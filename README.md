@@ -5,7 +5,15 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 - 仓库：<https://github.com/Jolyne-kujo/3D-Architect-Game-Demo>
 - Unity 编辑器：**6000.5.9f1**，以 `ProjectSettings/ProjectVersion.txt` 为准。
 - 渲染管线：URP；依赖版本由 `Packages/manifest.json` 和 `Packages/packages-lock.json` 共同记录。
-- 玩法实验场景：`Assets/WaterCourtyard/Scenes/WaterCourtyard.unity`（原 SampleScene 保留）。
+- 默认关卡：`Assets/CoastalTemple/Scenes/CoastalTemple.unity`。
+- 独立水系统实验：`Assets/WaterCourtyard/Scenes/WaterCourtyard.unity`（原 SampleScene 保留）。
+
+## 海岸神庙白模
+
+打开 `CoastalTemple` 场景并 Play；本机试玩包位于 `Builds/CoastalTemple-Windows/CoastalTemple.exe`。
+从岸边进入露天遗迹，沿山路到达大型神庙。**WASD** 行走，**Shift** 快走，**空格** 跳跃，**Tab** 在行走和观察间切换，**F1/F2/F3** 查看全景、山脚和神庙，**Home** 回到起点。水池按 **1** 排水、**R** 重新蓄水。
+
+山体采用原生 Terrain，建筑和山路采用 ProBuilder 网格并保存于场景/预制件中，Play 时不生成环境。编辑方法、模块与验证见 [海岸关卡说明](Documentation/CoastalTemple.md)。
 
 ## 水系统白模实验
 
@@ -13,6 +21,8 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 按 **1** 开启光源，水下接收器持续受光 1.5 秒后锁定排水；按 **Tab** 进入庭院，**WASD** 行走，沿西侧楼梯下池。**R** 重置，**V** 查看流速，**2** 扰动水面。
 
 这是有水量、流量和可变形网格的高度场水体原型。它不包含三维液体翻卷、飞溅和任意洞穴流动。复用方法、边界与测试见 [水系统说明](Documentation/WaterSystem.md)。
+
+选中水体的 `WaterVolume` 组件，调节 **Drain Speed Multiplier**（代码变量 `drainSpeedMultiplier`）。默认 **4**，当前实验池约 **50 秒**露出池底；设为 **1** 恢复原始速度。只加速开闸后的水模拟，不改变角色或全局时间。
 
 ## 团队成员首次接入
 

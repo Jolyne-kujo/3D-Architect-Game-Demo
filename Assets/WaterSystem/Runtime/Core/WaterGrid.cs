@@ -16,6 +16,19 @@ namespace Courtyard.Water
         public float CellSize { get; }
         public double Discharged { get; private set; }
         public double LastDischargeRate { get; private set; }
+        float drainSpeedMultiplier=1;
+        /// <summary>Water-only time acceleration while an outlet is open. 1 = physical time.</summary>
+        public float DrainSpeedMultiplier
+        {
+            get => drainSpeedMultiplier;
+            set
+            {
+                if(float.IsNaN(value)||float.IsInfinity(value)||value<.1f||value>8)
+                    throw new ArgumentOutOfRangeException(nameof(value),"Drain speed must be finite and between 0.1 and 8.");
+                drainSpeedMultiplier=value;
+            }
+        }
+        float FlowTimeScale => drainArea>0?drainSpeedMultiplier:1;
         public double Volume { get { double sum=0; for(int i=0;i<depth.Length;i++)sum+=depth[i]; return sum*cellArea; } }
 
         public WaterGrid(int width,int height,float cellSize,float[] terrain)
@@ -56,11 +69,11 @@ namespace Courtyard.Water
         }
         public float FlowX(int x,int z)
         {
-            int i=x+z*Width;return (float)((fluxX[i]+(x>0?fluxX[i-1]:0))/(2*CellSize*Math.Max(.025,depth[i])));
+            int i=x+z*Width;return FlowTimeScale*(float)((fluxX[i]+(x>0?fluxX[i-1]:0))/(2*CellSize*Math.Max(.025,depth[i])));
         }
         public float FlowZ(int x,int z)
         {
-            int i=x+z*Width;return (float)((fluxZ[i]+(z>0?fluxZ[i-Width]:0))/(2*CellSize*Math.Max(.025,depth[i])));
+            int i=x+z*Width;return FlowTimeScale*(float)((fluxZ[i]+(z>0?fluxZ[i-Width]:0))/(2*CellSize*Math.Max(.025,depth[i])));
         }
         public float FlowSpeed(int x,int z) { double u=FlowX(x,z),v=FlowZ(x,z);return (float)Math.Sqrt(u*u+v*v); }
         public void SetDrain(int x,int z,float radius,float area)
@@ -85,7 +98,8 @@ namespace Courtyard.Water
             if(float.IsNaN(dt)||float.IsInfinity(dt)||dt>.25f)throw new ArgumentException("Use bounded simulation ticks (<= 0.25s)");
             double maximum=0;for(int i=0;i<depth.Length;i++)maximum=Math.Max(maximum,depth[i]);
             double stable=Math.Min(.01,.4*CellSize/Math.Sqrt(2*Gravity*Math.Max(.01,maximum)));
-            int steps=(int)Math.Ceiling(dt/stable);double sub=dt/steps, before=Discharged;
+            double simulationDt=dt*FlowTimeScale;
+            int steps=(int)Math.Ceiling(simulationDt/stable);double sub=simulationDt/steps, before=Discharged;
             for(int s=0;s<steps;s++)Integrate(sub);
             LastDischargeRate=(Discharged-before)/dt;
         }

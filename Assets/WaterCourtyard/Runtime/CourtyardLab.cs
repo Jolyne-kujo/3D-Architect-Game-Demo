@@ -84,7 +84,7 @@ namespace WaterCourtyard
             Panel(new Rect(w-290,123,244,3),new Color(.15f,.25f,.27f));Panel(new Rect(w-290,123,244*Mathf.Clamp01(water.Remaining),3),new Color(.35f,.85f,.77f));
             GUI.Label(new Rect(w-290,138,252,26),$"出流  {water.Grid.LastDischargeRate:0.00} m³/s     {RunSeconds:0} s",body);
             GUI.Label(new Rect(w-290,174,252,24),$"核心 {water.SolverMilliseconds:0.00} ms   ·   {Fps:0} FPS",small);
-            GUI.Label(new Rect(w-290,201,252,24),water.showFlow?"流速着色：蓝 慢 → 橙 快":"光束折射 → 接收器 → 排水闸门",small);
+            GUI.Label(new Rect(w-290,201,252,24),water.showFlow?"流速着色：蓝 慢 → 橙 快":$"排水倍率 ×{water.drainSpeedMultiplier:0.0} · Inspector 可调",small);
             if(Overview)
             {
                 Panel(new Rect(26,h-120,w-52,94),new Color(.025f,.075f,.084f,.94f));

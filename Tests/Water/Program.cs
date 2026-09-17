@@ -24,5 +24,16 @@ Check("Nonfinite disturbances cannot poison the solver",()=>{var g=Pool();g.Fill
 Check("Nonfinite drain radius is rejected",()=>{var g=Pool();bool caught=false;try{g.SetDrain(8,8,float.PositiveInfinity,1);}catch(ArgumentException){caught=true;}Require(caught,"infinite radius accepted");});
 Check("Disturbed water query matches reconstructed mesh triangles",()=>{var g=Pool();g.Fill(2);g.Displace(12,12,.1f);g.Step(1f/30);float Corner(int x,int z)=>(g.Surface(x-1+(z-1)*32)+g.Surface(x+(z-1)*32)+g.Surface(x-1+z*32)+g.Surface(x+z*32))*.25f;float meshCenter=(Corner(13,12)+Corner(12,13))*.5f;Near(g.SampleSurface(12.5f,12.5f),meshCenter,.000001,"render and physics surface");});
 Check("Graded courtyard exposes the pool floor within 200 seconds",()=>{var bed=new float[48*64];for(int z=0;z<64;z++)for(int x=0;x<48;x++){float dx=(x+.5f)*.25f-6-2.2f,dz=(z+.5f)*.25f-8-2.8f;bed[x+z*48]=-4.5f+(float)Math.Sqrt(dx*dx+dz*dz)*.02f;}var g=new WaterGrid(48,64,.25f,bed);g.Fill(-.6f);double initial=g.Volume;g.SetDrain(32,43,.9f,3.2f);for(int i=0;i<6000;i++)g.Step(1f/30);Require(g.Volume/initial<.005,"remaining fraction "+g.Volume/initial);Near(g.Volume+g.Discharged,initial,.0001,"large pool conservation");});
+Check("Four-times drainage exposes the courtyard floor within 50 real seconds",()=>{
+    var bed=new float[48*64];for(int z=0;z<64;z++)for(int x=0;x<48;x++){float dx=(x+.5f)*.25f-8.2f,dz=(z+.5f)*.25f-10.8f;bed[x+z*48]=-4.5f+(float)Math.Sqrt(dx*dx+dz*dz)*.02f;}
+    var g=new WaterGrid(48,64,.25f,bed);g.Fill(-.6f);g.DrainSpeedMultiplier=4;g.SetDrain(32,43,.9f,3.2f);double initial=g.Volume;
+    for(int i=0;i<1500;i++)g.Step(1f/30);
+    Require(g.Volume/initial<.005,"Remaining fraction "+g.Volume/initial);
+    Near(g.Volume+g.Discharged,initial,.0001,"Accelerated conservation");
+    for(int i=0;i<48*64;i++)Require(g.Depth(i)>=0&&float.IsFinite(g.Depth(i)),"Invalid accelerated water depth");
+});
+Check("Drain speed does not accelerate a closed pool",()=>{var a=Pool(16);var b=Pool(16);a.Fill(2);b.Fill(2);b.DrainSpeedMultiplier=8;a.Displace(8,8,.04f);b.Displace(8,8,.04f);for(int n=0;n<100;n++){a.Step(.02f);b.Step(.02f);}for(int n=0;n<256;n++)Near(a.Depth(n),b.Depth(n),0,"Closed pool speed");});
+Check("Outflow meter reports volume per real second at eight-times speed",()=>{var g=Pool();g.Fill(2);g.DrainSpeedMultiplier=8;g.SetDrain(4,4,.5f,1);double before=g.Discharged;g.Step(.25f);Near(g.LastDischargeRate,(g.Discharged-before)/.25,.00001,"Rate units");Near(g.Volume+g.Discharged,128,.00001,"Maximum speed conservation");});
+Check("Unsafe drain speed is rejected",()=>{var g=Pool();foreach(float value in new[]{float.NaN,float.PositiveInfinity,0,9}){bool caught=false;try{g.DrainSpeedMultiplier=value;}catch(ArgumentOutOfRangeException){caught=true;}Require(caught,"Unsafe speed accepted");}Near(g.DrainSpeedMultiplier,1,0,"Rejected values preserved state");});
 var perf=Pool(64);perf.Fill(4);perf.SetDrain(32,32,1,5);var watch=Stopwatch.StartNew();for(int i=0;i<500;i++)perf.Step(.02f);watch.Stop();Console.WriteLine($"PERF 64x64 grid: {watch.Elapsed.TotalMilliseconds/500:F3} ms / 20ms step (CPU numerical core)");
 Console.WriteLine($"RESULT {count-failures}/{count} passed"); Environment.ExitCode=failures==0?0:1;

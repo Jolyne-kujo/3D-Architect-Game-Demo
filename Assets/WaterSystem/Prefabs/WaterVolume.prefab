@@ -113,6 +113,7 @@ MonoBehaviour:
   drainRadius: 0.9
   floorSlope: 0
   outletArea: 3.2
+  drainSpeedMultiplier: 4
   surfaceMaterial: {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   simulationHz: 30
   showFlow: 0

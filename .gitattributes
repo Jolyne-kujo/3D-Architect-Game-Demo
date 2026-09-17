@@ -75,6 +75,7 @@
 # Exclude from GitHub stats and diffs: third-party plugins, packages lock file
 Assets/Plugins/**           linguist-generated
 Packages/packages-lock.json linguist-generated
+Packages/com.coplaydev.unity-mcp/** linguist-vendored -whitespace
 
 # Unity LFS
 *.cubemap               lfs
@@ -183,3 +184,6 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Native TerrainData stays binary even with Force Text serialization.
+Assets/CoastalTemple/Terrain/CoastalMountain.asset lfs

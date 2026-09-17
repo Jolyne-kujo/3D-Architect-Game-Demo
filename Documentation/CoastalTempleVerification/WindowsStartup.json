@@ -1,0 +1,7 @@
+{
+  "renderer": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "graphics": "Direct3D 12",
+  "runtimeErrorCount": 0,
+  "running": true,
+  "visualVerification": "Editor Play screenshots; desktop application capture approval timed out"
+}

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/CoastalTemple/Scenes/CoastalTemple.unity
+    guid: 6284b13d103146a4c91e8447a974e0e1
+  - enabled: 1
     path: Assets/WaterCourtyard/Scenes/WaterCourtyard.unity
     guid: 8545752159d10224788a59b9c8dceab8
   m_configObjects:

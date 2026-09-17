@@ -21,6 +21,8 @@ namespace Courtyard.Water
         [Range(0,.1f), Tooltip("Optional base floor grade towards the outlet, metres per horizontal metre. Match the scene collider.")]
         public float floorSlope;
         [Min(0)] public float outletArea=3.2f;
+        [Range(.1f,8), Tooltip("排水速度倍率。1 = 原始物理时间，4 = 约 50 秒排空当前庭院。只加速开闸后的水模拟，不改变角色和全局时间；倍率越高，CPU 开销越大。")]
+        public float drainSpeedMultiplier=4;
         public Material surfaceMaterial;
         [Header("Simulation")]
         [Range(10,60)] public int simulationHz=30;
@@ -90,7 +92,7 @@ namespace Courtyard.Water
         }
         public void Advance(float dt)
         {
-            timer.Restart();Grid.SetDrain(drainX,drainZ,drainRadius,Gate.IsOpen?outletArea:0);Grid.Step(dt);timer.Stop();
+            timer.Restart();Grid.DrainSpeedMultiplier=drainSpeedMultiplier;Grid.SetDrain(drainX,drainZ,drainRadius,Gate.IsOpen?outletArea:0);Grid.Step(dt);timer.Stop();
             SolverMilliseconds=Mathf.Lerp(SolverMilliseconds,(float)timer.Elapsed.TotalMilliseconds,.1f);
             UpdateMesh();
         }

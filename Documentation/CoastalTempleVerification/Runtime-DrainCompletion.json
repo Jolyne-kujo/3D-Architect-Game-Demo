@@ -1,0 +1,12 @@
+{
+  "elapsedGameSeconds": 45.3630142,
+  "timeScale": 1.0,
+  "drainMultiplier": 4.0,
+  "remaining": 0.004985293,
+  "solverMilliseconds": 4.1164937,
+  "maximumObservedSolverMs": 9.621139,
+  "averageSmoothedSolverMs": 4.366039,
+  "initialVolume": 689.9363582469523,
+  "volumePlusDischarged": 689.93635824697014,
+  "gateOpen": true
+}
