@@ -8,8 +8,13 @@
 
 # Define macros (only works in top-level gitattributes files)
 [attr]lfs               filter=lfs diff=lfs merge=lfs -text
-[attr]unity-json        eol=lf linguist-language=json
-[attr]unity-yaml        merge=unityyamlmerge eol=lf linguist-language=yaml
+[attr]unity-json        text eol=lf linguist-language=json
+[attr]unity-yaml        text eol=lf linguist-language=yaml
+
+# Keep text consistent across Windows, macOS and Linux.
+*                       text=auto eol=lf
+*.bat                   text eol=crlf
+*.cmd                   text eol=crlf
 
 # Optionally collapse Unity YAML files on GitHub diffs
 # [attr]unity-yaml        merge=unityyamlmerge text linguist-language=yaml linguist-generated
@@ -51,7 +56,7 @@
 *.mixer                 unity-yaml
 *.overrideController    unity-yaml
 *.playable              unity-yaml
-*.prefab                unity-yaml
+*.prefab                unity-yaml merge=unityyamlmerge
 *.preset                unity-yaml
 *.renderTexture         unity-yaml
 *.scenetemplate         unity-yaml
@@ -60,7 +65,7 @@
 *.spriteatlas           unity-yaml
 *.spriteatlasv2         unity-yaml
 *.terrainlayer          unity-yaml
-*.unity                 unity-yaml
+*.unity                 unity-yaml merge=unityyamlmerge
 
 # "physic" for 3D but "physics" for 2D
 *.physicMaterial        unity-yaml
@@ -134,6 +139,14 @@ Packages/packages-lock.json linguist-generated
 *.tif                   lfs
 *.tiff                  lfs
 *.webp                  lfs
+
+# Match mixed-case image extensions on case-sensitive systems too.
+*.[pP][nN][gG]          lfs
+*.[jJ][pP][gG]          lfs
+*.[jJ][pP][eE][gG]      lfs
+*.[tT][gG][aA]          lfs
+*.[pP][sS][dD]          lfs
+*.[fF][bB][xX]          lfs
 
 # Compressed Archive
 *.7z                    lfs

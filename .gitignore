@@ -112,3 +112,15 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Personal editor/OS files and local secrets.
+/.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
