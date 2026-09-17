@@ -1,0 +1,9 @@
+{
+    "failures": 0,
+    "width": 1600,
+    "height": 1000,
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "api": "Direct3D12",
+    "initialCubicMetres": 689.9363582469523,
+    "solverMilliseconds": 1.6209139823913575
+}

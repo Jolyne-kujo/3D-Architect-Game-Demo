@@ -1,0 +1,20 @@
+PASS Closed pool conserves volume over 60 seconds
+PASS Initial fill respects solid steps
+PASS Disturbance spreads to other cells and conserves volume
+PASS Open drain removes local water and generates a surface gradient
+PASS Closed valve has no discharge
+PASS Drain empties pool without negative depths
+PASS Water cannot cross a high solid partition
+PASS Frame subdivision is deterministic
+PASS Reset restores state and clears drainage
+PASS Drain receiver needs continuous illumination then latches
+PASS Buoyancy fraction brackets waterline
+PASS Refraction obeys Snell law and level does not change angle
+PASS Total internal reflection is reported
+PASS Invalid domain is rejected
+PASS Nonfinite disturbances cannot poison the solver
+PASS Nonfinite drain radius is rejected
+PASS Disturbed water query matches reconstructed mesh triangles
+PASS Graded courtyard exposes the pool floor within 200 seconds
+PERF 64x64 grid: 0.088 ms / 20ms step (CPU numerical core)
+RESULT 18/18 passed

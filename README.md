@@ -5,7 +5,14 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 - 仓库：<https://github.com/Jolyne-kujo/3D-Architect-Game-Demo>
 - Unity 编辑器：**6000.5.9f1**，以 `ProjectSettings/ProjectVersion.txt` 为准。
 - 渲染管线：URP；依赖版本由 `Packages/manifest.json` 和 `Packages/packages-lock.json` 共同记录。
-- 起始场景：`Assets/Scenes/SampleScene.unity`。
+- 玩法实验场景：`Assets/WaterCourtyard/Scenes/WaterCourtyard.unity`（原 SampleScene 保留）。
+
+## 水系统白模实验
+
+打开实验场景并 Play；或运行本机 `Builds/WaterCourt-Windows/WaterCourt.exe`。
+按 **1** 开启光源，水下接收器持续受光 1.5 秒后锁定排水；按 **Tab** 进入庭院，**WASD** 行走，沿西侧楼梯下池。**R** 重置，**V** 查看流速，**2** 扰动水面。
+
+这是有水量、流量和可变形网格的高度场水体原型。它不包含三维液体翻卷、飞溅和任意洞穴流动。复用方法、边界与测试见 [水系统说明](Documentation/WaterSystem.md)。
 
 ## 团队成员首次接入
 

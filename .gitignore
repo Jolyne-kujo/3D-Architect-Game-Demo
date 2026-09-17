@@ -124,3 +124,10 @@ Thumbs.db
 *.jks
 *.p12
 *.pfx
+
+# Hand-authored standalone numerical test project (Unity-generated csproj stay ignored).
+!/Tests/Water/WaterChecks.csproj
+/Tests/**/bin/
+/Tests/**/obj/
+/Assets/Resources/PerformanceTestRunInfo.json*
+/Assets/Resources/PerformanceTestRunSettings.json*

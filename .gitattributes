@@ -9,7 +9,8 @@
 # Define macros (only works in top-level gitattributes files)
 [attr]lfs               filter=lfs diff=lfs merge=lfs -text
 [attr]unity-json        text eol=lf linguist-language=json
-[attr]unity-yaml        text eol=lf linguist-language=yaml
+# Unity's serializer emits a space after empty YAML values; preserve that format.
+[attr]unity-yaml        text eol=lf linguist-language=yaml whitespace=-blank-at-eol
 
 # Keep text consistent across Windows, macOS and Linux.
 *                       text=auto eol=lf

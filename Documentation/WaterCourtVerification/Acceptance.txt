@@ -1,0 +1,28 @@
+PASS Deep pool contains more than 500 cubic metres
+PASS Valve starts closed
+PASS Reusable 48x64 domain
+PASS Nonblack rendered scene 01-full-pool
+PASS Player disturbance conserves water
+PASS Rendered triangle and physics sampling agree after disturbance
+PASS Refracted light charges underwater receiver and latches drain
+PASS Air-water refraction produces a submerged beam segment
+PASS Nonblack rendered scene 02-refraction-unlock
+MEASURE realtime rendering 60.0 FPS; NVIDIA GeForce RTX 4060 Laptop GPU; 1600x1000
+PASS Outlet reduces total water volume
+PASS Guided buoyant platform descends with water
+PASS Volume plus measured discharge is conserved
+PASS Nonblack rendered scene 03-draining
+PASS Nonblack rendered scene 04-flow-field
+PASS Valve remains open after illumination is lost
+PASS Nonblack rendered scene 05-outlet-closeup
+PASS At least 99.5 percent of water drained
+PASS Final mass ledger conserved
+PASS Platform rests on floor instead of falling through
+PASS Nonblack rendered scene 06-drained-pool
+PASS CharacterController traverses the full staircase
+PASS Player reaches graded solid pool floor (feet -4.337, floor -4.362)
+PASS Nonblack rendered scene 07-walked-to-floor
+PASS Player can climb the same stairs back out
+PASS Climb returns to courtyard elevation
+PASS Reset refills pool and rearms drain
+RESULT failures=0
