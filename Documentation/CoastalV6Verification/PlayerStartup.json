@@ -1,0 +1,9 @@
+{
+  "issues": [],
+  "passed": true,
+  "process": "CoastalTemple",
+  "runtimeSeconds": 134.1,
+  "graphics": "Direct3D 12 / NVIDIA GeForce RTX 4060 Laptop GPU",
+  "scope": "Windows standalone graphics initialization and sustained process startup only; route, materials and pool verified in Editor Play",
+  "log": "Logs/CoastalV6Player.log"
+}

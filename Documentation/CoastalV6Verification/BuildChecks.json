@@ -1,0 +1,12 @@
+{
+  "buildResult": "succeeded",
+  "errors": 0,
+  "warnings": 486,
+  "durationSeconds": 8.6592,
+  "player": "Builds/CoastalHeadland-Windows/CoastalTemple.exe",
+  "package": "Builds/CoastalHeadland-Windows.zip",
+  "zipEntries": 216,
+  "zipMB": 58.84,
+  "zipCRCValid": true,
+  "noDoNotShipFiles": true
+}

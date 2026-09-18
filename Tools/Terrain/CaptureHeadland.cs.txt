@@ -1,0 +1,8 @@
+var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();tour.SetOverview(true);var cam=tour.view;
+var oldP=cam.transform.position;var oldR=cam.transform.rotation;var oldTarget=cam.targetTexture;var oldAspect=cam.aspect;var oldFov=cam.fieldOfView;var active=RenderTexture.active;
+var rt=RenderTexture.GetTemporary(1920,1080,24,RenderTextureFormat.ARGB32);var tx=new Texture2D(1920,1080,TextureFormat.RGB24,false);
+var poses=new[]{new Vector3(160,92,235),new Vector3(150,37,152),new Vector3(-12,235,88),new Vector3(-65,1.8f,204),new Vector3(-24,24.8f,34),new Vector3(-94,18,110),new Vector3(44,36,121)};
+var aims=new[]{new Vector3(-5,12,91),new Vector3(18,24,96),new Vector3(-12,0,88),new Vector3(40,38,88),new Vector3(52,36,137),new Vector3(-76,15,85),new Vector3(-65,0,204)};
+var names=new[]{"01-Overview","02-PointedSummit","03-TopMap","04-Spawn","05-HalfwaySlope","06-SouthboundTrail","07-NorthSea"};
+try{for(int i=0;i<poses.Length;i++){cam.transform.position=poses[i];cam.transform.LookAt(aims[i]);cam.fieldOfView=i==2?73:58;cam.targetTexture=rt;cam.aspect=16f/9;cam.Render();RenderTexture.active=rt;tx.ReadPixels(new Rect(0,0,1920,1080),0,0);tx.Apply();System.IO.File.WriteAllBytes("Documentation/CoastalV6Verification/"+names[i]+".png",tx.EncodeToPNG());}}
+finally{cam.targetTexture=oldTarget;cam.aspect=oldAspect;cam.fieldOfView=oldFov;cam.transform.SetPositionAndRotation(oldP,oldR);RenderTexture.active=active;RenderTexture.ReleaseTemporary(rt);UnityEngine.Object.DestroyImmediate(tx);}return "Captured 7 views";

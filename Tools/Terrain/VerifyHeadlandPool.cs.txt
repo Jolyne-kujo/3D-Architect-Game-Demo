@@ -1,0 +1,22 @@
+if(!Application.isPlaying)throw new System.Exception("Enter Play and illuminate the pool receiver for at least 2 seconds first.");
+var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();var water=tour.water;var results=new System.Collections.Generic.List<object>();int failures=0;
+void Check(string name,bool ok,object details=null){results.Add(new{name,ok,details});if(!ok)failures++;}
+Check("Translated pool receiver unlocks by real Update",water.Gate.IsOpen);
+Check("Translated source refracts into the pool",tour.beam.Entry.y>tour.beam.Hit.y+.5f);
+double initial=water.InitialVolume;double sea=tour.seaBoundary.nearSea.Grid.Volume;
+for(int n=0;n<1800;n++)water.Advance(1/30f);
+Check("Pool drains at least 99.5 percent",water.Remaining<.005f,water.Remaining);
+Check("Pool volume and discharge conserved",System.Math.Abs(water.Grid.Volume+water.Grid.Discharged-initial)<.025,new{initial,remaining=water.Grid.Volume,discharged=water.Grid.Discharged});
+Check("Pool drain does not remove sea water",System.Math.Abs(tour.seaBoundary.nearSea.Grid.Volume-sea)<.01);
+tour.SetOverview(true);var walker=tour.walker;walker.active=false;var cc=walker.Controller;
+cc.enabled=false;walker.transform.position=water.transform.position+new Vector3(-4.65f,.08f,-8.7f);cc.enabled=true;Physics.SyncTransforms();
+for(int n=0;n<312;n++)cc.Move(new Vector3(0,-.12f,.036f));
+var feet=walker.transform.position;var local=feet-water.transform.position;
+bool supported=Physics.Raycast(feet+Vector3.up*.3f,Vector3.down,out var support,.5f);
+Check("Walk down relocated stairs onto pool floor",local.z>1&&supported&&support.collider.name.StartsWith("Graded pool floor"),new{feet=feet.ToString(),support=supported?support.collider.name:"none"});
+for(int n=0;n<312;n++)cc.Move(new Vector3(0,-.08f,-.036f));
+local=walker.transform.position-water.transform.position;
+Check("Walk back out of relocated pool",local.z<-8&&local.y>-.15f,local.ToString());
+walker.ResetPosition();
+var json=Newtonsoft.Json.JsonConvert.SerializeObject(new{passed=failures==0,failures,checks=results,scope="Editor Play: real receiver Update, direct solver ticks, CharacterController.Move; not manual keyboard input"},Newtonsoft.Json.Formatting.Indented);
+System.IO.File.WriteAllText("Documentation/CoastalV6Verification/PoolChecks.json",json);return json;

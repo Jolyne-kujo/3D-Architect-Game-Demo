@@ -1,0 +1,8 @@
+{
+  "source": "User-provided NavMeshProject/PureNature",
+  "meshModules": 13,
+  "triangles": 98921,
+  "terrainResolution": 513,
+  "holeCount": 644,
+  "scene": "Assets/CoastalTemple/Scenes/CoastalTemple.unity"
+}

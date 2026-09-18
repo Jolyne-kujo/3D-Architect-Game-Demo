@@ -1,0 +1,17 @@
+if(Application.isPlaying)throw new System.Exception("Stop Play first");
+System.IO.Directory.CreateDirectory("Documentation/CoastalV6Verification");
+var names=new[]{"Cliff01","Cliff02","Cliff02b","Cliff02d","Cliff02f","Cliff03","Cliff03b","Cliff03d","Cliff03f","Cliff04","Cliff05","RockModular06","RockModular07","RockModular08","RockModular04","Rock04"};
+var mat=new Material(Shader.Find("Universal Render Pipeline/Lit"));mat.SetColor("_BaseColor",new Color(.62f,.64f,.6f));mat.SetFloat("_Smoothness",0);
+var root=new GameObject("SourcePreviewTemporary");var filter=root.AddComponent<MeshFilter>();root.AddComponent<MeshRenderer>().sharedMaterial=mat;
+var cameraObject=new GameObject("SourcePreviewCameraTemporary");var cam=cameraObject.AddComponent<Camera>();cam.clearFlags=CameraClearFlags.SolidColor;cam.backgroundColor=new Color(.18f,.23f,.27f);cam.fieldOfView=35;cam.nearClipPlane=.1f;cam.farClipPlane=100;
+var rt=RenderTexture.GetTemporary(512,512,24);var sheet=new Texture2D(2048,2048,TextureFormat.RGB24,false);var previous=RenderTexture.active;
+var labelObject=new GameObject("SourcePreviewLabelTemporary");var label=labelObject.AddComponent<TextMesh>();label.fontSize=45;label.characterSize=.09f;label.anchor=TextAnchor.MiddleCenter;label.color=Color.white;
+try{for(int i=0;i<names.Length;i++){
+var paths=AssetDatabase.FindAssets(names[i]+" t:Model",new[]{"Assets/ThirdParty/PureNatureSubset/Models"}).Select(AssetDatabase.GUIDToAssetPath);string path=paths.First(p=>System.IO.Path.GetFileNameWithoutExtension(p)==names[i]);
+var mesh=AssetDatabase.LoadAllAssetsAtPath(path).OfType<Mesh>().OrderByDescending(m=>m.vertexCount).First();filter.sharedMesh=mesh;float s=10/Mathf.Max(mesh.bounds.size.x,mesh.bounds.size.y,mesh.bounds.size.z);root.transform.localScale=Vector3.one*s;root.transform.position=new Vector3(1000,5,1000)-mesh.bounds.center*s;
+cam.transform.position=new Vector3(1015,13,980);cam.transform.LookAt(new Vector3(1000,4.5f,1000));cam.targetTexture=rt;cam.aspect=1;
+label.text=names[i];labelObject.transform.position=new Vector3(1000,-1.5f,1000);labelObject.transform.rotation=cam.transform.rotation;
+cam.Render();RenderTexture.active=rt;sheet.ReadPixels(new Rect(0,0,512,512),(i%4)*512,(3-i/4)*512);
+}sheet.Apply();System.IO.File.WriteAllBytes("Documentation/CoastalV6Verification/SourceModels.png",sheet.EncodeToPNG());}
+finally{RenderTexture.active=previous;RenderTexture.ReleaseTemporary(rt);UnityEngine.Object.DestroyImmediate(root);UnityEngine.Object.DestroyImmediate(labelObject);UnityEngine.Object.DestroyImmediate(cameraObject);UnityEngine.Object.DestroyImmediate(mat);UnityEngine.Object.DestroyImmediate(sheet);}
+return "16 source models previewed";

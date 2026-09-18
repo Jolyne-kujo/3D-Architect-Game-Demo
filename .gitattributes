@@ -189,3 +189,4 @@ LightingData.asset     binary
 Assets/CoastalTemple/Terrain/CoastalMountain.asset lfs
 Assets/CoastalTemple/Terrain/NearshorePreview.asset lfs
 Assets/CoastalTemple/Materials/AlgorithmicRippleNormal.asset lfs
+Assets/CoastalTemple/Terrain/Headland/*.asset lfs

@@ -1,0 +1,192 @@
+// Editor authoring recipe. Existing source meshes supply the visible mountain;
+// Terrain fills the beach, paths and spaces between the rock modules.
+if(Application.isPlaying)throw new System.Exception("Stop Play before authoring");
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/CoastalTemple/Scenes/CoastalTemple.unity")throw new System.Exception("Unexpected scene");
+const string art="Assets/ThirdParty/PureNatureSubset/";
+const string output="Assets/CoastalTemple/Terrain/Headland/";
+System.IO.Directory.CreateDirectory(output);AssetDatabase.Refresh();
+float Ease(float a,float b,float x)=>Mathf.SmoothStep(0,1,Mathf.InverseLerp(a,b,x));
+foreach(string path in AssetDatabase.FindAssets("t:Texture2D",new[]{art}).Select(AssetDatabase.GUIDToAssetPath))
+{
+    var importer=(TextureImporter)AssetImporter.GetAtPath(path);
+    if(importer.maxTextureSize!=1024){importer.maxTextureSize=1024;importer.textureCompression=TextureImporterCompression.Compressed;importer.SaveAndReimport();}
+}
+var shader=Shader.Find("Universal Render Pipeline/Lit");if(!shader)throw new System.Exception("Missing URP Lit shader");
+Material RockMaterial(string name,string texture,bool grass=false)
+{
+    string p="Assets/CoastalTemple/Materials/"+name+".mat";var mat=AssetDatabase.LoadAssetAtPath<Material>(p);
+    if(!mat){mat=new Material(shader);AssetDatabase.CreateAsset(mat,p);}mat.shader=shader;
+    mat.SetTexture("_BaseMap",AssetDatabase.LoadAssetAtPath<Texture2D>(art+"Textures/"+texture));
+    mat.SetColor("_BaseColor",grass?new Color(.68f,.82f,.65f):new Color(.88f,.89f,.86f));
+    mat.SetFloat("_Smoothness",.08f);mat.SetFloat("_Metallic",0);mat.SetFloat("_Surface",0);mat.SetFloat("_ZWrite",1);mat.SetFloat("_Cull",2);
+    mat.SetTextureScale("_BaseMap",Vector2.one);mat.renderQueue=-1;
+    // Each module has unique authored geometry. Standard URP materials provide
+    // the same opaque depth/shadow behavior as the rest of the environment.
+    mat.enableInstancing=false;EditorUtility.SetDirty(mat);return mat;
+}
+var rock2=RockMaterial("Headland_Layered02","Cliff02_a.png");var rock3=RockMaterial("Headland_Layered03","Cliff03_a.png");var rock4=RockMaterial("Headland_Layered04","Cliff04_a.png");
+var bare=RockMaterial("Headland_BareRock","Cliff03_a.png");
+var grassMaterial=RockMaterial("Headland_Grass","Grass01_a.png",true);
+var root=GameObject.Find("09_ModelHeadland");if(!root)root=new GameObject("09_ModelHeadland");
+// Deactivate obsolete block cliffs and staircase geometry, preserving history.
+foreach(var name in new[]{"08_CliffLandforms","03_MountainPath"}){var g=scene.GetRootGameObjects().FirstOrDefault(o=>o.name==name);if(g)g.SetActive(false);}
+foreach(Transform child in root.transform)child.gameObject.SetActive(false);
+Mesh Source(string name)
+{
+    string folder=name.StartsWith("Cliff")?"Cliffs":name.StartsWith("Boulder")?"Boulders":"Rocks";
+    return AssetDatabase.LoadAllAssetsAtPath(art+"Models/"+folder+"/"+name+".fbx").OfType<Mesh>().OrderByDescending(m=>m.vertexCount).First();
+}
+GameObject Put(string name,Mesh mesh,Material material)
+{
+    var child=root.transform.Find(name);var g=child?child.gameObject:new GameObject(name);g.SetActive(true);g.transform.SetParent(root.transform,false);g.transform.localPosition=Vector3.zero;g.transform.localRotation=Quaternion.identity;g.transform.localScale=Vector3.one;
+    var f=g.GetComponent<MeshFilter>();if(!f)f=g.AddComponent<MeshFilter>();f.sharedMesh=mesh;
+    var r=g.GetComponent<MeshRenderer>();if(!r)r=g.AddComponent<MeshRenderer>();r.sharedMaterials=mesh.subMeshCount==2?new[]{material,grassMaterial}:new[]{material};
+    var c=g.GetComponent<MeshCollider>();if(!c)c=g.AddComponent<MeshCollider>();c.sharedMesh=null;c.sharedMesh=mesh;c.convex=false;
+    EditorUtility.SetDirty(g);return g;
+}
+Mesh SavedMesh(string name,Mesh source,Vector3[] vertices,bool grassy=true)
+{
+    string path=output+name+".asset";var mesh=AssetDatabase.LoadAssetAtPath<Mesh>(path);
+    if(!mesh){mesh=UnityEngine.Object.Instantiate(source);mesh.name=name;AssetDatabase.CreateAsset(mesh,path);}else EditorUtility.CopySerialized(source,mesh);
+    mesh.name=name;mesh.vertices=vertices;mesh.RecalculateNormals();
+    // Bake material regions and planar grass UVs once, without changing the
+    // imported cliff's triangle geometry or collision surface.
+    var normals=mesh.normals;var triangles=source.triangles;
+    var points=vertices.ToList();var uv=source.uv.ToList();var newNormals=normals.ToList();
+    var rockTriangles=new System.Collections.Generic.List<int>();var grassTriangles=new System.Collections.Generic.List<int>();
+    var grassIndices=new System.Collections.Generic.Dictionary<int,int>();
+    int GrassVertex(int old)
+    {
+        if(grassIndices.TryGetValue(old,out int index))return index;
+        index=points.Count;grassIndices.Add(old,index);points.Add(vertices[old]);newNormals.Add(normals[old]);uv.Add(new Vector2(vertices[old].x,vertices[old].z)*.12f);return index;
+    }
+    for(int i=0;i<triangles.Length;i+=3)
+    {
+        int a=triangles[i],b=triangles[i+1],c=triangles[i+2];var normal=Vector3.Cross(vertices[b]-vertices[a],vertices[c]-vertices[a]).normalized;
+        if(grassy&&normal.y>.72f){grassTriangles.Add(GrassVertex(a));grassTriangles.Add(GrassVertex(b));grassTriangles.Add(GrassVertex(c));}
+        else{rockTriangles.Add(a);rockTriangles.Add(b);rockTriangles.Add(c);}
+    }
+    mesh.Clear();mesh.indexFormat=points.Count>65535?UnityEngine.Rendering.IndexFormat.UInt32:UnityEngine.Rendering.IndexFormat.UInt16;
+    mesh.SetVertices(points);mesh.SetNormals(newNormals);mesh.SetUVs(0,uv);mesh.subMeshCount=grassTriangles.Count>0?2:1;
+    mesh.SetTriangles(rockTriangles,0);if(grassTriangles.Count>0)mesh.SetTriangles(grassTriangles,1);
+    mesh.RecalculateTangents();mesh.RecalculateBounds();EditorUtility.SetDirty(mesh);return mesh;
+}
+float SummitHeight(float x,float z)
+{
+    float h=22+(x+38)*(8f/103)+(z-51)*((16-110*(8f/103))/97);
+    float pad=Mathf.Max(Mathf.Abs(x-40)/12.0f,Mathf.Abs(z-88)/15.0f);
+    return Mathf.Lerp(h,31,1-Ease(1,1.3f,pad));
+}
+// Morph an existing textured Cliff04 into an elongated triangular headland.
+// Original topology and UVs retain its fractured rock surfaces and inward base.
+var peakSource=Source("Cliff04");var pb=peakSource.bounds;var peakVertices=peakSource.vertices;
+for(int i=0;i<peakVertices.Length;i++)
+{
+    var v=peakVertices[i];float u=Mathf.InverseLerp(pb.min.x,pb.max.x,v.x),t=Mathf.InverseLerp(pb.min.y,pb.max.y,v.y),n=Mathf.InverseLerp(pb.min.z,pb.max.z,v.z);
+    float z=51+97*n,left=-38+110*n,right=65+7*n;float x=Mathf.Lerp(left,right,u);
+    float y=Mathf.Lerp(-5,SummitHeight(x,z),1-Mathf.Pow(1-t,1.35f));
+    peakVertices[i]=new Vector3(x,y,z);
+}
+Put("Summit_TriangularCliff04",SavedMesh("Summit_TriangularCliff04",peakSource,peakVertices),rock4);
+// Broad interlocking rock masses; each remains a separate editable scene object.
+void Mass(string name,string model,Vector3 center,Vector3 size,float yaw,Material mat)
+{
+    var source=Source(model);var bounds=source.bounds;var verts=source.vertices;var q=Quaternion.Euler(0,yaw,0);
+    for(int i=0;i<verts.Length;i++){var v=verts[i]-bounds.center;v=new Vector3(v.x/bounds.size.x*size.x,v.y/bounds.size.y*size.y,v.z/bounds.size.z*size.z);verts[i]=center+q*v;}
+    Put(name,SavedMesh(name,source,verts,mat!=bare),mat);
+}
+Mass("Midland_West_Cliff02","Cliff02",new Vector3(-36,8,17),new Vector3(63,28,66),-13,rock2);
+Mass("Midland_Center_Cliff02","Cliff02",new Vector3(9,8,27),new Vector3(72,28,66),17,rock2);
+Mass("Midland_South_Cliff02","Cliff02",new Vector3(13,5,-15),new Vector3(75,23,50),-18,rock2);
+Mass("Midland_East_Cliff03","Cliff03",new Vector3(51,3,26),new Vector3(43,30,59),-12,rock3);
+Mass("West_Shoulders_Cliff03","Cliff03",new Vector3(-52,5,74),new Vector3(36,29,60),12,rock3);
+Mass("North_Shoulders_Cliff02","Cliff02",new Vector3(-43,3,124),new Vector3(50,20,46),-12,rock2);
+Mass("Coastal_LowCrag_Cliff03","Cliff03",new Vector3(-13,-1,149),new Vector3(26,23,38),19,rock3);
+Mass("East_Toe_Cliff03","Cliff03",new Vector3(58,4,76),new Vector3(29,38,39),-27,bare);
+Mass("South_Toe_Cliff03","Cliff03",new Vector3(-9,-2,-40),new Vector3(42,15,30),28,bare);
+Mass("West_Toe_Cliff03","Cliff03",new Vector3(-72,-1,9),new Vector3(23,18,36),13,bare);
+Mass("Summit_Root_Cliff03","Cliff03",new Vector3(27,6,54),new Vector3(35,39,31),-8,rock3);
+
+var route=new[]{new Vector3(-65,0,204),new Vector3(-80,0,210),new Vector3(-86,0,195),new Vector3(-86,0,175),new Vector3(-89,2,154),new Vector3(-91,5,134),new Vector3(-88,10,111),new Vector3(-82,14,91),new Vector3(-78,18,73),new Vector3(-66,21,54),new Vector3(-48,22,39),new Vector3(-24,23,34),new Vector3(-22,24,54),new Vector3(-8,26,61),new Vector3(9,27.5f,66),new Vector3(24,29.2f,68),new Vector3(40,31,69),new Vector3(40,32.3f,80)};
+void Road(float x,float z,out float distance,out float level)
+{
+    distance=float.MaxValue;level=0;
+    for(int i=0;i<route.Length-2;i++){var a=route[i];var b=route[i+1];var d=new Vector2(b.x-a.x,b.z-a.z);float t=Mathf.Clamp01(Vector2.Dot(new Vector2(x-a.x,z-a.z),d)/d.sqrMagnitude);float s=Vector2.Distance(new Vector2(x,z),new Vector2(a.x,a.z)+d*t);if(s<distance){distance=s;level=Mathf.Lerp(a.y,b.y,t);}}
+}
+// A long, graded rock shoulder carries the southern approach. This broadens the
+// mountain behind the trail rather than leaving a thin Terrain embankment.
+var flankSource=Source("Cliff02");var fb=flankSource.bounds;var flankVertices=flankSource.vertices;
+for(int i=0;i<flankVertices.Length;i++)
+{
+    var v=flankVertices[i];float u=Mathf.InverseLerp(fb.min.x,fb.max.x,v.x),t=Mathf.InverseLerp(fb.min.y,fb.max.y,v.y),n=Mathf.InverseLerp(fb.min.z,fb.max.z,v.z);
+    float x=-112+86*u,z=31+150*n;
+    Road(-85,z,out _,out float top);top-=.65f+Mathf.Abs(x+77)*.01f;
+    flankVertices[i]=new Vector3(x,Mathf.Lerp(-7,top,1-Mathf.Pow(1-t,2.2f)),z);
+}
+Put("West_GradedFlank_Cliff02",SavedMesh("West_GradedFlank_Cliff02",flankSource,flankVertices),rock2);
+var terrain=GameObject.Find("01_CoastalTerrain").GetComponent<Terrain>();var data=terrain.terrainData;Undo.RegisterCompleteObjectUndo(data,"Rebuild model headland ground");data.size=new Vector3(300,70,330);
+Physics.SyncTransforms();var masses=root.GetComponentsInChildren<MeshCollider>();
+int resolution=data.heightmapResolution;var heights=new float[resolution,resolution];
+for(int iz=0;iz<resolution;iz++)for(int ix=0;ix<resolution;ix++)
+{
+    float x=-130+300f*ix/(resolution-1),z=-90+330f*iz/(resolution-1);
+    float y=-6;
+    // Low irregular coastal apron, with the north shore start and sandy transition.
+    float coastAngle=Mathf.Atan2((z-181)/44,(x+54)/53);
+    float beach=Mathf.Sqrt((x+54)*(x+54)/(53*53)+(z-181)*(z-181)/(44*44))*(1+.05f*Mathf.Sin(coastAngle*3+.7f));
+    y=Mathf.Lerp(y,-.24f,1-Ease(.76f,1.15f,beach));
+    // Keep the heightfield just inside the visible cliff volumes rather than
+    // drawing tall terrain curtains over the imported rock faces.
+    float rockTop=-100;RaycastHit hit;var ray=new Ray(new Vector3(x,70,z),Vector3.down);
+    foreach(var col in masses)if(col.bounds.Contains(new Vector3(x,col.bounds.center.y,z))&&col.Raycast(ray,out hit,90))rockTop=Mathf.Max(rockTop,hit.point.y);
+    if(rockTop>-90)y=Mathf.Min(y,rockTop-.18f);
+    Road(x,z,out float distance,out float road);
+    if(distance<36){float baseSupport=road+1.1f-distance*.10f-distance*distance*.043f;y=Mathf.Max(y,baseSupport);y=Mathf.Lerp(y,road-.035f,1-Ease(3.1f,6.4f,distance));}
+    // A naturally rounded mid-height clearing, merging into the existing modules.
+    float mid=Mathf.Sqrt((x+25)*(x+25)/(28*28)+(z-35)*(z-35)/(20*20));y=Mathf.Lerp(y,22.95f,1-Ease(.65f,1.08f,mid));
+    // The triangular cap supplies the summit itself. Soil here only fills shallow
+    // irregularities on its approach and the temple's foundation.
+    float pad=Mathf.Max(Mathf.Abs(x-40)/12.0f,Mathf.Abs(z-88)/15.0f);
+    if(pad<1.3f)y=Mathf.Max(y,Mathf.Lerp(y,30.97f,1-Ease(1,1.3f,pad)));
+    float court=Mathf.Max(Mathf.Abs(x+50)/23,Mathf.Abs(z-182)/25);y=Mathf.Lerp(y,-.22f,1-Ease(1,1.2f,court));
+    if(distance<3.1f)y=Mathf.Max(y,road-.035f);
+    heights[iz,ix]=Mathf.Clamp01((y+10)/70);
+}
+data.SetHeights(0,0,heights);
+int hr=data.holesResolution;var holes=new bool[hr,hr];int holeCount=0;
+for(int iz=0;iz<hr;iz++)for(int ix=0;ix<hr;ix++){float x=-130+(ix+.5f)*300/hr,z=-90+(iz+.5f)*330/hr;bool solid=!(Mathf.Abs(x+50)<6.8f&&Mathf.Abs(z-182)<8.8f);holes[iz,ix]=solid;if(!solid)holeCount++;}data.SetHoles(0,0,holes);
+TerrainLayer Layer(string name,Texture2D texture,Vector2 tile)
+{
+    string path=output+name+".terrainlayer";var l=AssetDatabase.LoadAssetAtPath<TerrainLayer>(path);if(!l){l=new TerrainLayer();AssetDatabase.CreateAsset(l,path);}l.diffuseTexture=texture;l.tileSize=tile;l.smoothness=0;l.metallic=0;EditorUtility.SetDirty(l);return l;
+}
+var grass=Layer("Grass",AssetDatabase.LoadAssetAtPath<Texture2D>(art+"Textures/Grass01_a.png"),Vector2.one*8.33f);
+grass.diffuseRemapMin=Vector4.zero;grass.diffuseRemapMax=new Vector4(.68f,.82f,.65f,1);EditorUtility.SetDirty(grass);
+var chalk=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/ChalkGray.terrainlayer");
+var sand=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/WhiteboxSand.terrainlayer");
+var trail=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/WhiteboxPath.terrainlayer");
+data.terrainLayers=new[]{grass,sand,trail,chalk};int ar=data.alphamapResolution;var weights=new float[ar,ar,4];
+for(int z=0;z<ar;z++)for(int x=0;x<ar;x++)
+{
+    float u=x/(float)(ar-1),v=z/(float)(ar-1),wx=-130+300*u,wz=-90+330*v,h=data.GetInterpolatedHeight(u,v)-10,slope=data.GetSteepness(u,v);
+    Road(wx,wz,out float distance,out _);float sw=1-Ease(1.2f,3.8f,h);float pw=(1-Ease(1.6f,3.2f,distance))*.78f*(1-sw);float rock=Ease(34,62,slope)*(1-sw)*(1-pw)*.55f;
+    weights[z,x,0]=1-sw-pw-rock;weights[z,x,1]=sw;weights[z,x,2]=pw;weights[z,x,3]=rock;
+}
+data.SetAlphamaps(0,0,weights);data.SetBaseMapDirty();terrain.Flush();EditorUtility.SetDirty(data);
+var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();
+var courtRoot=GameObject.Find("02_ShoreRuins_WaterCourt");courtRoot.transform.position=new Vector3(-50,0,182);
+var startRoot=GameObject.Find("00_ShoreStart");startRoot.transform.position=new Vector3(-35,0,231);startRoot.transform.Find("Start_SeaSteps").gameObject.SetActive(false);
+tour.walker.transform.position=new Vector3(-65,.15f,204);tour.walker.transform.rotation=Quaternion.Euler(0,140,0);
+var temple=GameObject.Find("04_SummitTemple");temple.transform.localScale=Vector3.one*.65f;temple.transform.rotation=Quaternion.identity;temple.transform.position=new Vector3(29.6f,-.2f,-24.45f);
+tour.viewpoints[0].position=new Vector3(150,106,248);tour.viewpoints[0].LookAt(new Vector3(-8,15,88));
+tour.viewpoints[1].position=new Vector3(-24,25,34);tour.viewpoints[1].LookAt(new Vector3(60,36,141));
+tour.viewpoints[2].position=new Vector3(95,52,167);tour.viewpoints[2].LookAt(new Vector3(34,29,88));
+var preview=AssetDatabase.LoadAssetAtPath<Mesh>("Assets/CoastalTemple/Terrain/NearshorePreview.asset");var uv=new System.Collections.Generic.List<Vector4>();var near=tour.seaBoundary.nearSea;
+foreach(var p in preview.vertices){var w=p+near.transform.position;float bed=near.bottom;var local=w-terrain.transform.position;if(local.x>=0&&local.z>=0&&local.x<300&&local.z<330)bed=Mathf.Max(bed,terrain.SampleHeight(w)+terrain.transform.position.y);uv.Add(new Vector4(Mathf.Max(0,near.initialLevel-bed),0,0,1));}preview.SetUVs(1,uv);EditorUtility.SetDirty(preview);
+foreach(var g in new[]{root,courtRoot,startRoot,temple,tour.walker.gameObject})EditorUtility.SetDirty(g.transform);
+foreach(var marker in tour.viewpoints)EditorUtility.SetDirty(marker);
+AssetDatabase.SaveAssets();UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+System.IO.Directory.CreateDirectory("Documentation/CoastalV6Verification");
+System.IO.File.WriteAllText("Documentation/CoastalV6Verification/RoutePoints.json",Newtonsoft.Json.JsonConvert.SerializeObject(route.Select(p=>new[]{p.x,p.y,p.z}),Newtonsoft.Json.Formatting.Indented));
+var report=new{source="User-provided NavMeshProject/PureNature",meshModules=masses.Length,triangles=masses.Sum(c=>c.sharedMesh.triangles.Length/3),terrainResolution=resolution,holeCount,scene=scene.path};
+string json=Newtonsoft.Json.JsonConvert.SerializeObject(report,Newtonsoft.Json.Formatting.Indented);System.IO.File.WriteAllText("Documentation/CoastalV6Verification/Assembly.json",json);return json;

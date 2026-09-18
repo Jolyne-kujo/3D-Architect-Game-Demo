@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "modules": 13,
+  "triangles": 98921,
+  "materialSlots": 23,
+  "missingScripts": 0,
+  "shaderErrors": [],
+  "matchingColliders": true,
+  "textures": [
+    {
+      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff02_a.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff03_a.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff04_a.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Grass01_a.png",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "srpBatcher": true
+}

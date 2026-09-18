@@ -1,0 +1,637 @@
+{
+  "passed": true,
+  "legs": [
+    {
+      "direction": "ascent",
+      "target": [
+        -80.0,
+        0.0,
+        210.0
+      ],
+      "actual": [
+        -79.83706,
+        -0.0110126436,
+        209.93483
+      ],
+      "steps": 235,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -86.0,
+        0.0,
+        195.0
+      ],
+      "actual": [
+        -85.93269,
+        -0.0110126436,
+        195.1631
+      ],
+      "steps": 235,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -86.0,
+        0.0,
+        175.0
+      ],
+      "actual": [
+        -85.99943,
+        -0.004748732,
+        175.171219
+      ],
+      "steps": 294,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -89.0,
+        2.0,
+        154.0
+      ],
+      "actual": [
+        -88.97659,
+        1.97926033,
+        154.165146
+      ],
+      "steps": 312,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -91.0,
+        5.0,
+        134.0
+      ],
+      "actual": [
+        -90.98618,
+        4.97440958,
+        134.137711
+      ],
+      "steps": 296,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -88.0,
+        10.0,
+        111.0
+      ],
+      "actual": [
+        -88.01813,
+        9.965258,
+        111.14045
+      ],
+      "steps": 341,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -82.0,
+        14.0,
+        91.0
+      ],
+      "actual": [
+        -82.04133,
+        13.9679747,
+        91.13831
+      ],
+      "steps": 307,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -78.0,
+        18.0,
+        73.0
+      ],
+      "actual": [
+        -78.03372,
+        17.9634361,
+        73.15137
+      ],
+      "steps": 271,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -66.0,
+        21.0,
+        54.0
+      ],
+      "actual": [
+        -66.09483,
+        20.9633427,
+        54.15093
+      ],
+      "steps": 330,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -48.0,
+        22.0,
+        39.0
+      ],
+      "actual": [
+        -48.107563,
+        22.5319538,
+        39.09006
+      ],
+      "steps": 345,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -24.0,
+        23.0,
+        34.0
+      ],
+      "actual": [
+        -24.1556282,
+        22.9933014,
+        34.03286
+      ],
+      "steps": 360,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -22.0,
+        24.0,
+        54.0
+      ],
+      "actual": [
+        -22.0170841,
+        23.9966278,
+        53.84176
+      ],
+      "steps": 293,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -8.0,
+        26.0,
+        61.0
+      ],
+      "actual": [
+        -8.148811,
+        25.9683285,
+        60.9240036
+      ],
+      "steps": 229,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        9.0,
+        27.5,
+        66.0
+      ],
+      "actual": [
+        8.869327,
+        27.4809341,
+        65.96132
+      ],
+      "steps": 261,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        24.0,
+        29.2,
+        68.0
+      ],
+      "actual": [
+        23.8301353,
+        29.17314,
+        67.97711
+      ],
+      "steps": 222,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        40.0,
+        31.0,
+        69.0
+      ],
+      "actual": [
+        39.8461227,
+        30.9751511,
+        68.9902649
+      ],
+      "steps": 236,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        40.0,
+        32.3,
+        80.0
+      ],
+      "actual": [
+        39.9972229,
+        32.3249931,
+        79.80121
+      ],
+      "steps": 159,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        40.0,
+        31.0,
+        69.0
+      ],
+      "actual": [
+        40.0,
+        30.9839573,
+        69.1879959
+      ],
+      "steps": 159,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        24.0,
+        29.2,
+        68.0
+      ],
+      "actual": [
+        24.13168,
+        29.2065,
+        68.00978
+      ],
+      "steps": 234,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        9.0,
+        27.5,
+        66.0
+      ],
+      "actual": [
+        9.167097,
+        27.5125465,
+        66.0221939
+      ],
+      "steps": 222,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -8.0,
+        26.0,
+        61.0
+      ],
+      "actual": [
+        -7.86694527,
+        25.9969025,
+        61.0389252
+      ],
+      "steps": 261,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -22.0,
+        24.0,
+        54.0
+      ],
+      "actual": [
+        -21.8667068,
+        24.0208,
+        54.0663872
+      ],
+      "steps": 230,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -24.0,
+        23.0,
+        34.0
+      ],
+      "actual": [
+        -23.9801826,
+        23.0028687,
+        34.1864128
+      ],
+      "steps": 294,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -48.0,
+        22.0,
+        39.0
+      ],
+      "actual": [
+        -47.8495979,
+        22.57289,
+        38.96986
+      ],
+      "steps": 358,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -66.0,
+        21.0,
+        54.0
+      ],
+      "actual": [
+        -65.86622,
+        20.9979763,
+        53.8892136
+      ],
+      "steps": 344,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -78.0,
+        18.0,
+        73.0
+      ],
+      "actual": [
+        -77.8942,
+        18.0136356,
+        72.833374
+      ],
+      "steps": 330,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -82.0,
+        14.0,
+        91.0
+      ],
+      "actual": [
+        -81.95661,
+        14.0401335,
+        90.80802
+      ],
+      "steps": 271,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -88.0,
+        10.0,
+        111.0
+      ],
+      "actual": [
+        -87.9618759,
+        10.0151272,
+        110.87262
+      ],
+      "steps": 308,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -91.0,
+        5.0,
+        134.0
+      ],
+      "actual": [
+        -90.98202,
+        5.02756357,
+        133.8631
+      ],
+      "steps": 341,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -89.0,
+        2.0,
+        154.0
+      ],
+      "actual": [
+        -89.01707,
+        2.02247214,
+        153.82663
+      ],
+      "steps": 295,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -86.0,
+        0.0,
+        175.0
+      ],
+      "actual": [
+        -86.0241547,
+        0.00712734461,
+        174.830475
+      ],
+      "steps": 312,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -86.0,
+        0.0,
+        195.0
+      ],
+      "actual": [
+        -86.00021,
+        -0.011012733,
+        194.822449
+      ],
+      "steps": 294,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -80.0,
+        0.0,
+        210.0
+      ],
+      "actual": [
+        -80.0502,
+        -0.011012733,
+        209.873016
+      ],
+      "steps": 238,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -65.0,
+        0.0,
+        204.0
+      ],
+      "actual": [
+        -65.16351,
+        0.0249999762,
+        204.063812
+      ],
+      "steps": 235,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge ascent",
+      "target": [
+        54.0,
+        31.0,
+        75.0
+      ],
+      "actual": [
+        53.8697548,
+        30.875,
+        74.92052
+      ],
+      "steps": 230,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge ascent",
+      "target": [
+        57.0,
+        33.0,
+        97.0
+      ],
+      "actual": [
+        56.9814339,
+        32.63899,
+        96.86904
+      ],
+      "steps": 326,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge ascent",
+      "target": [
+        61.0,
+        35.3,
+        122.0
+      ],
+      "actual": [
+        60.975647,
+        35.1566353,
+        121.84771
+      ],
+      "steps": 372,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge ascent",
+      "target": [
+        68.0,
+        36.8,
+        139.0
+      ],
+      "actual": [
+        67.9337158,
+        36.853672,
+        138.83815
+      ],
+      "steps": 270,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge descent",
+      "target": [
+        61.0,
+        35.3,
+        122.0
+      ],
+      "actual": [
+        61.0612144,
+        35.177803,
+        122.148666
+      ],
+      "steps": 268,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge descent",
+      "target": [
+        57.0,
+        33.0,
+        97.0
+      ],
+      "actual": [
+        57.0284538,
+        32.6618347,
+        97.17619
+      ],
+      "steps": 372,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge descent",
+      "target": [
+        54.0,
+        31.0,
+        75.0
+      ],
+      "actual": [
+        54.01976,
+        30.888567,
+        75.14468
+      ],
+      "steps": 327,
+      "ok": true
+    },
+    {
+      "direction": "pointed ridge descent",
+      "target": [
+        40.0,
+        31.0,
+        69.0
+      ],
+      "actual": [
+        40.13704,
+        30.98464,
+        69.0414047
+      ],
+      "steps": 261,
+      "ok": true
+    }
+  ],
+  "spawnSeesTemple": true,
+  "scope": "Editor Play actual CharacterController.Move; no jumping or teleport within route legs, both directions. Not manual keyboard testing."
+}
