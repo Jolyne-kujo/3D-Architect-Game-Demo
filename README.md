@@ -10,7 +10,8 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 
 ## 海岸神庙白模
 
-打开 `CoastalTemple` 场景并 Play；最新本机试玩包位于 `Builds/CoastalHeadland-Windows/CoastalTemple.exe`。
+打开 `CoastalTemple` 场景并 Play；最新本机试玩包位于 `Builds/CoastalWhitebox-Windows/CoastalTemple.exe`。
+当前采用暖白色岩壁与建筑、淡土黄色地表和沙滩，已去除山体彩色贴图。[当前配色截图](Documentation/CoastalWhiteboxPalette/README.md)。
 从沙滩岸边进入露天遗迹，经半山观海平台到达大型神庙。**WASD** 行走/游泳，**Shift** 快走，**空格** 跳跃/上浮，**Ctrl** 下潜，**Tab** 在行走和观察间切换，**F1/F2/F3** 查看全景、半山海面和神庙，**Home** 回到起点。水池按 **1** 排水、**R** 重新蓄水。触碰黄色浮标所在的近远海交界线会回到出生点。
 
 V6 使用用户提供工程中的 PureNature 岩石模型拼装主山体，Terrain 辅助铺设沙滩、道路和衔接坡面。北侧海边出发向南上山，到约 23 米高的半山后，从侧面转向东北，经缓坡抵达神庙和约 38 米高的三角尖岬。旧方台已停用。13 个静态山体模块分别可选，草地与岩壁使用标准 URP 材质；建筑、模型和地形均已保存，Play 时不生成环境。最新画面、俯视地图与验证见 [模型山体说明](Documentation/CoastalV6Verification/README.md)。海浪采用 GPU 四组叠加波，近岸另有低频流体模拟，远海使用轻量平面，调节方法见 [海面说明](Documentation/CoastalV3Verification/README.md)，场景编辑见 [海岸关卡说明](Documentation/CoastalTemple.md)。

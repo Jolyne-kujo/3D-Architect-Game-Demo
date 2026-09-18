@@ -2,6 +2,8 @@
 
 场景：`Assets/CoastalTemple/Scenes/CoastalTemple.unity`。Unity 6000.5.9f1，ProBuilder 6.1.2。
 
+当前配色为暖白色与淡土黄色，模型不使用彩色表面贴图。Terrain 使用同色纯色层，庭院采用本场景的中性材质副本；海水与机关的动态发光反馈保留。最新画面见 [白模配色](CoastalWhiteboxPalette/README.md)。
+
 先制作了 [概念图](Concepts/CoastalTemple-Concept.png)，再在 Unity 编辑器中通过原生 Terrain、ProBuilder 建模操作及预制件实例建立本场景。概念图是设计参考，实际白模截图见 [验证目录](CoastalTempleVerification/README.md)。
 
 ## 空间与编辑

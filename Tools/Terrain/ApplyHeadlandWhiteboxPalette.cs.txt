@@ -1,0 +1,56 @@
+// Material-only authoring: preserve the authored geometry, route and colliders.
+if(Application.isPlaying)throw new System.Exception("Stop Play before applying materials");
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!="Assets/CoastalTemple/Scenes/CoastalTemple.unity")throw new System.Exception("Unexpected scene");
+var white=new Color(.94f,.93f,.90f);var soil=new Color(.86f,.79f,.64f);var pathColor=new Color(.95f,.89f,.76f);var sandColor=new Color(.90f,.83f,.69f);
+void Plain(Material material,Color color)
+{
+    Undo.RecordObject(material,"Apply white and earth palette");
+    // Clear old serialized texture references as well as current shader maps.
+    var serialized=new SerializedObject(material);var maps=serialized.FindProperty("m_SavedProperties.m_TexEnvs");
+    for(int i=0;i<maps.arraySize;i++)maps.GetArrayElementAtIndex(i).FindPropertyRelative("second.m_Texture").objectReferenceValue=null;
+    serialized.ApplyModifiedProperties();material.SetColor("_BaseColor",color);material.SetFloat("_Smoothness",.06f);material.SetFloat("_Metallic",0);
+    material.DisableKeyword("_NORMALMAP");material.DisableKeyword("_METALLICSPECGLOSSMAP");EditorUtility.SetDirty(material);
+}
+foreach(var id in AssetDatabase.FindAssets("t:Material",new[]{"Assets/CoastalTemple/Materials"}))
+{
+    var material=AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(id));
+    if(material.name.StartsWith("Headland_"))Plain(material,material.name=="Headland_Grass"?soil:white);
+    else if(new[]{"Chalk","CutStone","CliffCap","CliffFace","CliffUndercut"}.Contains(material.name))Plain(material,material.name=="CliffCap"?soil:white);
+}
+// Give this scene neutral copies of the courtyard's solid model materials.
+// Receiver illumination and light beams retain their gameplay feedback.
+var court=GameObject.Find("02_ShoreRuins_WaterCourt");var copies=new System.Collections.Generic.Dictionary<Material,Material>();
+foreach(var renderer in court.GetComponentsInChildren<MeshRenderer>(true))
+{
+    var materials=renderer.sharedMaterials;bool changed=false;
+    for(int i=0;i<materials.Length;i++)
+    {
+        var original=materials[i];if(!original||original.shader.name!="Universal Render Pipeline/Lit"||original.name=="Receiver")continue;
+        if(!copies.TryGetValue(original,out var neutral))
+        {
+            string name=original.name.StartsWith("Whitebox_")?original.name:"Whitebox_"+original.name.Replace(" ","_");
+            string asset="Assets/CoastalTemple/Materials/"+name+".mat";neutral=AssetDatabase.LoadAssetAtPath<Material>(asset);
+            if(!neutral){neutral=new Material(original){name=name};AssetDatabase.CreateAsset(neutral,asset);}
+            bool earth=name.Contains("Instrument")||name.Contains("Mechanism")||name.Contains("Recess");Plain(neutral,earth?soil:white);copies.Add(original,neutral);
+        }
+        materials[i]=neutral;changed=true;
+    }
+    if(changed){Undo.RecordObject(renderer,"Apply neutral courtyard materials");renderer.sharedMaterials=materials;EditorUtility.SetDirty(renderer);}
+}
+Texture2D Solid(string name,Color color)
+{
+    string asset="Assets/CoastalTemple/Terrain/Headland/"+name+".asset";var texture=AssetDatabase.LoadAssetAtPath<Texture2D>(asset);
+    if(!texture){texture=new Texture2D(2,2,TextureFormat.RGBA32,false,false){name=name,wrapMode=TextureWrapMode.Repeat};AssetDatabase.CreateAsset(texture,asset);}
+    texture.SetPixels(Enumerable.Repeat(color,4).ToArray());texture.Apply();EditorUtility.SetDirty(texture);return texture;
+}
+var terrain=GameObject.Find("01_CoastalTerrain").GetComponent<Terrain>();var layers=terrain.terrainData.terrainLayers;
+var textures=new[]{Solid("WhiteboxSoil",soil),Solid("WhiteboxBeach",sandColor),Solid("WhiteboxTrail",pathColor),Solid("WhiteboxRock",white)};
+for(int i=0;i<layers.Length;i++)
+{
+    var layer=layers[i];Undo.RecordObject(layer,"Apply neutral terrain palette");layer.diffuseTexture=textures[i];layer.normalMapTexture=null;layer.maskMapTexture=null;
+    layer.diffuseRemapMin=Vector4.zero;layer.diffuseRemapMax=Vector4.one;layer.smoothness=.06f;layer.metallic=0;EditorUtility.SetDirty(layer);
+}
+terrain.terrainData.SetBaseMapDirty();terrain.Flush();EditorUtility.SetDirty(terrain.terrainData);
+AssetDatabase.SaveAssets();UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+return new{palette="Warm white rock and architecture; pale earth soil, paths and beach",headlandModules=GameObject.Find("09_ModelHeadland").GetComponentsInChildren<MeshFilter>().Length,courtyardMaterialCopies=copies.Count};

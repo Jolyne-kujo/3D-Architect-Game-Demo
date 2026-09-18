@@ -17,8 +17,8 @@ Material RockMaterial(string name,string texture,bool grass=false)
 {
     string p="Assets/CoastalTemple/Materials/"+name+".mat";var mat=AssetDatabase.LoadAssetAtPath<Material>(p);
     if(!mat){mat=new Material(shader);AssetDatabase.CreateAsset(mat,p);}mat.shader=shader;
-    mat.SetTexture("_BaseMap",AssetDatabase.LoadAssetAtPath<Texture2D>(art+"Textures/"+texture));
-    mat.SetColor("_BaseColor",grass?new Color(.68f,.82f,.65f):new Color(.88f,.89f,.86f));
+    mat.SetTexture("_BaseMap",null);
+    mat.SetColor("_BaseColor",grass?new Color(.86f,.79f,.64f):new Color(.94f,.93f,.90f));
     mat.SetFloat("_Smoothness",.08f);mat.SetFloat("_Metallic",0);mat.SetFloat("_Surface",0);mat.SetFloat("_ZWrite",1);mat.SetFloat("_Cull",2);
     mat.SetTextureScale("_BaseMap",Vector2.one);mat.renderQueue=-1;
     // Each module has unique authored geometry. Standard URP materials provide
@@ -160,8 +160,8 @@ TerrainLayer Layer(string name,Texture2D texture,Vector2 tile)
 {
     string path=output+name+".terrainlayer";var l=AssetDatabase.LoadAssetAtPath<TerrainLayer>(path);if(!l){l=new TerrainLayer();AssetDatabase.CreateAsset(l,path);}l.diffuseTexture=texture;l.tileSize=tile;l.smoothness=0;l.metallic=0;EditorUtility.SetDirty(l);return l;
 }
-var grass=Layer("Grass",AssetDatabase.LoadAssetAtPath<Texture2D>(art+"Textures/Grass01_a.png"),Vector2.one*8.33f);
-grass.diffuseRemapMin=Vector4.zero;grass.diffuseRemapMax=new Vector4(.68f,.82f,.65f,1);EditorUtility.SetDirty(grass);
+var grass=Layer("Grass",AssetDatabase.LoadAssetAtPath<Texture2D>(output+"WhiteboxSoil.asset"),Vector2.one*8.33f);
+grass.diffuseRemapMin=Vector4.zero;grass.diffuseRemapMax=Vector4.one;EditorUtility.SetDirty(grass);
 var chalk=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/ChalkGray.terrainlayer");
 var sand=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/WhiteboxSand.terrainlayer");
 var trail=AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/WhiteboxPath.terrainlayer");

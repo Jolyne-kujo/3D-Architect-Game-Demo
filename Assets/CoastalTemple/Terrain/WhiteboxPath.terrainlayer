@@ -7,7 +7,7 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WhiteboxPath
-  m_DiffuseTexture: {fileID: 2800000, guid: 411367d04605f974097caab8c2c50286, type: 2}
+  m_DiffuseTexture: {fileID: 2800000, guid: 487dc1547de59c548903f39a069a1cde, type: 2}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 12, y: 12}

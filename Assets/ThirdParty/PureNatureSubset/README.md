@@ -8,4 +8,6 @@
 
 当前山体使用 Cliff02/03/04 的几何进行缩放、拼装及局部形变。草顶面与岩壁 UV 分开，派生网格保存在 `Assets/CoastalTemple/Terrain/Headland`，配套标准 URP 材质位于 `Assets/CoastalTemple/Materials/Headland_*.mat`。这是本项目的地形拼装，不是原神摘星崖原始模型。
 
+当前场景按要求改用暖白色和淡土黄色纯色材质，不再绑定这些原始颜色贴图；源贴图保留在此处，供后续美术使用。
+
 原资源作者、使用说明与权利信息以附带的 `Readme.pdf` 和原始资源许可为准。本文件记录导入来源，不替代原资源许可。
