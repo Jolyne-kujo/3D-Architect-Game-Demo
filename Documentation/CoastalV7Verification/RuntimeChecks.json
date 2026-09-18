@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Seam contact (-144.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (0.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (0.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (-144.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (-144.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Seam contact (1000.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-65.00, 0.15, 204.00)"
+    },
+    {
+      "name": "Death count is one per crossing",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Death preserves courtyard puzzle",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Safe near water does not kill",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Respawn restores view direction",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Swimmer selects near sea",
+      "ok": true,
+      "details": {
+        "seaHeight": -1.74835563,
+        "seaDepth": 4.30180264
+      }
+    },
+    {
+      "name": "Pool remains independent",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Analytic waves move",
+      "ok": true,
+      "details": {
+        "h0": -0.16190879,
+        "h1": -0.0110099437
+      }
+    },
+    {
+      "name": "GPU wave parameters bound",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Far sea uses generated normal texture",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Simulated seam remains level",
+      "ok": true,
+      "details": -1.7
+    }
+  ],
+  "nearSeaCells": 6192,
+  "nearSeaHz": 15,
+  "solverPlusMeshMs": 4.4561866666666665,
+  "amortizedMsAt60Fps": 1.1140466666666666,
+  "scope": "Unity Editor Play, CharacterController.Move and runtime components; not manual keyboard testing"
+}

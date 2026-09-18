@@ -1,0 +1,40 @@
+if(!Application.isPlaying)throw new System.Exception("Enter Play first");
+var root=GameObject.Find("10_CompactMountain").transform;var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();
+var checks=new System.Collections.Generic.List<object>();int failures=0;
+void Check(string name,bool ok,object details=null){checks.Add(new{name,ok,details});if(!ok)failures++;}
+float Ground(Vector3 p)=>Physics.RaycastAll(new Vector3(p.x,110,p.z),Vector3.down,130,~0,QueryTriggerInteraction.Ignore).Where(h=>h.transform.IsChildOf(root)||h.collider is TerrainCollider).Select(h=>h.point.y).DefaultIfEmpty(-100).Max();
+bool Blocked(Vector3 a,Vector3 b,out RaycastHit hit)=>Physics.Raycast(a,(b-a).normalized,out hit,Vector3.Distance(a,b),~0,QueryTriggerInteraction.Ignore);
+var spawn=new Vector3(-65,1.8f,204);var reveal=tour.viewpoints[1].position;
+var beachPoints=new[]{new Vector3(58,1,155),new Vector3(68,1,155),new Vector3(74,1,163)};
+foreach(var target in beachPoints)
+{
+    bool hidden=Blocked(spawn,target,out var hit);Check("Beach hidden from shore "+target,hidden&&hit.transform.IsChildOf(root),hidden?hit.collider.name:"clear");
+    bool obstructed=Blocked(reveal,target,out hit);Check("Beach revealed at midway bend "+target,!obstructed,obstructed?hit.collider.name:"clear");
+}
+float eyeHeight=reveal.y-Ground(reveal);Check("Reveal camera is at walking height",eyeHeight>1.55f&&eyeHeight<2.1f,eyeHeight);
+// Reach the rim from the tested beach-route bend without jumping.
+tour.SetOverview(true);var walker=tour.walker;walker.active=false;var cc=walker.Controller;cc.enabled=false;walker.transform.position=new Vector3(30,37.15f,146);cc.enabled=true;Physics.SyncTransforms();
+for(int i=0;i<45;i++)cc.Move(new Vector3(.068f,-.045f,0));Check("Walk from bend to viewing rim",Mathf.Abs(walker.transform.position.x-33)<.25f&&Mathf.Abs(walker.transform.position.y-37)<.3f,walker.transform.position.ToString());walker.ResetPosition();
+var routes=Newtonsoft.Json.JsonConvert.DeserializeObject<System.Collections.Generic.Dictionary<string,float[][]>>(System.IO.File.ReadAllText("Documentation/CoastalV7Verification/RoutePoints.json"));
+var sections=new System.Collections.Generic.List<object>();
+foreach(var pair in routes.Where(p=>p.Key!="ridge"))
+{
+    var ps=pair.Value.Select(p=>new Vector3(p[0],p[1],p[2])).ToArray();
+    for(int i=1;i<ps.Length-1;i++)
+    {
+        var p=(ps[i]+ps[i-1])*.5f;var dir=ps[i]-ps[i-1];var side=new Vector3(-dir.z,0,dir.x).normalized*6.5f;
+        float floor=Ground(p),left=Ground(p+side),right=Ground(p-side);sections.Add(new{route=pair.Key,segment=i,floor,left,right});
+        // The first rising segment opens into the original courtyard on one side.
+        // Keep that opening clear for the pool stairs rather than enclosing it.
+        if(pair.Key=="main"&&i==3)Check("Courtyard entry cut into rock flank",Mathf.Max(left,right)>floor+.6f,new{floor,left,right});
+        bool enclosed=pair.Key=="main"?(i>=4&&i<=8)||(i>=11&&i<=14):i==2||i==3||i==6;
+        if(enclosed)Check("Inset rock cut "+pair.Key+" "+i,Mathf.Min(left,right)>floor+.6f,new{floor,left,right});
+    }
+}
+var filters=root.GetComponentsInChildren<MeshFilter>();Check("Eleven saved model modules",filters.Length==11);
+Check("Collision uses visible mesh geometry",filters.All(f=>f.GetComponent<MeshCollider>()&&f.GetComponent<MeshCollider>().sharedMesh==f.sharedMesh));
+Check("Every derived mesh is a project asset",filters.All(f=>AssetDatabase.GetAssetPath(f.sharedMesh).StartsWith("Assets/CoastalTemple/Terrain/CompactMountain/")));
+Check("Mountain materials have no color texture",root.GetComponentsInChildren<MeshRenderer>().All(r=>r.sharedMaterials.All(m=>m.GetTexture("_BaseMap")==null)));
+Check("Old headland is inactive",UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects().Any(g=>g.name=="09_ModelHeadland"&&!g.activeSelf));
+var report=new{passed=failures==0,failures,checks,sections,scope="Actual Play colliders, visible saved mesh identity, and walking-height sight rays. Cross-section coverage excludes flat clearings, sea-level transitions and the deliberately open viewing rim."};
+var json=Newtonsoft.Json.JsonConvert.SerializeObject(report,Newtonsoft.Json.Formatting.Indented);System.IO.File.WriteAllText("Documentation/CoastalV7Verification/GeometryChecks.json",json);return Newtonsoft.Json.JsonConvert.SerializeObject(new{passed=failures==0,failures,count=checks.Count});

@@ -1,0 +1,345 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Beach hidden from shore (58.00, 1.00, 155.00)",
+      "ok": true,
+      "details": "Beach_BroadRockSlope"
+    },
+    {
+      "name": "Beach revealed at midway bend (58.00, 1.00, 155.00)",
+      "ok": true,
+      "details": "clear"
+    },
+    {
+      "name": "Beach hidden from shore (68.00, 1.00, 155.00)",
+      "ok": true,
+      "details": "Beach_BroadRockSlope"
+    },
+    {
+      "name": "Beach revealed at midway bend (68.00, 1.00, 155.00)",
+      "ok": true,
+      "details": "clear"
+    },
+    {
+      "name": "Beach hidden from shore (74.00, 1.00, 163.00)",
+      "ok": true,
+      "details": "Beach_BroadRockSlope"
+    },
+    {
+      "name": "Beach revealed at midway bend (74.00, 1.00, 163.00)",
+      "ok": true,
+      "details": "clear"
+    },
+    {
+      "name": "Reveal camera is at walking height",
+      "ok": true,
+      "details": 1.85461044
+    },
+    {
+      "name": "Walk from bend to viewing rim",
+      "ok": true,
+      "details": "(33.06, 36.97, 146.00)"
+    },
+    {
+      "name": "Courtyard entry cut into rock flank",
+      "ok": true,
+      "details": {
+        "floor": 6.46451569,
+        "left": -0.220657349,
+        "right": 11.7726078
+      }
+    },
+    {
+      "name": "Inset rock cut main 4",
+      "ok": true,
+      "details": {
+        "floor": 14.4651184,
+        "left": 18.1545811,
+        "right": 20.1877766
+      }
+    },
+    {
+      "name": "Inset rock cut main 5",
+      "ok": true,
+      "details": {
+        "floor": 23.46521,
+        "left": 28.9482574,
+        "right": 30.2834644
+      }
+    },
+    {
+      "name": "Inset rock cut main 6",
+      "ok": true,
+      "details": {
+        "floor": 30.9645233,
+        "left": 34.1081619,
+        "right": 35.4671173
+      }
+    },
+    {
+      "name": "Inset rock cut main 7",
+      "ok": true,
+      "details": {
+        "floor": 36.4652,
+        "left": 40.358696,
+        "right": 41.9314156
+      }
+    },
+    {
+      "name": "Inset rock cut main 8",
+      "ok": true,
+      "details": {
+        "floor": 39.96531,
+        "left": 40.97143,
+        "right": 40.97143
+      }
+    },
+    {
+      "name": "Inset rock cut main 11",
+      "ok": true,
+      "details": {
+        "floor": 46.9652138,
+        "left": 55.609726,
+        "right": 54.3985748
+      }
+    },
+    {
+      "name": "Inset rock cut main 12",
+      "ok": true,
+      "details": {
+        "floor": 50.4651222,
+        "left": 55.5191231,
+        "right": 55.6255074
+      }
+    },
+    {
+      "name": "Inset rock cut main 13",
+      "ok": true,
+      "details": {
+        "floor": 54.9643631,
+        "left": 57.6541176,
+        "right": 57.2402725
+      }
+    },
+    {
+      "name": "Inset rock cut main 14",
+      "ok": true,
+      "details": {
+        "floor": 60.9649963,
+        "left": 62.489502,
+        "right": 61.7864456
+      }
+    },
+    {
+      "name": "Inset rock cut beach 2",
+      "ok": true,
+      "details": {
+        "floor": 40.4656639,
+        "left": 41.20239,
+        "right": 42.5102844
+      }
+    },
+    {
+      "name": "Inset rock cut beach 3",
+      "ok": true,
+      "details": {
+        "floor": 38.4654427,
+        "left": 40.7235451,
+        "right": 40.41679
+      }
+    },
+    {
+      "name": "Inset rock cut beach 6",
+      "ok": true,
+      "details": {
+        "floor": 12.9647942,
+        "left": 15.6748009,
+        "right": 15.1499329
+      }
+    },
+    {
+      "name": "Eleven saved model modules",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Collision uses visible mesh geometry",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Every derived mesh is a project asset",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Mountain materials have no color texture",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Old headland is inactive",
+      "ok": true,
+      "details": null
+    }
+  ],
+  "sections": [
+    {
+      "route": "main",
+      "segment": 1,
+      "floor": -0.0360107422,
+      "left": -0.220657349,
+      "right": -0.220657349
+    },
+    {
+      "route": "main",
+      "segment": 2,
+      "floor": 1.46447754,
+      "left": -0.220657349,
+      "right": 0.196540833
+    },
+    {
+      "route": "main",
+      "segment": 3,
+      "floor": 6.46451569,
+      "left": -0.220657349,
+      "right": 11.7726078
+    },
+    {
+      "route": "main",
+      "segment": 4,
+      "floor": 14.4651184,
+      "left": 18.1545811,
+      "right": 20.1877766
+    },
+    {
+      "route": "main",
+      "segment": 5,
+      "floor": 23.46521,
+      "left": 28.9482574,
+      "right": 30.2834644
+    },
+    {
+      "route": "main",
+      "segment": 6,
+      "floor": 30.9645233,
+      "left": 34.1081619,
+      "right": 35.4671173
+    },
+    {
+      "route": "main",
+      "segment": 7,
+      "floor": 36.4652,
+      "left": 40.358696,
+      "right": 41.9314156
+    },
+    {
+      "route": "main",
+      "segment": 8,
+      "floor": 39.96531,
+      "left": 40.97143,
+      "right": 40.97143
+    },
+    {
+      "route": "main",
+      "segment": 9,
+      "floor": 41.4643364,
+      "left": 40.9647179,
+      "right": 40.97143
+    },
+    {
+      "route": "main",
+      "segment": 10,
+      "floor": 43.46512,
+      "left": 53.0133247,
+      "right": 43.14087
+    },
+    {
+      "route": "main",
+      "segment": 11,
+      "floor": 46.9652138,
+      "left": 55.609726,
+      "right": 54.3985748
+    },
+    {
+      "route": "main",
+      "segment": 12,
+      "floor": 50.4651222,
+      "left": 55.5191231,
+      "right": 55.6255074
+    },
+    {
+      "route": "main",
+      "segment": 13,
+      "floor": 54.9643631,
+      "left": 57.6541176,
+      "right": 57.2402725
+    },
+    {
+      "route": "main",
+      "segment": 14,
+      "floor": 60.9649963,
+      "left": 62.489502,
+      "right": 61.7864456
+    },
+    {
+      "route": "main",
+      "segment": 15,
+      "floor": 63.9644775,
+      "left": 62.48378,
+      "right": 63.9300156
+    },
+    {
+      "route": "beach",
+      "segment": 1,
+      "floor": 40.9647179,
+      "left": 40.97143,
+      "right": 41.5978622
+    },
+    {
+      "route": "beach",
+      "segment": 2,
+      "floor": 40.4656639,
+      "left": 41.20239,
+      "right": 42.5102844
+    },
+    {
+      "route": "beach",
+      "segment": 3,
+      "floor": 38.4654427,
+      "left": 40.7235451,
+      "right": 40.41679
+    },
+    {
+      "route": "beach",
+      "segment": 4,
+      "floor": 32.96418,
+      "left": 39.09998,
+      "right": 30.4395676
+    },
+    {
+      "route": "beach",
+      "segment": 5,
+      "floor": 23.9644852,
+      "left": 28.3679314,
+      "right": 24.5584736
+    },
+    {
+      "route": "beach",
+      "segment": 6,
+      "floor": 12.9647942,
+      "left": 15.6748009,
+      "right": 15.1499329
+    },
+    {
+      "route": "beach",
+      "segment": 7,
+      "floor": 3.56493378,
+      "left": 3.48322153,
+      "right": 2.777368
+    }
+  ],
+  "scope": "Actual Play colliders, visible saved mesh identity, and walking-height sight rays. Cross-section coverage excludes flat clearings, sea-level transitions and the deliberately open viewing rim."
+}

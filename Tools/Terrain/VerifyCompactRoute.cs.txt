@@ -1,0 +1,12 @@
+if(!Application.isPlaying)throw new System.Exception("Enter Play first");
+var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();tour.SetOverview(true);var walker=tour.walker;walker.active=false;var cc=walker.Controller;
+var routes=Newtonsoft.Json.JsonConvert.DeserializeObject<System.Collections.Generic.Dictionary<string,float[][]>>(System.IO.File.ReadAllText("Documentation/CoastalV7Verification/RoutePoints.json"));
+void Teleport(Vector3 p){cc.enabled=false;walker.transform.position=p;cc.enabled=true;Physics.SyncTransforms();}
+var legs=new System.Collections.Generic.List<object>();bool passed=true;
+bool Walk(string direction,IEnumerable<Vector3> targets)
+{
+    foreach(var target in targets){int steps=0;for(;steps<2400;steps++){var d=target-walker.transform.position;d.y=0;if(d.magnitude<.20f)break;cc.Move(d.normalized*.068f+Vector3.down*.045f);}if(steps<2400)for(int settle=0;settle<90;settle++)cc.Move(Vector3.down*.045f);var p=walker.transform.position;bool ok=steps<2400&&Mathf.Abs(p.y-target.y)<.8f;legs.Add(new{direction,target=new[]{target.x,target.y,target.z},actual=new[]{p.x,p.y,p.z},steps,ok});passed&=ok;if(!ok)return false;}return true;
+}
+foreach(var pair in routes){var route=pair.Value.Select(v=>new Vector3(v[0],v[1],v[2])).ToList();Teleport(route[0]+Vector3.up*.15f);Walk(pair.Key+" forward",route.Skip(1));Teleport(route.Last()+Vector3.up*.15f);Walk(pair.Key+" reverse",route.Take(route.Count-1).Reverse());}
+var temple=GameObject.Find("04_SummitTemple").transform;var from=new Vector3(-65,1.8f,204);var to=new Vector3(33,73,111);RaycastHit hit;bool blocked=Physics.Raycast(from,(to-from).normalized,out hit,Vector3.Distance(from,to));bool visible=!blocked||hit.transform.IsChildOf(temple);passed&=visible;
+walker.ResetPosition();var report=new{passed,legs,spawnSeesTemple=visible,scope="Editor Play actual CharacterController.Move; no jumping or teleport within route legs, both directions. Not manual keyboard testing."};var json=Newtonsoft.Json.JsonConvert.SerializeObject(report,Newtonsoft.Json.Formatting.Indented);System.IO.File.WriteAllText("Documentation/CoastalV7Verification/RouteChecks.json",json);return Newtonsoft.Json.JsonConvert.SerializeObject(new{passed,count=legs.Count,spawnSeesTemple=visible});
