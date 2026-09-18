@@ -187,3 +187,5 @@ LightingData.asset     binary
 
 # Native TerrainData stays binary even with Force Text serialization.
 Assets/CoastalTemple/Terrain/CoastalMountain.asset lfs
+Assets/CoastalTemple/Terrain/NearshorePreview.asset lfs
+Assets/CoastalTemple/Materials/AlgorithmicRippleNormal.asset lfs

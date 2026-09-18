@@ -14,6 +14,10 @@ namespace Courtyard.Water
         public int Width { get; }
         public int Height { get; }
         public float CellSize { get; }
+        // Ocean render domains keep dry corners at sea level instead of drawing up cliff walls.
+        public float DrySurfaceCeiling { get; set; } = float.PositiveInfinity;
+        public float BoundarySurfaceFadeMetres { get; set; }
+        public float BoundarySurfaceLevel { get; set; }
         public double Discharged { get; private set; }
         public double LastDischargeRate { get; private set; }
         float drainSpeedMultiplier=1;
@@ -57,7 +61,14 @@ namespace Courtyard.Water
                 int k=i+j*Width;terrain+=Bed(k);total++;
                 if(Depth(k)>.002f){height+=Surface(k);wet++;}
             }
-            return wet>0?height/wet:terrain/total;
+            float surface=wet>0?height/wet:Math.Min(terrain/total,DrySurfaceCeiling);
+            if(BoundarySurfaceFadeMetres>0)
+            {
+                float distance=Math.Min(Math.Min(x,Width-x),Math.Min(z,Height-z))*CellSize;
+                float blend=Math.Max(0,Math.Min(1,distance/BoundarySurfaceFadeMetres));blend=blend*blend*(3-2*blend);
+                surface=BoundarySurfaceLevel+(surface-BoundarySurfaceLevel)*blend;
+            }
+            return surface;
         }
         public float SampleSurface(float gridX,float gridZ)
         {

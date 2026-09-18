@@ -15,6 +15,7 @@ namespace CoastalTemple
         public Transform drainGate;
         public BuoyantBody[] floaters;
         public Transform[] viewpoints;
+        public SeaBoundary seaBoundary;
         bool overview;
         int viewpoint;
         float gateAngle;
@@ -65,11 +66,16 @@ namespace CoastalTemple
             float scale=Mathf.Max(.7f,Screen.height/900f);GUI.matrix=Matrix4x4.Scale(new Vector3(scale,scale,1));float w=Screen.width/scale,h=Screen.height/scale;
             GUI.color=new Color(.025f,.06f,.065f,.83f);GUI.DrawTexture(new Rect(24,24,365,84),Texture2D.whiteTexture);GUI.color=Color.white;
             GUI.Label(new Rect(41,34,340,34),"潮岸遗迹 · 朝圣之路",title);
-            GUI.Label(new Rect(42,73,340,24),"岸边起点 → 露天遗迹 → 山顶神庙",label);
+            GUI.Label(new Rect(42,73,340,24),"沙滩遗迹 → 半山海湾 → 山顶神庙",label);
             GUI.color=new Color(.025f,.06f,.065f,.83f);GUI.DrawTexture(new Rect(24,h-79,w-48,55),Texture2D.whiteTexture);GUI.color=Color.white;
-            GUI.Label(new Rect(41,h-68,w-75,24),"WASD 行走 · Shift 快走 · 空格跳跃 · Tab 观察 / 行走 · F1 全景 · F2 山脚 · F3 神庙 · Home 回起点",label);
+            GUI.Label(new Rect(41,h-68,w-75,24),"WASD 行走 / 游泳 · 空格上浮 · Ctrl 下潜 · Tab 观察 · F1 全景 · F2 半山海湾 · F3 神庙 · Home 回起点",label);
             GUI.Label(new Rect(41,h-46,w-75,22),$"1 开启水池排水 · R 重新蓄水 · V 水流视图    |    余水 {water.Remaining*100:0.0}% · 排水倍率 ×{water.drainSpeedMultiplier:0.0}",label);
             if(!overview)GUI.Label(new Rect(w*.5f-4,h*.5f-12,18,24),"·",label);
+            if(seaBoundary&&Time.time-seaBoundary.LastDeathTime<3)
+            {
+                GUI.color=new Color(.08f,.12f,.15f,.9f);GUI.DrawTexture(new Rect(w*.5f-215,h*.42f,430,60),Texture2D.whiteTexture);GUI.color=Color.white;
+                GUI.Label(new Rect(w*.5f-192,h*.42f+15,405,36),"已越过近海边界 · 返回岸边起点",title);
+            }
         }
     }
 }

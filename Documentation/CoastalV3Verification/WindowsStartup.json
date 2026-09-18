@@ -1,0 +1,8 @@
+{
+  "running": true,
+  "pid": 26876,
+  "title": "",
+  "runtimeErrors": [],
+  "renderer": "NVIDIA GeForce RTX 4060 Laptop GPU / Direct3D 12",
+  "scope": "Standalone startup verified from process and player log; scene/render/interaction checks performed in Unity Editor Play, not manual standalone keyboard testing"
+}

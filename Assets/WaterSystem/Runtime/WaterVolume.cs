@@ -12,8 +12,15 @@ namespace Courtyard.Water
     {
         [Header("Axis-aligned domain in metres; keep rotation zero and scale one")]
         [Min(1)] public float sizeX=12, sizeZ=16;
-        [Range(.15f,1)] public float cellSize=.25f;
+        [Range(.15f,4)] public float cellSize=.25f;
         public float bottom=-4.5f, initialLevel=-.6f;
+        [Tooltip("Optional authored Terrain sampled once on initialization; heights are water-local.")]
+        public Terrain bedTerrain;
+        public bool keepDryCornersAtInitialLevel;
+        [Min(0),Tooltip("Fade reconstructed heights to initial level at a flat neighboring water surface. Does not remove solver volume.")]
+        public float surfaceBoundaryFade;
+        [Min(0), Tooltip("Volume moved by a swimmer, in cubic metres.")]
+        public float swimmerDisplacement=.014f;
         public WaterBedBlock[] bedBlocks=Array.Empty<WaterBedBlock>();
         [Header("Local floor outlet")]
         public Vector2 drainPosition=new Vector2(2.2f,2.8f);
@@ -24,6 +31,7 @@ namespace Courtyard.Water
         [Range(.1f,8), Tooltip("排水速度倍率。1 = 原始物理时间，4 = 约 50 秒排空当前庭院。只加速开闸后的水模拟，不改变角色和全局时间；倍率越高，CPU 开销越大。")]
         public float drainSpeedMultiplier=4;
         public Material surfaceMaterial;
+        public WaterSurfaceMotion surfaceMotion;
         [Header("Simulation")]
         [Range(10,60)] public int simulationHz=30;
         public bool showFlow;
@@ -54,10 +62,20 @@ namespace Courtyard.Water
             for(int z=0;z<nz;z++)for(int x=0;x<nx;x++)
             {
                 float px=(x+.5f)*dx-sizeX*.5f,pz=(z+.5f)*dz-sizeZ*.5f,h=bottom+Vector2.Distance(new Vector2(px,pz),drainPosition)*floorSlope;
+                if(bedTerrain)
+                {
+                    Vector3 p=transform.position+new Vector3(px,0,pz)-bedTerrain.transform.position;
+                    Vector3 size=bedTerrain.terrainData.size;
+                    if(p.x>=0&&p.z>=0&&p.x<=size.x&&p.z<=size.z)
+                        h=Mathf.Max(bottom,bedTerrain.terrainData.GetInterpolatedHeight(p.x/size.x,p.z/size.z)+bedTerrain.transform.position.y-transform.position.y);
+                }
                 foreach(var b in bedBlocks)if(Mathf.Abs(px-b.center.x)<=b.size.x*.5f&&Mathf.Abs(pz-b.center.y)<=b.size.y*.5f)h=Mathf.Max(h,b.top);
                 bed[x+z*nx]=h;
             }
-            Grid=new WaterGrid(nx,nz,cellSize,bed);properties=new MaterialPropertyBlock();
+            Grid=new WaterGrid(nx,nz,cellSize,bed);
+            if(keepDryCornersAtInitialLevel)Grid.DrySurfaceCeiling=initialLevel;
+            Grid.BoundarySurfaceFadeMetres=surfaceBoundaryFade;Grid.BoundarySurfaceLevel=initialLevel;
+            properties=new MaterialPropertyBlock();
             drainX=Mathf.Clamp(Mathf.FloorToInt((drainPosition.x+sizeX*.5f)/dx),0,nx-1);
             drainZ=Mathf.Clamp(Mathf.FloorToInt((drainPosition.y+sizeZ*.5f)/dz),0,nz-1);
             mesh=new Mesh{name="Simulated water heightfield"};
@@ -113,6 +131,7 @@ namespace Courtyard.Water
                 waterData[i]=count>0?new Vector4(depth/count,u/count,v/count,1):Vector4.zero;
             }
             mesh.vertices=vertices;mesh.SetUVs(1,waterData);mesh.RecalculateNormals();
+            if(surfaceMotion){mesh.RecalculateBounds();var bounds=mesh.bounds;bounds.Expand(Vector3.up*surfaceMotion.MaximumDisplacement*2);mesh.bounds=bounds;}
             properties.SetFloat("_ShowFlow",showFlow?1:0);GetComponent<MeshRenderer>().SetPropertyBlock(properties);
         }
         public bool Sample(Vector3 world,out float surface,out Vector3 flow,out float depth)
@@ -124,7 +143,14 @@ namespace Courtyard.Water
             float u=Mathf.Clamp01(gx-x),v=Mathf.Clamp01(gz-z);
             Vector4 data=u+v<=1?waterData[i]*(1-u-v)+waterData[i+1]*u+waterData[i+nx+1]*v:
                 waterData[i+1]*(1-v)+waterData[i+nx+1]*(1-u)+waterData[i+nx+2]*(u+v-1);
-            surface=Grid.SampleSurface(gx,gz)+transform.position.y;depth=data.x;flow=new Vector3(data.y,0,data.z);return depth>.008f;
+            surface=Grid.SampleSurface(gx,gz)+transform.position.y;
+            if(surfaceMotion&&surfaceMotion.isActiveAndEnabled)
+            {
+                float Offset(int index)=>surfaceMotion.HeightOffset(vertices[index]+transform.position,waterData[index].x,Time.time);
+                surface+=u+v<=1?Offset(i)*(1-u-v)+Offset(i+1)*u+Offset(i+nx+1)*v:
+                    Offset(i+1)*(1-v)+Offset(i+nx+1)*(1-u)+Offset(i+nx+2)*(u+v-1);
+            }
+            depth=data.x;flow=new Vector3(data.y,0,data.z);return depth>.008f;
         }
         public Vector3 SurfaceNormal(Vector3 world)
         {

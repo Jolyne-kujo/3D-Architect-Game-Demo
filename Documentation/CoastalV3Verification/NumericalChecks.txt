@@ -1,0 +1,31 @@
+PASS Closed pool conserves volume over 60 seconds
+PASS Initial fill respects solid steps
+PASS Disturbance spreads to other cells and conserves volume
+PASS Open drain removes local water and generates a surface gradient
+PASS Closed valve has no discharge
+PASS Drain empties pool without negative depths
+PASS Water cannot cross a high solid partition
+PASS Frame subdivision is deterministic
+PASS Reset restores state and clears drainage
+PASS Drain receiver needs continuous illumination then latches
+PASS Buoyancy fraction brackets waterline
+PASS Refraction obeys Snell law and level does not change angle
+PASS Total internal reflection is reported
+PASS Invalid domain is rejected
+PASS Nonfinite disturbances cannot poison the solver
+PASS Nonfinite drain radius is rejected
+PASS Disturbed water query matches reconstructed mesh triangles
+PASS Graded courtyard exposes the pool floor within 200 seconds
+PASS Four-times drainage exposes the courtyard floor within 50 real seconds
+PASS Drain speed does not accelerate a closed pool
+PASS Outflow meter reports volume per real second at eight-times speed
+PASS Unsafe drain speed is rejected
+PASS Sea seam rejects capsule contact on every edge and corner
+PASS Sea seam catches a fast crossing and invalid coordinates
+PASS Coastal wave crosses wet cells without flooding an island
+PERF 64x64 grid: 0.096 ms / 20ms step (CPU numerical core)
+PASS Ocean dry corners cannot stretch a water triangle up a cliff
+PASS Ocean waves are bounded, animated and reversible by zero amplitude
+PASS Ocean geometry joins the flat far sea without a crack
+PASS Solver disturbances also join the static sea at its exact level
+RESULT 29/29 passed

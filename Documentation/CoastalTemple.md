@@ -9,13 +9,13 @@
 - `00_ShoreStart`：岸边落脚平台；`Player_ShoreStart` 是 Play 后的起点。
 - `01_CoastalTerrain`：300 × 330 米的原生 Terrain，513 高度图，山顶台地约海拔 48 米。选中后使用 Terrain 的 Raise/Lower、Smooth、Set Height 工具继续塑形；池底区域开了 Terrain Hole。
 - `02_ShoreRuins_WaterCourt`：露天残柱、残墙、可进入的原有深水池与独立排水机关。原庭院封闭边界在此场景中停用。
-- `03_MountainPath`：11 段道路/楼梯和圆形转折平台。台阶上升约 0.24 米；路宽 5.4 米。拐角和神庙入口已经用实际 CharacterController.Move 双向走通。
-- `SummitTemple`：山顶神庙预制件，包含 20 根柱、台基、入口台阶、内殿、山墙屋顶。可直接编辑 ProBuilder 顶点/边/面，或把视觉部分替换成美术模型。
+- `03_MountainPath`：原长楼梯已停用保留。当前步道直接塑进 Terrain；半山平台位于约 (60,24,95)，绕过山肩后可看到东侧海面。上山与下山均已通过 CharacterController.Move 验证。
+- `04_SummitTemple`：山顶神庙预制件，包含 20 根柱、台基、入口台阶、内殿、山墙屋顶。可直接编辑 ProBuilder 顶点/边/面，或把视觉部分替换成美术模型。
 - `05_WalkthroughControls`：行走/相机/水机关输入，仅控制现有对象。三个 View 标记可在编辑器里移动，改变 F1/F2/F3 的观察角度。
 
 `TempleColumn.prefab` 和 `SummitTemple.prefab` 位于 `Assets/CoastalTemple/Prefabs`。单独更换美术时保留碰撞尺寸、道路高度和机关引用。新的环境没有运行时建模脚本，也无需执行生成菜单即可打开、编辑和游玩。
 
-海面 `Sea_Backdrop_VisualOnly` 是本轮用于判断岸线的背景色面；可交互流体仍是遗迹里的独立水池。当前没有海洋物理或水下地形玩法。
+原 `Sea_Backdrop_VisualOnly` 已停用。当前 `07_Sea` 包含可游泳、可扰动的近岸水、GPU 叠加海浪、轻量远海及越界回点组件。地形恢复灰白风格；写实岩壁资产未保留在场景和仓库中。详见 [当前海面实现与验证](CoastalV3Verification/README.md)。
 
 ## 排水速度
 
