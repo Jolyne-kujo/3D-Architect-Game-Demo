@@ -1,0 +1,757 @@
+{
+  "passed": true,
+  "routeLegs": [
+    {
+      "direction": "ascent",
+      "target": [
+        -17.0,
+        0.0,
+        -15.0
+      ],
+      "actual": [
+        -17.1086082,
+        0.0249999464,
+        -15.1002531
+      ],
+      "steps": 258,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -17.0,
+        0.0,
+        15.0
+      ],
+      "actual": [
+        -17.00065,
+        0.0249999464,
+        14.8195543
+      ],
+      "steps": 440,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        2.0,
+        3.0,
+        28.0
+      ],
+      "actual": [
+        1.88444364,
+        2.970176,
+        27.91984
+      ],
+      "steps": 338,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        34.0,
+        8.0,
+        35.0
+      ],
+      "actual": [
+        33.8254547,
+        7.96478033,
+        34.96152
+      ],
+      "steps": 481,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        52.0,
+        13.0,
+        49.0
+      ],
+      "actual": [
+        51.85356,
+        12.9602833,
+        48.8868866
+      ],
+      "steps": 335,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        58.0,
+        19.0,
+        67.0
+      ],
+      "actual": [
+        57.9500122,
+        18.9518,
+        66.85269
+      ],
+      "steps": 279,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        56.0,
+        24.0,
+        80.0
+      ],
+      "actual": [
+        56.02452,
+        23.92705,
+        79.83467
+      ],
+      "steps": 193,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        48.0,
+        28.0,
+        90.0
+      ],
+      "actual": [
+        48.1034355,
+        27.9062557,
+        89.86897
+      ],
+      "steps": 188,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        34.0,
+        28.0,
+        92.0
+      ],
+      "actual": [
+        34.18542,
+        27.985,
+        91.9719849
+      ],
+      "steps": 207,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        15.0,
+        28.0,
+        92.0
+      ],
+      "actual": [
+        15.1454411,
+        27.985,
+        91.99979
+      ],
+      "steps": 280,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        34.0,
+        28.0,
+        99.0
+      ],
+      "actual": [
+        33.8236427,
+        27.985,
+        98.9345245
+      ],
+      "steps": 293,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        46.0,
+        28.0,
+        107.0
+      ],
+      "actual": [
+        45.84216,
+        28.0030727,
+        106.895447
+      ],
+      "steps": 212,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        60.0,
+        32.0,
+        113.0
+      ],
+      "actual": [
+        59.82934,
+        31.94398,
+        112.926414
+      ],
+      "steps": 224,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        68.0,
+        36.0,
+        122.0
+      ],
+      "actual": [
+        67.8834152,
+        35.93766,
+        121.870537
+      ],
+      "steps": 177,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        78.0,
+        43.0,
+        148.0
+      ],
+      "actual": [
+        77.94962,
+        42.963,
+        147.869873
+      ],
+      "steps": 410,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        76.0,
+        51.0,
+        174.0
+      ],
+      "actual": [
+        76.01181,
+        50.922924,
+        173.84169
+      ],
+      "steps": 383,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        58.0,
+        61.0,
+        197.0
+      ],
+      "actual": [
+        58.102066,
+        60.93309,
+        196.868774
+      ],
+      "steps": 429,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        25.0,
+        69.0,
+        211.0
+      ],
+      "actual": [
+        25.143652,
+        68.9573441,
+        210.938675
+      ],
+      "steps": 527,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -9.0,
+        75.0,
+        211.0
+      ],
+      "actual": [
+        -8.856295,
+        74.9540939,
+        210.999741
+      ],
+      "steps": 500,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -32.0,
+        78.0,
+        195.0
+      ],
+      "actual": [
+        -31.84553,
+        77.95715,
+        195.106781
+      ],
+      "steps": 411,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -36.0,
+        78.0,
+        166.0
+      ],
+      "actual": [
+        -35.9771423,
+        77.98599,
+        166.160156
+      ],
+      "steps": 430,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -24.0,
+        78.0,
+        142.0
+      ],
+      "actual": [
+        -24.077282,
+        77.985,
+        142.1559
+      ],
+      "steps": 394,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        -17.0,
+        78.0,
+        124.0
+      ],
+      "actual": [
+        -17.0633812,
+        77.98499,
+        124.1626
+      ],
+      "steps": 284,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        16.0,
+        78.0,
+        124.0
+      ],
+      "actual": [
+        15.8482227,
+        77.985,
+        124.000748
+      ],
+      "steps": 484,
+      "ok": true
+    },
+    {
+      "direction": "ascent",
+      "target": [
+        16.0,
+        80.0,
+        140.0
+      ],
+      "actual": [
+        15.9985209,
+        80.025,
+        139.84404
+      ],
+      "steps": 233,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        16.0,
+        78.0,
+        124.0
+      ],
+      "actual": [
+        16.0,
+        77.985,
+        124.156
+      ],
+      "steps": 233,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -17.0,
+        78.0,
+        124.0
+      ],
+      "actual": [
+        -16.8436356,
+        77.98499,
+        124.00074
+      ],
+      "steps": 483,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -24.0,
+        78.0,
+        142.0
+      ],
+      "actual": [
+        -23.92842,
+        77.985,
+        141.819962
+      ],
+      "steps": 282,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -36.0,
+        78.0,
+        166.0
+      ],
+      "actual": [
+        -35.92592,
+        77.98599,
+        165.851608
+      ],
+      "steps": 395,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -32.0,
+        78.0,
+        195.0
+      ],
+      "actual": [
+        -32.0229034,
+        77.97963,
+        194.829941
+      ],
+      "steps": 430,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -9.0,
+        75.0,
+        211.0
+      ],
+      "actual": [
+        -9.152247,
+        75.00042,
+        210.893066
+      ],
+      "steps": 411,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        25.0,
+        69.0,
+        211.0
+      ],
+      "actual": [
+        24.8475876,
+        69.01543,
+        210.999527
+      ],
+      "steps": 500,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        58.0,
+        61.0,
+        197.0
+      ],
+      "actual": [
+        57.8608322,
+        61.02253,
+        197.058762
+      ],
+      "steps": 527,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        76.0,
+        51.0,
+        174.0
+      ],
+      "actual": [
+        75.89718,
+        51.0537071,
+        174.1307
+      ],
+      "steps": 429,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        78.0,
+        43.0,
+        148.0
+      ],
+      "actual": [
+        77.9862747,
+        43.0530777,
+        148.170624
+      ],
+      "steps": 383,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        68.0,
+        36.0,
+        122.0
+      ],
+      "actual": [
+        68.0710144,
+        36.0450668,
+        122.186111
+      ],
+      "steps": 409,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        60.0,
+        32.0,
+        113.0
+      ],
+      "actual": [
+        60.12678,
+        32.060173,
+        113.144295
+      ],
+      "steps": 177,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        46.0,
+        28.0,
+        107.0
+      ],
+      "actual": [
+        46.15877,
+        28.0636,
+        107.069054
+      ],
+      "steps": 224,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        34.0,
+        28.0,
+        99.0
+      ],
+      "actual": [
+        34.1471825,
+        27.985,
+        99.09768
+      ],
+      "steps": 212,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        15.0,
+        28.0,
+        92.0
+      ],
+      "actual": [
+        15.1466246,
+        27.9849987,
+        92.05435
+      ],
+      "steps": 298,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        34.0,
+        28.0,
+        92.0
+      ],
+      "actual": [
+        33.8465462,
+        27.9849987,
+        92.00044
+      ],
+      "steps": 275,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        48.0,
+        28.0,
+        90.0
+      ],
+      "actual": [
+        47.8513527,
+        27.9625111,
+        90.02101
+      ],
+      "steps": 208,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        56.0,
+        24.0,
+        80.0
+      ],
+      "actual": [
+        55.87387,
+        24.0616856,
+        80.15511
+      ],
+      "steps": 187,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        58.0,
+        19.0,
+        67.0
+      ],
+      "actual": [
+        57.97865,
+        19.0515728,
+        67.1321
+      ],
+      "steps": 194,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        52.0,
+        13.0,
+        49.0
+      ],
+      "actual": [
+        52.0589752,
+        13.04448,
+        49.1788673
+      ],
+      "steps": 278,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        34.0,
+        8.0,
+        35.0
+      ],
+      "actual": [
+        34.1416664,
+        8.031588,
+        35.11123
+      ],
+      "steps": 335,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        2.0,
+        3.0,
+        28.0
+      ],
+      "actual": [
+        2.13955855,
+        3.01122832,
+        28.0308762
+      ],
+      "steps": 482,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -17.0,
+        0.0,
+        15.0
+      ],
+      "actual": [
+        -16.8591442,
+        0.0249999762,
+        15.0959
+      ],
+      "steps": 338,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -17.0,
+        0.0,
+        -15.0
+      ],
+      "actual": [
+        -16.999176,
+        0.0249999762,
+        -14.8237734
+      ],
+      "steps": 440,
+      "ok": true
+    },
+    {
+      "direction": "descent",
+      "target": [
+        -30.0,
+        0.0,
+        -27.0
+      ],
+      "actual": [
+        -29.9033585,
+        0.0249999762,
+        -26.9094887
+      ],
+      "steps": 260,
+      "ok": true
+    }
+  ],
+  "spawnSeesTemple": true,
+  "scope": "Unity Editor Play actual CharacterController.Move, no jumping or teleport within route legs; both directions tested."
+}

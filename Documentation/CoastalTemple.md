@@ -7,11 +7,12 @@
 ## 空间与编辑
 
 - `00_ShoreStart`：岸边落脚平台；`Player_ShoreStart` 是 Play 后的起点。
-- `01_CoastalTerrain`：300 × 330 米的原生 Terrain，513 高度图，山顶台地约海拔 48 米。山体由错落的折线山脊、不对称坡面、台地与沟谷构成，四层纯色材质保持简约风格。选中后使用 Terrain 的 Raise/Lower、Smooth、Set Height 工具继续塑形；池底区域开了 Terrain Hole。
+- `01_CoastalTerrain`：300 × 330 米的原生 Terrain，513 高度图，高度范围 −10～105 米。山体由错落的折线山脊、不对称坡面与沟谷构成，四层纯色材质保持简约风格。选中后使用 Terrain 的 Raise/Lower、Smooth、Set Height 工具继续塑形；池底区域开了 Terrain Hole。
 - `02_ShoreRuins_WaterCourt`：露天残柱、残墙、可进入的原有深水池与独立排水机关。原庭院封闭边界在此场景中停用。
-- `03_MountainPath`：原长楼梯已停用保留。当前约 5 米宽的步道直接切入 Terrain，两侧由连续山肩包住；半山平台位于约 (61,24,96)，绕过山肩后可看到东侧海面。上山与下山均已通过 CharacterController.Move 验证。最新画面、造型依据和编辑说明见 [地形迭代](CoastalV4Verification/README.md)。
-- `04_SummitTemple`：山顶神庙预制件，包含 20 根柱、台基、入口台阶、内殿、山墙屋顶。可直接编辑 ProBuilder 顶点/边/面，或把视觉部分替换成美术模型。
+- `03_MountainPath`：原长楼梯已停用保留。当前约 5 米宽的步道直接切入 Terrain，两侧由山肩包住。下段先右后左到约 (15,28,92) 的半山方台，再由右侧分岔，沿东侧、后山、西侧逆时针登顶。平台前右方的低山口可看到东侧海面。上下山均已通过 CharacterController.Move 验证。最新画面和编辑说明见 [断崖迭代](CoastalV5Verification/README.md)。
+- `04_SummitTemple`：山顶神庙预制件，包含 20 根柱、台基、入口台阶、内殿、山墙屋顶。本场景根节点位置 (0,30,−22)，台基约海拔 78 米、内殿地面 80 米；比旧版抬高 30 米并朝岸边前移 22 米。可直接编辑 ProBuilder 顶点/边/面，或把视觉部分替换成美术模型。
 - `05_WalkthroughControls`：行走/相机/水机关输入，仅控制现有对象。三个 View 标记可在编辑器里移动，改变 F1/F2/F3 的观察角度。
+- `08_CliffLandforms`：`Halfway_CliffBlock` 是约 53 × 38 米的半山方台，顶面 27.96 米；`Summit_OverhangingCliff` 顶面 77.96 米，承托向前突出的神庙。两者都向下内收，使用可编辑 ProBuilder 网格与对应静态 MeshCollider；合计 94 个三角形。网格资源保存在 Terrain 目录，几何信息也保存在场景里。编辑接入口时同时检查 Terrain 高度和网格顶面，避免产生台阶或缝隙。
 
 `TempleColumn.prefab` 和 `SummitTemple.prefab` 位于 `Assets/CoastalTemple/Prefabs`。单独更换美术时保留碰撞尺寸、道路高度和机关引用。新的环境没有运行时建模脚本，也无需执行生成菜单即可打开、编辑和游玩。
 

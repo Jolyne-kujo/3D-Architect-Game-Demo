@@ -1,0 +1,242 @@
+// Editor-only V5 authoring: native Terrain plus two saved ProBuilder overhangs.
+// Terrain is a heightfield; the negative-angle faces are editable static meshes.
+// Nothing here runs during Play. Rerunning replaces the authored terrain/blocks.
+if (Application.isPlaying) throw new System.InvalidOperationException("Stop Play before sculpting.");
+var terrain = GameObject.Find("01_CoastalTerrain").GetComponent<Terrain>();
+var data = terrain.terrainData;
+Undo.RegisterCompleteObjectUndo(data, "Sculpt cliff summit and switchback route");
+data.size = new Vector3(300,115,330);
+int resolution = data.heightmapResolution;
+var heights = new float[resolution, resolution];
+float Ease(float a, float b, float v) => Mathf.SmoothStep(0, 1, Mathf.InverseLerp(a, b, v));
+
+// A small number of asymmetric, piecewise planar ridges describes uplifted beds.
+// Each crest is hand placed; its two sides have different slope angles.
+float Ridge(float x, float z, Vector3[] crest, float leftSlope, float rightSlope, float endSlope)
+{
+    float best = -100;
+    for (int i = 0; i < crest.Length - 1; i++)
+    {
+        var a = crest[i]; var b = crest[i + 1];
+        var delta = new Vector2(b.x - a.x, b.z - a.z);
+        var rel = new Vector2(x - a.x, z - a.z);
+        float along = Vector2.Dot(rel, delta) / delta.sqrMagnitude;
+        float t = Mathf.Clamp01(along);
+        float cross = (delta.x * rel.y - delta.y * rel.x) / delta.magnitude;
+        float beyond = Mathf.Abs(along - t) * delta.magnitude;
+        float flank = Mathf.Max(0, Mathf.Abs(cross) - 3.1f);
+        float loss = (Mathf.Min(flank, 9) * .64f + Mathf.Max(0, flank - 9) * 1.2f) * (cross > 0 ? leftSlope : rightSlope);
+        float y = Mathf.Lerp(a.y, b.y, t) - loss - beyond * endSlope;
+        best = Mathf.Max(best, y);
+    }
+    return best;
+}
+var frontCrest = new[] {new Vector3(-45, 9, 43), new Vector3(-32, 18, 62), new Vector3(-22, 27, 94), new Vector3(-15, 39, 122), new Vector3(-36, 47, 148)};
+var westCrest = new[] {new Vector3(-65, 8, 67), new Vector3(-63, 23, 102), new Vector3(-55, 37, 143), new Vector3(-65, 30, 168), new Vector3(-53, 18, 203)};
+var eastCrest = new[] {new Vector3(34, 12, 38), new Vector3(72, 24, 69), new Vector3(68, 33, 98), new Vector3(63, 46, 132), new Vector3(54, 53, 170)};
+var rearCrest = new[] {new Vector3(48, 54, 163), new Vector3(41, 64, 187), new Vector3(14, 70, 205), new Vector3(-17, 71, 193)};
+var route = new[] {
+    new Vector3(-30,0,-27),new Vector3(-17,0,-15),new Vector3(-17,0,15),
+    new Vector3(2,3,28),new Vector3(34,8,35),new Vector3(52,13,49),
+    new Vector3(58,19,67),new Vector3(56,24,80),new Vector3(48,28,90),
+    new Vector3(34,28,92),new Vector3(15,28,92),
+    new Vector3(34,28,99),new Vector3(46,28,107),new Vector3(60,32,113),
+    new Vector3(68,36,122),new Vector3(78,43,148),new Vector3(76,51,174),
+    new Vector3(58,61,197),new Vector3(25,69,211),new Vector3(-9,75,211),
+    new Vector3(-32,78,195),new Vector3(-36,78,166),new Vector3(-24,78,142),
+    new Vector3(-17,78,124),new Vector3(16,78,124)
+};
+var midFootprint = new[] {new Vector2(-8,76),new Vector2(-5,73),new Vector2(41,73),new Vector2(45,77),new Vector2(45,107),new Vector2(41,111),new Vector2(-5,111),new Vector2(-8,108)};
+var summitFootprint = new[] {new Vector2(-23,125),new Vector2(-18,122),new Vector2(43,122),new Vector2(51,133),new Vector2(49,184),new Vector2(36,194),new Vector2(-19,192),new Vector2(-29,179),new Vector2(-29,141)};
+bool Inside(float x,float z,Vector2[] polygon)
+{
+    bool inside=false;
+    for(int i=0,j=polygon.Length-1;i<polygon.Length;j=i++)
+    {var a=polygon[i];var b=polygon[j];if((a.y>z)!=(b.y>z)&&x<(b.x-a.x)*(z-a.y)/(b.y-a.y)+a.x)inside=!inside;}
+    return inside;
+}
+void Road(float x, float z, out float distance, out float level, out Vector2 nearest)
+{
+    distance = 10000; level = 0;nearest=Vector2.zero;
+    for (int i = 0; i < route.Length - 1; i++)
+    {
+        var a = route[i]; var b = route[i + 1];
+        var delta = new Vector2(b.x - a.x, b.z - a.z);
+        float t = Mathf.Clamp01(Vector2.Dot(new Vector2(x - a.x, z - a.z), delta) / delta.sqrMagnitude);
+        float d = Vector2.Distance(new Vector2(x, z), new Vector2(a.x, a.z) + delta * t);
+        if (d < distance) { distance = d; level = Mathf.Lerp(a.y, b.y, t);nearest=new Vector2(a.x,a.z)+delta*t; }
+    }
+}
+float TerraceWeight(float x, float z)
+{
+    return Inside(x,z,midFootprint)?1:0;
+}
+float RockFacet(float x, float z)
+{
+    // Low-frequency triangular facets add a few large broken planes, not a noisy texture.
+    float u = (x + z * .23f) / 11, v = (z - x * .17f) / 13;
+    int ix = Mathf.FloorToInt(u), iz = Mathf.FloorToInt(v); u -= ix; v -= iz;
+    float Knot(int a, int b) {float q = Mathf.Sin(a * 127.1f + b * 311.7f) * 43758.5453f; return (q - Mathf.Floor(q)) * 2 - 1;}
+    float a = Knot(ix, iz), b = Knot(ix + 1, iz), c = Knot(ix, iz + 1), d = Knot(ix + 1, iz + 1);
+    return u + v <= 1 ? a + (b - a) * u + (c - a) * v : d + (c - d) * (1 - u) + (b - d) * (1 - v);
+}
+for (int z = 0; z < resolution; z++) for (int x = 0; x < resolution; x++)
+{
+    float wx = -130 + x * 300f / (resolution - 1), wz = -90 + z * 330f / (resolution - 1);
+    float coast = Ease(-47, -9, wz);
+    float lowCoastWidth = Mathf.Lerp(42, 80, Ease(8, 55, wz));
+    float land = -6 + 6.3f * coast * (1 - Ease(lowCoastWidth, lowCoastWidth + 24, Mathf.Abs(wx + 8)));
+    // Summit block bounded by inclined planes, not a round Gaussian hill.
+    float summit = Mathf.Min(65 + (wx - 16) * .018f,
+        .69f * (wz - 78) + .08f * (wx - 10),
+        2.3f * (240 - wz) + .1f * wx,
+        .92f * (wx + 80) + .10f * (wz - 140),
+        1.45f * (110 - wx) - .10f * (wz - 155));
+    float y = Mathf.Max(land, summit,
+        Ridge(wx, wz, frontCrest, .96f, .64f, 1.05f),
+        Ridge(wx, wz, westCrest, 1.35f, .63f, 1.0f),
+        Ridge(wx, wz, eastCrest, .70f, 1.55f, 1.05f),
+        Ridge(wx, wz, rearCrest, .65f, 1.65f, 1.1f));
+    // Sparse erosion notches cut across the bedding; broad planes stay legible.
+    float high = Ease(7, 28, y);
+    float notch1 = Mathf.Max(0, 1 - Mathf.Abs(wx + .27f * wz + 25) / 5.5f);
+    float notch2 = Mathf.Max(0, 1 - Mathf.Abs(wx - .18f * wz - 66) / 4.0f);
+    y += high * (RockFacet(wx, wz) * 3.0f - notch1 * 3.4f - notch2 * 2.8f);
+
+    Road(wx, wz, out float distance, out float roadLevel,out Vector2 nearest);
+    bool onMesh=Inside(nearest.x,nearest.y,midFootprint)||Inside(nearest.x,nearest.y,summitFootprint);
+    bool midGate=wx>41&&wx<49&&(Mathf.Abs(wz-91)<4||Mathf.Abs(wz-106)<4);
+    bool peakGate=wx>-33&&wx<-25&&wz>146&&wz<159;
+    float roadOnTerrain=(!onMesh||midGate||peakGate)?1:0;
+    float terrace = TerraceWeight(wx, wz);
+    // Wide earth shoulders support a genuinely cut-in road. They merge into the
+    // mountain over 20 m instead of leaving a raised ribbon or retaining wall.
+    float bank = 4.1f + 1.25f * Mathf.Sin(wz * .061f + .6f);
+    float support = roadLevel + bank - distance * .16f - distance * distance * .027f;
+    float shoulderWeight = Ease(18, 40, wz) * (1 - terrace)*roadOnTerrain;
+    y = Mathf.Lerp(y, Mathf.Max(y, support), shoulderWeight);
+    y = Mathf.Lerp(y, roadLevel - .04f, (1 - Ease(2.5f, 6.8f, distance))*roadOnTerrain);
+    // Preserve the courtyard's foundation, its Terrain hole, and the sandy entry.
+    float court = Mathf.Max(Mathf.Abs(wx) / 22, Mathf.Abs(wz) / 24);
+    y = Mathf.Lerp(y, -.22f, 1 - Ease(1, 1.35f, court));
+    float beach = (1 - Ease(32, 51, Mathf.Abs(wx + 25))) * (1 - Ease(19, 27, Mathf.Abs(wz + 46)));
+    y = Mathf.Lerp(y, Mathf.Lerp(-3.7f, 0, Mathf.InverseLerp(-70, -27, wz)), beach);
+    // Carve after the courtyard flattening so the last descent has no height seam.
+    y = Mathf.Lerp(y, roadLevel - .04f, (1 - Ease(2.5f, 6.8f, distance))*roadOnTerrain);
+    // Lower the ground below each solid cliff. Their tops/colliders carry the
+    // walker; no heightfield surface fills or fakes the undercut faces.
+    if(Inside(wx,wz,midFootprint)&&!midGate)y=Mathf.Min(y,5 + .13f*(wz-73));
+    if(Inside(wx,wz,summitFootprint)&&!peakGate)y=Mathf.Min(y,43 + .2f*(wz-122));
+    // A low notch frames the eastern bay from the halfway platform. It clears
+    // the eye ray above the lower trail while the approach below remains occluded.
+    float viewNotch=Ease(46,55,wx)*(1-Ease(85,99,wx))*(1-Ease(4,8,Mathf.Abs(wz-(82+(wx-41)*.082f))));
+    y=Mathf.Lerp(y,Mathf.Min(y,25-.08f*(wx-60)),viewNotch);
+    // Expose the front of the independent halfway block, leaving its right approach intact.
+    float midApron=(1-Ease(25,34,Mathf.Abs(wx-17)))*(1-Ease(68,74,wz))*Ease(49,61,wz);
+    y=Mathf.Lerp(y,Mathf.Min(y,6.5f),midApron);
+    heights[z, x] = Mathf.Clamp01((y + 10) / 115);
+}
+data.SetHeights(0, 0, heights);
+
+TerrainLayer SolidLayer(string name, Color color)
+{
+    string root = "Assets/CoastalTemple/Terrain/";
+    var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(root + name + ".asset");
+    if (!texture) { texture = new Texture2D(4, 4); texture.name = name; AssetDatabase.CreateAsset(texture, root + name + ".asset"); }
+    texture.SetPixels(Enumerable.Repeat(color, 16).ToArray()); texture.Apply(); EditorUtility.SetDirty(texture);
+    var layer = AssetDatabase.LoadAssetAtPath<TerrainLayer>(root + name + ".terrainlayer");
+    if (!layer) {layer = new TerrainLayer(); AssetDatabase.CreateAsset(layer, root + name + ".terrainlayer");}
+    layer.name = name; layer.diffuseTexture = texture; layer.tileSize = Vector2.one * 12;
+    layer.smoothness = .06f; EditorUtility.SetDirty(layer); return layer;
+}
+var chalk = SolidLayer("ChalkGray", new Color(.70f, .70f, .65f));
+var sand = AssetDatabase.LoadAssetAtPath<TerrainLayer>("Assets/CoastalTemple/Terrain/WhiteboxSand.terrainlayer");
+var path = SolidLayer("WhiteboxPath", new Color(.61f, .59f, .52f));
+var grass = SolidLayer("MutedSage", new Color(.40f, .47f, .31f));
+data.terrainLayers = new[] {chalk, sand, path, grass};
+int ar = data.alphamapResolution;
+var alpha = new float[ar, ar, 4];
+for (int z = 0; z < ar; z++) for (int x = 0; x < ar; x++)
+{
+    float u = x / (float)(ar - 1), v = z / (float)(ar - 1);
+    float wx = -130 + u * 300, wz = -90 + v * 330;
+    float h = data.GetInterpolatedHeight(u, v) - 10;
+    float slope = data.GetSteepness(u, v);
+    Road(wx, wz, out float distance, out _,out _);
+    float sw = (1 - Ease(-31, -24, wz)) * (1 - Ease(32, 51, Mathf.Abs(wx + 25)));
+    float pw = (1 - Ease(1.45f, 2.7f, distance)) * .52f * (1 - sw);
+    float green = (1 - Ease(22, 43, slope)) * Ease(1.0f, 7, h) * (1 - Ease(69, 78, h));
+    green *= .75f + .25f * Mathf.Sin(wx * .038f + wz * .026f);
+    green *= (1 - sw) * (1 - pw);
+    alpha[z, x, 0] = 1 - sw - pw - green; alpha[z, x, 1] = sw;
+    alpha[z, x, 2] = pw; alpha[z, x, 3] = green;
+}
+data.SetAlphamaps(0, 0, alpha);
+data.SetBaseMapDirty();
+terrain.materialTemplate.SetFloat("_NumLayersCount", 4);
+EditorUtility.SetDirty(terrain.materialTemplate);
+terrain.heightmapPixelError = 3; terrain.drawInstanced = true;
+terrain.Flush(); EditorUtility.SetDirty(data); EditorUtility.SetDirty(terrain);
+var tour = UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();
+// The temple moves 30 m up and 22 m toward the starting shore.
+var temple=GameObject.Find("04_SummitTemple");Undo.RecordObject(temple.transform,"Raise and project temple");
+temple.transform.position=new Vector3(0,30,-22);EditorUtility.SetDirty(temple.transform);
+
+Material CliffMaterial(string name,Color color)
+{
+    string path="Assets/CoastalTemple/Materials/"+name+".mat";
+    var mat=AssetDatabase.LoadAssetAtPath<Material>(path);
+    if(!mat){mat=new Material(Shader.Find("Universal Render Pipeline/Lit"));mat.name=name;AssetDatabase.CreateAsset(mat,path);}
+    mat.SetColor("_BaseColor",color);mat.SetFloat("_Smoothness",0);EditorUtility.SetDirty(mat);return mat;
+}
+var capMat=CliffMaterial("CliffCap",new Color(.68f,.68f,.62f));
+var faceMat=CliffMaterial("CliffFace",new Color(.70f,.70f,.65f));
+var underMat=CliffMaterial("CliffUndercut",new Color(.72f,.72f,.67f));
+var cliffRoot=GameObject.Find("08_CliffLandforms");if(!cliffRoot){cliffRoot=new GameObject("08_CliffLandforms");Undo.RegisterCreatedObjectUndo(cliffRoot,"Create editable cliff landforms");}
+UnityEngine.ProBuilder.ProBuilderMesh Cliff(string name,Vector2[] top,float topY,float lipY,float baseY,Vector2 bottomCenter,float sx,float sz)
+{
+    var vertices=new System.Collections.Generic.List<Vector3>();var faces=new System.Collections.Generic.List<UnityEngine.ProBuilder.Face>();
+    Vector2 center=Vector2.zero;foreach(var p in top)center+=p;center/=top.Length;
+    void Face(Vector3[] points,Vector3 outward,int material)
+    {
+        int start=vertices.Count;vertices.AddRange(points);var indexes=new System.Collections.Generic.List<int>();
+        bool reverse=Vector3.Dot(Vector3.Cross(points[1]-points[0],points[2]-points[0]),outward)<0;
+        for(int j=1;j<points.Length-1;j++){indexes.Add(start);indexes.Add(start+(reverse?j+1:j));indexes.Add(start+(reverse?j:j+1));}
+        var f=new UnityEngine.ProBuilder.Face(indexes);f.submeshIndex=material;f.smoothingGroup=0;faces.Add(f);
+    }
+    var topRing=top.Select(p=>new Vector3(p.x,topY,p.y)).ToArray();
+    var lipRing=top.Select(p=>new Vector3(Mathf.Lerp(center.x,p.x,.975f),lipY,Mathf.Lerp(center.y,p.y,.975f))).ToArray();
+    var baseRing=top.Select(p=>new Vector3(bottomCenter.x+(p.x-center.x)*sx,baseY,bottomCenter.y+(p.y-center.y)*sz)).ToArray();
+    Face(topRing,Vector3.up,0);Face(baseRing,Vector3.down,2);
+    for(int i=0;i<top.Length;i++)
+    {
+        int j=(i+1)%top.Length;var side=(topRing[i]+topRing[j])*.5f-new Vector3(center.x,topY,center.y);
+        Face(new[]{topRing[i],topRing[j],lipRing[j],lipRing[i]},side,1);
+        Face(new[]{lipRing[i],lipRing[j],baseRing[j],baseRing[i]},side,2);
+    }
+    var existing=GameObject.Find(name);UnityEngine.ProBuilder.ProBuilderMesh pb;
+    if(existing){pb=existing.GetComponent<UnityEngine.ProBuilder.ProBuilderMesh>();Undo.RecordObject(pb,"Reshape cliff block");pb.RebuildWithPositionsAndFaces(vertices,faces);}
+    else{pb=UnityEngine.ProBuilder.ProBuilderMesh.Create(vertices,faces);pb.gameObject.name=name;Undo.RegisterCreatedObjectUndo(pb.gameObject,"Create cliff block");}
+    pb.transform.SetParent(cliffRoot.transform,false);pb.transform.localPosition=Vector3.zero;
+    pb.GetComponent<MeshRenderer>().sharedMaterials=new[]{capMat,faceMat,underMat};pb.ToMesh();pb.Refresh();
+    var mesh=pb.GetComponent<MeshFilter>().sharedMesh;
+    string meshPath="Assets/CoastalTemple/Terrain/"+name+".asset";
+    if(!AssetDatabase.Contains(mesh))AssetDatabase.CreateAsset(mesh,meshPath);
+    pb.preserveMeshAssetOnDestroy=true;
+    var col=pb.GetComponent<MeshCollider>();if(!col)col=pb.gameObject.AddComponent<MeshCollider>();col.sharedMesh=null;col.sharedMesh=mesh;col.convex=false;
+    EditorUtility.SetDirty(mesh);EditorUtility.SetDirty(pb);EditorUtility.SetDirty(col);
+    return pb;
+}
+var halfway=Cliff("Halfway_CliffBlock",midFootprint,27.96f,25.2f,5.0f,new Vector2(18,98),.80f,.72f);
+var peak=Cliff("Summit_OverhangingCliff",summitFootprint,77.96f,73.4f,43,new Vector2(13,169),.76f,.62f);
+tour.viewpoints[0].position = new Vector3(88,45,-57);
+tour.viewpoints[0].LookAt(new Vector3(15,37,120));
+tour.viewpoints[1].position = new Vector3(41,29.8f,82);
+tour.viewpoints[1].LookAt(new Vector3(260,-1.7f,100));
+tour.viewpoints[2].position = new Vector3(-42,99,112);
+tour.viewpoints[2].LookAt(new Vector3(16,86,151));
+foreach(var view in tour.viewpoints)EditorUtility.SetDirty(view);
+AssetDatabase.SaveAssets(); UnityEditor.SceneManagement.EditorSceneManager.SaveScene(terrain.gameObject.scene);
+System.IO.Directory.CreateDirectory("Documentation/CoastalV5Verification");
+System.IO.File.WriteAllText("Documentation/CoastalV5Verification/RoutePoints.json",Newtonsoft.Json.JsonConvert.SerializeObject(route.Select(p=>new[]{p.x,p.y,p.z}).ToArray(),Newtonsoft.Json.Formatting.Indented));
+return Newtonsoft.Json.JsonConvert.SerializeObject(new {nativeTerrain=true,resolution,routePoints=route.Length,terrainLayers=data.terrainLayers.Length,holesPreserved=true,cliffTriangles=halfway.GetComponent<MeshFilter>().sharedMesh.triangles.Length/3+peak.GetComponent<MeshFilter>().sharedMesh.triangles.Length/3});

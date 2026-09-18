@@ -1,0 +1,24 @@
+if(!Application.isPlaying)throw new System.Exception("Enter Play first.");
+var checks=new System.Collections.Generic.List<object>();int failures=0;
+void Check(string name,bool ok,object details){checks.Add(new{name,ok,details});if(!ok)failures++;}
+Physics.SyncTransforms();
+foreach(var sample in new[]{("Halfway_CliffBlock",new Vector3(17,10,76),27.96f),("Summit_OverhangingCliff",new Vector3(16,50,126),77.96f)})
+{
+    RaycastHit under,top;
+    var collider=GameObject.Find(sample.Item1).GetComponent<MeshCollider>();
+    bool a=Physics.Raycast(sample.Item2,Vector3.up,out under,40),b=collider.Raycast(new Ray(sample.Item2+Vector3.up*70,Vector3.down),out top,80);
+    float ground=Terrain.activeTerrain.SampleHeight(sample.Item2)+Terrain.activeTerrain.transform.position.y;
+    Check(sample.Item1+" has accessible negative-angle underside",a&&b&&under.transform.name==sample.Item1&&top.transform.name==sample.Item1&&under.normal.y<-.1f&&Mathf.Abs(top.point.y-sample.Item3)<.01f&&under.point.y-ground>8,
+        new{underHit=a?under.transform.name:null,underPoint=under.point.ToString(),underNormal=under.normal.ToString(),topY=top.point.y,terrainY=ground});
+    var pb=GameObject.Find(sample.Item1).GetComponent<UnityEngine.ProBuilder.ProBuilderMesh>();var m=pb.GetComponent<MeshFilter>().sharedMesh;
+    var positions=m.vertices;var indices=m.triangles;var edges=new System.Collections.Generic.Dictionary<string,int>();bool nondegenerate=true;
+    string Key(Vector3 v)=>v.x.ToString("F3",System.Globalization.CultureInfo.InvariantCulture)+","+v.y.ToString("F3",System.Globalization.CultureInfo.InvariantCulture)+","+v.z.ToString("F3",System.Globalization.CultureInfo.InvariantCulture);
+    void Edge(Vector3 a0,Vector3 b0){string a1=Key(a0),b1=Key(b0);string k=string.CompareOrdinal(a1,b1)<0?a1+"|"+b1:b1+"|"+a1;edges[k]=edges.ContainsKey(k)?edges[k]+1:1;}
+    for(int i=0;i<indices.Length;i+=3){var a0=positions[indices[i]];var b0=positions[indices[i+1]];var c0=positions[indices[i+2]];nondegenerate&=Vector3.Cross(b0-a0,c0-a0).sqrMagnitude>.000001f;Edge(a0,b0);Edge(b0,c0);Edge(c0,a0);}
+    Check(sample.Item1+" is a closed editable solid with matching collider",nondegenerate&&edges.Values.All(n=>n==2)&&pb.GetComponent<MeshCollider>().sharedMesh==m,new{triangles=indices.Length/3,badEdges=edges.Values.Count(n=>n!=2)});
+}
+bool Blocked(Vector3 from,Vector3 to,out string hitName){RaycastHit hit;bool blocked=Physics.Raycast(from,(to-from).normalized,out hit,Vector3.Distance(from,to));hitName=blocked?hit.transform.name:null;return blocked;}
+var bay=new Vector3(260,-1.7f,100);bool before=Blocked(new Vector3(52,14.8f,49),bay,out string beforeHit),after=Blocked(new Vector3(41,29.8f,82),bay,out string afterHit);
+Check("Halfway platform reveals the eastern sea",before&&!after,new{before,after,beforeHit,afterHit});
+var report=new{passed=failures==0,failures,checks};var json=Newtonsoft.Json.JsonConvert.SerializeObject(report,Newtonsoft.Json.Formatting.Indented);
+System.IO.File.WriteAllText("Documentation/CoastalV5Verification/GeometryChecks.json",json);return json;

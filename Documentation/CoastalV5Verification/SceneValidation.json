@@ -1,0 +1,34 @@
+{
+  "scene": "Assets/CoastalTemple/Scenes/CoastalTemple.unity",
+  "playing": false,
+  "missingScripts": 0,
+  "brokenPrefabs": 0,
+  "terrainCollider": true,
+  "terrainCount": 1,
+  "holes": 621,
+  "terrainResolution": 513,
+  "terrainLayers": 4,
+  "nearSeaGrid": [
+    72,
+    86
+  ],
+  "nearSeaHz": 15,
+  "cliffs": [
+    {
+      "name": "Halfway_CliffBlock",
+      "active": true,
+      "triangles": 44,
+      "meshAsset": "Assets/CoastalTemple/Terrain/Halfway_CliffBlock.asset",
+      "colliderMatches": true,
+      "preserveMeshAssetOnDestroy": true
+    },
+    {
+      "name": "Summit_OverhangingCliff",
+      "active": true,
+      "triangles": 50,
+      "meshAsset": "Assets/CoastalTemple/Terrain/Summit_OverhangingCliff.asset",
+      "colliderMatches": true,
+      "preserveMeshAssetOnDestroy": true
+    }
+  ]
+}

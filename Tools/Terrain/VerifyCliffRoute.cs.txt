@@ -1,0 +1,24 @@
+if(!Application.isPlaying)throw new System.Exception("Enter Play first.");
+var tour=UnityEngine.Object.FindFirstObjectByType<CoastalTemple.CoastalWalkthrough>();
+tour.SetOverview(true);var walker=tour.walker;walker.active=false;var cc=walker.Controller;
+var values=Newtonsoft.Json.JsonConvert.DeserializeObject<float[][]>(System.IO.File.ReadAllText("Documentation/CoastalV5Verification/RoutePoints.json"));
+var route=values.Select(v=>new Vector3(v[0],v[1],v[2])).ToList();route.Add(new Vector3(16,80,140));
+void Teleport(Vector3 p){cc.enabled=false;walker.transform.position=p;cc.enabled=true;Physics.SyncTransforms();}
+var legs=new System.Collections.Generic.List<object>();bool passed=true;
+void Walk(string direction,IEnumerable<Vector3> targets)
+{
+    foreach(var target in targets)
+    {
+        int steps=0;for(;steps<2400;steps++){var d=target-walker.transform.position;d.y=0;if(d.magnitude<.20f)break;cc.Move(d.normalized*.068f+Vector3.down*.045f);}
+        var p=walker.transform.position;bool ok=steps<2400&&Mathf.Abs(p.y-target.y)<.65f;
+        legs.Add(new{direction,target=new[]{target.x,target.y,target.z},actual=new[]{p.x,p.y,p.z},steps,ok});passed&=ok;if(!ok)break;
+    }
+}
+Teleport(route[0]+Vector3.up*.15f);Walk("ascent",route.Skip(1));
+Teleport(route[route.Count-1]+Vector3.up*.15f);Walk("descent",route.Take(route.Count-1).Reverse());
+var temple=GameObject.Find("04_SummitTemple").transform;
+bool Seen(Vector3 from,Vector3 to){RaycastHit hit;return !Physics.Raycast(from,(to-from).normalized,out hit,Vector3.Distance(from,to))||hit.transform.IsChildOf(temple);}
+bool visible=Seen(new Vector3(-30,1.8f,-27),new Vector3(16,93,144));
+var report=new{passed=passed&&visible,routeLegs=legs,spawnSeesTemple=visible,scope="Unity Editor Play actual CharacterController.Move, no jumping or teleport within route legs; both directions tested."};
+walker.ResetPosition();var json=Newtonsoft.Json.JsonConvert.SerializeObject(report,Newtonsoft.Json.Formatting.Indented);
+System.IO.File.WriteAllText("Documentation/CoastalV5Verification/RouteChecks.json",json);return json;

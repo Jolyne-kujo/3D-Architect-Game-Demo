@@ -1,0 +1,20 @@
+{
+  "buildResult": "succeeded",
+  "errors": 0,
+  "warnings": 486,
+  "durationSeconds": 7.7597,
+  "player": "Builds/CoastalCliff-Windows/CoastalTemple.exe",
+  "package": "Builds/CoastalCliff-Windows.zip",
+  "zipEntries": 215,
+  "zipMB": 52.85,
+  "zipCRCValid": true,
+  "noDoNotShipFiles": true,
+  "playerStartup": {
+    "scope": "Windows batchmode startup with D3D12 graphics; not a manual keyboard playthrough",
+    "runtimeErrors": [],
+    "gpuInitialized": true,
+    "seconds": 34.3,
+    "running": true,
+    "log": "Logs/CoastalCliff-Player.log"
+  }
+}

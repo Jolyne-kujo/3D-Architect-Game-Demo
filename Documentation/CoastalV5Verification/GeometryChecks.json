@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Halfway_CliffBlock has accessible negative-angle underside",
+      "ok": true,
+      "details": {
+        "underHit": "Halfway_CliffBlock",
+        "underPoint": "(17.00, 20.50, 76.00)",
+        "underNormal": "(0.00, -0.47, -0.88)",
+        "topY": 27.96,
+        "terrainY": 0.301074028
+      }
+    },
+    {
+      "name": "Halfway_CliffBlock is a closed editable solid with matching collider",
+      "ok": true,
+      "details": {
+        "triangles": 44,
+        "badEdges": 0
+      }
+    },
+    {
+      "name": "Summit_OverhangingCliff has accessible negative-angle underside",
+      "ok": true,
+      "details": {
+        "underHit": "Summit_OverhangingCliff",
+        "underPoint": "(16.00, 69.67, 126.00)",
+        "underNormal": "(0.00, -0.65, -0.76)",
+        "topY": 77.96,
+        "terrainY": 34.4054832
+      }
+    },
+    {
+      "name": "Summit_OverhangingCliff is a closed editable solid with matching collider",
+      "ok": true,
+      "details": {
+        "triangles": 50,
+        "badEdges": 0
+      }
+    },
+    {
+      "name": "Halfway platform reveals the eastern sea",
+      "ok": true,
+      "details": {
+        "before": true,
+        "after": false,
+        "beforeHit": "01_CoastalTerrain",
+        "afterHit": null
+      }
+    }
+  ]
+}
