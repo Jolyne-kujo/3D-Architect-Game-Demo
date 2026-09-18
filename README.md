@@ -10,10 +10,10 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 
 ## 海岸神庙白模
 
-打开 `CoastalTemple` 场景并 Play；最新本机试玩包位于 `Builds/CoastalSea-Windows/CoastalTemple.exe`。
+打开 `CoastalTemple` 场景并 Play；最新本机试玩包位于 `Builds/CoastalTerrain-Windows/CoastalTemple.exe`。
 从沙滩岸边进入露天遗迹，经半山观海平台到达大型神庙。**WASD** 行走/游泳，**Shift** 快走，**空格** 跳跃/上浮，**Ctrl** 下潜，**Tab** 在行走和观察间切换，**F1/F2/F3** 查看全景、半山海面和神庙，**Home** 回到起点。水池按 **1** 排水、**R** 重新蓄水。触碰黄色浮标所在的近远海交界线会回到出生点。
 
-山体采用原生 Terrain，步道融入坡面，建筑采用 ProBuilder 网格并保存于场景/预制件中，Play 时不生成环境。海浪采用 GPU 四组叠加波，近岸另有低频流体模拟，远海使用轻量平面。最新调节方法与实测见 [海面说明](Documentation/CoastalV3Verification/README.md)，场景编辑见 [海岸关卡说明](Documentation/CoastalTemple.md)。
+山体采用原生 Terrain，按褶皱山脊、陡坡台地和沟谷塑形；步道嵌在两侧山肩之间，半山转弯后可见另一侧海面。建筑采用 ProBuilder 网格并保存于场景/预制件中，Play 时不生成环境。最新地形画面与验证见 [地形说明](Documentation/CoastalV4Verification/README.md)。海浪采用 GPU 四组叠加波，近岸另有低频流体模拟，远海使用轻量平面，调节方法见 [海面说明](Documentation/CoastalV3Verification/README.md)，场景编辑见 [海岸关卡说明](Documentation/CoastalTemple.md)。
 
 ## 水系统白模实验
 

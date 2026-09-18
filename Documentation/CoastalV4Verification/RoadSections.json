@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "center": "(-20.50, 6.00, 41.00)",
+      "floor": 5.960744,
+      "leftRise": 1.55826855,
+      "rightRise": 3.65388966,
+      "leftCrestRise": 1.79273129,
+      "rightCrestRise": 4.4107523,
+      "enclosed": true
+    },
+    {
+      "center": "(5.00, 13.00, 58.00)",
+      "floor": 12.959734,
+      "leftRise": 0.983118057,
+      "rightRise": 1.17753983,
+      "leftCrestRise": 1.17692757,
+      "rightCrestRise": 2.02111816,
+      "enclosed": true
+    },
+    {
+      "center": "(32.00, 20.50, 74.50)",
+      "floor": 20.4594688,
+      "leftRise": 2.47613144,
+      "rightRise": 0.775478363,
+      "leftCrestRise": 2.86529541,
+      "rightCrestRise": 1.01856232,
+      "enclosed": true
+    },
+    {
+      "center": "(26.50, 33.00, 112.50)",
+      "floor": 32.96023,
+      "leftRise": 5.516083,
+      "rightRise": 2.55834579,
+      "leftCrestRise": 5.766739,
+      "rightCrestRise": 2.73786545,
+      "enclosed": true
+    },
+    {
+      "center": "(2.50, 38.00, 127.50)",
+      "floor": 37.9595451,
+      "leftRise": 8.161049,
+      "rightRise": 2.89619446,
+      "leftCrestRise": 8.161049,
+      "rightCrestRise": 3.0493927,
+      "enclosed": true
+    },
+    {
+      "center": "(4.00, 43.00, 138.50)",
+      "floor": 42.95996,
+      "leftRise": -3.97510529,
+      "rightRise": 2.94441986,
+      "leftCrestRise": 1.29315186,
+      "rightCrestRise": 3.35105133,
+      "enclosed": true
+    }
+  ],
+  "scope": "Six road midpoint cross sections. Report 7 m samples and bank crests 3.5-8 m from center; hairpins can descend to the adjacent lower trail beyond the bank. Both bank crests must rise over 0.5 m. Terrace and temple entrances intentionally open.",
+  "terrainCount": 1,
+  "resolution": 513,
+  "materialLayers": 4
+}

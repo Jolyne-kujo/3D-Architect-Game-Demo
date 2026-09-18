@@ -1,0 +1,8 @@
+{
+  "responding": true,
+  "logErrorMatches": 0,
+  "scope": "Windows executable startup/log check; gameplay and route checks are Unity Editor Play.",
+  "processId": 50556,
+  "running": true,
+  "closedAfterStartupCheck": true
+}

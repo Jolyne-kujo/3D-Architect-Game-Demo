@@ -1,0 +1,12 @@
+{
+  "job_id": "build-abbe58f191",
+  "result": "succeeded",
+  "platform": "StandaloneWindows64",
+  "output_path": "Builds/CoastalTerrain-Windows/CoastalTemple.exe",
+  "started_at": "2026-09-18T02:35:43.5665401Z",
+  "duration_seconds": 8.3380632,
+  "completed_at": "2026-09-18T02:35:51.9046033Z",
+  "total_size_mb": 141.05,
+  "errors": 0,
+  "warnings": 486
+}

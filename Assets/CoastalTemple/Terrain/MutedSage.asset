@@ -6,7 +6,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WhiteboxPath
+  m_Name: MutedSage
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -40,7 +40,7 @@ Texture2D:
   m_ColorSpace: 1
   m_PlatformBlob: 
   image data: 84
-  _typelessdata: 9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff9c9685ff
+  _typelessdata: 66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff66784fff
   m_StreamData:
     serializedVersion: 2
     offset: 0

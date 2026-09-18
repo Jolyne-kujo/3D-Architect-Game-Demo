@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Seam contact (-144.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (0.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (0.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (-144.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, -88.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (-144.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (144.00, -3.00, 256.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Seam contact (1000.00, -3.00, 0.00)",
+      "ok": true,
+      "details": "(-30.00, 0.15, -27.00)"
+    },
+    {
+      "name": "Death count is one per crossing",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Death preserves courtyard puzzle",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Safe near water does not kill",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Respawn restores view direction",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Swimmer selects near sea",
+      "ok": true,
+      "details": {
+        "seaHeight": -1.75118029,
+        "seaDepth": 1.5471673
+      }
+    },
+    {
+      "name": "Pool remains independent",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Analytic waves move",
+      "ok": true,
+      "details": {
+        "h0": -0.16190879,
+        "h1": -0.0110099437
+      }
+    },
+    {
+      "name": "GPU wave parameters bound",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Far sea uses generated normal texture",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Simulated seam remains level",
+      "ok": true,
+      "details": -1.7
+    },
+    {
+      "name": "Spawn sees summit temple",
+      "ok": true,
+      "details": "TC_Shaft at (13.44, 61.48, 155.27)"
+    },
+    {
+      "name": "Halfway turn reveals hidden sea",
+      "ok": true,
+      "details": {
+        "beforeBlocked": true,
+        "afterBlocked": false
+      }
+    },
+    {
+      "name": "Descent returns to shore without jumping",
+      "ok": true,
+      "details": null
+    }
+  ],
+  "nearSeaCells": 6192,
+  "nearSeaHz": 15,
+  "solverPlusMeshMs": 3.8654800000000002,
+  "amortizedMsAt60Fps": 0.96637000000000006,
+  "scope": "Unity Editor Play, CharacterController.Move and runtime components; not manual keyboard testing"
+}

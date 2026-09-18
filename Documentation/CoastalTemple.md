@@ -7,9 +7,9 @@
 ## 空间与编辑
 
 - `00_ShoreStart`：岸边落脚平台；`Player_ShoreStart` 是 Play 后的起点。
-- `01_CoastalTerrain`：300 × 330 米的原生 Terrain，513 高度图，山顶台地约海拔 48 米。选中后使用 Terrain 的 Raise/Lower、Smooth、Set Height 工具继续塑形；池底区域开了 Terrain Hole。
+- `01_CoastalTerrain`：300 × 330 米的原生 Terrain，513 高度图，山顶台地约海拔 48 米。山体由错落的折线山脊、不对称坡面、台地与沟谷构成，四层纯色材质保持简约风格。选中后使用 Terrain 的 Raise/Lower、Smooth、Set Height 工具继续塑形；池底区域开了 Terrain Hole。
 - `02_ShoreRuins_WaterCourt`：露天残柱、残墙、可进入的原有深水池与独立排水机关。原庭院封闭边界在此场景中停用。
-- `03_MountainPath`：原长楼梯已停用保留。当前步道直接塑进 Terrain；半山平台位于约 (60,24,95)，绕过山肩后可看到东侧海面。上山与下山均已通过 CharacterController.Move 验证。
+- `03_MountainPath`：原长楼梯已停用保留。当前约 5 米宽的步道直接切入 Terrain，两侧由连续山肩包住；半山平台位于约 (61,24,96)，绕过山肩后可看到东侧海面。上山与下山均已通过 CharacterController.Move 验证。最新画面、造型依据和编辑说明见 [地形迭代](CoastalV4Verification/README.md)。
 - `04_SummitTemple`：山顶神庙预制件，包含 20 根柱、台基、入口台阶、内殿、山墙屋顶。可直接编辑 ProBuilder 顶点/边/面，或把视觉部分替换成美术模型。
 - `05_WalkthroughControls`：行走/相机/水机关输入，仅控制现有对象。三个 View 标记可在编辑器里移动，改变 F1/F2/F3 的观察角度。
 

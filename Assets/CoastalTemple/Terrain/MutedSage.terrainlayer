@@ -6,8 +6,8 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WhiteboxPath
-  m_DiffuseTexture: {fileID: 2800000, guid: 411367d04605f974097caab8c2c50286, type: 2}
+  m_Name: MutedSage
+  m_DiffuseTexture: {fileID: 2800000, guid: d1703858850740747b54a6b4a209b95e, type: 2}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 12, y: 12}

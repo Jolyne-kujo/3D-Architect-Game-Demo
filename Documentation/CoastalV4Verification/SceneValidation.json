@@ -1,0 +1,16 @@
+{
+  "scene": "Assets/CoastalTemple/Scenes/CoastalTemple.unity",
+  "playing": false,
+  "missingScripts": 0,
+  "brokenPrefabs": 0,
+  "terrainCollider": true,
+  "terrainCount": 1,
+  "holes": 621,
+  "terrainResolution": 513,
+  "terrainLayers": 4,
+  "nearSeaGrid": [
+    72,
+    86
+  ],
+  "nearSeaHz": 15
+}
