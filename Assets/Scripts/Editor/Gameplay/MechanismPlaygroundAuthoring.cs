@@ -76,6 +76,7 @@ namespace CoastalTemple.Editor
             var drain=Place("DrainGate",new Vector3(-20,-3.8f,15));
             var mirage=Place("WaterMirage",new Vector3(-11,-.3f,13));
             waterObj.SetActive(true);
+            WaterTraversalAuthoring.AlignShowroomPool();
             var player=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(PlayerPath));
             var walker=player.GetComponentInChildren<CourtyardWalker>();walker.water=water;walker.additionalWaters=System.Array.Empty<WaterVolume>();
             walker.transform.SetPositionAndRotation(new Vector3(7,.05f,-.8f),Quaternion.Euler(0,180,0));walker.active=true;

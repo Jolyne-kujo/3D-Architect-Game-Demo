@@ -34,14 +34,14 @@ namespace CoastalTemple.Editor
                 Physics.SyncTransforms();
                 if(!Physics.Raycast(new Vector3(-54.65f,-3.7f,182.2f),Vector3.down,out var bottom,2,Physics.DefaultRaycastLayers,QueryTriggerInteraction.Ignore))throw new InvalidOperationException("Pool bottom missing.");
                 w.RespawnAt(bottom.point+Vector3.up*.025f,180);Step(Vector2.zero);
-                bool standing=w.Grounded&&!w.Swimming,climbed=false,up=false;int stairFrames=0;
+                bool startedSwimming=w.Swimming&&!w.Grounded,climbed=false,up=false;int stairFrames=0;
                 for(int i=0;i<420;i++)
                 {
                     Step(Vector2.up);climbed|=w.Climbing;up|=a.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");if(w.StairDirection==1)stairFrames++;
                     if(i==160)Capture(camera,"02-MainPoolStairs",w.transform.position+new Vector3(3,2.4f,-3),w.transform.position+Vector3.up*.8f);
                     if(w.transform.position.z<173&&w.transform.position.y>-.05f)break;
                 }
-                Check(standing&&up&&!climbed&&w.transform.position.z<173&&w.transform.position.y>-.05f,"main pool stairs: start standing="+standing+", normal locomotion="+up+", mantle="+climbed+", stair frames="+stairFrames+", exit="+w.transform.position);
+                Check(startedSwimming&&up&&!climbed&&w.transform.position.z<173&&w.transform.position.y>-.05f,"main pool stairs: deep start swimming="+startedSwimming+", normal locomotion="+up+", mantle="+climbed+", stair frames="+stairFrames+", exit="+w.transform.position);
                 w.RespawnAt(new Vector3(-49,-2,179),0);for(int i=0;i<160;i++)Step(Vector2.zero);
                 float idle=head.position.y-w.WaterSurface;
                 Capture(camera,"03-TreadingWater",w.transform.position+new Vector3(3,2.7f,2),w.transform.position+Vector3.up*1.25f);

@@ -27,15 +27,15 @@ namespace CoastalTemple.Editor
                     catch (Exception e) { lines.Add("FAIL " + name + ": " + e.Message); }
                 }
             }
-            Test("Submerged foot support stands, restores stepOffset, jumps and stays airborne", f =>
+            Test("Shallow submerged foot support stands, restores stepOffset, jumps and stays airborne", f =>
             {
-                f.Box("Submerged step", new Vector3(0,-.1f,0), new Vector3(3,.2f,3));
-                f.Place(new Vector3(0,.025f,0)); f.Step(Vector2.zero);
+                f.Box("Submerged step", new Vector3(0,.55f,0), new Vector3(3,.2f,3));
+                f.Place(new Vector3(0,.675f,0)); f.Step(Vector2.zero);
                 Need(f.Walker.Grounded && !f.Walker.Swimming && f.Body.stepOffset > .3f, "still swimming or step offset zero");
                 f.Step(Vector2.zero, true, 1);
                 Need(f.Walker.VerticalSpeed > 4 && !f.Walker.Grounded, "no jump from support");
                 f.Advance(.25f, Vector2.zero);
-                Need(f.Player.position.y > f.Origin.y + .7f && !f.Walker.Swimming, "water immediately swallowed the jump");
+                Need(f.Player.position.y > f.Origin.y + 1.35f && !f.Walker.Swimming, "water immediately swallowed the jump");
             });
             Test("No false ground from sidewalls or trigger volumes; open-water ascent remains bounded", f =>
             {
@@ -65,6 +65,7 @@ namespace CoastalTemple.Editor
             });
             Test("An ankle-high submerged lip uses native stepping without a mantle", f =>
             {
+                f.Walker.water.initialLevel=1.5f;f.Walker.water.ResetWater();
                 f.Box("Low lip",new Vector3(0,.2f,2),new Vector3(3,.4f,3));
                 f.Place(new Vector3(0,.2f,0));
                 bool mantle=false;

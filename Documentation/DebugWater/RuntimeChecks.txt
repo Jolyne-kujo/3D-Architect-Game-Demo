@@ -2,7 +2,7 @@ PASS debug laser starts disabled, with no unintended red light
 PASS both incoming and refracted projection beams are blue and visible
 PASS shore console is the nearest reachable E interaction on dry ground
 PASS ordinary player E interaction opens the correct pool drain
-PASS 22s drain: water level -0.30 -> -3.22, volume 1476.3 -> 313.1
+PASS 22s drain: water level -0.30 -> -3.12, volume 1592.8 -> 378.8
 PASS physical guided float follows draining water: deck Y -0.20 -> -3.30
 PASS draining below the submerged sample removes the refraction and solid mirage steps
 PASS second E interaction refills the same pool and closes its drain

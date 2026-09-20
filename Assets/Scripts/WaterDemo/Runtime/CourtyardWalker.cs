@@ -12,7 +12,7 @@ namespace WaterCourtyard
         public static bool ShouldSwim(bool hasWater, float feet, float surface, float depth, bool wasSwimming)
         {
             // Retain swim mode as the horizontal animation raises the capsule root.
-            // A supported foot or leaving the water still ends it in the walker.
+            // Shallow supported feet or leaving water end swimming in the walker.
             return hasWater && depth > 1.28f && surface - feet > (wasSwimming ? .12f : 1.18f);
         }
 
@@ -60,6 +60,8 @@ namespace WaterCourtyard
         [Tooltip("Fractional horizontal damping per second when airborne with no input. Zero preserves momentum exactly.")]
         [Min(0)] public float airDrag=.1f;
         [Min(0)] public float swimAcceleration=7;
+        [Tooltip("Maximum water height above supported feet for standing/wading. Deeper water wins over floor contact.")]
+        [Range(.3f,1.4f)] public float maximumWadingDepth=1.1f;
         [Min(0)] public float jumpSpeed=4.6f;
         public float JumpHeight => jumpSpeed*jumpSpeed/(2*Mathf.Max(.1f,Mathf.Abs(Physics.gravity.y)));
         public float WaterSurface { get; private set; }
@@ -83,7 +85,7 @@ namespace WaterCourtyard
         readonly CourtyardCharacterQueries contacts = new CourtyardCharacterQueries();
         CourtyardSurfaceSwimmer surfaceSwimmer;
         Rigidbody groundBody;Vector3 groundPosition,horizontalVelocity;
-        void Awake(){Controller=GetComponent<CharacterController>();Climber=GetComponent<CourtyardLedgeClimb>();surfaceSwimmer=GetComponent<CourtyardSurfaceSwimmer>();landStepOffset=Controller.stepOffset;start=transform.position;startYaw=yaw=transform.eulerAngles.y;}
+        void Awake(){Controller=GetComponent<CharacterController>();Controller.minMoveDistance=0;Climber=GetComponent<CourtyardLedgeClimb>();surfaceSwimmer=GetComponent<CourtyardSurfaceSwimmer>();landStepOffset=Controller.stepOffset;start=transform.position;startYaw=yaw=transform.eulerAngles.y;}
         public void ResetPosition() => RespawnAt(start, startYaw);
         // Matrix supplied by the portal package avoids an assembly dependency from this shared walker.
         public void WarpThroughPortal(Vector3 position, Quaternion rotation, Matrix4x4 mapping)
@@ -183,7 +185,9 @@ namespace WaterCourtyard
             var currentWater=SampleWater(transform.position+Vector3.up*.8f,out float surface,out Vector3 flow,out float depth);
             WaterSurface=surface;Diving=swimInput<-.1f;
             bool wasSwimming=Swimming;
-            Swimming=!Grounded&&waterJumpGrace<=0&&CourtyardSwimMotion.ShouldSwim(currentWater,transform.position.y,surface,depth,wasSwimming);
+            bool canWade=Grounded&&(!currentWater||WithinWadingDepth(surface));
+            Swimming=!canWade&&waterJumpGrace<=0&&CourtyardSwimMotion.ShouldSwim(currentWater,transform.position.y,surface,depth,wasSwimming);
+            if(Swimming)Grounded=false;
             bool shallowStep=Swimming&&NearWaterSurface&&contacts.HasLowStep(Controller,target,landStepOffset);
             Controller.stepOffset=Swimming&&!shallowStep?0:landStepOffset;
             if(Climber&&!(jumpPressed&&Grounded)&&Climber.TryBegin(target,seconds))
@@ -223,10 +227,19 @@ namespace WaterCourtyard
             if((collision&CollisionFlags.Above)!=0&&vertical>0)vertical=0;
             if((collision&CollisionFlags.Below)!=0&&vertical<0)vertical=Swimming?0:-2;
             ground=default;Grounded=vertical<=.1f&&(contacts.FindGround(Controller,out ground)||((collision&CollisionFlags.Below)!=0));
+            // Touching a deep stair/seabed does not cancel buoyancy. Stand only when the
+            // supported feet reach a shallow enough level to put the standing torso above water.
+            if(Swimming&&!WithinWadingDepth(surface))Grounded=false;
             UpdateStairs(ground);
             if(Grounded){Swimming=false;Controller.stepOffset=landStepOffset;}
             if(transform.position.y<-12)ResetPosition();
             if(Swimming&&currentWater&&input.sqrMagnitude>.1f&&Time.time>disturbTime){currentWater.Disturb(transform.position,currentWater.swimmerDisplacement);disturbTime=Time.time+.16f;}
+        }
+        bool WithinWadingDepth(float surface)
+        {
+            // Native step contact can leave the capsule feet one skin-width below the tread.
+            // Account for that contact margin when deciding whether shallow support can stand.
+            return surface-CourtyardCharacterQueries.Feet(Controller).y<=maximumWadingDepth+Controller.skinWidth+.005f;
         }
         void UpdateStairs(RaycastHit ground)
         {
@@ -240,6 +253,9 @@ namespace WaterCourtyard
             // Do not retain a hidden push that launches the player if the obstruction disappears.
             if(hit.normal.y<Mathf.Cos(Controller.slopeLimit*Mathf.Deg2Rad))
             {
+                // A low tread is an intended step, not a wall. Cancelling its velocity every
+                // callback made progress depend on frame time and deadlocked at 240+ FPS.
+                if(((Grounded&&vertical<=0)||(Swimming&&NearWaterSurface))&&Controller.stepOffset>0&&contacts.HasLowStep(Controller,horizontalVelocity,landStepOffset))return;
                 Vector3 normal=new Vector3(hit.normal.x,0,hit.normal.z).normalized;
                 float into=Vector3.Dot(horizontalVelocity,normal);
                 if(into<0)horizontalVelocity-=normal*into;

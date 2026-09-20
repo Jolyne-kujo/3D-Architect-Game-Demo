@@ -32,6 +32,7 @@ namespace Courtyard.Water
         public float drainSpeedMultiplier=4;
         public Material surfaceMaterial;
         public WaterSurfaceMotion surfaceMotion;
+        [HideInInspector] public string editorPreviewSignature;
         [Header("Simulation")]
         [Range(10,60)] public int simulationHz=30;
         public bool showFlow;
@@ -53,24 +54,14 @@ namespace Courtyard.Water
             if(Grid!=null)return;
             if(transform.rotation!=Quaternion.identity||transform.lossyScale!=Vector3.one)
                 throw new InvalidOperationException("WaterVolume supports translation only; keep rotation zero and scale one, and use domain dimensions to resize.");
-            if(float.IsNaN(sizeX)||float.IsInfinity(sizeX)||sizeX<=0||float.IsNaN(sizeZ)||float.IsInfinity(sizeZ)||sizeZ<=0||cellSize<=0||float.IsNaN(cellSize)||float.IsInfinity(cellSize))
-                throw new ArgumentException("Water domain dimensions must be positive and finite.");
+            ValidateDimensions();
             nx=Mathf.Max(2,Mathf.RoundToInt(sizeX/cellSize));nz=Mathf.Max(2,Mathf.RoundToInt(sizeZ/cellSize));
             // A square simulation grid has one physical spacing. Snap the visible domain with it.
             sizeX=nx*cellSize;sizeZ=nz*cellSize;dx=dz=cellSize;
             float[] bed=new float[nx*nz];
             for(int z=0;z<nz;z++)for(int x=0;x<nx;x++)
             {
-                float px=(x+.5f)*dx-sizeX*.5f,pz=(z+.5f)*dz-sizeZ*.5f,h=bottom+Vector2.Distance(new Vector2(px,pz),drainPosition)*floorSlope;
-                if(bedTerrain)
-                {
-                    Vector3 p=transform.position+new Vector3(px,0,pz)-bedTerrain.transform.position;
-                    Vector3 size=bedTerrain.terrainData.size;
-                    if(p.x>=0&&p.z>=0&&p.x<=size.x&&p.z<=size.z)
-                        h=Mathf.Max(bottom,bedTerrain.terrainData.GetInterpolatedHeight(p.x/size.x,p.z/size.z)+bedTerrain.transform.position.y-transform.position.y);
-                }
-                foreach(var b in bedBlocks)if(Mathf.Abs(px-b.center.x)<=b.size.x*.5f&&Mathf.Abs(pz-b.center.y)<=b.size.y*.5f)h=Mathf.Max(h,b.top);
-                bed[x+z*nx]=h;
+                bed[x+z*nx]=BedHeight(new Vector2((x+.5f)*dx-sizeX*.5f,(z+.5f)*dz-sizeZ*.5f));
             }
             Grid=new WaterGrid(nx,nz,cellSize,bed);
             if(keepDryCornersAtInitialLevel)Grid.DrySurfaceCeiling=initialLevel;
@@ -164,6 +155,50 @@ namespace Courtyard.Water
             Vector3 p=world-transform.position;int x=Mathf.FloorToInt((p.x+sizeX*.5f)/dx),z=Mathf.FloorToInt((p.z+sizeZ*.5f)/dz);
             Grid.Displace(x,z,cubicMetres);
             UpdateMesh();
+        }
+        public float BedHeight(Vector2 point)
+        {
+            float h=bottom+Vector2.Distance(point,drainPosition)*floorSlope;
+            if(bedTerrain&&bedTerrain.terrainData)
+            {
+                Vector3 p=transform.position+new Vector3(point.x,0,point.y)-bedTerrain.transform.position;
+                Vector3 size=bedTerrain.terrainData.size;
+                if(p.x>=0&&p.z>=0&&p.x<=size.x&&p.z<=size.z)
+                    h=Mathf.Max(bottom,bedTerrain.terrainData.GetInterpolatedHeight(p.x/size.x,p.z/size.z)+bedTerrain.transform.position.y-transform.position.y);
+            }
+            foreach(var block in bedBlocks)if(Mathf.Abs(point.x-block.center.x)<=block.size.x*.5f&&Mathf.Abs(point.y-block.center.y)<=block.size.y*.5f)h=Mathf.Max(h,block.top);
+            return h;
+        }
+
+        /// <summary>Initial water geometry for authoring; does not create or advance a live simulation.</summary>
+        public Mesh CreateInitialSurfaceMesh()
+        {
+            ValidateDimensions();
+            int width=Mathf.Max(2,Mathf.RoundToInt(sizeX/cellSize)),length=Mathf.Max(2,Mathf.RoundToInt(sizeZ/cellSize));
+            float extentX=width*cellSize,extentZ=length*cellSize;
+            var bed=new float[width*length];
+            for(int z=0;z<length;z++)for(int x=0;x<width;x++)bed[x+z*width]=BedHeight(new Vector2((x+.5f)*cellSize-extentX*.5f,(z+.5f)*cellSize-extentZ*.5f));
+            var grid=new WaterGrid(width,length,cellSize,bed);
+            if(keepDryCornersAtInitialLevel)grid.DrySurfaceCeiling=initialLevel;
+            grid.BoundarySurfaceFadeMetres=surfaceBoundaryFade;grid.BoundarySurfaceLevel=initialLevel;grid.Fill(initialLevel);
+            var points=new Vector3[(width+1)*(length+1)];var uv=new Vector2[points.Length];var data=new List<Vector4>(points.Length);var indices=new int[width*length*6];
+            for(int z=0;z<=length;z++)for(int x=0;x<=width;x++)
+            {
+                int i=x+z*(width+1);points[i]=new Vector3(x*cellSize-extentX*.5f,grid.VertexSurface(x,z),z*cellSize-extentZ*.5f);uv[i]=new Vector2(x*cellSize,z*cellSize);
+                float depth=0;int count=0;
+                for(int zz=Mathf.Max(0,z-1);zz<=Mathf.Min(length-1,z);zz++)for(int xx=Mathf.Max(0,x-1);xx<=Mathf.Min(width-1,x);xx++)
+                {float value=grid.Depth(xx+zz*width);if(value>.002f){depth+=value;count++;}}
+                data.Add(count>0?new Vector4(depth/count,0,0,1):Vector4.zero);
+            }
+            for(int z=0;z<length;z++)for(int x=0;x<width;x++)
+            {int i=x+z*(width+1),t=(x+z*width)*6;indices[t]=i;indices[t+1]=i+width+1;indices[t+2]=i+1;indices[t+3]=i+1;indices[t+4]=i+width+1;indices[t+5]=i+width+2;}
+            var result=new Mesh{name="Initial water surface preview"};if(points.Length>65535)result.indexFormat=IndexFormat.UInt32;
+            result.vertices=points;result.uv=uv;result.SetUVs(1,data);result.triangles=indices;result.RecalculateNormals();result.RecalculateBounds();return result;
+        }
+        void ValidateDimensions()
+        {
+            if(float.IsNaN(sizeX)||float.IsInfinity(sizeX)||sizeX<=0||float.IsNaN(sizeZ)||float.IsInfinity(sizeZ)||sizeZ<=0||cellSize<=0||float.IsNaN(cellSize)||float.IsInfinity(cellSize))
+                throw new ArgumentException("Water domain dimensions must be positive and finite.");
         }
         void OnDestroy(){if(mesh)Destroy(mesh);}
         void OnDrawGizmosSelected(){Gizmos.color=Color.cyan;Gizmos.DrawWireCube(transform.position+Vector3.up*(bottom+initialLevel)*.5f,new Vector3(sizeX,initialLevel-bottom,sizeZ));}

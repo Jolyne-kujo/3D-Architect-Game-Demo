@@ -1,0 +1,6 @@
+PASS WaterVolume — reusable simulation: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS Nearshore_SimulatedWater: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS WaterVolume_6x8: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS down stairs enters swimming, head above water=0.234m, lowest root=-1.884, mantle=False
+PASS swim back onto ramp and sprint to dry shore without Space: 2.62s end=(-54.65, 0.03, 173.53)
+PASS jump from shore after swimming still works

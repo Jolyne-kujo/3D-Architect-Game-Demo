@@ -1,0 +1,2 @@
+PASS Showroom water - use dimensions to resize: persisted initial surface matches simulation, vertices=1806, no running simulation in Edit
+PASS water mesh reaches all four inner pool edges: Center: (-16.00, -0.30, 16.25), Extents: (10.50, 0.00, 10.25)

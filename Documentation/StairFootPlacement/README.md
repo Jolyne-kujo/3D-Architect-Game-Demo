@@ -2,6 +2,8 @@
 
 2026-09-20，Unity 6000.5.9f1。
 
+后续修复了高帧率投影台阶卡住、深水脚底接触压过游泳、水面编辑预览与池岸缝隙；当前行为和新增验证见 [水中行走与预览说明](../WaterTraversal/README.md)。下文原始 50 FPS 检查不能单独作为高帧率通过的证据。
+
 ## 备份和试玩版本
 
 - 修改前完整项目：私有 GitHub `Jolyne-kujo/3D-Architect-Game-Demo`，`main` 提交 `6f59ea4971e2a689972e93ce49486b3a1e7f8d12`。

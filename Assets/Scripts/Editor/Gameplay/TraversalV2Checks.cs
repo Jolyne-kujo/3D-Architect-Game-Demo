@@ -48,12 +48,12 @@ namespace CoastalTemple.Editor
                 for(int i=0;i<450;i++){f.Step(Vector2.up);down|=f.A.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");climbed|=f.W.Climbing;if(stairs.transform.InverseTransformPoint(f.W.transform.position).z<-.3f)break;}
                 Require(down&&!climbed&&f.Local.y<.4f,"downstairs mismatch: "+f.Local);
             });
-            Test("Submerged stairs remain standing and use stair locomotion all the way out",f=>
+            Test("Deep stair approach swims then stands on the shallow ramp and walks out",f=>
             {
                 f.EnableWater();f.Floor();var stairs=f.Stairs();f.Place(new Vector3(0,.025f,-.5f));
-                bool climbed=false,up=false;
-                for(int i=0;i<400;i++){f.Step(Vector2.up);climbed|=f.W.Climbing;up|=f.W.StairDirection==1;if(f.Local.z>8)break;}
-                Require(!climbed&&up&&f.Local.y>4.1f&&f.W.Grounded&&!f.W.Swimming,"submerged flight failed: "+f.Local);
+                bool climbed=false,up=false,swam=false;
+                for(int i=0;i<400;i++){f.Step(Vector2.up);swam|=f.W.Swimming;climbed|=f.W.Climbing;up|=f.W.StairDirection==1;if(f.Local.z>8)break;}
+                Require(swam&&!climbed&&up&&f.Local.y>4.1f&&f.W.Grounded&&!f.W.Swimming,"submerged flight failed: "+f.Local);
             });
             Test("Idle and moving swim keep the animated head above water without mode flicker",f=>
             {

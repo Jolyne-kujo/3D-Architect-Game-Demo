@@ -1,4 +1,4 @@
-PASS Submerged foot support stands, restores stepOffset, jumps and stays airborne
+PASS Shallow submerged foot support stands, restores stepOffset, jumps and stays airborne
 PASS No false ground from sidewalls or trigger volumes; open-water ascent remains bounded
 PASS Walk and jump up submerged half-metre stairs to dry land
 PASS Swimming approach automatically mantles a below-shoulder ledge

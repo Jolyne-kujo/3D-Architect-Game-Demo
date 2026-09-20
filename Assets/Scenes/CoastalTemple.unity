@@ -2692,6 +2692,7 @@ MonoBehaviour:
   drainSpeedMultiplier: 1
   surfaceMaterial: {fileID: 2100000, guid: 43e04f2c99690c64f86f04c1baa332ff, type: 2}
   surfaceMotion: {fileID: 64274897}
+  editorPreviewSignature: 2d9ddc7ffe3f46da38cb9c8249628d66
   simulationHz: 15
   showFlow: 0
 --- !u!114 &64274893
@@ -2769,7 +2770,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64274891}
-  m_Mesh: {fileID: 4300000, guid: 2a10bf4f7235f50418ecd2d361d6dd00, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 797ed04a0a239e24793ae45dc7947530, type: 2}
 --- !u!4 &64274896
 Transform:
   m_ObjectHideFlags: 0
@@ -30250,6 +30251,7 @@ MonoBehaviour:
   airAcceleration: 4
   airDrag: 0.1
   swimAcceleration: 7
+  maximumWadingDepth: 1.1
   jumpSpeed: 4.6
 --- !u!4 &761032069
 Transform:
@@ -30292,7 +30294,7 @@ CharacterController:
   m_SlopeLimit: 50
   m_StepOffset: 0.35
   m_SkinWidth: 0.025
-  m_MinMoveDistance: 0.001
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &761032071
 MonoBehaviour:
@@ -54533,6 +54535,7 @@ MonoBehaviour:
   drainSpeedMultiplier: 4
   surfaceMaterial: {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   surfaceMotion: {fileID: 0}
+  editorPreviewSignature: cfe2b69d8f0cd949a529da849cce8c28
   simulationHz: 30
   showFlow: 0
 --- !u!23 &1462331411
@@ -54560,7 +54563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54591,7 +54594,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462331409}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 74d9cfe663a67cd4782e0b9faad2fd1c, type: 2}
 --- !u!4 &1462331413
 Transform:
   m_ObjectHideFlags: 0
@@ -64481,6 +64484,7 @@ MonoBehaviour:
   drainSpeedMultiplier: 4
   surfaceMaterial: {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   surfaceMotion: {fileID: 0}
+  editorPreviewSignature: fe1cfa7599b402d7ea8cb5539a53c60e
   simulationHz: 20
   showFlow: 0
 --- !u!23 &1790666447
@@ -64508,7 +64512,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64539,7 +64543,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790666445}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 3ca0010326cee7e4d91d53c0fdb8ffdb, type: 2}
 --- !u!4 &1790666449
 Transform:
   m_ObjectHideFlags: 0

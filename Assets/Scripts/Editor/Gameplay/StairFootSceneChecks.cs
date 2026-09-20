@@ -24,7 +24,7 @@ namespace CoastalTemple.Editor
             var camera=new GameObject("TemporaryFootObserver").AddComponent<Camera>();camera.CopyFrom(Camera.main);camera.enabled=false;camera.fieldOfView=48;
             var lines=new List<string>();var temporary=new List<GameObject>();Directory.CreateDirectory(Output);
             void Check(bool ok,string message)=>lines.Add((ok?"PASS ":"FAIL ")+message);
-            void Pose(){update.Invoke(driver,null);a.Update(.02f);w.GetComponentInChildren<PlayerBodyAnchor>().SnapToWalker();}
+            void Pose(){update.Invoke(driver,null);a.Update(.02f);w.GetComponentInChildren<PlayerBodyAnchor>().SnapToWalker();w.GetComponent<CourtyardSurfaceSwimmer>().SamplePose(.02f);}
             void Step(Vector2 input,bool run=false,bool jump=false){Physics.SyncTransforms();w.SimulateMovement(input,run,jump,0,.02f);Pose();}
             try
             {
@@ -38,11 +38,13 @@ namespace CoastalTemple.Editor
                     {
                         Step(Vector2.up,run);mantle|=w.Climbing;
                         float z=stair.transform.InverseTransformPoint(w.transform.position).z;
-                        if(z>1&&z<stair.run-.5f){speed+=w.PlanarVelocity.magnitude;moving++;if(!w.Grounded)air++;}
+                        // The swimming-to-standing pose can briefly settle onto the submerged ramp.
+                        // This assertion concerns loss of contact on the dry running surface.
+                        if(z>1&&z<stair.run-.5f){speed+=w.PlanarVelocity.magnitude;moving++;if(!w.Grounded&&!w.Swimming&&w.transform.position.y>=w.WaterSurface)air++;}
                         if(run&&z>stair.run*.55f&&z<stair.run*.55f+.2f)Capture(camera,scene+"-RunRamp",w.transform.position+new Vector3(2.5f,1.1f,1.6f),w.transform.position+Vector3.up*.65f);
                         if(z>stair.run+.5f)
                         {
-                            Check(!mantle&&air<3,$"actual {(run?"run":"walk")} stair traversal: {i*.02f:F2}s, speed={speed/Mathf.Max(1,moving):F2}m/s, airborne={air}, mantle={mantle}");
+                            Check(!mantle&&air<3,$"actual {(run?"run":"walk")} stair traversal: {i*.02f:F2}s, speed={speed/Mathf.Max(1,moving):F2}m/s, dry-airborne={air}, mantle={mantle}");
                             return i*.02f;
                         }
                     }
@@ -51,7 +53,7 @@ namespace CoastalTemple.Editor
                 float walk=Traverse(false),run=Traverse(true);Check(run<walk*.82f,"Shift accelerates actual scene stairs");
                 Check(a.GetCurrentAnimatorStateInfo(0).IsName("Locomotion"),"stairs use normal locomotion blend tree");
                 w.ApplyLook(new Vector2(180,0));bool jumped=false;int falling=0;
-                for(int i=0;i<250;i++){Step(Vector2.up,true);float z=stair.transform.InverseTransformPoint(w.transform.position).z;if(z<.1f)break;if(z>1&&z<stair.run-1&&!w.Grounded)falling++;jumped|=w.Climbing;}
+                for(int i=0;i<250;i++){Step(Vector2.up,true);float z=stair.transform.InverseTransformPoint(w.transform.position).z;if(z<.1f)break;if(z>1&&z<stair.run-1&&!w.Grounded&&!w.Swimming)falling++;jumped|=w.Climbing;}
                 Check(falling<3&&!jumped,"run down actual stairs: airborne="+falling+", mantle="+jumped);
                 if(scene=="MechanismPlayground")
                 {
