@@ -1,3 +1,3 @@
 PASS main pool stairs: deep start swimming=True, normal locomotion=True, mantle=False, stair frames=38, exit=(-54.65, 0.03, 172.99)
-PASS main pool swimming: idle head=0.241m, moving min=0.233m, transition min=0.071m, continuous swim=True
+PASS main pool swimming: idle head=0.242m, moving min=0.232m, transition min=0.011m, continuous swim=True
 PASS main pool existing buoyant lift without Space: grabbed=True, native clip=True, stood=True, feet=(-46.25, -0.14, 180.97)

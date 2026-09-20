@@ -1,22 +1,22 @@
 PASS Showroom water - use dimensions to resize: editor preview equals actual runtime initial vertices, indices and water-depth data
 PASS real blue-light projection is solid
-PASS 30 FPS walk across four projected slabs without jumping: 0.800s, end=(-9.50, 0.57, 16.51)
-PASS 30 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.57, 16.45)
-PASS 60 FPS walk across four projected slabs without jumping: 0.783s, end=(-9.50, 0.57, 16.43)
-PASS 60 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.57, 16.41)
-PASS 144 FPS walk across four projected slabs without jumping: 0.785s, end=(-9.50, 0.57, 16.42)
-PASS 144 FPS run across four projected slabs without jumping: 0.576s, end=(-9.50, 0.57, 16.43)
+PASS 30 FPS walk across four projected slabs without jumping: 0.800s, end=(-9.50, 0.58, 16.51)
+PASS 30 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.58, 16.45)
+PASS 60 FPS walk across four projected slabs without jumping: 0.783s, end=(-9.50, 0.58, 16.43)
+PASS 60 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.58, 16.41)
+PASS 144 FPS walk across four projected slabs without jumping: 0.785s, end=(-9.50, 0.58, 16.42)
+PASS 144 FPS run across four projected slabs without jumping: 0.576s, end=(-9.50, 0.58, 16.43)
 PASS 240 FPS walk across four projected slabs without jumping: 0.783s, end=(-9.50, 0.58, 16.41)
 PASS 240 FPS run across four projected slabs without jumping: 0.575s, end=(-9.50, 0.58, 16.42)
-PASS 500 FPS walk across four projected slabs without jumping: 0.784s, end=(-9.50, 0.57, 16.41)
-PASS 500 FPS run across four projected slabs without jumping: 0.574s, end=(-9.50, 0.57, 16.41)
+PASS 500 FPS walk across four projected slabs without jumping: 0.784s, end=(-9.50, 0.58, 16.41)
+PASS 500 FPS run across four projected slabs without jumping: 0.574s, end=(-9.50, 0.58, 16.41)
 PASS 240 FPS restart at blocked edge, approach -5 degrees: 0.742s
 PASS 240 FPS restart at blocked edge, approach 0 degrees: 0.738s
 PASS 240 FPS restart at blocked edge, approach 5 degrees: 0.742s
-PASS down stairs enters swimming, head above water=0.253m, lowest root=-1.604, mantle=False
-PASS swim back onto ramp and sprint to dry shore without Space: 2.68s end=(-24.00, 0.03, 6.37)
+PASS down stairs enters swimming, head above water=0.250m, lowest root=-1.595, mantle=False
+PASS swim back onto ramp and sprint to dry shore without Space: 2.80s end=(-24.00, 0.03, 6.33)
 PASS jump from shore after swimming still works
-PASS seabed contact cannot cancel deep-water flotation: head=0.241
+PASS seabed contact cannot cancel deep-water flotation: head=0.239
 PASS Ctrl dive still descends intentionally
 PASS release dive returns to surface
 PASS shallow supported feet use standing pose

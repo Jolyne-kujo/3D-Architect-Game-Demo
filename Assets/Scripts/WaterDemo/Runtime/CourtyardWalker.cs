@@ -83,6 +83,7 @@ namespace WaterCourtyard
         public Vector3 WorldVelocity => horizontalVelocity + Vector3.up * vertical;
         float yaw,pitch,vertical,disturbTime,startYaw,landStepOffset,waterJumpGrace;Vector3 start;
         readonly CourtyardCharacterQueries contacts = new CourtyardCharacterQueries();
+        readonly CourtyardStepGuard stepGuard = new CourtyardStepGuard();
         CourtyardSurfaceSwimmer surfaceSwimmer;
         Rigidbody groundBody;Vector3 groundPosition,horizontalVelocity;
         void Awake(){Controller=GetComponent<CharacterController>();Controller.minMoveDistance=0;Climber=GetComponent<CourtyardLedgeClimb>();surfaceSwimmer=GetComponent<CourtyardSurfaceSwimmer>();landStepOffset=Controller.stepOffset;start=transform.position;startYaw=yaw=transform.eulerAngles.y;}
@@ -220,7 +221,10 @@ namespace WaterCourtyard
                 vertical+=Physics.gravity.y*seconds;verticalDisplacement=vertical*seconds;
             }
             Vector3 before=transform.position;
-            CollisionFlags collision=Controller.Move(horizontalVelocity*seconds+Vector3.up*verticalDisplacement);
+            Vector3 horizontalDisplacement=horizontalVelocity*seconds;
+            if(Grounded&&!Swimming&&vertical<=0)
+                horizontalDisplacement=stepGuard.Constrain(Controller,ground,horizontalDisplacement,landStepOffset,ref horizontalVelocity);
+            CollisionFlags collision=Controller.Move(horizontalDisplacement+Vector3.up*verticalDisplacement);
             Vector3 displacement=transform.position-before;PlanarVelocity=new Vector3(displacement.x,0,displacement.z)/seconds;
             if(!rotateBodyWithLook&&input.sqrMagnitude>.0001f&&PlanarVelocity.sqrMagnitude>.01f)
                 transform.rotation=Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(PlanarVelocity),movementTurnSpeed*seconds);

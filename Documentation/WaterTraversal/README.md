@@ -2,6 +2,8 @@
 
 2026-09-20，Unity 6000.5.9f1。主地图 CoastalTemple 与实验场 MechanismPlayground 均已保存。
 
+后续已统一 Step Offset=0.30m、Skin Width=0.028m，并增加墙角/高于上限的台阶预检查，详见 [自动跨步与防蹭墙](../StepWallControl/README.md)。本目录实际场景回归仍通过。
+
 ## 本次问题与修复
 
 此前的 50 FPS 检查没有覆盖高帧率故障。同一组实际投影台阶在 240 FPS 下，4 秒后仍卡在第一块边缘（Z=14.18）。原因是角色撞到低台阶侧面时水平速度被当成撞墙清零，加上 CharacterController 的 0.001m 最小位移，使每帧很小的加速无法累积。

@@ -21,7 +21,7 @@
 
 ## 可调参数
 
-- 玩家 `CharacterController > Step Offset`：自动跨步高度上限，当前 0.35m。0.60m 障碍仍需跳跃，且不会错误触发低处攀爬。
+- 玩家 `CharacterController > Step Offset`：自动跨步高度上限，当前 0.30m；已增加按实际支撑面测高的防蹭墙检查，见 [自动跨步上限](../StepWallControl/README.md)。0.60m 障碍仍需跳跃，且不会错误触发低处攀爬。
 - 红色模型 Animator 所在物体的 `GroundFootIK`：`Maximum Lift` 0.38m、`Maximum Drop` 0.22m、`Sole Clearance` 0.018m、`Toe Reach` 0.12m、`Settle Speed` 3。
 - 楼梯的 `Smooth walk collision - keep with stairs` 是身体碰撞，`Editable visual steps` 是可编辑的台阶外观。外观台阶参与脚部落点计算。
 
