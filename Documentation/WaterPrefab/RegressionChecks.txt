@@ -1,0 +1,268 @@
+PASS automatic mirage binding selects the occupied vertical water layer
+PASS rotated nonuniformly scaled mirage calibrates its initial target to a real refracted hit
+PASS using E and resolving again cannot move the calibrated target
+PASS changing water level cannot continuously recalibrate the puzzle target
+PASS failed physical projection keeps the explicit water and manually authored target
+PASS a second unlit drain cannot cancel the illuminated receiver's completed activation
+PASS disabled receiver residual illumination cannot open its drain
+PASS an unlit receiver does not supply a drain command
+PASS automatic drain binding rejects a basin whose floor is above the device
+PASS an explicit disabled water is preserved but cannot be operated
+10 reusable water device checks passed.
+
+PASS Shallow submerged foot support stands, restores stepOffset, jumps and stays airborne
+PASS No false ground from sidewalls or trigger volumes; open-water ascent remains bounded
+PASS Walk and jump up submerged half-metre stairs to dry land
+PASS Swimming approach automatically mantles a below-shoulder ledge
+PASS An ankle-high submerged lip uses native stepping without a mantle
+PASS Over-shoulder walls, no intent and blocked landing do not mantle
+PASS Moving rotated scaled platform retains the landing point in its local space
+PASS Disappearing support and respawn cancel climbing without disabling controller
+PASS New ceiling during mantle cancels safely and restores collision with the ledge
+PASS Actual buoyant prefab can be boarded from surface by forward plus Space
+PASS Laser prefab starts yellow and both readout meshes match the whole color cycle
+PASS debug laser starts disabled, with no unintended red light
+PASS both incoming and refracted projection beams are blue and visible
+PASS shore console is the nearest reachable E interaction on dry ground
+PASS ordinary player E interaction opens the correct pool drain
+PASS 22s drain: water level -0.30 -> -3.12, volume 1592.8 -> 378.8
+PASS physical guided float follows draining water: deck Y -0.20 -> -3.30
+PASS draining below the submerged sample removes the refraction and solid mirage steps
+PASS second E interaction refills the same pool and closes its drain
+PASS buoyancy recovers after refill: deck Y -0.20
+PASS enabling debug mode alone does not emit
+PASS color cycle is red -> yellow -> blue -> red
+PASS yellow on red receiver cannot raise the lift
+PASS player red laser physically raises lift: 2.38 -> 3.37
+PASS debug beam begins at camera center and uses ordinary optical tracing
+PASS releasing fire immediately removes lift drive, even during receiver grace
+PASS blue on yellow receiver cannot lower the lift
+PASS player yellow laser physically lowers lift: 3.37 -> 2.38
+PASS ordinary wall blocks the debug laser and stops the lift
+PASS player blue laser activates the actual blue bridge and its receiver
+PASS releasing player control also suppresses debug emission
+PASS F6 debug-disable path always turns the source off
+21 checks passed.
+PASS Showroom water - use dimensions to resize: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS real blue-light projection is solid
+PASS 30 FPS walk across four projected slabs without jumping: 0.800s, end=(-9.50, 0.58, 16.51)
+PASS 30 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.58, 16.45)
+PASS 60 FPS walk across four projected slabs without jumping: 0.783s, end=(-9.50, 0.58, 16.43)
+PASS 60 FPS run across four projected slabs without jumping: 0.567s, end=(-9.50, 0.58, 16.41)
+PASS 144 FPS walk across four projected slabs without jumping: 0.785s, end=(-9.50, 0.58, 16.42)
+PASS 144 FPS run across four projected slabs without jumping: 0.576s, end=(-9.50, 0.58, 16.43)
+PASS 240 FPS walk across four projected slabs without jumping: 0.783s, end=(-9.50, 0.58, 16.41)
+PASS 240 FPS run across four projected slabs without jumping: 0.575s, end=(-9.50, 0.58, 16.42)
+PASS 500 FPS walk across four projected slabs without jumping: 0.784s, end=(-9.50, 0.58, 16.41)
+PASS 500 FPS run across four projected slabs without jumping: 0.574s, end=(-9.50, 0.58, 16.41)
+PASS 240 FPS restart at blocked edge, approach -5 degrees: 0.742s
+PASS 240 FPS restart at blocked edge, approach 0 degrees: 0.738s
+PASS 240 FPS restart at blocked edge, approach 5 degrees: 0.742s
+PASS down stairs enters swimming, head above water=0.248m, lowest root=-1.602, mantle=False
+PASS swim back onto ramp and sprint to dry shore without Space: 2.80s end=(-24.00, 0.03, 6.33)
+PASS jump from shore after swimming still works
+PASS seabed contact cannot cancel deep-water flotation: head=0.239
+PASS Ctrl dive still descends intentionally
+PASS release dive returns to surface
+PASS shallow supported feet use standing pose
+PASS shallow stair support can jump
+PASS WaterVolume — reusable simulation: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS WaterVolume_6x8: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS Nearshore_SimulatedWater: editor preview equals actual runtime initial vertices, indices and water-depth data
+PASS down stairs enters swimming, head above water=0.234m, lowest root=-1.884, mantle=False
+PASS swim back onto ramp and sprint to dry shore without Space: 2.62s end=(-54.65, 0.03, 173.53)
+PASS jump from shore after swimming still works
+{
+    "mode": "Prefab assets and isolated local physics",
+    "passed": 36,
+    "failed": 0,
+    "assetsChecked": 16,
+    "serializedReferences": 7482,
+    "missingReferences": 0,
+    "externalObjectReferences": 0,
+    "originalScenesPreserved": true,
+    "results": [
+        {
+            "name": "LaserDevice asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedStoneCurtain asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "YellowLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "BlueLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightBridge asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightDrivenLift asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "VerticalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "HorizontalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal1 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal2 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PortalPair asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "DrainGate asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PoolsideDrainConsole asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "WaterMirage asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Red receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Yellow receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Blue receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Wrong color interrupts receiver charge",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Large current lamp and small next lamp follow the full E cycle",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "vertical buoyancy prefab follows water on transformed rail",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "horizontal buoyancy prefab moves and holds its transformed path",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal pair duplicate maps within its own transformed pair",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "drain prefab discovers local water and opens/resets it",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "mirage prefab binds water, projects, and switches authored geometry",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "original scenes remain loaded with original active/dirty state",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}
+
+PASS saved showroom is connected to WaterVolume.prefab; missing scripts=0; missing references=0; both water/float prefab external scene references=0.

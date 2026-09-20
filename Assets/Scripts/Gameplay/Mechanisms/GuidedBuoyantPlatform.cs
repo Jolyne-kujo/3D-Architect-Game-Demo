@@ -29,6 +29,8 @@ namespace CoastalTemple.Mechanisms
         [Min(1), Tooltip("Dry mass / displaced hull volume. Values below water density float; scaling preserves this density.")]
         public float bodyDensity = 350;
         [Min(1)] public float waterDensity = 1000;
+        [Tooltip("Use the density of each sampled WaterVolume; disable for a per-platform override.")]
+        public bool useWaterDensity = true;
         [Min(0)] public float waterDrag = 3;
         [Min(0)] public float railDamping = .4f;
         [Min(.05f)] public float maxBuoyancySpeed = 3;
@@ -62,9 +64,8 @@ namespace CoastalTemple.Mechanisms
         }
 
         readonly MotorLeverState cycle = new MotorLeverState();
-        WaterVolume[] discoveredWaters;
         Quaternion deckLocalRotation;
-        float travel, floatOffset, buoyancySpeed, waterRefresh;
+        float travel, floatOffset, buoyancySpeed;
         bool initialized;
         Vector3 SafeFloatAxis => floatAxis.sqrMagnitude > .000001f ? floatAxis.normalized : Vector3.up;
 
@@ -111,7 +112,7 @@ namespace CoastalTemple.Mechanisms
             if (!initialized && !Initialize()) return;
             travel = Mathf.Clamp01(initialTravel);
             floatOffset = Mathf.Clamp(0, Mathf.Min(floatMin, floatMax), Mathf.Max(floatMin, floatMax));
-            buoyancySpeed = 0; Submersion = 0; IsMoving = false; waterRefresh = 0;
+            buoyancySpeed = 0; Submersion = 0; IsMoving = false;
             cycle.SetDirection(-1); cycle.SetDirection(0);
             platformBody.position = ResolvePosition();
             platformBody.rotation = transform.rotation * deckLocalRotation;
@@ -131,12 +132,6 @@ namespace CoastalTemple.Mechanisms
         {
             IsMoving = false;
             if (!isActiveAndEnabled || seconds <= 0 || float.IsNaN(seconds) || float.IsInfinity(seconds) || (!initialized && !Initialize())) return;
-            waterRefresh -= seconds;
-            if (!water && (discoveredWaters == null || waterRefresh <= 0))
-            {
-                discoveredWaters = FindObjectsByType<WaterVolume>(FindObjectsInactive.Exclude);
-                waterRefresh = 1;
-            }
             Vector3 before = platformBody.position;
             // Bounded substeps keep buoyancy stable when callers advance at a lower simulation rate.
             float remaining = Mathf.Min(seconds, .5f);
@@ -170,12 +165,11 @@ namespace CoastalTemple.Mechanisms
             float axisScale = mode == GuidedPlatformMode.VerticalBuoyancy ? pathLength : transform.TransformVector(SafeFloatAxis).magnitude;
             if (axisScale < .0001f) { buoyancySpeed = 0; return; }
 
-            SampleHull(ResolvePosition(), out float fraction, out Vector3 flow);
+            SampleHull(ResolvePosition(), out float fraction, out Vector3 flow, out float displacedDensity);
             Submersion = fraction;
-            float densityRatio = Mathf.Max(1, waterDensity) / Mathf.Max(1, bodyDensity);
             // Archimedes force / mass: density * displaced volume * g / (bodyDensity * hullVolume).
             // The frame supplies all reaction forces perpendicular to the allowed slide.
-            Vector3 acceleration = Physics.gravity + Vector3.up * (Physics.gravity.magnitude * densityRatio * fraction);
+            Vector3 acceleration = Physics.gravity + Vector3.up * (Physics.gravity.magnitude * displacedDensity / Mathf.Max(1, bodyDensity));
             float damping = Mathf.Max(0, railDamping) + Mathf.Max(0, waterDrag) * fraction;
             float force = Vector3.Dot(acceleration, axis) + Mathf.Max(0, waterDrag) * fraction * Vector3.Dot(flow, axis);
             if (damping > .00001f)
@@ -201,9 +195,9 @@ namespace CoastalTemple.Mechanisms
         Vector3 ResolvePosition() => Vector3.Lerp(StartWorld, EndWorld, travel)
             + (mode == GuidedPlatformMode.HorizontalFerry ? transform.TransformVector(SafeFloatAxis) * floatOffset : Vector3.zero);
 
-        void SampleHull(Vector3 position, out float fraction, out Vector3 flow)
+        void SampleHull(Vector3 position, out float fraction, out Vector3 flow, out float displacedDensity)
         {
-            fraction = 0; flow = Vector3.zero;
+            fraction = 0; flow = Vector3.zero; displacedDensity = 0;
             const int count = 4;
             Vector3 size = new Vector3(Mathf.Abs(displacementSize.x), Mathf.Abs(displacementSize.y), Mathf.Abs(displacementSize.z));
             Vector3 x = platform.TransformVector(Vector3.right * size.x);
@@ -215,33 +209,19 @@ namespace CoastalTemple.Mechanisms
             for (int ix = 0; ix < count; ix++) for (int iz = 0; iz < count; iz++)
             {
                 Vector3 p = center + x * ((ix + .5f) / count - .5f) + z * ((iz + .5f) / count - .5f);
-                if (!SampleWater(p, verticalSpan * .5f, out float surface, out Vector3 localFlow)) continue;
+                var sampled = water;
+                float surface; Vector3 localFlow;
+                if (sampled)
+                {
+                    if (!WaterVolume.SampleColumn(sampled, p, verticalSpan * .5f, out surface, out localFlow, out _)) continue;
+                }
+                else sampled = WaterVolume.FindAt(p, gameObject.scene, out surface, out localFlow, out _, verticalSpan * .5f);
+                if (!sampled) continue;
                 float submerged = Mathf.Clamp01((surface - p.y) / verticalSpan + .5f) / (count * count);
                 fraction += submerged; flow += localFlow * submerged;
+                displacedDensity += submerged * Mathf.Max(1, useWaterDensity ? sampled.density : waterDensity);
             }
             if (fraction > .00001f) flow /= fraction;
-        }
-
-        bool SampleWater(Vector3 point, float halfHeight, out float surface, out Vector3 flow)
-        {
-            surface = 0; flow = Vector3.zero;
-            if (water) return EligibleWater(water, point, halfHeight, out surface, out flow);
-            bool found = false;
-            if (discoveredWaters == null) return false;
-            foreach (var candidate in discoveredWaters)
-            {
-                if (!EligibleWater(candidate, point, halfHeight, out float height, out Vector3 velocity) || (found && height <= surface)) continue;
-                found = true; surface = height; flow = velocity;
-            }
-            return found;
-        }
-
-        static bool EligibleWater(WaterVolume candidate, Vector3 point, float halfHeight, out float surface, out Vector3 flow)
-        {
-            surface = 0; flow = Vector3.zero;
-            if (!candidate || !candidate.isActiveAndEnabled || !candidate.Sample(point, out surface, out flow, out float depth)) return false;
-            // An elevated basin cannot float a platform through the solid floor underneath it.
-            return point.y + halfHeight >= surface - depth - .02f;
         }
 
         void OnDisable() { cycle.SetDirection(0); buoyancySpeed = 0; IsMoving = false; }

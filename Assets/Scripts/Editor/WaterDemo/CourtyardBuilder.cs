@@ -81,8 +81,7 @@ namespace WaterCourtyard.Editor
             BuildPoolFloor(water);
             PrefabUtility.SaveAsPrefabAsset(waterObject,"Assets/Prefabs/Water/CourtyardWater.prefab");
             // A separate clean domain prefab does not carry this courtyard's staircase.
-            var reusable=new GameObject("WaterVolume");var generic=reusable.AddComponent<WaterVolume>();generic.surfaceMaterial=waterMat;
-            PrefabUtility.SaveAsPrefabAsset(reusable,"Assets/Prefabs/Water/WaterVolume.prefab");UnityEngine.Object.DestroyImmediate(reusable);
+            // The shared water prefab is authored separately; rebuilding this older courtyard must not overwrite it.
             var flow=new GameObject("Surface flow tracers").AddComponent<FlowTracers>();flow.water=water;flow.material=tracer;
             Vector3 drainCenter=new Vector3(2.2f,-4.48f,2.8f);
             Cylinder("Outlet dark throat",drainCenter,new Vector3(1.84f,.015f,1.84f),dark,false);

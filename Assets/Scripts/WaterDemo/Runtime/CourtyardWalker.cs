@@ -41,6 +41,8 @@ namespace WaterCourtyard
     {
         public WaterVolume water;
         public WaterVolume[] additionalWaters=System.Array.Empty<WaterVolume>();
+        [Tooltip("Also discover enabled water prefabs in this physics world. Explicit assignments win equal-height ties.")]
+        public bool discoverSceneWater=true;
         public Transform eye;
         public bool active;
         [Tooltip("Overview can stop player input while retaining gravity and moving-platform contact.")]
@@ -133,6 +135,12 @@ namespace WaterCourtyard
                 // Highest occupied basin wins. Equal surfaces keep the explicit primary/earlier sample stable.
                 if(selected&&candidateSurface<=surface+.0001f)continue;
                 selected=candidate;surface=candidateSurface;flow=candidateFlow;depth=candidateDepth;
+            }
+            if(discoverSceneWater)
+            {
+                var candidate=WaterVolume.FindAt(position,gameObject.scene,out float height,out Vector3 velocity,out float columnDepth);
+                if(candidate&&(!selected||height>surface+.0001f))
+                {selected=candidate;surface=height;flow=velocity;depth=columnDepth;}
             }
             return selected;
         }

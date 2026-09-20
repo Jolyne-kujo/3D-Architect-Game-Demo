@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4804397839043212304}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 278addda58397c94c95897e055f8ff49, type: 2}
 --- !u!23 &6918639810504009020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,17 +103,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d0629efd8669c247a595dd70c905353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Courtyard.Water::Courtyard.Water.WaterVolume
-  sizeX: 12
-  sizeZ: 16
-  cellSize: 0.25
-  bottom: -4.5
-  initialLevel: -0.6
+  sizeX: 21
+  sizeZ: 20.5
+  cellSize: 0.5
+  bottom: -4
+  initialLevel: -0.3
+  bedTerrain: {fileID: 0}
+  keepDryCornersAtInitialLevel: 0
+  surfaceBoundaryFade: 0
+  swimmerDisplacement: 0.014
   bedBlocks: []
-  drainPosition: {x: 2.2, y: 2.8}
+  density: 1000
+  refractiveIndex: 1.333
+  drainPosition: {x: -5, y: -2.25}
   drainRadius: 0.9
   floorSlope: 0
-  outletArea: 3.2
+  outletArea: 4
   drainSpeedMultiplier: 4
   surfaceMaterial: {fileID: 2100000, guid: d5ea1856b079d254c85a797475f17129, type: 2}
+  surfaceMotion: {fileID: 0}
+  editorPreviewSignature: 5b278fc9e58a08e7b911acccf2baf5ab
   simulationHz: 30
   showFlow: 0

@@ -39,7 +39,7 @@ namespace WaterCourtyard
             Vector3 inside=ray;
             if(wet&&point.y>floor)
             {
-                Vector3 normal=water.SurfaceNormal(point);float eta=1/1.333f,cos=-Vector3.Dot(normal,ray);float k=1-eta*eta*(1-cos*cos);
+                Vector3 normal=water.SurfaceNormal(point);float eta=1/Mathf.Max(1,water.refractiveIndex),cos=-Vector3.Dot(normal,ray);float k=1-eta*eta*(1-cos*cos);
                 inside=k>=0?eta*ray+(eta*cos-Mathf.Sqrt(k))*normal:Vector3.Reflect(ray,normal);
             }
             else Entry=source.position;

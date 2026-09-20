@@ -48,10 +48,15 @@ namespace CoastalTemple.Editor
             if(!stableEditMode||Application.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode||EditorApplication.isCompiling||EditorApplication.isUpdating||EditorApplication.timeSinceStartup<next)return;
             next=EditorApplication.timeSinceStartup+1;
             foreach(var water in UnityEngine.Object.FindObjectsByType<WaterVolume>(FindObjectsSortMode.None))Refresh(water,false);
+            var stage=PrefabStageUtility.GetCurrentPrefabStage();
+            if(stage&&stage.prefabContentsRoot)
+                foreach(var water in stage.prefabContentsRoot.GetComponentsInChildren<WaterVolume>())Refresh(water,false);
         }
         public static bool Refresh(WaterVolume water,bool force)
         {
-            if(!water||!stableEditMode||Application.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode||!water.gameObject.scene.IsValid()||EditorSceneManager.IsPreviewScene(water.gameObject.scene)||string.IsNullOrEmpty(water.gameObject.scene.path))return false;
+            if(!water||!stableEditMode||Application.isPlaying||EditorApplication.isPlayingOrWillChangePlaymode||!water.gameObject.scene.IsValid())return false;
+            // Preview scenes include Prefab Mode and LoadPrefabContents. Both need editable water geometry.
+            // Unsaved scene instances are supported too: asset identity comes from geometry, not a scene file ID.
             if(water.sizeX<=0||water.sizeZ<=0||water.cellSize<=0||float.IsNaN(water.sizeX)||float.IsInfinity(water.sizeX)||float.IsNaN(water.sizeZ)||float.IsInfinity(water.sizeZ)||float.IsNaN(water.cellSize)||float.IsInfinity(water.cellSize))return false;
             var settings=new GeometrySettings{x=water.sizeX,z=water.sizeZ,cell=water.cellSize,bottom=water.bottom,level=water.initialLevel,grade=water.floorSlope,fade=water.surfaceBoundaryFade,dry=water.keepDryCornersAtInitialLevel,drain=water.drainPosition,blocks=water.bedBlocks,
                 terrain=water.bedTerrain?AssetDatabase.GetAssetPath(water.bedTerrain.terrainData):"",relativeTerrainPosition=water.bedTerrain?water.bedTerrain.transform.position-water.transform.position:Vector3.zero};
@@ -60,15 +65,23 @@ namespace CoastalTemple.Editor
             if(!force&&water.editorPreviewSignature==signature&&filter.sharedMesh&&EditorUtility.IsPersistent(filter.sharedMesh))
             {if(renderer.sharedMaterial!=water.surfaceMaterial){renderer.sharedMaterial=water.surfaceMaterial;EditorUtility.SetDirty(renderer);}return false;}
             Directory.CreateDirectory(Folder);
-            var id=GlobalObjectId.GetGlobalObjectIdSlow(water);
-            if(id.targetObjectId==0)return false; // Save new scene objects before assigning a stable asset name.
-            string path=$"{Folder}/{Path.GetFileNameWithoutExtension(water.gameObject.scene.path)}_{id.targetObjectId}.asset";
-            var generated=water.CreateInitialSurfaceMesh();var asset=AssetDatabase.LoadAssetAtPath<Mesh>(path);
-            if(asset){EditorUtility.CopySerialized(generated,asset);UnityEngine.Object.DestroyImmediate(generated);EditorUtility.SetDirty(asset);}
+            var generated=water.CreateInitialSurfaceMesh();
+            // Immutable, content-addressed meshes: resizing a copy or applying a prefab override must
+            // never rewrite another instance's preview, including changes to a sampled terrain bed.
+            string geometry=Hash128.Compute(EditorJsonUtility.ToJson(generated)).ToString();
+            string path=$"{Folder}/Water_{geometry}.asset";
+            var asset=AssetDatabase.LoadAssetAtPath<Mesh>(path);
+            if(asset)UnityEngine.Object.DestroyImmediate(generated);
             else{asset=generated;AssetDatabase.CreateAsset(asset,path);}
             Undo.RecordObjects(new UnityEngine.Object[]{water,filter,renderer},"Update initial water surface preview");
             filter.sharedMesh=asset;renderer.sharedMaterial=water.surfaceMaterial;water.editorPreviewSignature=signature;
             EditorUtility.SetDirty(filter);EditorUtility.SetDirty(renderer);EditorUtility.SetDirty(water);
+            if(PrefabUtility.IsPartOfPrefabInstance(water))
+            {
+                PrefabUtility.RecordPrefabInstancePropertyModifications(water);
+                PrefabUtility.RecordPrefabInstancePropertyModifications(filter);
+                PrefabUtility.RecordPrefabInstancePropertyModifications(renderer);
+            }
             EditorSceneManager.MarkSceneDirty(water.gameObject.scene);AssetDatabase.SaveAssetIfDirty(asset);return true;
         }
     }

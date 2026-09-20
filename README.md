@@ -29,6 +29,8 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 
 这是有水量、流量和可变形网格的高度场水体原型。它不包含三维液体翻卷、飞溅和任意洞穴流动。复用方法、边界与测试见 [水系统说明](Documentation/WaterSystem.md)。
 
+实验水体预制体：`Assets/Prefabs/Water/WaterVolume.prefab`。支持编辑器预览、独立排水、游泳与浮力自动采样，水密度及折射率可调；见 [拖入使用说明](Documentation/WaterPrefab/README.md)。
+
 选中水体的 `WaterVolume` 组件，调节 **Drain Speed Multiplier**（代码变量 `drainSpeedMultiplier`）。默认 **4**，当前实验池约 **50 秒**露出池底；设为 **1** 恢复原始速度。只加速开闸后的水模拟，不改变角色或全局时间。
 
 ## 团队成员首次接入

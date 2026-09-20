@@ -61,8 +61,9 @@ namespace CoastalTemple.Editor
             var portalLaser=Place("LaserDevice",new Vector3(7,0,-3));portalLaser.transform.rotation=Quaternion.Euler(0,180,0);
             var portalReceiver=Place("LightReceiver",new Vector3(29,.3f,17));portalReceiver.transform.rotation=Quaternion.Euler(0,90,0);
             // Keep this laser off initially so the player can approach and switch its color with E.
-            var waterObj=new GameObject("Showroom water - use dimensions to resize");waterObj.SetActive(false);waterObj.transform.position=new Vector3(-16,0,17);
-            var water=waterObj.AddComponent<WaterVolume>();water.sizeX=21;water.sizeZ=19;water.cellSize=.5f;water.bottom=-4;water.initialLevel=-.3f;
+            var waterObj=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(WaterPrefabAuthoring.WaterPath));
+            waterObj.name="Showroom water - use dimensions to resize";waterObj.SetActive(false);waterObj.transform.position=new Vector3(-16,0,17);
+            var water=waterObj.GetComponent<WaterVolume>();water.sizeX=21;water.sizeZ=19;water.cellSize=.5f;water.bottom=-4;water.initialLevel=-.3f;
             water.surfaceMaterial=AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/Water/Water.mat");water.drainPosition=new Vector2(-5,-3);water.outletArea=4;
             Box("Pool bottom",new Vector3(-16,-4.2f,17),new Vector3(22,.4f,20),ivory);
             Box("Pool west wall",new Vector3(-26.7f,-2,17),new Vector3(.4f,4,20),ivory);

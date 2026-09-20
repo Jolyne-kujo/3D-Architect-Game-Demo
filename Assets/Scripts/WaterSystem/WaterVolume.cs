@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 namespace Courtyard.Water
 {
@@ -22,6 +23,11 @@ namespace Courtyard.Water
         [Min(0), Tooltip("Volume moved by a swimmer, in cubic metres.")]
         public float swimmerDisplacement=.014f;
         public WaterBedBlock[] bedBlocks=Array.Empty<WaterBedBlock>();
+        [Header("Water medium")]
+        [Min(1), Tooltip("Density in kg/m³, read by buoyant bodies and guided floats.")]
+        public float density=1000;
+        [Range(1,2), Tooltip("Refractive index used by water optical mechanisms. Fresh water is approximately 1.333.")]
+        public float refractiveIndex=1.333f;
         [Header("Local floor outlet")]
         public Vector2 drainPosition=new Vector2(2.2f,2.8f);
         public float drainRadius=.9f;
@@ -48,7 +54,39 @@ namespace Courtyard.Water
         int nx,nz,drainX,drainZ; float accumulator;
         float dx,dz;
         readonly System.Diagnostics.Stopwatch timer=new System.Diagnostics.Stopwatch();
+        static readonly List<WaterVolume> activeVolumes=new List<WaterVolume>();
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ClearRegistry()=>activeVolumes.Clear();
+        // Also repopulate when Enter Play Mode options skip scene reload.
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        static void RegisterLoadedVolumes()
+        {
+            foreach(var water in FindObjectsByType<WaterVolume>(FindObjectsSortMode.None))
+                if(water.isActiveAndEnabled&&!activeVolumes.Contains(water))activeVolumes.Add(water);
+        }
+        void OnEnable(){if(!activeVolumes.Contains(this))activeVolumes.Add(this);}
+        void OnDisable()=>activeVolumes.Remove(this);
         void Awake() => Initialize();
+        /// <summary>Find the highest occupied water column in the caller's physics world, without scene searches or allocations.</summary>
+        public static WaterVolume FindAt(Vector3 point,Scene scene,out float surface,out Vector3 flow,out float depth,float halfHeight=0)
+        {
+            surface=0;flow=Vector3.zero;depth=0;WaterVolume selected=null;
+            var physics=scene.GetPhysicsScene();
+            foreach(var candidate in activeVolumes)
+            {
+                if(!candidate||candidate.gameObject.scene.GetPhysicsScene()!=physics||
+                    !SampleColumn(candidate,point,halfHeight,out float height,out Vector3 velocity,out float columnDepth)||
+                    (selected&&height<=surface+.0001f))continue;
+                selected=candidate;surface=height;flow=velocity;depth=columnDepth;
+            }
+            return selected;
+        }
+        public static bool SampleColumn(WaterVolume candidate,Vector3 point,float halfHeight,out float surface,out Vector3 flow,out float depth)
+        {
+            surface=0;flow=Vector3.zero;depth=0;
+            return candidate&&candidate.isActiveAndEnabled&&candidate.Sample(point,out surface,out flow,out depth)
+                &&point.y+Mathf.Max(0,halfHeight)>=surface-depth-.05f;
+        }
         public void Initialize()
         {
             if(Grid!=null)return;

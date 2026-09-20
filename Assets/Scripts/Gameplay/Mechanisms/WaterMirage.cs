@@ -26,6 +26,8 @@ namespace CoastalTemple.Mechanisms
         [Min(.1f)] public float maxDistance=20f;
         [Min(.01f)] public float minimumDepth=.15f;
         [Range(1f,2f)] public float waterRefractiveIndex=1.333f;
+        [Tooltip("Read refractive index from the bound WaterVolume. Disable for a per-puzzle override.")]
+        public bool useWaterRefractiveIndex=true;
         public bool powered=true;
         public Transform aimReference;
         [Tooltip("Exact local pitch/yaw states. Positive pitch aims downward.")]
@@ -73,7 +75,7 @@ namespace CoastalTemple.Mechanisms
         {
             Initialize();
             if(!powered||(receiver&&!receiver.IsActive))return Fail("光路尚未供能");
-            if(!water||!source||!sampleObject||!projectionPlane||!target)return Fail("等待布置投影组件");
+            if(!water||!water.isActiveAndEnabled||!source||!sampleObject||!projectionPlane||!target)return Fail("等待布置投影组件");
             if(!water.Sample(sampleObject.position,out float surface,out _,out float depth)||depth<minimumDepth)return Fail("水深不足");
             if(!WaterMirageMath.InWater(sampleObject.position.y,surface,depth,minimumDepth))return Fail("样本未浸入水中");
             MirageVector entry=default;double entryDistance=0;
@@ -85,7 +87,8 @@ namespace CoastalTemple.Mechanisms
             }
             if(!WaterMirageMath.EnterWater(ToMath(source.position),ToMath(source.forward),surface,maxDistance,out entry,out entryDistance))return Fail("无法求得水面交点");
             EntryPoint=ToUnity(entry);
-            if(!WaterMirageMath.Refract(ToMath(source.forward),ToMath(water.SurfaceNormal(EntryPoint)),1,waterRefractiveIndex,out var refracted))return Fail("无透射光线");
+            float index=useWaterRefractiveIndex?water.refractiveIndex:waterRefractiveIndex;
+            if(!WaterMirageMath.Refract(ToMath(source.forward),ToMath(water.SurfaceNormal(EntryPoint)),1,Mathf.Max(1,index),out var refracted))return Fail("无透射光线");
             if(!WaterMirageMath.IntersectPlane(entry,refracted,ToMath(projectionPlane.position),ToMath(projectionPlane.forward),maxDistance-entryDistance,out var hit,out double projectedDistance))return Fail("折射光线未命中投影墙");
             ProjectedPoint=ToUnity(hit);RefractedDirection=ToUnity(refracted);
             if(!water.Sample(ProjectedPoint,out float hitSurface,out _,out float hitDepth)||!WaterMirageMath.InWater(ProjectedPoint.y,hitSurface,hitDepth,minimumDepth))return Fail("投影点超出单层水体光路");

@@ -51,13 +51,15 @@ Windows 试玩包由 `Tools/Build-WaterCourt.ps1` 生成到 `Builds/WaterCourt-W
 
 ## 复用与美术替换
 
-`Assets/WaterSystem/` 是通用水系统，运行程序集 `Courtyard.Water` 不依赖演示场景或 Input System。数值核心 `Runtime/Core/WaterGrid.cs` 不依赖 Unity，可单独跑 .NET 测试。`Assets/WaterCourtyard/` 负责庭院、美术占位、角色、光路机关、界面和验证。
+实验场水面现为可直接拖入的 `Assets/Prefabs/Water/WaterVolume.prefab`，附带材质、编辑器水面网格及水位模拟。[预制体使用说明与本次验证](WaterPrefab/README.md) 包含浮力物体、光路折射、排水机关的连接方法。
+
+`Assets/Scripts/WaterSystem/` 是通用水系统，运行程序集 `Courtyard.Water` 不依赖演示场景或 Input System。数值核心 `Core/WaterGrid.cs` 不依赖 Unity，可单独跑 .NET 测试。`Assets/Scripts/WaterDemo/` 负责原庭院演示，`Assets/Scripts/Gameplay/` 负责可复用玩法与玩家系统。
 
 将通用 `WaterVolume` 预制件拖入新场景；设置池域尺寸、底部、初始水位、出口和 `bedBlocks`。仅支持水平轴对齐水域：保持旋转为零、缩放为一，通过尺寸字段调整大小，可平移。尺寸会按单元间距对齐。物理单位为米、秒、千克。场景需要自己的池壁与池底碰撞体。
 
 相机所属 URP 资产必须开启 **Opaque Texture** 和 **Depth Texture**（当前 PC 配置已开启；Mobile 配置没有开启）。水面不使用逐帧 MeshCollider，避免昂贵碰撞体重建。查询水面调用 `Sample`，持续受光调用 `Illuminate`，直接开启排水调用 `OpenDrain`，恢复初始状态调用 `ResetWater`。
 
-给可漂浮物添加 Rigidbody、Collider、BuoyantBody，指定该水域，设置实际排水体尺寸和质量。不要直接缩放物理根节点；改变碰撞体和 `displacementSize`，将美术放在子节点。导轨平台设置 `guided`。
+给可漂浮物添加 Rigidbody、Collider、BuoyantBody，设置实际排水体尺寸和质量，`water` 留空即可自动采样所在水域；也可直接使用 `BuoyantBlock.prefab`。缩放会改变排水体积，质量不会自动变化。导轨机关使用 `GuidedBuoyantPlatform` 预制体。水密度和玩法折射率集中在 `WaterVolume` 组件中。
 
 美术成员替换 `Visual — replace with art` 子节点或庭院的渲染体，保留物理根节点、碰撞体、脚本引用和 `.meta`。更换台阶尺寸时同步更新 `bedBlocks`，保证水体和碰撞几何一致。可通过 `Water Court → Rebuild whitebox courtyard` 重新生成实验场景；该命令会覆盖本实验生成场景和资源，完成美术编辑后不要无意运行。
 
