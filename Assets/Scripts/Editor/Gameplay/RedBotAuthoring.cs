@@ -106,8 +106,6 @@ namespace CoastalTemple.Editor
             controller.AddParameter("Swimming", AnimatorControllerParameterType.Bool);
             controller.AddParameter("Climbing", AnimatorControllerParameterType.Bool);
             controller.AddParameter("ClimbProgress", AnimatorControllerParameterType.Float);
-            controller.AddParameter("StairDirection", AnimatorControllerParameterType.Int);
-            controller.AddParameter("StairSpeed", AnimatorControllerParameterType.Float);
             var land = machine.AddState("Locomotion"); land.writeDefaultValues = false;
             var tree = new BlendTree { name = "Red Bot Idle Slow Fast", blendType = BlendTreeType.Simple1D, blendParameter = "Speed", useAutomaticThresholds = false };
             AssetDatabase.AddObjectToAsset(tree, controller);
@@ -129,14 +127,6 @@ namespace CoastalTemple.Editor
             var climbing = Transition(climb); climbing.AddCondition(AnimatorConditionMode.If, 0, "Climbing");
             var wet = Transition(swim); wet.AddCondition(AnimatorConditionMode.If, 0, "Swimming");
             var grounded = Transition(land); grounded.AddCondition(AnimatorConditionMode.IfNot, 0, "Swimming"); grounded.AddCondition(AnimatorConditionMode.If, 0, "Grounded");
-            grounded.AddCondition(AnimatorConditionMode.Equals,0,"StairDirection");
-            foreach(var entry in new[]{("Stairs Up","Ascending Stairs",1),("Stairs Down","Descending Stairs",-1)})
-            {
-                var state=machine.AddState(entry.Item1);state.motion=Clip(entry.Item2);state.writeDefaultValues=false;
-                state.speedParameter="StairSpeed";state.speedParameterActive=true;
-                var transition=Transition(state);transition.AddCondition(AnimatorConditionMode.Equals,entry.Item3,"StairDirection");
-                transition.AddCondition(AnimatorConditionMode.If,0,"Grounded");transition.AddCondition(AnimatorConditionMode.IfNot,0,"Swimming");transition.AddCondition(AnimatorConditionMode.IfNot,0,"Climbing");
-            }
             var jumping = Transition(air); jumping.AddCondition(AnimatorConditionMode.IfNot, 0, "Swimming"); jumping.AddCondition(AnimatorConditionMode.IfNot, 0, "Grounded");
             foreach (var transition in new[] { wet, grounded, jumping }) transition.AddCondition(AnimatorConditionMode.IfNot, 0, "Climbing");
             var mask = new AvatarMask { name = "Right lantern arm only", hideFlags = HideFlags.HideInHierarchy };
@@ -170,6 +160,7 @@ namespace CoastalTemple.Editor
                 ReusableGameplayAuthoring.CalibrateMannequin(visual.transform);
                 var a = visual.GetComponent<Animator>(); a.runtimeAnimatorController = BuildController(); a.applyRootMotion = false; a.cullingMode = AnimatorCullingMode.AlwaysAnimate;
                 visual.AddComponent<LedgeClimbHandIK>();
+                visual.AddComponent<GroundFootIK>();
                 var red = Material("RedBot_Surface", new Color(.837f, .302308f, .263655f));
                 var joints = Material("RedBot_Joints", new Color(.333333f, .124529f, .101015f));
                 var skins = visual.GetComponentsInChildren<SkinnedMeshRenderer>();

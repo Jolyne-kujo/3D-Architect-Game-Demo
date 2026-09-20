@@ -1,0 +1,11 @@
+PASS actual walk stair traversal: 1.76s, speed=3.40m/s, airborne=0, mantle=False
+PASS actual run stair traversal: 1.20s, speed=5.30m/s, airborne=0, mantle=False
+PASS Shift accelerates actual scene stairs
+PASS stairs use normal locomotion blend tree
+PASS run down actual stairs: airborne=0, mantle=False
+PASS actual blue-light projection produces solid steps
+PASS actual four thin steps without Space: 1.10s, mantle=False, feet=(-9.50, 0.57, 16.41)
+PASS independent feet on 0.20m split support: height difference=0.200m, IK error=0.000m
+PASS jump immediately releases foot IK
+PASS open-water swimming releases foot IK
+PASS teleport/respawn clears old foot offsets

@@ -94,10 +94,12 @@ namespace WaterCourtyard
                 // inside the tread incorrectly rejects narrow but walkable pool stairs.
                 Vector3 topOrigin = face.point + inward * (radius * .5f + .02f);
                 topOrigin.y = feet.y + maxHeight + .08f;
-                if (!query.Ray(body, topOrigin, Vector3.down, maxHeight - minHeight + .08f, out var top)) continue;
+                // Include the lower endpoint: pool lips exactly on the freeboard boundary
+                // otherwise miss by float rounding, especially away from the world origin.
+                if (!query.Ray(body, topOrigin, Vector3.down, maxHeight - minHeight + .1f, out var top)) continue;
                 if(top.collider.GetComponentInParent<CourtyardStaircase>())continue;
                 float height = top.point.y - feet.y;
-                if (height < minHeight || height > maxHeight || top.normal.y < Mathf.Cos(body.slopeLimit * Mathf.Deg2Rad)) continue;
+                if (height < minHeight-.002f || height > maxHeight+.002f || top.normal.y < Mathf.Cos(body.slopeLimit * Mathf.Deg2Rad)) continue;
                 Vector3 landingFeet = top.point + Vector3.up * .035f;
                 Vector3 liftedFeet = new Vector3(feet.x, landingFeet.y + .09f, feet.z);
                 if (!query.CanOccupy(body, landingFeet) || !query.CanOccupy(body, liftedFeet)) continue;

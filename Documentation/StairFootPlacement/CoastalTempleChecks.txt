@@ -1,0 +1,5 @@
+PASS actual walk stair traversal: 2.68s, speed=3.40m/s, airborne=0, mantle=False
+PASS actual run stair traversal: 1.78s, speed=5.30m/s, airborne=0, mantle=False
+PASS Shift accelerates actual scene stairs
+PASS stairs use normal locomotion blend tree
+PASS run down actual stairs: airborne=0, mantle=False

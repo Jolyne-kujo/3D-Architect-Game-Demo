@@ -1605,6 +1605,7 @@ GameObject:
   - component: {fileID: 6873492095789290669}
   - component: {fileID: 3699909810782677603}
   - component: {fileID: 6833926541179962645}
+  - component: {fileID: 4750181510532146155}
   m_Layer: 0
   m_Name: RedBot_ModelAndSkeleton
   m_TagString: Untagged
@@ -1664,6 +1665,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af75097ceb39594f93013183d114ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.LedgeClimbHandIK
+--- !u!114 &4750181510532146155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078159702902531106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65282b0c8a1dc7e4084b6451a2cd0b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.GroundFootIK
+  maximumLift: 0.38
+  maximumDrop: 0.22
+  soleClearance: 0.018
+  toeReach: 0.12
+  settleSpeed: 3
 --- !u!1 &4183453927491295610
 GameObject:
   m_ObjectHideFlags: 0

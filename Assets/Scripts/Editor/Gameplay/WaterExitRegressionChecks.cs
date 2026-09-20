@@ -63,11 +63,13 @@ namespace CoastalTemple.Editor
                 var surface=f.Root.transform.Find("Ledge").GetComponent<Collider>();
                 Need(!UnityEngine.Physics.GetIgnoreCollision(f.Body,surface),"deck collision was not restored");
             });
-            Test("A low pool lip is climbable when floating above the previous stair", f =>
+            Test("An ankle-high submerged lip uses native stepping without a mantle", f =>
             {
                 f.Box("Low lip",new Vector3(0,.2f,2),new Vector3(3,.4f,3));
                 f.Place(new Vector3(0,.2f,0));
-                for(int i=0;i<90;i++)f.Step(i<10?Vector2.up:Vector2.zero);
+                bool mantle=false;
+                for(int i=0;i<90;i++){f.Step(Vector2.up);mantle|=f.Walker.Climbing;if(f.Walker.Grounded&&f.Player.position.y>f.Origin.y+.37f)break;}
+                Need(!mantle,"ankle-high lip triggered a mantle");
                 Need(f.Walker.Grounded&&!f.Walker.Swimming&&f.Player.position.y>f.Origin.y+.37f,"stuck between swim draft and low stair");
             });
             Test("Over-shoulder walls, no intent and blocked landing do not mantle", f =>

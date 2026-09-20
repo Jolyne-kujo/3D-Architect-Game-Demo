@@ -51,8 +51,9 @@ namespace CoastalTemple.Player
             }
             if(supportsStairs)
             {
-                animator.SetInteger(StairDirection,walker.StairDirection);
-                animator.SetFloat(StairSpeed,walker.Staircase?Mathf.Clamp(speed/walker.Staircase.animationReferenceSpeed,.4f,1.6f):1);
+                // Retain compatibility with saved controllers, but use normal walk/run on ramps.
+                animator.SetInteger(StairDirection,0);
+                animator.SetFloat(StairSpeed,1);
             }
             if (supportsClimb)
             {

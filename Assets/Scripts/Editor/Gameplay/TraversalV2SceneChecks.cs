@@ -37,11 +37,11 @@ namespace CoastalTemple.Editor
                 bool standing=w.Grounded&&!w.Swimming,climbed=false,up=false;int stairFrames=0;
                 for(int i=0;i<420;i++)
                 {
-                    Step(Vector2.up);climbed|=w.Climbing;up|=a.GetCurrentAnimatorStateInfo(0).IsName("Stairs Up");if(w.StairDirection==1)stairFrames++;
+                    Step(Vector2.up);climbed|=w.Climbing;up|=a.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");if(w.StairDirection==1)stairFrames++;
                     if(i==160)Capture(camera,"02-MainPoolStairs",w.transform.position+new Vector3(3,2.4f,-3),w.transform.position+Vector3.up*.8f);
                     if(w.transform.position.z<173&&w.transform.position.y>-.05f)break;
                 }
-                Check(standing&&up&&!climbed&&w.transform.position.z<173&&w.transform.position.y>-.05f,"main pool stairs: start standing="+standing+", native up clip="+up+", mantle="+climbed+", stair frames="+stairFrames+", exit="+w.transform.position);
+                Check(standing&&up&&!climbed&&w.transform.position.z<173&&w.transform.position.y>-.05f,"main pool stairs: start standing="+standing+", normal locomotion="+up+", mantle="+climbed+", stair frames="+stairFrames+", exit="+w.transform.position);
                 w.RespawnAt(new Vector3(-49,-2,179),0);for(int i=0;i<160;i++)Step(Vector2.zero);
                 float idle=head.position.y-w.WaterSurface;
                 Capture(camera,"03-TreadingWater",w.transform.position+new Vector3(3,2.7f,2),w.transform.position+Vector3.up*1.25f);
@@ -77,10 +77,10 @@ namespace CoastalTemple.Editor
                 if(!Physics.Raycast(new Vector3(-24,-3.3f,12.3f),Vector3.down,out var bottom,3,Physics.DefaultRaycastLayers,QueryTriggerInteraction.Ignore))throw new InvalidOperationException("Showroom pool bottom missing.");
                 w.RespawnAt(bottom.point+Vector3.up*.025f,180);bool climb=false,up=false,down=false;
                 void Step(){Physics.SyncTransforms();Physics.Simulate(.02f);w.SimulateMovement(Vector2.up,false,false,0,.02f);driver.SendMessage("Update");a.Update(.02f);swimmer.SamplePose(.02f);climb|=w.Climbing;}
-                for(int i=0;i<430;i++){Step();up|=a.GetCurrentAnimatorStateInfo(0).IsName("Stairs Up");if(w.transform.position.z<6.3f&&w.transform.position.y>-.05f)break;}
+                for(int i=0;i<430;i++){Step();up|=a.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");if(w.transform.position.z<6.3f&&w.transform.position.y>-.05f)break;}
                 bool exited=w.transform.position.z<6.3f&&w.transform.position.y>-.05f;
-                w.ApplyLook(new Vector2(180,0));for(int i=0;i<250;i++){Step();down|=a.GetCurrentAnimatorStateInfo(0).IsName("Stairs Down");if(w.transform.position.z>10.5f)break;}
-                string result=(exited&&up&&down&&!climb?"PASS ":"FAIL ")+"actual scaled showroom stair prefab: exited="+exited+", up clip="+up+", down clip="+down+", mantle="+climb+", end="+w.transform.position;
+                w.ApplyLook(new Vector2(180,0));for(int i=0;i<250;i++){Step();down|=a.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");if(w.transform.position.z>10.5f)break;}
+                string result=(exited&&up&&down&&!climb?"PASS ":"FAIL ")+"actual scaled showroom ramp stairs: exited="+exited+", up clip="+up+", down clip="+down+", mantle="+climb+", end="+w.transform.position;
                 File.WriteAllText(Output+"/ShowroomStairChecks.txt",result);return result;
             }
             finally{w.RespawnAt(saved,yaw);w.enabled=enabled;Physics.simulationMode=simulation;}

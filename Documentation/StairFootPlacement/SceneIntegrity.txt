@@ -1,0 +1,5 @@
+Assets/Scenes/CoastalTemple.unity objects=722 missingScripts=0 footIK=1 stairs=1 dirty=False
+Assets/Scenes/MechanismPlayground.unity objects=246 missingScripts=0 footIK=1 stairs=1 dirty=False
+Assets/Prefabs/Player/RedBot.prefab footIK=1
+Assets/Prefabs/Player/ExplorerThirdPerson.prefab footIK=1
+First build scene=Assets/Scenes/CoastalTemple.unity

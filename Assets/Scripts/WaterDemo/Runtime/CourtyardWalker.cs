@@ -173,19 +173,19 @@ namespace WaterCourtyard
             // Carry first so the foot probe sees this frame's moving support.
             if(groundBody){Vector3 carry=groundBody.position-groundPosition;if(carry.magnitude<1)Controller.Move(carry);groundBody=null;}
             RaycastHit ground=default;
-            Grounded=vertical<=.1f&&contacts.FindGround(Controller,out ground);
+            Grounded=vertical<=.1f&&(contacts.FindGround(Controller,out ground)||Controller.isGrounded);
             UpdateStairs(ground);
             waterJumpGrace=Mathf.Max(0,waterJumpGrace-seconds);
             // Input describes a desired velocity, not an instantaneous replacement for momentum.
             // This vector stays in world space so turning the camera cannot rotate an airborne trajectory.
             var inputFrame=Quaternion.Euler(0,yaw,0);
             Vector3 target=inputFrame*new Vector3(input.x,0,input.y)*(running?runSpeed:walkSpeed);
-            if(Staircase)target=Vector3.ClampMagnitude(target,Staircase.movementSpeed);
             var currentWater=SampleWater(transform.position+Vector3.up*.8f,out float surface,out Vector3 flow,out float depth);
             WaterSurface=surface;Diving=swimInput<-.1f;
             bool wasSwimming=Swimming;
             Swimming=!Grounded&&waterJumpGrace<=0&&CourtyardSwimMotion.ShouldSwim(currentWater,transform.position.y,surface,depth,wasSwimming);
-            Controller.stepOffset=Swimming?0:landStepOffset;
+            bool shallowStep=Swimming&&NearWaterSurface&&contacts.HasLowStep(Controller,target,landStepOffset);
+            Controller.stepOffset=Swimming&&!shallowStep?0:landStepOffset;
             if(Climber&&!(jumpPressed&&Grounded)&&Climber.TryBegin(target,seconds))
             {
                 horizontalVelocity=Vector3.zero;vertical=0;Swimming=false;Grounded=false;groundBody=null;
@@ -209,7 +209,9 @@ namespace WaterCourtyard
                     horizontalVelocity=Vector3.MoveTowards(horizontalVelocity,target,airAcceleration*seconds);
                 else
                     horizontalVelocity*=Mathf.Exp(-airDrag*seconds);
-                if(Grounded&&vertical<0)vertical=-2;
+                // Follow descending ramps at sprint speed without briefly switching to an airborne pose.
+                if(Grounded&&vertical<=0)vertical=ground.collider
+                    ?-Mathf.Max(2,horizontalVelocity.magnitude*Mathf.Sqrt(Mathf.Max(0,1-ground.normal.y*ground.normal.y))/Mathf.Max(.1f,ground.normal.y)):-2;
                 if(jumpPressed&&Grounded){vertical=jumpSpeed;waterJumpGrace=.5f;Grounded=false;}
                 vertical+=Physics.gravity.y*seconds;verticalDisplacement=vertical*seconds;
             }
@@ -220,7 +222,7 @@ namespace WaterCourtyard
                 transform.rotation=Quaternion.RotateTowards(transform.rotation,Quaternion.LookRotation(PlanarVelocity),movementTurnSpeed*seconds);
             if((collision&CollisionFlags.Above)!=0&&vertical>0)vertical=0;
             if((collision&CollisionFlags.Below)!=0&&vertical<0)vertical=Swimming?0:-2;
-            ground=default;Grounded=vertical<=.1f&&contacts.FindGround(Controller,out ground);
+            ground=default;Grounded=vertical<=.1f&&(contacts.FindGround(Controller,out ground)||((collision&CollisionFlags.Below)!=0));
             UpdateStairs(ground);
             if(Grounded){Swimming=false;Controller.stepOffset=landStepOffset;}
             if(transform.position.y<-12)ResetPosition();

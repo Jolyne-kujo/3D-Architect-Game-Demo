@@ -29,7 +29,8 @@ namespace CoastalTemple.Editor
                 var mesh=AssetDatabase.LoadAssetAtPath<Mesh>(RampAsset);
                 if(!mesh){mesh=new Mesh();AssetDatabase.CreateAsset(mesh,RampAsset);}else mesh.Clear();
                 mesh.name="Staircase smooth collision ramp";
-                var profile=new[]{new Vector2(0,0),new Vector2(.3f,0),new Vector2(4.2f,7.15f),new Vector2(4.2f,7.7f),new Vector2(0,7.7f)};
+                // Continuous ramp from the pool floor; the old profile started with a 0.3m wall.
+                var profile=new[]{new Vector2(0,0),new Vector2(4.2f,7.7f),new Vector2(0,7.7f)};
                 int n=profile.Length;var vertices=new Vector3[n*2];var triangles=new List<int>();
                 for(int i=0;i<n;i++){vertices[i]=new Vector3(-1.1f,profile[i].x,profile[i].y);vertices[i+n]=new Vector3(1.1f,profile[i].x,profile[i].y);}
                 for(int i=1;i<n-1;i++){triangles.AddRange(new[]{0,i+1,i,n,n+i,n+i+1});}

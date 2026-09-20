@@ -21,7 +21,7 @@ namespace CoastalTemple.Editor
             var lines=new List<string>();
             void Test(string name,Action<Rig> test)
             {
-                using(var rig=new Rig())try{test(rig);lines.Add("PASS "+name+" "+string.Join("; ",rig.Values));}catch(Exception e){lines.Add("FAIL "+name+": "+e.Message);}
+                using(var rig=new Rig())try{test(rig);lines.Add(("PASS "+name+" "+string.Join("; ",rig.Values)).TrimEnd());}catch(Exception e){lines.Add("FAIL "+name+": "+e.Message);}
             }
             Test("0.6m obstacle never mantles and remains jumpable",f=>
             {
@@ -37,15 +37,15 @@ namespace CoastalTemple.Editor
                 f.Step(Vector2.up);Require(f.W.Climbing,"eligible mantle missing");for(int i=0;i<70;i++)f.Step(Vector2.zero);
                 Require(f.W.Grounded&&f.Local.y>1.27f,"did not land");
             });
-            Test("Rotated scaled stair prefab walks up and down with the two supplied clips, never mantles",f=>
+            Test("Rotated scaled legacy stairs use normal locomotion and never mantle",f=>
             {
                 f.Floor();var stairs=f.Stairs();stairs.transform.rotation=Quaternion.Euler(0,37,0);stairs.transform.localScale=new Vector3(1.2f,1.1f,.95f);
                 Vector3 forward=stairs.UpDirection;f.Place(forward*-.6f+Vector3.up*.025f,37);
                 bool up=false,down=false,climbed=false;int upFrames=0;
-                for(int i=0;i<450;i++){f.Step(Vector2.up);up|=f.A.GetCurrentAnimatorStateInfo(0).IsName("Stairs Up");climbed|=f.W.Climbing;if(f.W.StairDirection==1)upFrames++;if(stairs.transform.InverseTransformPoint(f.W.transform.position).z>stairs.run+.4f)break;}
-                Require(up&&!climbed&&upFrames>80&&f.Local.y>4.4f,"upstairs mismatch: clip="+up+" climb="+climbed+" pose="+f.Local);
+                for(int i=0;i<450;i++){f.Step(Vector2.up);up|=f.A.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");climbed|=f.W.Climbing;if(f.W.StairDirection==1)upFrames++;if(stairs.transform.InverseTransformPoint(f.W.transform.position).z>stairs.run+.4f)break;}
+                Require(up&&!climbed&&upFrames>30&&f.Local.y>4.4f,"upstairs mismatch: clip="+up+" climb="+climbed+" pose="+f.Local);
                 f.W.ApplyLook(new Vector2(180,0));
-                for(int i=0;i<450;i++){f.Step(Vector2.up);down|=f.A.GetCurrentAnimatorStateInfo(0).IsName("Stairs Down");climbed|=f.W.Climbing;if(stairs.transform.InverseTransformPoint(f.W.transform.position).z<-.3f)break;}
+                for(int i=0;i<450;i++){f.Step(Vector2.up);down|=f.A.GetCurrentAnimatorStateInfo(0).IsName("Locomotion");climbed|=f.W.Climbing;if(stairs.transform.InverseTransformPoint(f.W.transform.position).z<-.3f)break;}
                 Require(down&&!climbed&&f.Local.y<.4f,"downstairs mismatch: "+f.Local);
             });
             Test("Submerged stairs remain standing and use stair locomotion all the way out",f=>

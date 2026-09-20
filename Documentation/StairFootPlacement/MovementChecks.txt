@@ -1,0 +1,7 @@
+PASS Rotated/scaled ramp: run faster than walk, no jump or mantle walk=2.48s run=1.66s
+PASS Ramp collision starts at floor with no vertical entry lip
+PASS Ankle-high thin boxes crossed without jumping
+PASS Four thin projected steps: 0.25m rises and 0.10m gaps without jump
+PASS 0.60m wall is not automatically stepped or mantled
+PASS Low step under low ceiling does not push body through roof
+PASS Descending ramp at run speed keeps grounded locomotion

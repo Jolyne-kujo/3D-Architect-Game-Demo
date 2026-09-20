@@ -26,7 +26,7 @@
 
 发生器根上的 `LaserEmitterConsole.colorCycle` 可按实例设置循环顺序，提示文字、两盏指示灯与 E 的下一档使用同一个数据源。默认黄光先测试临时消失，再切蓝光看石幕恢复，最后才用红光测试永久消失。指示灯是共享材质的发光外观，不增加实时点光源；仅光色变化时更新显示。
 
-玩家的水下着地、楼梯动画和边缘攀爬已同时接入主场景与 `ExplorerThirdPerson`。在水面朝浮板前进即可自动抓边；脚踩到水下楼梯后切回站立，可直接走出或跳跃。可复用楼梯在 `Assets/Prefabs/Architecture/Staircase.prefab`，参数及当前验证见 `Documentation/TraversalV2/README.md`。
+主地图和实验场的楼梯现使用连续斜坡碰撞，可按 Shift 跑步；两脚独立落点和髋部 IK 已接入 RedBot。当前场景楼梯为可直接编辑的普通几何，旧楼梯预制体仅留给归档场景兼容。低台阶自动跨步，高平台仍使用抓边；参数和验证见 `Documentation/StairFootPlacement/README.md`。
 
 ## 调整外观与摆放
 

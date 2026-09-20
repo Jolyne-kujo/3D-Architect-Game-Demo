@@ -1,0 +1,17 @@
+{
+  "baseline": "6f59ea4971e2a689972e93ce49486b3a1e7f8d12",
+  "scenes": [
+    {
+      "scene": "Assets/Scenes/CoastalTemple.unity",
+      "sharedAuthoredTransforms": 540,
+      "changedExistingTransformIds": [],
+      "addedSerializedTransforms": 18
+    },
+    {
+      "scene": "Assets/Scenes/MechanismPlayground.unity",
+      "sharedAuthoredTransforms": 13,
+      "changedExistingTransformIds": [],
+      "addedSerializedTransforms": 18
+    }
+  ]
+}

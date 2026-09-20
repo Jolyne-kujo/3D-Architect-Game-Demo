@@ -49,5 +49,24 @@ namespace WaterCourtyard
             for (int i = 0; i < count; i++) if (!Own(body, overlaps[i])) return false;
             return true;
         }
+
+        /// <summary>Allow native stepping onto a shallow submerged tread, without starting a mantle.</summary>
+        public bool HasLowStep(CharacterController body, Vector3 intent, float maximumHeight)
+        {
+            if(intent.sqrMagnitude<.01f||maximumHeight<=0)return false;
+            Vector3 direction=Vector3.ProjectOnPlane(intent,Vector3.up).normalized;
+            Vector3 feet=Feet(body);float radius=Radius(body);
+            for(int i=0;i<3;i++)
+            {
+                float scan=Mathf.Lerp(.035f,maximumHeight-.01f,i*.5f);
+                if(!Ray(body,feet+Vector3.up*scan,direction,radius+.26f,out var face)||face.normal.y>.4f)continue;
+                Vector3 origin=face.point+direction*.06f;origin.y=feet.y+maximumHeight+.08f;
+                if(!Ray(body,origin,Vector3.down,maximumHeight+.08f,out var top))continue;
+                float rise=top.point.y-feet.y;
+                if(rise<=.015f||rise>maximumHeight||top.normal.y<Mathf.Cos(body.slopeLimit*Mathf.Deg2Rad))continue;
+                if(CanOccupy(body,top.point+Vector3.up*.035f))return true;
+            }
+            return false;
+        }
     }
 }
