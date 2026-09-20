@@ -1,0 +1,147 @@
+{
+    "mode": "Prefab assets and isolated local physics",
+    "passed": 24,
+    "failed": 3,
+    "assetsChecked": 12,
+    "serializedReferences": 6393,
+    "missingReferences": 0,
+    "externalObjectReferences": 0,
+    "originalScenesPreserved": true,
+    "results": [
+        {
+            "name": "LaserDevice asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedStoneCurtain asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightBridge asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightDrivenLift asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "VerticalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "HorizontalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal1 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal2 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PortalPair asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "DrainGate asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "WaterMirage asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 0",
+            "passed": false,
+            "detail": "System.InvalidOperationException: Red must not activate the blue bridge\r\n  at CoastalTemple.Editor.MechanismPrefabChecks.CheckBridge (System.Int32 pose) [0x00176] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:293 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks+<>c__DisplayClass13_1.<RunSuite>b__2 () [0x00000] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:89 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks.Test (System.String name, System.Action action) [0x00052] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:131 "
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 1",
+            "passed": false,
+            "detail": "System.InvalidOperationException: Red must not activate the blue bridge\r\n  at CoastalTemple.Editor.MechanismPrefabChecks.CheckBridge (System.Int32 pose) [0x00176] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:293 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks+<>c__DisplayClass13_1.<RunSuite>b__2 () [0x00000] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:89 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks.Test (System.String name, System.Action action) [0x00052] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:131 "
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 2",
+            "passed": false,
+            "detail": "System.InvalidOperationException: Red must not activate the blue bridge\r\n  at CoastalTemple.Editor.MechanismPrefabChecks.CheckBridge (System.Int32 pose) [0x00176] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:293 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks+<>c__DisplayClass13_1.<RunSuite>b__2 () [0x00000] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:89 \r\n  at CoastalTemple.Editor.MechanismPrefabChecks.Test (System.String name, System.Action action) [0x00052] in F:\\Unity Project\\3D Architect\\Assets\\Scripts\\Editor\\Gameplay\\MechanismPrefabChecks.cs:131 "
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "vertical buoyancy prefab follows water on transformed rail",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "horizontal buoyancy prefab moves and holds its transformed path",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal pair duplicate maps within its own transformed pair",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "drain prefab discovers local water and opens/resets it",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "mirage prefab binds water, projects, and switches authored geometry",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "original scenes remain loaded with original active/dirty state",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

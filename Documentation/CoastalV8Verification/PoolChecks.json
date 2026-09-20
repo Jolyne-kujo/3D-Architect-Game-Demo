@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Translated pool receiver unlocks by real Update",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Translated source refracts into the pool",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Pool drains at least 99.5 percent",
+      "ok": true,
+      "details": 9.99141463E-08
+    },
+    {
+      "name": "Pool volume and discharge conserved",
+      "ok": true,
+      "details": {
+        "initial": 689.9363582469523,
+        "remaining": 6.8934401004516893E-05,
+        "discharged": 689.93628931256376
+      }
+    },
+    {
+      "name": "Pool drain does not remove sea water",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Walk down relocated stairs onto pool floor",
+      "ok": true,
+      "details": {
+        "feet": "(-54.65, -4.34, 184.53)",
+        "support": "Graded pool floor — 2 percent to outlet"
+      }
+    },
+    {
+      "name": "Walk back out of relocated pool",
+      "ok": true,
+      "details": "(-4.65, 0.02, -8.70)"
+    }
+  ],
+  "scope": "Editor Play: real receiver Update, direct solver ticks, CharacterController.Move; not manual keyboard input"
+}

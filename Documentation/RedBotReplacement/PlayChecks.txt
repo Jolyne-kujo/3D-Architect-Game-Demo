@@ -1,0 +1,36 @@
+PASS world body uses both meshes from the supplied skinned Slow Run FBX
+PASS both body parts have supported materials and visible world shadows
+PASS bot uses a visibly red material tint
+PASS world body no longer contains the previous ivory mannequin mesh
+PASS replacement body has a valid humanoid avatar
+PASS source root motion cannot displace the movement controller
+PASS standing still plays the supplied Idle clip
+PASS supplied Idle clip is configured to loop
+PASS stationary camera orbit does not translate the actor
+PASS stationary orbit does not rotate the body or its world shadow
+PASS normal movement plays supplied Slow Run
+PASS Slow Run accompanies real controller movement
+PASS Slow Run animates legs while body root stays on controller; knee=78.04516, drift=0
+PASS Shift sprint plays supplied Fast Run
+PASS Fast Run accompanies real controller movement
+PASS Fast Run animates legs while body root stays on controller; knee=69.50839, drift=0
+PASS stopping returns to the supplied Idle loop
+PASS space jump lifts the controller into the ascending airborne phase
+PASS airborne state plays the supplied Jump clip
+PASS landing returns to the supplied Idle loop
+PASS picking up the lantern enables the upper-body lifting layer
+PASS working lantern remains attached to the replacement bot's world hand
+PASS Slow Run with lifting overlay preserves running legs; knee motion=38.21622
+PASS Slow Run keeps the lifting overlay fully active
+PASS Slow Run keeps carrying hand raised throughout locomotion; minimum relative shoulder height=-0.07833461
+PASS Fast Run with lifting overlay preserves running legs; knee motion=63.96107
+PASS Fast Run keeps the lifting overlay fully active
+PASS Fast Run keeps carrying hand raised throughout locomotion; minimum relative shoulder height=-0.0836436
+PASS real courtyard pool still activates the swimming animation on the replacement body
+PASS stationary swimming plays supplied Treading Water
+PASS both supplied water animations loop
+PASS idle swimming keeps the replacement bot facing the controller heading; forward dot=0.9999846
+PASS swimming fades out the lifting overlay so both arms can swim
+PASS surface swimming keeps the third-person camera above the water
+PASS moving in water plays supplied Swimming
+PASS diving still moves the new bot underwater with the third-person camera

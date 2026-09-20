@@ -1,0 +1,1778 @@
+{
+    "startedUtc": "2026-09-19T02:48:56.6635771Z",
+    "endedUtc": "2026-09-19T02:54:21.2880460Z",
+    "scene": "Assets/Scenes/CoastalTemple.unity",
+    "outcome": "PASS",
+    "progress": "Recovery stage 3 remains stable at its safe point",
+    "diagnostic": "",
+    "running": false,
+    "routePassed": true,
+    "recoveryChecksPassed": true,
+    "routeTeleports": 0,
+    "postRouteTeleports": 7,
+    "postRouteRepositions": 4,
+    "postRouteRecoveries": 3,
+    "unexplainedDiscontinuities": 0,
+    "interactionCount": 19,
+    "simulatedFrames": 4871,
+    "elapsedSeconds": 324.62457275390627,
+    "currentPosition": {
+        "x": -26.5,
+        "y": 38.42499923706055,
+        "z": 117.0
+    },
+    "checks": [
+        {
+            "name": "Initial authored states settle",
+            "detail": "Observed 0.123 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -64.69499969482422,
+                "y": 0.02499982714653015,
+                "z": 204.0
+            },
+            "target": {
+                "x": -64.69499969482422,
+                "y": 0.02499982714653015,
+                "z": 204.0
+            },
+            "elapsedSeconds": 0.1234893798828125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Start at authored shore spawn",
+            "detail": "No test reposition; all three puzzles are initially unsolved. Keyboard movement is suspended while real controller intent is supplied.",
+            "passed": true,
+            "position": {
+                "x": -64.69499969482422,
+                "y": 0.02499982714653015,
+                "z": 204.0
+            },
+            "target": {
+                "x": -64.69499969482422,
+                "y": 0.02499982714653015,
+                "z": 204.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "01 missing light bridge is a real physical gap",
+            "detail": "A real downward ray at the missing route found no nearby solid support.",
+            "passed": true,
+            "position": {
+                "x": -64.69499969482422,
+                "y": 0.02499982714653015,
+                "z": 204.0
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.5,
+                "z": 190.5
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 13.898670196533204
+        },
+        {
+            "name": "01 reach shore ramp",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.206m.",
+            "passed": true,
+            "position": {
+                "x": -67.55509948730469,
+                "y": 0.3564412295818329,
+                "z": 204.68441772460938
+            },
+            "target": {
+                "x": -68.0,
+                "y": 0.15000009536743165,
+                "z": 204.6999969482422
+            },
+            "elapsedSeconds": 2.53466796875,
+            "horizontalDistance": 0.4451732039451599
+        },
+        {
+            "name": "01 climb to entry mirror",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -67.20904541015625,
+                "y": 3.5249998569488527,
+                "z": 196.31875610351563
+            },
+            "target": {
+                "x": -67.19999694824219,
+                "y": 3.5,
+                "z": 196.10000610351563
+            },
+            "elapsedSeconds": 2.5482177734375,
+            "horizontalDistance": 0.21893706917762757
+        },
+        {
+            "name": "01 E borrows light from the entry mirror",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.482m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -67.20904541015625,
+                "y": 3.5249998569488527,
+                "z": 196.31875610351563
+            },
+            "target": {
+                "x": -66.0,
+                "y": 4.349999904632568,
+                "z": 196.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2503584623336793
+        },
+        {
+            "name": "01 A gains support while B disappears",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -67.20904541015625,
+                "y": 3.5249998569488527,
+                "z": 196.31875610351563
+            },
+            "target": {
+                "x": -67.20904541015625,
+                "y": 3.5249998569488527,
+                "z": 196.31875610351563
+            },
+            "elapsedSeconds": 0.5419921875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "01 optical tradeoff is physical",
+            "detail": "A light-bridge colliders are enabled; returning B collider is disabled; permanent cracked window remains open.",
+            "passed": true,
+            "position": {
+                "x": -67.20904541015625,
+                "y": 3.5249998569488527,
+                "z": 196.31875610351563
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.4000000953674318,
+                "z": 190.5
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 5.872268199920654
+        },
+        {
+            "name": "01 cross A onto the safe middle island",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -67.39635467529297,
+                "y": 3.5249998569488527,
+                "z": 185.51028442382813
+            },
+            "target": {
+                "x": -67.4000015258789,
+                "y": 3.5,
+                "z": 185.3000030517578
+            },
+            "elapsedSeconds": 3.2589111328125,
+            "horizontalDistance": 0.21031299233436585
+        },
+        {
+            "name": "01 E returns the borrowed light from the island",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.686m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -67.39635467529297,
+                "y": 3.5249998569488527,
+                "z": 185.51028442382813
+            },
+            "target": {
+                "x": -66.0,
+                "y": 4.349999904632568,
+                "z": 185.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.4866729974746705
+        },
+        {
+            "name": "01 A disappears and B returns",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -67.39635467529297,
+                "y": 3.5249998569488527,
+                "z": 185.51028442382813
+            },
+            "target": {
+                "x": -67.39635467529297,
+                "y": 3.5249998569488527,
+                "z": 185.51028442382813
+            },
+            "elapsedSeconds": 0.1661834716796875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "01 cross the returned stone bridge",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -67.9865493774414,
+                "y": 3.5249998569488527,
+                "z": 174.8431396484375
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.5,
+                "z": 174.60000610351563
+            },
+            "elapsedSeconds": 3.2261505126953127,
+            "horizontalDistance": 0.2435053139925003
+        },
+        {
+            "name": "01 E collects the reusable lantern",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.039m; radius=2.800m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -67.9865493774414,
+                "y": 3.5249998569488527,
+                "z": 174.8431396484375
+            },
+            "target": {
+                "x": -69.80000305175781,
+                "y": 4.75,
+                "z": 174.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.9998747110366822
+        },
+        {
+            "name": "01 lantern acquired",
+            "detail": "Possession and reusable illumination came from the normal nearby pickup.",
+            "passed": true,
+            "position": {
+                "x": -67.9865493774414,
+                "y": 3.5249998569488527,
+                "z": 174.8431396484375
+            },
+            "target": {
+                "x": -67.9865493774414,
+                "y": 3.5249998569488527,
+                "z": 174.8431396484375
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "01 leave the lantern landing",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=0.175m.",
+            "passed": true,
+            "position": {
+                "x": -67.9990234375,
+                "y": 4.991293430328369,
+                "z": 169.8871307373047
+            },
+            "target": {
+                "x": -68.0,
+                "y": 5.1666669845581059,
+                "z": 169.5
+            },
+            "elapsedSeconds": 1.4667816162109376,
+            "horizontalDistance": 0.3871319591999054
+        },
+        {
+            "name": "Shore mountain path",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=0.243m.",
+            "passed": true,
+            "position": {
+                "x": -67.99994659423828,
+                "y": 9.75668716430664,
+                "z": 158.60903930664063
+            },
+            "target": {
+                "x": -68.0,
+                "y": 10.0,
+                "z": 158.0
+            },
+            "elapsedSeconds": 3.319061279296875,
+            "horizontalDistance": 0.609039306640625
+        },
+        {
+            "name": "Path toward the stone workshop",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=0.283m.",
+            "passed": true,
+            "position": {
+                "x": -58.331485748291019,
+                "y": 18.716571807861329,
+                "z": 143.51742553710938
+            },
+            "target": {
+                "x": -58.0,
+                "y": 19.0,
+                "z": 143.0
+            },
+            "elapsedSeconds": 5.2728118896484379,
+            "horizontalDistance": 0.614501416683197
+        },
+        {
+            "name": "02 reach the workshop approach",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.768m.",
+            "passed": true,
+            "position": {
+                "x": -57.21089553833008,
+                "y": 22.36781120300293,
+                "z": 135.12757873535157
+            },
+            "target": {
+                "x": -57.16063690185547,
+                "y": 21.600000381469728,
+                "z": 134.75131225585938
+            },
+            "elapsedSeconds": 2.5211181640625,
+            "horizontalDistance": 0.3796082139015198
+        },
+        {
+            "name": "02 approach the riding wall from the entry",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -49.58259963989258,
+                "y": 25.025001525878908,
+                "z": 129.185302734375
+            },
+            "target": {
+                "x": -49.48860168457031,
+                "y": 25.0,
+                "z": 129.11105346679688
+            },
+            "elapsedSeconds": 3.0248260498046877,
+            "horizontalDistance": 0.11978551745414734
+        },
+        {
+            "name": "02 E starts raising the stone wall from the entry",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.606m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.58259963989258,
+                "y": 25.025001525878908,
+                "z": 129.185302734375
+            },
+            "target": {
+                "x": -50.2960319519043,
+                "y": 25.850000381469728,
+                "z": 131.5626983642578
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 2.48213529586792
+        },
+        {
+            "name": "02 board the real rising wall",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 25.772979736328126,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.8896369934082,
+                "y": 25.74797821044922,
+                "z": 127.03229522705078
+            },
+            "elapsedSeconds": 0.72991943359375,
+            "horizontalDistance": 0.17357002198696137
+        },
+        {
+            "name": "02 CharacterController stands on the moving wall Rigidbody",
+            "detail": "Real downward support ray found the expected Rigidbody and the controller is grounded.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 25.772979736328126,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.94281768798828,
+                "y": 25.772979736328126,
+                "z": 127.19751739501953
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 ride to the middle gallery height",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 28.9628849029541,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.94281768798828,
+                "y": 28.9628849029541,
+                "z": 127.19751739501953
+            },
+            "elapsedSeconds": 2.91363525390625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E stops the wall at the middle gallery",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.098m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 28.9628849029541,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -47.004661560058597,
+                "y": 29.805145263671876,
+                "z": 127.4022445678711
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.9489387273788453
+        },
+        {
+            "name": "02 light loss stops the wall",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "elapsedSeconds": 0.015350341796875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 middle stop holds its physical height settles",
+            "detail": "Observed 0.128 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "elapsedSeconds": 0.128265380859375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 middle stop holds its physical height",
+            "detail": "Observed 0.371 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "target": {
+                "x": -48.94281768798828,
+                "y": 28.98488426208496,
+                "z": 127.19751739501953
+            },
+            "elapsedSeconds": 0.370574951171875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 step sideways onto the fixed gallery",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -50.2516975402832,
+                "y": 29.024999618530275,
+                "z": 125.43746185302735
+            },
+            "target": {
+                "x": -50.34300994873047,
+                "y": 29.0,
+                "z": 125.3146743774414
+            },
+            "elapsedSeconds": 0.77587890625,
+            "horizontalDistance": 0.15301869809627534
+        },
+        {
+            "name": "02 go around the winch pedestal",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -48.76868438720703,
+                "y": 29.024999618530275,
+                "z": 123.62779998779297
+            },
+            "target": {
+                "x": -48.66649627685547,
+                "y": 29.0,
+                "z": 123.50310516357422
+            },
+            "elapsedSeconds": 0.815826416015625,
+            "horizontalDistance": 0.16121789813041688
+        },
+        {
+            "name": "02 reach the bridge winch",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.37703323364258,
+                "y": 29.0,
+                "z": 122.66337585449219
+            },
+            "elapsedSeconds": 0.41571044921875,
+            "horizontalDistance": 0.16434183716773988
+        },
+        {
+            "name": "02 E starts the bridge leftward",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.309m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -50.1785888671875,
+                "y": 29.850000381469728,
+                "z": 123.34162139892578
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.039961814880371
+        },
+        {
+            "name": "02 bridge passes the center alignment",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 8.236358642578125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E stops the bridge beyond center",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.309m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -50.1785888671875,
+                "y": 29.850000381469728,
+                "z": 123.34162139892578
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.039961814880371
+        },
+        {
+            "name": "02 bridge holds the first intermediate stop settles",
+            "detail": "Observed 0.123 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 0.123046875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 bridge holds the first intermediate stop",
+            "detail": "Observed 0.270 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 0.27044677734375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E reverses the bridge rightward",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.309m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -50.1785888671875,
+                "y": 29.850000381469728,
+                "z": 123.34162139892578
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.039961814880371
+        },
+        {
+            "name": "02 bridge returns to its centerline",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 1.159332275390625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E completes the four-step winch cycle at center",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.309m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -50.1785888671875,
+                "y": 29.850000381469728,
+                "z": 123.34162139892578
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.039961814880371
+        },
+        {
+            "name": "02 aligned cross-bridge remains stopped settles",
+            "detail": "Observed 0.130 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 0.130340576171875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 aligned cross-bridge remains stopped",
+            "detail": "Observed 0.370 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "elapsedSeconds": 0.36962890625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 winch completes forward-stop-reverse-stop",
+            "detail": "All four commands used normal nearby E; actual Rigidbody x=-0.018m, no motor setters were called.",
+            "passed": true,
+            "position": {
+                "x": -49.28935623168945,
+                "y": 29.024999618530275,
+                "z": 122.80237579345703
+            },
+            "target": {
+                "x": -43.78955078125,
+                "y": 31.75,
+                "z": 123.46106719970703
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 5.539109706878662
+        },
+        {
+            "name": "02 leave the winch without crossing its pedestal",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -48.77939987182617,
+                "y": 29.024999618530275,
+                "z": 123.37608337402344
+            },
+            "target": {
+                "x": -48.66649627685547,
+                "y": 29.0,
+                "z": 123.50310516357422
+            },
+            "elapsedSeconds": 0.3404541015625,
+            "horizontalDistance": 0.1699463278055191
+        },
+        {
+            "name": "02 return along the fixed gallery",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -50.24188232421875,
+                "y": 29.024999618530275,
+                "z": 125.18929290771485
+            },
+            "target": {
+                "x": -50.34300994873047,
+                "y": 29.0,
+                "z": 125.3146743774414
+            },
+            "elapsedSeconds": 0.81463623046875,
+            "horizontalDistance": 0.1610816866159439
+        },
+        {
+            "name": "02 reboard the stopped wall",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.8896369934082,
+                "y": 28.959884643554689,
+                "z": 127.03229522705078
+            },
+            "elapsedSeconds": 0.74786376953125,
+            "horizontalDistance": 0.166609987616539
+        },
+        {
+            "name": "02 rider reboards from the middle gallery",
+            "detail": "Real downward support ray found the expected Rigidbody and the controller is grounded.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E advances middle stop to lower",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.196m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -47.004661560058597,
+                "y": 29.80988311767578,
+                "z": 127.4022445678711
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 2.0466344356536867
+        },
+        {
+            "name": "02 lower aim produces an actual lowering request",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.063232421875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E advances lower to resting light",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.202m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.98488426208496,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -47.004661560058597,
+                "y": 29.79281234741211,
+                "z": 127.4022445678711
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 2.0466344356536867
+        },
+        {
+            "name": "02 resting light stops the downward request",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.9628849029541,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 28.9628849029541,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.018310546875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E starts the second ascent",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.196m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 28.9628849029541,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -47.004661560058597,
+                "y": 29.787883758544923,
+                "z": 127.4022445678711
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 2.0466344356536867
+        },
+        {
+            "name": "02 rider reaches the upper wall stop",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.976797103881837,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 31.976797103881837,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 2.799407958984375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 E parks the wall at the upper gallery",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=2.195m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.976797103881837,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -47.004661560058597,
+                "y": 32.802764892578128,
+                "z": 127.40223693847656
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 2.0466325283050539
+        },
+        {
+            "name": "02 upper wall stops physically",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.033660888671875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 upper stop holds the rider settles",
+            "detail": "Observed 0.130 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.130218505859375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 upper stop holds the rider",
+            "detail": "Observed 0.302 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.3017578125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 rider remains on the wall at the upper stop",
+            "detail": "Real downward support ray found the expected Rigidbody and the controller is grounded.",
+            "passed": true,
+            "position": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "target": {
+                "x": -48.988197326660159,
+                "y": 31.998796463012697,
+                "z": 126.89796447753906
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 approach the aligned bridge from the wall",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=0.001m.",
+            "passed": true,
+            "position": {
+                "x": -47.430152893066409,
+                "y": 31.998796463012697,
+                "z": 125.77897644042969
+            },
+            "target": {
+                "x": -47.28652572631836,
+                "y": 32.0,
+                "z": 125.67581939697266
+            },
+            "elapsedSeconds": 0.6732177734375,
+            "horizontalDistance": 0.1768336445093155
+        },
+        {
+            "name": "02 board the aligned sliding bridge",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -46.12529754638672,
+                "y": 32.02499771118164,
+                "z": 124.69149780273438
+            },
+            "target": {
+                "x": -45.98876953125,
+                "y": 32.0,
+                "z": 124.57771301269531
+            },
+            "elapsedSeconds": 0.615997314453125,
+            "horizontalDistance": 0.17772696912288667
+        },
+        {
+            "name": "02 real sliding bridge supports the crossing",
+            "detail": "Real downward support ray found the expected Rigidbody and the controller is grounded.",
+            "passed": true,
+            "position": {
+                "x": -46.12529754638672,
+                "y": 32.02499771118164,
+                "z": 124.69149780273438
+            },
+            "target": {
+                "x": -46.12529754638672,
+                "y": 32.02499771118164,
+                "z": 124.69149780273438
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "02 cross the repaired upper corridor",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -40.177486419677737,
+                "y": 32.02499771118164,
+                "z": 120.35824584960938
+            },
+            "target": {
+                "x": -39.98444366455078,
+                "y": 32.0,
+                "z": 120.21760559082031
+            },
+            "elapsedSeconds": 2.233367919921875,
+            "horizontalDistance": 0.23884133994579316
+        },
+        {
+            "name": "02 pass the workshop completion landing",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -39.40966796875,
+                "y": 32.025001525878909,
+                "z": 119.7267837524414
+            },
+            "target": {
+                "x": -39.2210578918457,
+                "y": 32.0,
+                "z": 119.57166290283203
+            },
+            "elapsedSeconds": 0.366363525390625,
+            "horizontalDistance": 0.2442053258419037
+        },
+        {
+            "name": "02 leave by the authored joining ramp",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.186m.",
+            "passed": true,
+            "position": {
+                "x": -35.2723274230957,
+                "y": 34.286399841308597,
+                "z": 116.23017883300781
+            },
+            "target": {
+                "x": -35.022430419921878,
+                "y": 34.099998474121097,
+                "z": 116.01898193359375
+            },
+            "elapsedSeconds": 1.628509521484375,
+            "horizontalDistance": 0.32718899846076968
+        },
+        {
+            "name": "Mountain connection toward folded light",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.338m.",
+            "passed": true,
+            "position": {
+                "x": -35.182586669921878,
+                "y": 34.3380012512207,
+                "z": 116.48385620117188
+            },
+            "target": {
+                "x": -35.0,
+                "y": 34.0,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.081451416015625,
+            "horizontalDistance": 0.5474872589111328
+        },
+        {
+            "name": "03 reach the folded-light approach",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.252m.",
+            "passed": true,
+            "position": {
+                "x": -35.6805419921875,
+                "y": 34.05167770385742,
+                "z": 116.79827880859375
+            },
+            "target": {
+                "x": -36.0,
+                "y": 33.80000305175781,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.197479248046875,
+            "horizontalDistance": 0.3778159022331238
+        },
+        {
+            "name": "03 climb to the entrance portal control",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.400001525878908,
+                "y": 38.400001525878909,
+                "z": 117.80000305175781
+            },
+            "elapsedSeconds": 2.81268310546875,
+            "horizontalDistance": 0.17198877036571504
+        },
+        {
+            "name": "03 unaligned stone bridge leaves a real gap",
+            "detail": "A real downward ray at the missing route found no nearby solid support.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -21.5,
+                "y": 38.400001525878909,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 5.130870342254639
+        },
+        {
+            "name": "03 E directs portal light to the stone-drive receiver",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.457m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.5,
+                "y": 39.25,
+                "z": 119.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2205191850662232
+        },
+        {
+            "name": "03 redirected light moves A into the centerline",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "elapsedSeconds": 6.5911865234375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 E passes through the long-corridor mode",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.457m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.5,
+                "y": 39.25,
+                "z": 119.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2205191850662232
+        },
+        {
+            "name": "03 visible control-cycle transition",
+            "detail": "Observed 0.085 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "elapsedSeconds": 0.085296630859375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 E returns the portal to rest before crossing",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.457m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.5,
+                "y": 39.25,
+                "z": 119.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2205191850662232
+        },
+        {
+            "name": "03 A returns as a stationary physical bridge",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "target": {
+                "x": -26.57099723815918,
+                "y": 38.42499923706055,
+                "z": 117.78154754638672
+            },
+            "elapsedSeconds": 0.839874267578125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 cross centered A onto the safe middle pier",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.700000762939454,
+                "y": 38.400001525878909,
+                "z": 117.80000305175781
+            },
+            "elapsedSeconds": 2.953338623046875,
+            "horizontalDistance": 0.1947387307882309
+        },
+        {
+            "name": "03 E passes through stone-drive mode from the middle pier",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.493m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.5,
+                "y": 39.25,
+                "z": 119.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2636022567749024
+        },
+        {
+            "name": "03 middle control-cycle transition",
+            "detail": "Observed 0.092 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "elapsedSeconds": 0.092193603515625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 E aims the low beam toward the far corridor",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.493m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.5,
+                "y": 39.25,
+                "z": 119.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.2636022567749024
+        },
+        {
+            "name": "03 low portal aim settles",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "elapsedSeconds": 1.060791015625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 low beam dissolves A while B remains dark",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "elapsedSeconds": 0.00018310546875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 observe the low beam obstruction",
+            "detail": "Observed 0.367 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "elapsedSeconds": 0.36669921875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 failed low aim is observable",
+            "detail": "Actual final beam endpoint=(0.00, -0.10, 0.00); B has no collider support; A disappeared. The player stands on the permanent middle pier.",
+            "passed": true,
+            "position": {
+                "x": -16.894739151000978,
+                "y": 38.42499923706055,
+                "z": 117.79963684082031
+            },
+            "target": {
+                "x": -18.0,
+                "y": 38.30000305175781,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.364192247390747
+        },
+        {
+            "name": "03 move across the safe pier to its height winch",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -16.72031021118164,
+                "y": 38.42499923706055,
+                "z": 116.36682891845703
+            },
+            "target": {
+                "x": -16.700000762939454,
+                "y": 38.400001525878909,
+                "z": 116.19999694824219
+            },
+            "elapsedSeconds": 0.544921875,
+            "horizontalDistance": 0.16806362569332124
+        },
+        {
+            "name": "03 E raises the portal carriage",
+            "detail": "PlayerInteractor.Interact accepted the nearest reachable object; distance=1.596m; radius=2.900m; no policy bypass.",
+            "passed": true,
+            "position": {
+                "x": -16.72031021118164,
+                "y": 38.42499923706055,
+                "z": 116.36682891845703
+            },
+            "target": {
+                "x": -16.5,
+                "y": 39.25,
+                "z": 115.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.3844702243804932
+        },
+        {
+            "name": "03 carriage reaches 5.6m and far B becomes solid",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -16.72031021118164,
+                "y": 38.42499923706055,
+                "z": 116.36682891845703
+            },
+            "target": {
+                "x": -16.72031021118164,
+                "y": 38.42499923706055,
+                "z": 116.36682891845703
+            },
+            "elapsedSeconds": 5.091796875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "03 elevated portal light repairs the far route",
+            "detail": "The original beam cleared the physical middle pier, illuminated the far receiver and enabled the authored rising bridge.",
+            "passed": true,
+            "position": {
+                "x": -16.72031021118164,
+                "y": 38.42499923706055,
+                "z": 116.36682891845703
+            },
+            "target": {
+                "x": -18.0,
+                "y": 38.400001525878909,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 1.4277645349502564
+        },
+        {
+            "name": "03 approach the rising light bridge",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -15.363018989562989,
+                "y": 38.42499923706055,
+                "z": 116.9321060180664
+            },
+            "target": {
+                "x": -15.199999809265137,
+                "y": 38.400001525878909,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.550750732421875,
+            "horizontalDistance": 0.17659232020378114
+        },
+        {
+            "name": "03 climb the real illuminated corridor",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -7.507696151733398,
+                "y": 41.02499771118164,
+                "z": 116.99866485595703
+            },
+            "target": {
+                "x": -7.34999942779541,
+                "y": 41.0,
+                "z": 117.0
+            },
+            "elapsedSeconds": 2.428924560546875,
+            "horizontalDistance": 0.15770237147808076
+        },
+        {
+            "name": "03 step around the receiver stand",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -7.375558853149414,
+                "y": 41.02499771118164,
+                "z": 115.9942855834961
+            },
+            "target": {
+                "x": -7.34999942779541,
+                "y": 41.0,
+                "z": 115.80000305175781
+            },
+            "elapsedSeconds": 0.401763916015625,
+            "horizontalDistance": 0.19595658779144288
+        },
+        {
+            "name": "03 reach the sea-view reward landing",
+            "detail": "Reached using ordinary CharacterController intent; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -5.797938823699951,
+                "y": 41.025001525878909,
+                "z": 115.8216552734375
+            },
+            "target": {
+                "x": -5.599998474121094,
+                "y": 41.0,
+                "z": 115.79999542236328
+            },
+            "elapsedSeconds": 0.567474365234375,
+            "horizontalDistance": 0.19912190735340119
+        },
+        {
+            "name": "Full V9 shore-to-sea-view route passed",
+            "detail": "Three real broken routes crossed by CharacterController; normal nearest E interactions; wall riding and intermediate stops; full winch reversal cycle; observable failed low light followed by a real elevated portal solution; no jump intent or reposition.",
+            "passed": true,
+            "position": {
+                "x": -5.797938823699951,
+                "y": 41.025001525878909,
+                "z": 115.8216552734375
+            },
+            "target": {
+                "x": -5.797938823699951,
+                "y": 41.025001525878909,
+                "z": 115.8216552734375
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery Home retains completed world state",
+            "detail": "Explicit post-route test reposition; excluded from the accepted main route. World mechanism state was not altered.",
+            "passed": true,
+            "position": {
+                "x": -65.0,
+                "y": 0.15000000596046449,
+                "z": 204.0
+            },
+            "target": {
+                "x": -65.0,
+                "y": 0.15000000596046449,
+                "z": 204.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery settles after actual Home reset",
+            "detail": "Observed 0.202 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -64.69499969482422,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "target": {
+                "x": -64.69499969482422,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "elapsedSeconds": 0.202392578125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery deliberately enters stage 1 fall region",
+            "detail": "Explicit post-route test reposition; excluded from the accepted main route. World mechanism state was not altered.",
+            "passed": true,
+            "position": {
+                "x": -68.0,
+                "y": 0.5,
+                "z": 185.0
+            },
+            "target": {
+                "x": -68.0,
+                "y": 0.5,
+                "z": 185.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 1 uses its authored automatic return",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -68.0,
+                "y": 3.619999885559082,
+                "z": 196.5
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.619999885559082,
+                "z": 196.5
+            },
+            "elapsedSeconds": 0.01873779296875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 1 remains stable at its safe point",
+            "detail": "Observed 0.369 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -68.0,
+                "y": 3.5249996185302736,
+                "z": 196.5
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.5249996185302736,
+                "z": 196.5
+            },
+            "elapsedSeconds": 0.36883544921875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 1 preserves the solved world",
+            "detail": "Post-route placement into the fall volume was explicit; the ordinary LateUpdate performed one automatic return. No mechanism was reset.",
+            "passed": true,
+            "position": {
+                "x": -68.0,
+                "y": 3.5249996185302736,
+                "z": 196.5
+            },
+            "target": {
+                "x": -68.0,
+                "y": 3.619999885559082,
+                "z": 196.5
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery deliberately enters stage 2 fall region",
+            "detail": "Explicit post-route test reposition; excluded from the accepted main route. World mechanism state was not altered.",
+            "passed": true,
+            "position": {
+                "x": -45.709842681884769,
+                "y": 20.0,
+                "z": 125.06217193603516
+            },
+            "target": {
+                "x": -45.709842681884769,
+                "y": 20.0,
+                "z": 125.06217193603516
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 2 uses its authored automatic return",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -52.19862365722656,
+                "y": 25.119998931884767,
+                "z": 130.5526885986328
+            },
+            "target": {
+                "x": -52.19862365722656,
+                "y": 25.119998931884767,
+                "z": 130.5526885986328
+            },
+            "elapsedSeconds": 0.0048828125,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 2 remains stable at its safe point",
+            "detail": "Observed 0.363 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -52.19862365722656,
+                "y": 25.024999618530275,
+                "z": 130.5526885986328
+            },
+            "target": {
+                "x": -52.19862365722656,
+                "y": 25.024999618530275,
+                "z": 130.5526885986328
+            },
+            "elapsedSeconds": 0.3626708984375,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 2 preserves the solved world",
+            "detail": "Post-route placement into the fall volume was explicit; the ordinary LateUpdate performed one automatic return. No mechanism was reset.",
+            "passed": true,
+            "position": {
+                "x": -52.19862365722656,
+                "y": 25.024999618530275,
+                "z": 130.5526885986328
+            },
+            "target": {
+                "x": -52.19862365722656,
+                "y": 25.119998931884767,
+                "z": 130.5526885986328
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery deliberately enters stage 3 fall region",
+            "detail": "Explicit post-route test reposition; excluded from the accepted main route. World mechanism state was not altered.",
+            "passed": true,
+            "position": {
+                "x": -15.0,
+                "y": 29.400001525878908,
+                "z": 117.0
+            },
+            "target": {
+                "x": -15.0,
+                "y": 29.400001525878908,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 3 uses its authored automatic return",
+            "detail": "Satisfied through normal render/physics updates with neutral controller intent.",
+            "passed": true,
+            "position": {
+                "x": -26.5,
+                "y": 38.52000045776367,
+                "z": 117.0
+            },
+            "target": {
+                "x": -26.5,
+                "y": 38.52000045776367,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.016357421875,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 3 remains stable at its safe point",
+            "detail": "Observed 0.360 seconds of ordinary frames.",
+            "passed": true,
+            "position": {
+                "x": -26.5,
+                "y": 38.42499923706055,
+                "z": 117.0
+            },
+            "target": {
+                "x": -26.5,
+                "y": 38.42499923706055,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.359619140625,
+            "horizontalDistance": 0.0
+        },
+        {
+            "name": "Recovery stage 3 preserves the solved world",
+            "detail": "Post-route placement into the fall volume was explicit; the ordinary LateUpdate performed one automatic return. No mechanism was reset.",
+            "passed": true,
+            "position": {
+                "x": -26.5,
+                "y": 38.42499923706055,
+                "z": 117.0
+            },
+            "target": {
+                "x": -26.5,
+                "y": 38.52000045776367,
+                "z": 117.0
+            },
+            "elapsedSeconds": 0.0,
+            "horizontalDistance": 0.0
+        }
+    ],
+    "scope": "Main route uses CourtyardWalker.SimulateMovement/ApplyLook with no jump intent, teleport, motor setter, direct optical selection or forced bridge state. Every E action goes through PlayerInteractor.Interact with the ordinary availability, distance and obstruction policy, and the target must be the nearest reachable prompt. Real rendered/physics frames drive all mechanisms. Physical keyboard events are not injected. Game fall/sea-boundary recoveries and unexplained position discontinuities fail the main route and are counted. BeginRecoveryChecks is separate and requires a previously accepted zero-teleport route; every deliberate post-route reposition and automatic recovery is reported separately. Exit Play restores authored state."
+}

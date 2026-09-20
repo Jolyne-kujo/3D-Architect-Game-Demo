@@ -1,0 +1,10 @@
+PASS 15 prefab assets have complete local references; checks=16
+PASS Red receiver saved matching identity
+PASS Yellow receiver saved matching identity
+PASS Blue receiver saved matching identity
+PASS blue receiver and bridge are one self-contained prefab
+PASS both authored indicator meshes are circular cylinders
+PASS current large upper / next small lower saved
+PASS all 4 saved showroom laser instances inherit new lamp bindings
+PASS main scene shortcut opens existing map and is final active scene
+PASS final main scene is saved in Edit mode

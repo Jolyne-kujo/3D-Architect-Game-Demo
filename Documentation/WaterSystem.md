@@ -2,7 +2,7 @@
 
 ## 试玩
 
-Unity 6000.5.9f1 / URP。打开 `Assets/WaterCourtyard/Scenes/WaterCourtyard.unity` 并 Play。
+Unity 6000.5.9f1 / URP。打开 `Assets/Scenes/WaterCourtyard.unity` 并 Play。
 Windows 试玩包由 `Tools/Build-WaterCourt.ps1` 生成到 `Builds/WaterCourt-Windows/WaterCourt.exe`。
 构建输出不提交 Git；源码、场景、预制件、材质和 `.meta` 一起保存在私有仓库。
 

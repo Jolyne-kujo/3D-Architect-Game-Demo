@@ -1,0 +1,81 @@
+{
+    "passed": 15,
+    "failed": 0,
+    "results": [
+        {
+            "name": "opaque wall blocks receiver",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "sources aggregate independently and loss restores",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "permanent curtain requires continuous hit and remains gone",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "temporary invisible curtain keeps optical detection",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "curtain return waits for player to leave",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "curtain occupancy uses physical box with separate optical sensor",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "curtain physical wall blocks rays missing a smaller optical sensor",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "activation callback does not skip other receivers",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "overlapping transparent targets do not trap a beam",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "reset callback does not skip other receivers",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal maps offset and rotated direction without gap beam",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal rejects outside aperture and back side",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal respects total physical path distance",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal loops stop at hop budget",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "latching receiver holds after light is removed",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+PASS RedStone_Permanent duplication remaps all renderer references
+PASS RedStone_Permanent opaque obstruction prevents activation
+PASS RedStone_Permanent configured activation timing is honored
+PASS RedStone_Permanent real beam removes visuals and collision after rotation and scaling
+PASS RedStone_Permanent unlit duplicate stays independently solid
+PASS RedStone_Permanent darkness follows its own permanent or returning rule
+PASS RedStone_Permanent explicit reset restores model and collision
+PASS RedStone_WhileLit duplication remaps all renderer references
+PASS RedStone_WhileLit opaque obstruction prevents activation
+PASS RedStone_WhileLit configured activation timing is honored
+PASS RedStone_WhileLit real beam removes visuals and collision after rotation and scaling
+PASS RedStone_WhileLit unlit duplicate stays independently solid
+PASS returning prefab waits while an occupant is inside
+PASS RedStone_WhileLit darkness follows its own permanent or returning rule
+PASS RedStone_WhileLit explicit reset restores model and collision

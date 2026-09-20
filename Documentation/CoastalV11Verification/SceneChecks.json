@@ -1,0 +1,32 @@
+[
+  {
+    "name": "no missing scripts",
+    "ok": true,
+    "detail": "0"
+  },
+  {
+    "name": "three authored lessons",
+    "ok": true,
+    "detail": "3"
+  },
+  {
+    "name": "player modules explicitly wired",
+    "ok": true,
+    "detail": "Serialized scene references"
+  },
+  {
+    "name": "original drain experiment wired",
+    "ok": true,
+    "detail": "No teaching-controller dependency"
+  },
+  {
+    "name": "four authored motors",
+    "ok": true,
+    "detail": "4"
+  },
+  {
+    "name": "two real light bridges",
+    "ok": true,
+    "detail": "2"
+  }
+]

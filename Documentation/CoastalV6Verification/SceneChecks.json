@@ -8,22 +8,22 @@
   "matchingColliders": true,
   "textures": [
     {
-      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff02_a.png",
+      "path": "Assets/Textures/Environment/PureNature/Cliff02_a.png",
       "width": 1024,
       "height": 1024
     },
     {
-      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff03_a.png",
+      "path": "Assets/Textures/Environment/PureNature/Cliff03_a.png",
       "width": 1024,
       "height": 1024
     },
     {
-      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff04_a.png",
+      "path": "Assets/Textures/Environment/PureNature/Cliff04_a.png",
       "width": 1024,
       "height": 1024
     },
     {
-      "path": "Assets/ThirdParty/PureNatureSubset/Textures/Grass01_a.png",
+      "path": "Assets/Textures/Environment/PureNature/Grass01_a.png",
       "width": 1024,
       "height": 1024
     }

@@ -1,0 +1,14 @@
+FAIL walking changes actual arm bones, not just whole-model sway; degrees=0
+FAIL walking hand animation is not frozen at playback speed zero
+PASS hand animation cannot move the eye camera
+PASS test performs a real grounded jump
+FAIL releasing input in air preserves most launch speed; before=5.300709, after=0
+FAIL released jump continues travelling forward
+FAIL turning camera in air does not rotate momentum
+FAIL airborne hands use an active movement pose
+PASS landing applies ground braking and comes to rest
+FAIL opposite air input steers gradually instead of reversing instantly
+PASS respawn clears previous momentum
+PASS inertial controller still stops before wall
+PASS blocked character reports zero actual speed for animation
+PASS removing wall does not release stored blocked velocity

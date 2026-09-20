@@ -1,0 +1,2 @@
+FAIL 0.6m obstacle should not mantle; actual climbing=True
+FAIL forward-swim head clearance at existing float height=-0.563 m (head offset=0.837)

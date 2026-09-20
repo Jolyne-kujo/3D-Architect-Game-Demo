@@ -1,0 +1,11 @@
+PASS 16 mechanism prefab assets: local references valid; checks=17
+PASS complete player prefab contains a disabled debug laser with internal camera and player bindings
+PASS reusable shore console has handle, interaction point and yellow receiver without external scene references
+PASS CoastalTemple reload: exactly one complete player debug laser, starts off with live input
+PASS CoastalTemple reload: blue projection renderers=1
+PASS CoastalTemple opens saved without dirty state
+PASS MechanismPlayground reload: exactly one complete player debug laser, starts off with live input
+PASS MechanismPlayground reload: blue projection renderers=1
+PASS shore console saved reference points to the actual showroom pool
+PASS MechanismPlayground opens saved without dirty state
+PASS main map remains first build scene

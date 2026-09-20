@@ -1,0 +1,187 @@
+{
+    "mode": "Prefab assets and isolated local physics",
+    "passed": 35,
+    "failed": 0,
+    "assetsChecked": 15,
+    "serializedReferences": 6870,
+    "missingReferences": 0,
+    "externalObjectReferences": 0,
+    "originalScenesPreserved": true,
+    "results": [
+        {
+            "name": "LaserDevice asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedStoneCurtain asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "YellowLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "BlueLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightBridge asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightDrivenLift asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "VerticalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "HorizontalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal1 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal2 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PortalPair asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "DrainGate asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "WaterMirage asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Red receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Yellow receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Blue receiver accepts only matching laser and fires its effect",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Wrong color interrupts receiver charge",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Large current lamp and small next lamp follow the full E cycle",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 0",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "laser and red/yellow wall after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "light bridge on/off after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "lift physical raise/hold/lower after root transform 2",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "vertical buoyancy prefab follows water on transformed rail",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "horizontal buoyancy prefab moves and holds its transformed path",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "portal pair duplicate maps within its own transformed pair",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "drain prefab discovers local water and opens/resets it",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "mirage prefab binds water, projects, and switches authored geometry",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "original scenes remain loaded with original active/dirty state",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+PASS saved scene starts in third person
+PASS complete imported body and world shadow are visible
+PASS viewmodel arms and overlay remain disabled
+PASS 360-degree orbit never translates actor
+PASS stationary orbit does not turn body or shift its shadow
+PASS animated body stays at the controller origin
+PASS W moves along camera yaw independently of starting body heading
+PASS body faces actual forward movement
+PASS normal movement plays supplied Slow Run clip
+PASS sprint plays supplied Fast Run clip
+PASS sideways input turns body toward movement instead of playing forward run sideways
+PASS jump remains functional in third person
+PASS wall shortens follow distance before camera clips
+PASS camera remains outside solid wall
+PASS clearance restores camera distance gradually
+PASS camera recovers full follow distance
+PASS real pool activates full-body swimming animation
+PASS surface swimming keeps third-person view above water
+PASS diving moves the swimmer while retaining follow view
+PASS picked-up lantern is visible on world body with working light
+PASS held object uses a layer rendered by third-person camera
+PASS initially hidden hands initialize correctly when first-person fallback is enabled
+PASS perspective fallback transfers held lantern to visible first-person hand
+PASS returning to third person restores world-held lantern
+PASS overview exit restores third-person gameplay
+PASS interaction reach stays on actor instead of distant camera

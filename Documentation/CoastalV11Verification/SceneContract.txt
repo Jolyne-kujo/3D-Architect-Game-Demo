@@ -1,0 +1,8 @@
+PASS gameplay starts in first person
+PASS camera is a direct child of stable eye pivot
+PASS camera has no orbit or shoulder offset
+PASS separate first person hands camera exists
+PASS hands clear world depth instead of clipping into walls
+PASS hands overlay is in the world camera stack
+PASS world and hands cameras use disjoint visibility masks
+PASS legacy third person requests cannot enable orbit gameplay

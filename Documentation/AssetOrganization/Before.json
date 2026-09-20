@@ -1,0 +1,1672 @@
+[
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02.fbx",
+    "guid": "00194efaa8dc40c4ab4553308e71360f",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Pool_tile.mat",
+    "guid": "10e7b54b4eaefff4399b7c80a9a54c21",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset",
+    "guid": "10fc4df2da32a41aaa32d77bc913491c",
+    "type": "VolumeProfile"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff04.fbx",
+    "guid": "20e6961ebaae33d4cafeb3c5c2433376",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LaserEmitter.cs",
+    "guid": "20496dc39bb6bcd48a75cb5e1d28efe2",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Character/X Bot@Fast Run.fbx",
+    "guid": "30653e724fe41ba4fba96997785689f9",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff04_a.png",
+    "guid": "50aae0c98587db146a01b1e3c6d06694",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder03.fbx",
+    "guid": "70d24e7129e37fb4db3deed89f0f8617",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/East_Toe_Cliff03.asset",
+    "guid": "706ee3b04f6cd784b9c0678b96b4221f",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder04.fbx",
+    "guid": "8043dbd290315f04e8512189765cde6a",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/LessonStation.cs",
+    "guid": "903d2c2c18dc47818cb6bb191c8383eb",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/PlayerBodyAnchor.cs",
+    "guid": "900ef621bd47a1d47a5dbb4dccc42a19",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/WaterSurfaceMotion.cs",
+    "guid": "a0cc4f8c6c44b3646a9929d2167d8de5",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Midland_East_Cliff03.asset",
+    "guid": "b0e237a0cd5d9ad41b56d099aadb0983",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Halfway_WestShoulder.asset",
+    "guid": "b01334f5077fc9a438a612889e866cc8",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V10_BeforeFirstPerson.unity",
+    "guid": "d089b31951a3acd4ba17af98049dfe5e",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/LessonCompletionCondition.cs",
+    "guid": "e0053771d9774a66bc8190f4b5b0a518",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightPortal.cs",
+    "guid": "e03ee148ab1032b41873171d8a962aee",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Prefabs/03_FoldedBridge.prefab",
+    "guid": "e02f45ca75cfc6a4a9179cb978a3740c",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock05.fbx",
+    "guid": "f0c1fafaa13191646a776ce4bdb69c3c",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Terrain.mat",
+    "guid": "f01f4428a700f1842ba5ce9eb0b25329",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterSystem/Prefabs/WaterVolume.prefab",
+    "guid": "01f38413dd1d5a44ba0392cab2549dbd",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/AimConsoleRelay.cs",
+    "guid": "110345aead80cdf45bd3d810a8aec8b8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/StoneCurtain_Red.mat",
+    "guid": "215ed1efedf030e4595422a7d1c5bcb6",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/WhiteboxPath.asset",
+    "guid": "411367d04605f974097caab8c2c50286",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/WaterMirageMath.cs",
+    "guid": "412405e8b208d7b408a13335aaba7e0c",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Player/QuaterniusMannequin.prefab",
+    "guid": "5123b3411bbb3c1419232f51d4d8ab4d",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/SOURCE.md",
+    "guid": "513f310fe06a31241add93ca620bb8d6",
+    "type": "TextAsset"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Light ray.mat",
+    "guid": "61eaff5b7873486428409cf49abf6a3f",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Headland_Layered02.mat",
+    "guid": "71bd536bf4355224ba22d563529e1b1d",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Readme.asset",
+    "guid": "8105016687592461f977c054a80ce2f2",
+    "type": "Readme"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/Sunlight_Gold.mat",
+    "guid": "8178c05dfa91cc3408ab7d7b5998ba23",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightReceiver.cs",
+    "guid": "81fbc6a135917464c845ca4ea5b17d74",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V9.unity",
+    "guid": "91a7954decc031344bc4224f9aec13ed",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/PlayerShadowChecks.cs",
+    "guid": "91d7d279e3c839b4789a468dee8c97a6",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/West_Toe_Cliff03.asset",
+    "guid": "a11109da46641b7428f0fd6e237183e8",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular08.fbx",
+    "guid": "a1a67b3aca5184644a91afcf6d640009",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/MirageSandboxAuthoring.cs",
+    "guid": "a1996477ec2c0a349a7e13ff65150579",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Prefabs/SummitTemple.prefab",
+    "guid": "b196bcbc74c3bea4687fa103da14836a",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Prefabs/ExplorerVisual.prefab",
+    "guid": "c14ede7166dea704d89305a0f1cdcf52",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/MutedSage.asset",
+    "guid": "d1703858850740747b54a6b4a209b95e",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Prefabs/FirstLight.prefab",
+    "guid": "f1074a6052fa4b84895728813e86cee0",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03c.fbx",
+    "guid": "02f94cebd4cfcfd429bcdb1324a91db3",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/LightPath.mat",
+    "guid": "02ca4646ca34d0f4d8c7eed5bcd40f65",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/TutorialModuleMigration.cs",
+    "guid": "32c78c3c409049f69e47999561e10c37",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/WaterCourtyard.Demo.asmdef",
+    "guid": "325cc3185ee1ab04f8da974a8e73ee57",
+    "type": "AssemblyDefinitionAsset"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02e.fbx",
+    "guid": "320d86c7ea6ccb14daae84af72936ca5",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/Materials/testMaterial.mat",
+    "guid": "428923c45434f2344a7101a374cd8511",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Sea.mat",
+    "guid": "421b84ea06a882d4c874978561d57b90",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/WhiteboxBeach.asset",
+    "guid": "52485e0da2f3d7d4ca94d132cbfdd5cf",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CliffFace.mat",
+    "guid": "52dc7e13beb746b4abefaea32e18b127",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Scenes/CoastalTemple.unity",
+    "guid": "6284b13d103146a4c91e8447a974e0e1",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Prefabs/BorrowedLight.prefab",
+    "guid": "62072487eb8a6b74eaa6de93b30feefb",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/02_StoneWorkshop_Exit_Join.asset",
+    "guid": "62f81085b2fab9d47ac9471a61b10a2c",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png",
+    "guid": "727a75301c3d24613a3ebcec4a24c2c8",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V11_BeforeMotionFix.unity",
+    "guid": "824619e120387dc4e91ae302b952f55c",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Interaction/LanternState.cs",
+    "guid": "923502b40d4f4df093d81735736d0e0a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/ChalkGray.asset",
+    "guid": "922e1985319ae0a44af261b1f7eebf08",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MotorLeverState.cs",
+    "guid": "b2b53b41eea6af440b8c397927785fb5",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Light/StoneRuleMark.mat",
+    "guid": "b2d97c44568428849b3f4703481184bc",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Beach_BroadRockSlope.asset",
+    "guid": "c265a993fe7d2554198a67d74068d3e2",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MirageAimConsole.cs",
+    "guid": "c22f4037b54892242b2463c2f5c541e3",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/SeaBoundary.cs",
+    "guid": "d28a7ed4ac9f59349931a3d5db9df8b6",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/Preview.png",
+    "guid": "d25bbca04e7f82443b2fdc7fd283476a",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/LanternPickup.cs",
+    "guid": "e2fb096968634748bab2527f85d78335",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset",
+    "guid": "f288ae1f4751b564a96ac7587541f7a2",
+    "type": "UniversalRendererData"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Instrument_teal.mat",
+    "guid": "135f82bf7ce607544a55649bbdf69ce5",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset",
+    "guid": "3327b811d0a7be344aa3469c09d8e9cf",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff01.fbx",
+    "guid": "337e7ea00c398a240bf3322b03834cd6",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/Descent_To_Halfway.asset",
+    "guid": "33aee327aff2aab42b3ba8ebed68627f",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CoastalOcean.mat",
+    "guid": "43e04f2c99690c64f86f04c1baa332ff",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/FirstPerson/FirstPersonHands.prefab",
+    "guid": "5388951c9a24e3443b6df8a266ff7f5d",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Midland_West_Cliff02.asset",
+    "guid": "63d6b3407c99dbd44b73cfea413e60ed",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CliffUndercut.mat",
+    "guid": "63078125a0ec13c468ff5a41710cd99a",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02b.fbx",
+    "guid": "63abda316caf8cf409157abde949cd8c",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/RedStoneCurtain.cs",
+    "guid": "93ebfdcd206bce0488527cb9c822e12a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Textures/Floor07.png",
+    "guid": "b3c0bbe0037d2cd40b4668f08aaecbe7",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/ReusableGameplayAuthoring.cs",
+    "guid": "b3cc656c96c131045b9e392e033f4823",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Midland_Center_Cliff02.asset",
+    "guid": "d397d6647f766ed4e8b0ee291945f8ec",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder02.fbx",
+    "guid": "e333e25ba88ccf540840f967badadab5",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/TileGrid.asset",
+    "guid": "e376d543120c8e8469dc46f928f04005",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/DrainRing.asset",
+    "guid": "e32ae3aa86141244aa1cb0e11a49d786",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/RelaxedHandsAuthoring.cs",
+    "guid": "e3be7fbcdf161c14b946753568610693",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Textures/Floor04.png",
+    "guid": "f39368acefce75b4a810139cebee3706",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/BuoyantBody.cs",
+    "guid": "f3eecda10e488944fbee314f298648a5",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03b.fbx",
+    "guid": "0420d907b105cbb4cbc64fa529a24872",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset",
+    "guid": "04d18854b87087c4c8fe6687464432de",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular03.fbx",
+    "guid": "14376cb89053d864fb3b32c23dc16838",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightActivationState.cs",
+    "guid": "24588e545e77ca14b8f82dce06a4d4c3",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff05.fbx",
+    "guid": "244dfa26ae9bedf408af5120099208e5",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/FallRecoveryRegion.cs",
+    "guid": "345bf29d164a0764ba55f9413a8a4fae",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGapRestore.json",
+    "guid": "340d6e08e58e03741836dddc151c7d5b",
+    "type": "TextAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CoastalMountain.asset",
+    "guid": "643123f5fa715de40b58bbf1aa8d777e",
+    "type": "TerrainData"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/Lift_Approach.asset",
+    "guid": "74f1c0494ea8c05428ef38b0eb585122",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Headland_BareRock.mat",
+    "guid": "8484a1433e5d532409a1fdde7f8420d4",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular05.fbx",
+    "guid": "845ebc3c8702c2d4084b46ff6db6bd68",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff03_a.png",
+    "guid": "94448abe9f8cb6847a146b9d37f0c9f2",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/FirstPerson/HeldLantern.mat",
+    "guid": "949d4abea7efd1847a4b317995452e41",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_Approach.asset",
+    "guid": "b40cc7eb11556494f8af6e9c9f396a04",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/Recess.mat",
+    "guid": "c44c6c36cf2e76b47ba5485e1669a911",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Editor/WaterCourtyard.Editor.asmdef",
+    "guid": "d49165c2480f2e447ad34167d1bb535b",
+    "type": "AssemblyDefinitionAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/West_RockFlank.asset",
+    "guid": "d45fa1f738203f94ba1674657f8b61ca",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CliffCap.mat",
+    "guid": "e4a288091170f31479ca8ffa957c3be5",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Headland_Layered04.mat",
+    "guid": "e44ae2397cb828f4cb32745d09805729",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03d.fbx",
+    "guid": "f4ecaa0bea8ccdf4db56be72704b51c8",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Chalk.mat",
+    "guid": "f40fb9df0284aa24c8bffa5d0d25b85d",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions",
+    "guid": "052faaac586de48259a63d0c4782560b",
+    "type": "InputActionAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/Routes/TutorialV9Authoring.cs",
+    "guid": "354055a41980ce146896b330b73747bb",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/CoastalWalkthrough.cs",
+    "guid": "3568c7b0dc760494b9458e5f8ec5cf1e",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightTargetFeedback.cs",
+    "guid": "356d8a22c4e7841478608cc0209daada",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock12.fbx",
+    "guid": "45772c977fe1b8b42b0d9699a0af0939",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInteractionPolicy.cs",
+    "guid": "454bdec6d71747469231e64c04a5a17d",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset",
+    "guid": "65bc7dbf4170f435aa868c779acfb082",
+    "type": "UniversalRendererData"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Instrument teal.mat",
+    "guid": "755ff1e712021c64aa9626e6b05a9533",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Scenes/WaterCourtyard.unity",
+    "guid": "8545752159d10224788a59b9c8dceab8",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock10.fbx",
+    "guid": "95e57251882ae8d4dbc491ce0cf2158b",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Halfway_JoinedFront.asset",
+    "guid": "a52547506c3867b41a59ea200922f132",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Interaction/PlayerInteractor.cs",
+    "guid": "a559c9198b54479d895bb8c5bb4aabae",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/PortalConsoleRelay.cs",
+    "guid": "b5bbd7c3dd5cd914fa9eaaf61bb39467",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/V9PlayChecks.cs",
+    "guid": "b52e31d40ac74138880bf0cff19a10a0",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock04.fbx",
+    "guid": "d55515213986c4e43bda03ab4c2982d5",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterSystem/Materials/Water.mat",
+    "guid": "d5ea1856b079d254c85a797475f17129",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Summit_CompactPoint.asset",
+    "guid": "16686f3fd3bc18648ae23bf34c80a86f",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/SceneObjectGuide.cs",
+    "guid": "26978249b6acfa84aa35908d258b5b5e",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Flow marks.mat",
+    "guid": "26e81f8a3b7b1ee4f858f57e28c3f62f",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/Core/OceanWaveMath.cs",
+    "guid": "260b1c252cf1af149904fd9218699d47",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInteractable.cs",
+    "guid": "36580022de5b4a73a7509178372798d8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/ChalkGray.terrainlayer",
+    "guid": "467681a79db80974aa863e719b46d608",
+    "type": "TerrainLayer"
+  },
+  {
+    "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/AnimationLibrary_Unity_Standard.fbx",
+    "guid": "4607ea505c5f35b45920ad4992910eaa",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Light/RedStone_Permanent.prefab",
+    "guid": "5664a7cbff0b19545af41438e07f1a29",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/FirstPersonMotionChecks.cs",
+    "guid": "56e6f506f47d4ef4e85e6cff8a5699a6",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/License.txt",
+    "guid": "56ff6bc4b94136d409acf828590d0d07",
+    "type": "TextAsset"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular06.fbx",
+    "guid": "6664bd6f8b9837e4693d85525a04663f",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CutStone.mat",
+    "guid": "668dbfe337a3c22449e6930081b6fb39",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/02_StoneWorkshop_Approach.asset",
+    "guid": "8675e2ee435f2da46a8c8296ba336c36",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Chalk.mat",
+    "guid": "a66326d1155e1a943b6849042fabe2b5",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/TutorialGapExcavator.cs",
+    "guid": "a6585997bd9342948aba121b08023085",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/OceanWaves.cs",
+    "guid": "b6907aa28677cc44eb210c314afe9d87",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/East_SummitSupport.asset",
+    "guid": "b6cfd930385602d4da32e02895fc1778",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff02_a.png",
+    "guid": "c62db5b329a61e04b94a78a0fbae0576",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock01.fbx",
+    "guid": "e66fee410cb35f84787af5440dfdc2cc",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/PlayerReachedCondition.cs",
+    "guid": "f609588a8216462fa5172b5ffa79db57",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/North_AscentBody.asset",
+    "guid": "f6497619361550740a477d63f2a8c4dd",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/WhiteboxSoil.asset",
+    "guid": "f65defd116631214f806a5f45c9a03a1",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightTarget.cs",
+    "guid": "073a4d42f57487d44be9c3ccd8b6e688",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/WaterMirage.cs",
+    "guid": "076b4936a36323c459bf1bdc33c827cc",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+    "guid": "174c7f1e60431f4459d0f1c391ff21ca",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Summit_TriangularCliff04.asset",
+    "guid": "27fc684fbad46164da91ffbbe53cf9da",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/Unity_Setup.png",
+    "guid": "37e007732a4ded94bb3943f4f8d1c72f",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset",
+    "guid": "47375710433a0a94ab422f95824845e7",
+    "type": "TerrainData"
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+    "guid": "476cc7d7cd9874016adc216baab94a0a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/CoastalPlayerAvatar.cs",
+    "guid": "57002125e98a84d4aad4c2316858309a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/Sandstone.mat",
+    "guid": "576416d7f2c8e024ca81a4ad1cf12404",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Materials/Floor1.mat",
+    "guid": "57892f3648730b34ca54f74734f3e34b",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Sky.mat",
+    "guid": "67008340a00e0454ab5e4ff0bea537aa",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Core/SeaBounds.cs",
+    "guid": "67c22793cd5077149828602dcea61576",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/PortalRailConsole.cs",
+    "guid": "87c69f24a28b4cfab057676a437e27a8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/CourtyardDrainConsole.cs",
+    "guid": "8797e3f395044fb4298f08c070099607",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+    "guid": "97bc8e64ee44e0a478bf0e7541a63503",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/CourtyardWalker.cs",
+    "guid": "c7162cba94fad8e44a1c129671d06f83",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/SolidPath.cs",
+    "guid": "d7f550095660ec8429f2cc1e5e95e155",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/BoundaryBuoy.mat",
+    "guid": "d72dbdaeeddec274f9572cef72c15b62",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V8.unity",
+    "guid": "e767f660f3f91a945b078a0421da34ee",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLiftMath.cs",
+    "guid": "e738dfdd24a20804a85f9f1ea56f9b6b",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/Chalk.mat",
+    "guid": "f76743cc70e590645bdc04aaca7e071c",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/01_FirstLight_CarvedFloor.asset",
+    "guid": "f7c8819f38618eb43ae5aaaad9df4d41",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02d.fbx",
+    "guid": "f7da1263f14e6b74f9b1ae0e9c841865",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+    "guid": "182725207b5b41643a26b7023ad6b005",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+    "guid": "18dc0cd2c080841dea60987a38ce93fa",
+    "type": "UniversalRenderPipelineGlobalSettings"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/CourtyardDrainExperiment.cs",
+    "guid": "183f6d84334c4a9cb4a408fb2a976c71",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/CONTROLS.md",
+    "guid": "2876d99826b840349c836d93a82adad5",
+    "type": "TextAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/WhiteboxTrail.asset",
+    "guid": "487dc1547de59c548903f39a069a1cde",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Interaction/PlayerLantern.cs",
+    "guid": "48de5e72450c4099ab030433f990c43c",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/TutorialInteractionChecks.cs",
+    "guid": "683390cc70f041f68b3a4957e79ceb17",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Materials/FloorNormal.mat",
+    "guid": "78334c856c0bfdd40a3b77947fef18de",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Textures/FloorNormal.PNG",
+    "guid": "98a96af1d6c7b714cb5b060ed99e000d",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/ReturningStone.mat",
+    "guid": "a8522f25415b1764a93257eb9a2c35e8",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/Courtyard.Water.asmdef",
+    "guid": "a85ae6b9a42b29c40b4001502bec23b4",
+    "type": "AssemblyDefinitionAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Prefabs/TempleColumn.prefab",
+    "guid": "b8a9947ef4236484e80b3a40f70a707b",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/Sandstone.mat",
+    "guid": "c842283e35a34cb4192b0a65805587ba",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Grass.terrainlayer",
+    "guid": "d8032f8e9b58cb84f89f529d9b934f88",
+    "type": "TerrainLayer"
+  },
+  {
+    "path": "Assets/Character/Fast Run.zip",
+    "guid": "d8186c13e05e0d64e9d9f143416702d9",
+    "type": "DefaultAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/02_BorrowedLight_CarvedFloor.asset",
+    "guid": "d8e8b90da41782d4ab1a356fb7167bb0",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/01_BorrowedBridge_Shore_Approach.asset",
+    "guid": "d8ad0a04c8821ea4bb34b5138b7dad29",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/WhiteboxSand.terrainlayer",
+    "guid": "e8e1e0511717df04b831b22e307c9546",
+    "type": "TerrainLayer"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/South_Toe_Cliff03.asset",
+    "guid": "f8e4893350752d940880856e79bd17b1",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLiftChecks.cs",
+    "guid": "f8c78c7c78d015442982d4fd2b7756e2",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Receiver.mat",
+    "guid": "09df77c776648064ba7e7dd3c500b101",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular01.fbx",
+    "guid": "29c3ac4f93371c548b5ba586d2da5826",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/WalkerMomentumChecks.cs",
+    "guid": "291afa5ad54624d449d33bb18d858f83",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/FlowTracers.cs",
+    "guid": "39f29fc817ac6f8498df2e83ae1c6039",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Coastal_LowCrag_Cliff03.asset",
+    "guid": "59d37dee550bd854db8d41fd0101e90c",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Light/RedStone_WhileLit.prefab",
+    "guid": "5909d01b245ec8a4381a015b893c701a",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/AimConsole.cs",
+    "guid": "69d5b2d0669e42ac876d27060189afee",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Character/X Bot@Slow Run.fbx",
+    "guid": "69ad0ce074ca89b49bfa418b53bb956d",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular07.fbx",
+    "guid": "69fd531ba82a76b46abe0dcf4fa6a2cb",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_B_Rising_LightBridge.asset",
+    "guid": "89104bf4ef54e034a88bdd8c031d0660",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock08.fbx",
+    "guid": "8932f97f36d732a49900e3655b08ab81",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular04.fbx",
+    "guid": "8906689737b74ef43b87272b6d8ac350",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/Character/Slow Run.zip",
+    "guid": "894983243d0b96640838841f94743cdc",
+    "type": "DefaultAsset"
+  },
+  {
+    "path": "Assets/Textures/Floor05.png",
+    "guid": "9988538e390ef78449cfd079d4ae2ee0",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/Scenes/SampleScene.unity",
+    "guid": "99c9720ab356a0642a771bea13969a05",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/PlayerCameraMath.cs",
+    "guid": "991a97662b0f71d4180afc7a8428e946",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Summit_Root_Cliff03.asset",
+    "guid": "a9107e5729f5a1d40b4d396b215853df",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/RefractedDrainBeam.cs",
+    "guid": "b916cba29dfdd0b46b07505f9cff5043",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Limestone.mat",
+    "guid": "e92406506c5c3d046bf5238dc6bcd4e4",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Prefabs/02_StoneWorkshop.prefab",
+    "guid": "e9d69700c3d847946bebbf60637fb137",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock02.fbx",
+    "guid": "1a555dcad38ea93448b4430b156937de",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/CoastalSwell.cs",
+    "guid": "1ab87ba18babbe24283029ae7d6e483a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/FallRecoveryChecks.cs",
+    "guid": "1ae916e41d86be64eb45078a7428dc4b",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Player/MannequinLocomotion.controller",
+    "guid": "1a3a88ce336c17642930e94694af5e85",
+    "type": "AnimatorController"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder05.fbx",
+    "guid": "1a5f601bd6fe533459bc47057447aacc",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/NearshorePreview.asset",
+    "guid": "2a10bf4f7235f50418ecd2d361d6dd00",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03.fbx",
+    "guid": "2a567b513bee363499460d4193668e32",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset",
+    "guid": "3a78d3157c471b742b92ef8736cfe71d",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/West_Shoulders_Cliff03.asset",
+    "guid": "5acc9a7f317af4e43aa7928f9c4be5c6",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/FirstPersonHands.cs",
+    "guid": "8aa221eb504600a4486b89f9594164bc",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LightPathDriver.cs",
+    "guid": "8af2c8979d2893f4799f73ece56edc83",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Summit_OverhangingCliff.asset",
+    "guid": "aa007b94b2859294c907be76b67ccb5c",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/Textures/Floor03.PNG",
+    "guid": "ba749a31aecb5084e9b22ed362f674e0",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Shaders/Ocean.shader",
+    "guid": "ca626fac53c386c46b2525de7b275548",
+    "type": "Shader"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/01_BorrowedBridge_Exit_Join.asset",
+    "guid": "ca999c843cf3d9349993aa278091cae0",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/Core/WaterGrid.cs",
+    "guid": "da81fa596701bda48a8f3cc9f0f78e9d",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock09.fbx",
+    "guid": "eaf697666981fc64eb2f1faf8e492aa3",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/FirstPersonPlayChecks.cs",
+    "guid": "ea0972c0a85cb7a4a8d3154e88dbc8af",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt",
+    "guid": "eabc9546105bf4accac1fd62a63e88e6",
+    "type": "DefaultAsset"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Paveway01.fbx",
+    "guid": "fab0907c9e920194987bdb26b641e554",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Editor/CourtyardBuilder.cs",
+    "guid": "0bc7af10b2f553f4ca82f3a4092b008d",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Readme.pdf",
+    "guid": "1bd53099eea226f4f9ca0ec37f39084c",
+    "type": "DefaultAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLift.cs",
+    "guid": "1b190cf757bf69142abce5a92b961346",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Textures/Grass01_a.png",
+    "guid": "1bbb6f363f884124aaa1cad8329f78cf",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/North_Shoulders_Cliff02.asset",
+    "guid": "2b9f17b6c9c9d494fabe1a0db7219e03",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/RiggedPlayerAnimation.cs",
+    "guid": "4b03b0b6460352c41bd12da760881e7b",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset",
+    "guid": "4b83569d67af61e458304325a23e5dfd",
+    "type": "UniversalRenderPipelineAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/CourtyardDrainExperimentChecks.cs",
+    "guid": "4b8639e5f93a4075b31a6575167d44f8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/FirstPerson/FirstPersonHands.controller",
+    "guid": "4bd7c89f7ce89bb4b9409be4a6ceb444",
+    "type": "AnimatorController"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/TutorialHud.cs",
+    "guid": "5b501567c1594163ab614b0ed0ab4d8a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/FirstPerson/RelaxedHands.anim",
+    "guid": "5b90707539e5f404b85e87aa765208d8",
+    "type": "AnimationClip"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/03_FoldedLight_CarvedFloor.asset",
+    "guid": "6bd6dfc1e88195f42b5675c0b7dd1ca0",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Mechanism.mat",
+    "guid": "6b6f0462bedadfc489afbd8c49c477a8",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Prefabs/FoldedLight.prefab",
+    "guid": "8b0c076b8ff0a794bbe03b2bbcf4abe9",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/CourtyardDrainMigration.cs",
+    "guid": "8bac35587a364462b3c8fb3f3a81b95a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Prefabs/CourtyardWater.prefab",
+    "guid": "9b73b31e66115eb4998bb1fca674c3b3",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Whitebox_Recess.mat",
+    "guid": "abe2ba2c37ad8d445aea27003c055b6b",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset",
+    "guid": "ab09877e2e707104187f6f83e2f62510",
+    "type": "VolumeProfile"
+  },
+  {
+    "path": "Assets/Textures/Floor02.PNG",
+    "guid": "bb25af4ac3ec3c842b2b1ad2a889ae59",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/README.md",
+    "guid": "bb1ef50967d5c324da8a72beb801cc9b",
+    "type": "TextAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Chalk.mat",
+    "guid": "cba7e0be2c12ac14394b159b72f24279",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Prefabs/01_BorrowedBridge.prefab",
+    "guid": "cbb836c12dc8fdc4494f1e2766c5cc99",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/CourtyardLab.cs",
+    "guid": "dbc72d2c327720b4ebfc1aa9553780b8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity",
+    "guid": "fb615b6d1080d694099d4348564af9d4",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/Chalk.mat",
+    "guid": "fb23ba0768c74ca47919091560cd0c34",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset",
+    "guid": "1c23878cea9af8f4e9ad6bf772f4d8cd",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/TutorialSceneAuthoring.cs",
+    "guid": "1c93b594ee7441b4d909ff88c7043686",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MechanismComponentChecks.cs",
+    "guid": "1c7a024cacdef504c886e021370e3a62",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/ReusableAssetChecks.cs",
+    "guid": "2c144101848032145aa37dab50c4d9ae",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Sky.mat",
+    "guid": "2ce534db73d014a4da99cd0b3069fcc4",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03e.fbx",
+    "guid": "2c36ac845a5d8a644ae6f6c29a5f2ce6",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/MeshAssetWriter.cs",
+    "guid": "4cd6986fe6ce4b62972828ca1e8b5ff1",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Limestone.mat",
+    "guid": "4c2a3899dc6b1ff4c9b50bcd3468beba",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Textures/Floor06.png",
+    "guid": "5c184747416c7b44b8c236f7e9d9843d",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset",
+    "guid": "5c2d6b9d2a91f6442bae6018bfbffcf5",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock03.fbx",
+    "guid": "6cef85b27eef70643bebe7ec4229f25d",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset",
+    "guid": "8cc5e407931961940a05a733a3fe4537",
+    "type": "TerrainData"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/WhiteboxSand.asset",
+    "guid": "8c3da41a7eec47d4f831d6d469faeea8",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Player/CoastalPlayerCamera.cs",
+    "guid": "9c3dfb53d07203c4ea5fb3637e5e3938",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03f.fbx",
+    "guid": "9c5fa9580ac3a6a468f9d4793a783bcb",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/FarSeaRing.asset",
+    "guid": "acd627edbe0e80d45ab66356c30abe32",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Recess.mat",
+    "guid": "ac0898cfc344c6e4ca3e9b60d6fbe8fa",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Tip_LowerButtress.asset",
+    "guid": "cc8b54e615520854793258fe882eeede",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Beach_OccludingButtress.asset",
+    "guid": "cccf280f273898a4aa1b150bb3a951e6",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInput.cs",
+    "guid": "fc2396ab9de445e882994f779029ceb0",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+    "guid": "fcf7219bab7fe46a1ad266029b2fee19",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/TutorialJourney.cs",
+    "guid": "fc0861c6100e4ff58f93cff2c67f8f9b",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/Midland_South_Cliff02.asset",
+    "guid": "fc3e20fc03437314f8f2ad11218d5f9c",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Headland_Grass.mat",
+    "guid": "0d51f2b72f93330479b7dc8b1dd20f48",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03g.fbx",
+    "guid": "1de2bff64e54872448f9fb5ca0b56cb9",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Pool tile.mat",
+    "guid": "1d79fc55fa1c5224cbf2b7f004497dcf",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/LightRuleTests.cs",
+    "guid": "1d6ed56bc2fd1094d99170f7b1e55374",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/PlayerAvatarAuthoring.cs",
+    "guid": "1daf50586ef4063409e962ddb383ec5c",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/WaterSystem/Runtime/WaterVolume.cs",
+    "guid": "2d0629efd8669c247a595dd70c905353",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Meshes/BorrowedLight_Approach.asset",
+    "guid": "3ddac987e50666b4baa4a26c6916b0d8",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/CoastalTone.asset",
+    "guid": "4dc2c66b4ec7fb34bb712aecabb644d4",
+    "type": "VolumeProfile"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LinearPlatformMotorMath.cs",
+    "guid": "4d337e0cab4900548a37f469dd7b6453",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/FirstPerson/Quaternius_ArmsOnly.asset",
+    "guid": "4d9720332e96d01448ac28133e3f5277",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/LinearPlatformMotor.cs",
+    "guid": "4dfaa365149ee704b9a972209d991cf3",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/V10PlayerChecks.cs",
+    "guid": "4dbd3c380c33e0a408ce24db46a51ce8",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/MutedSage.terrainlayer",
+    "guid": "5d4d8c2f249a6d840b7f26ed048f7c5a",
+    "type": "TerrainLayer"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock11.fbx",
+    "guid": "5d6d56b7558a27e459c68661410b80e9",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock07.fbx",
+    "guid": "6d09b84846cf7be46988d1c9b32d938a",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/Textures/Floor01.PNG",
+    "guid": "7d8b981857ee93744b54b5f3bb26a3d9",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Light/LightPuzzleWorld.cs",
+    "guid": "7d1e379a12987014490515d8d893c476",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/FirstPersonChecks.cs",
+    "guid": "7d6e052e1ebe2b545b7617c4016dcbea",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/Recess.mat",
+    "guid": "8d4484f061b7a264b8d1e55328fda0f6",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Runtime/WaterAcceptance.cs",
+    "guid": "8dfd5e0bab24d5f4faceec2b48290ea5",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset",
+    "guid": "9d1e3b038212d6d43809a42488ecab0e",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02c.fbx",
+    "guid": "bd03343968dfaa74485728360dbe713f",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/WhiteboxPath.terrainlayer",
+    "guid": "bd29633b72a306e4ca51df63d7953989",
+    "type": "TerrainLayer"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/GradedFloor.asset",
+    "guid": "bdadb48d6b22a0f4e84b5acc74a49baa",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/Routes/RouteLayouts.cs",
+    "guid": "cd2bcc6f9ec09fe4eaba16e39cbd866f",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/AlgorithmicRippleNormal.asset",
+    "guid": "ed52661a5567dc342a430fb2f3ddb6f8",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Tutorial/LessonProgress.cs",
+    "guid": "fdedd8ef4a2e4477b6af6e8f03cf68cb",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MechanismDriveRules.cs",
+    "guid": "0e22db7ac1e3d4b409d19195546fdf97",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V13_BeforeShadowFix.unity",
+    "guid": "0eaa4a820edfefc4db109d1cc0e92b86",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/WaterSystem/Shaders/HeightfieldWater.shader",
+    "guid": "0e7d71e9c9ed8e649b23f2afc8374fba",
+    "type": "Shader"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Materials/Portal_Turquoise.mat",
+    "guid": "2eb876e3a0a632f42b7fac78e8924148",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock06.fbx",
+    "guid": "3ef54dab4b56d6a41814fbf07e63eb80",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder01.fbx",
+    "guid": "3eaad35c83134024d8521b64b109f088",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+    "guid": "4e4048c0a822c2646a7595ea0dca9e76",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/WhiteboxRock.asset",
+    "guid": "4ed1c48df48e021428772511dd8bb725",
+    "type": "Texture2D"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/CourtVolume.asset",
+    "guid": "5e213539032f93e4a98cac68a1584b41",
+    "type": "VolumeProfile"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02g.fbx",
+    "guid": "5e56d0e225c14f74b9c019e24a26c711",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_Exit_Join.asset",
+    "guid": "5ef6cdb961a3e33409ffa78deb7b69db",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset",
+    "guid": "5e6cbd92db86f4b18aec3ed561671858",
+    "type": "UniversalRenderPipelineAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Diagnostics/V8PlayChecks.cs",
+    "guid": "6e20f90ad992ba849a469bb2eefb88eb",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MirageBeamView.cs",
+    "guid": "6e5fada55bf267d47b9b06342034a40a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Reusable/Player/Mannequin_Ivory.mat",
+    "guid": "6e8f0e4d7cf8b884ea500a8d3edf6d95",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular02.fbx",
+    "guid": "7e82e1cb82054c446a4319a6fc6e49c9",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Main_SouthBody.asset",
+    "guid": "9e992c5ccc3800440ab9602d784a9d2b",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Archive/CoastalTemple_V7.unity",
+    "guid": "ceee9e5804271ea47993fcc6b291a4bb",
+    "type": "SceneAsset"
+  },
+  {
+    "path": "Assets/CoastalTemple/Runtime/Mechanisms/MotorLever.cs",
+    "guid": "de14c725112d9fa42952c0e92db73e13",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/Routes/RouteAuthoringKit.cs",
+    "guid": "feefd5b145d21a64aa69837b59508049",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Halfway_CliffBlock.asset",
+    "guid": "1f81c807895afae4ea1b634e1cf3e007",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/CompactMountain/Rear_FoldedRidge.asset",
+    "guid": "1f486ae883ffe674ab0e2f771d06c41a",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/FirstPersonAuthoring.cs",
+    "guid": "3f8e938621635694484606f90bc97741",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/Editor/LocalMcpConnection.cs",
+    "guid": "6f7214293deb0c844838d77e54ea943a",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Editor/SceneObjectGuideEditor.cs",
+    "guid": "6f2494765a1c1ad4094f6a1f879e78fd",
+    "type": "MonoScript"
+  },
+  {
+    "path": "Assets/CoastalTemple/Materials/Headland_Layered03.mat",
+    "guid": "6ffb37d7ecc08ee4d995b48945155ede",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/WaterCourtyard/Generated/Materials/Mechanism.mat",
+    "guid": "7fb98ef83bab2d74b84926ec4aacc312",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/Materials/Floor01.mat",
+    "guid": "7faa1bd8ab6cc904a90d7c4d307e112d",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02f.fbx",
+    "guid": "9f172cb24875542409a8063c7148bcc7",
+    "type": "GameObject"
+  },
+  {
+    "path": "Assets/CoastalTemple/Terrain/Headland/West_GradedFlank_Cliff02.asset",
+    "guid": "efc0e4b5abc2a4346bfc5fb299c21f64",
+    "type": "Mesh"
+  },
+  {
+    "path": "Assets/CoastalTemple/TutorialV9/Materials/SpaceWindow.mat",
+    "guid": "efdd9583275ae6841b04e1531a1d1473",
+    "type": "Material"
+  },
+  {
+    "path": "Assets/CoastalTemple/Tutorial/Prefabs/WaterMirageSandbox.prefab",
+    "guid": "fff34dfa5fc723f47b7af0d8d22b99f5",
+    "type": "GameObject"
+  }
+]

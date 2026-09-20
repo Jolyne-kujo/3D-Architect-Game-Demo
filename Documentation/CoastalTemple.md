@@ -1,6 +1,6 @@
 # 海岸神庙白模
 
-场景：`Assets/CoastalTemple/Scenes/CoastalTemple.unity`。Unity 6000.5.9f1，ProBuilder 6.1.2。
+场景：`Assets/Scenes/CoastalTemple.unity`。Unity 6000.5.9f1，ProBuilder 6.1.2。
 
 当前配色为暖白色与淡土黄色，模型不使用彩色表面贴图。Terrain 使用同色纯色层，庭院采用本场景的中性材质副本；海水与机关的动态发光反馈保留。最新画面见 [V7 紧凑山体](CoastalV7Verification/README.md)，历史配色见 [白模配色](CoastalWhiteboxPalette/README.md)。
 
@@ -19,13 +19,13 @@
 - `10_CompactMountain`：当前 11 个拼接模型，来自项目内 PureNature 源 FBX 的派生网格。半山和山顶紧贴；`Summit_CompactPoint` 为三角尖顶，`Halfway_JoinedFront` 为半山主体，`Beach_BroadRockSlope` 承托通往隐藏沙滩的支路。派生网格保存在 `Terrain/CompactMountain`，原 FBX 位于 `ThirdParty/PureNatureSubset`，未修改源工程。每块模型使用相同网格进行渲染和 MeshCollider 碰撞，可独立选中、移动、缩放。编辑顶点时须同步碰撞，并复查 Terrain 路面衔接。
 - `11_CoastalLandmarks`：半山、隐藏沙滩和尖顶的空对象标记，便于定位和后续布置关卡。
 
-`TempleColumn.prefab` 和 `SummitTemple.prefab` 位于 `Assets/CoastalTemple/Prefabs`。单独更换美术时保留碰撞尺寸、道路高度和机关引用。新的环境没有运行时建模脚本，也无需执行生成菜单即可打开、编辑和游玩。
+`TempleColumn.prefab` 和 `SummitTemple.prefab` 位于 `Assets/Prefabs/Architecture`。单独更换美术时保留碰撞尺寸、道路高度和机关引用。新的环境没有运行时建模脚本，也无需执行生成菜单即可打开、编辑和游玩。
 
 原 `Sea_Backdrop_VisualOnly` 已停用。当前 `07_Sea` 包含可游泳、可扰动的近岸水、GPU 叠加海浪、轻量远海及越界回点组件。V7 已更新海床预览。水池保持 (-50,0,182)，独立模拟和机关连接均保留。详见 [海面实现](CoastalV3Verification/README.md) 与 [当前水池验证](CoastalV7Verification/PoolChecks.json)。
 
 ## 排水速度
 
-`Assets/WaterSystem/Runtime/WaterVolume.cs` 的 `public float drainSpeedMultiplier = 4` 同时显示在 Inspector 中，范围 0.1–8。已对独立水体预制件与两张场景保存默认值 4。
+`Assets/Scripts/WaterSystem/WaterVolume.cs` 的 `public float drainSpeedMultiplier = 4` 同时显示在 Inspector 中，范围 0.1–8。已对独立水体预制件与两张场景保存默认值 4。
 
 - 1：水体按原来的物理时间推进。
 - 4：当前庭院数值测试在 50 秒内排去超过 99.5% 水量。
@@ -39,4 +39,4 @@ TerrainData 是 Unity 原生二进制资源，已单独加入 Git LFS，避免�
 
 ProBuilder 通过 Unity Package Manager 还原；锁定 6.1.2，以适配当前编辑器 API。升级依据为 [Unity 官方变更记录](https://docs.unity3d.com/Packages/com.unity.probuilder@6.1/changelog/CHANGELOG.html)。
 
-`Packages/com.coplaydev.unity-mcp` 是带 MIT 许可证的编辑器自动化工具，不是玩法或运行环境生成器。普通编辑和试玩不依赖本机 MCP 服务。`Assets/Editor/LocalMcpConnection.cs` 只有检测到本机忽略目录 `Logs/Mcp/connect` 时才自动连接 localhost；其他成员克隆后不会自动连接。Python 客户端示例在 `Tools/Mcp/UnityMcp.py`，需自行准备 FastMCP 环境。
+`Packages/com.coplaydev.unity-mcp` 是带 MIT 许可证的编辑器自动化工具，不是玩法或运行环境生成器。普通编辑和试玩不依赖本机 MCP 服务。`Assets/Scripts/Editor/Tools/LocalMcpConnection.cs` 只有检测到本机忽略目录 `Logs/Mcp/connect` 时才自动连接 localhost；其他成员克隆后不会自动连接。Python 客户端示例在 `Tools/Mcp/UnityMcp.py`，需自行准备 FastMCP 环境。

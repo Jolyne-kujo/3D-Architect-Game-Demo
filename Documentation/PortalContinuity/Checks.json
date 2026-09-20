@@ -1,0 +1,76 @@
+{
+    "passed": 14,
+    "failed": 0,
+    "results": [
+        {
+            "name": "live front view at 4 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "live front view at 40 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "live front view at 200 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "live back view at 4 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "live back view at 40 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "live back view at 200 metres",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "moving destination updates on back face, without retaining previous frame",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "near-plane coverage on side 1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "near-plane coverage on side -1",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "back-face ray uses the same map and leaves on the back of the exit",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "back-face swept crossing preserves overshoot and does not bounce",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "back-side body slice keeps source and destination complementary",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "three different portal pairs render conditionally nested views",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "sixteen visible root windows all refresh despite the recursion budget",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

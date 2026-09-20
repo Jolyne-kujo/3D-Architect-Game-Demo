@@ -1,0 +1,7 @@
+PASS main first bridge uses actual blue optical path
+PASS main first bridge switches off when aim moves away
+PASS existing red stone-lift raise receiver remains usable
+PASS existing red stone-lift lower receiver remains usable
+PASS main portal transmits blue to stone-drive receiver
+PASS main low portal ray remains blocked by middle pier
+PASS main elevated portal ray reaches blue bridge receiver

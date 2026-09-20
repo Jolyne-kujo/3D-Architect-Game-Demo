@@ -1,0 +1,3 @@
+PASS actual showroom stairs: grounded=True, jump speed=4.4038, exit=(-24.00, 0.02, 7.48)
+PASS actual showroom floating deck: grabbed=True, native climb state=True, stood=True, exit=(-20.00, 0.12, 13.66)
+PASS actual showroom E sequence: yellow temporary=True, blue restores=True, red permanent=True

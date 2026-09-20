@@ -1,6 +1,6 @@
 # 悬挑断崖与折返登山路线
 
-本版保留原生 Unity Terrain 山体和简约浅色白模，突出半山方台与山顶神庙。场景为 `Assets/CoastalTemple/Scenes/CoastalTemple.unity`。
+本版保留原生 Unity Terrain 山体和简约浅色白模，突出半山方台与山顶神庙。场景为 `Assets/Scenes/CoastalTemple.unity`。
 
 ## 本次形态
 

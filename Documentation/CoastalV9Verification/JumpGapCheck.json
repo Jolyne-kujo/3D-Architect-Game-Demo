@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "frames": 96,
+  "maxForwardLocalZ": 1.27496338,
+  "farLandingBeginsAt": 2.0,
+  "gapMetres": 7.0,
+  "automaticRecoveries": 1,
+  "scope": "Post-route deliberate setup at the near edge, then real normal-frame CharacterController run and jump intent. No forced displacement. Other gaps are not individually jump-tested."
+}

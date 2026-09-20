@@ -16,7 +16,7 @@
 
 ## 编辑与性能
 
-- 场景仍为 `Assets/CoastalTemple/Scenes/CoastalTemple.unity`。
+- 场景仍为 `Assets/Scenes/CoastalTemple.unity`。
 - 在 Hierarchy 选 `01_CoastalTerrain`，可直接用 Terrain 的抬升、压低、平滑、设定高度和绘制纹理工具编辑。
 - 同一块原生 TerrainData，尺寸 300 × 330 米，高度图保持 513 × 513；TerrainCollider 与水池开洞保留。
 - 约 5 米宽的步道在 Terrain 内切出，向两侧过渡到高处山肩。平台及神庙入口有意保持开放。

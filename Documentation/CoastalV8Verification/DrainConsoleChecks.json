@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Local console enables refracted drain beam",
+    "ok": true
+  },
+  {
+    "name": "Same local console resets water and light",
+    "ok": true
+  },
+  {
+    "name": "Local console repeatable after reset",
+    "ok": true
+  }
+]

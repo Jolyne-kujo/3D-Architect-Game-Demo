@@ -1,0 +1,6 @@
+FAIL downloaded mannequin prefab exists
+FAIL RedStone_Permanent reusable prefab exists
+FAIL RedStone_WhileLit reusable prefab exists
+FAIL main camera remains parented to character
+FAIL moving character immediately moves attached camera
+FAIL returning from overview rebinds camera

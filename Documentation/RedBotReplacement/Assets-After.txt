@@ -1,0 +1,24 @@
+PASS Slow Run imports as humanoid
+PASS Slow Run loop policy
+PASS Fast Run imports as humanoid
+PASS Fast Run loop policy
+PASS Fast Run shares valid source avatar
+PASS Idle imports as humanoid
+PASS Idle loop policy
+PASS Idle shares valid source avatar
+PASS Jump imports as humanoid
+PASS Jump loop policy
+PASS Jump shares valid source avatar
+PASS Lifting imports as humanoid
+PASS Lifting loop policy
+PASS Lifting shares valid source avatar
+PASS Swimming imports as humanoid
+PASS Swimming loop policy
+PASS Swimming shares valid source avatar
+PASS Treading Water imports as humanoid
+PASS Treading Water loop policy
+PASS Treading Water shares valid source avatar
+PASS current body uses new controller
+PASS Mixamo uses native forward axis
+PASS two red bot mesh parts
+PASS carry mask isolates right arm and fingers

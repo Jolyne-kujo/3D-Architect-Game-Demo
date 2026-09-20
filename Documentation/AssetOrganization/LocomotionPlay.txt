@@ -1,0 +1,15 @@
+PASS Imported_Model_And_Skeleton actually plays Slow Run
+PASS Downloaded_Arms_And_Rig actually plays Slow Run
+PASS Slow Run keeps body and camera anchored; errors=0, 0
+PASS Slow Run hips remain inside capsule vicinity over repeated cycles; max XZ radius=0.1650289
+PASS Slow Run animates original mannequin skeleton; knee degrees=82.10065
+PASS Slow Run keeps same forward direction as idle; angle=30.93465
+PASS Slow Run cannot move character using source root motion
+PASS Imported_Model_And_Skeleton actually plays Fast Run
+PASS Downloaded_Arms_And_Rig actually plays Fast Run
+PASS Fast Run keeps body and camera anchored; errors=0, 0
+PASS Fast Run hips remain inside capsule vicinity over repeated cycles; max XZ radius=0.1554637
+PASS Fast Run animates original mannequin skeleton; knee degrees=64.40237
+PASS Fast Run keeps same forward direction as idle; angle=30.52756
+PASS Fast Run cannot move character using source root motion
+PASS stopping returns to idle

@@ -1,0 +1,7 @@
+Assets/Prefabs/Mechanisms/Portal1.prefab: 1 two-sided gates
+Assets/Prefabs/Mechanisms/Portal2.prefab: 1 two-sided gates
+Assets/Prefabs/Mechanisms/PortalPair.prefab: 2 two-sided gates
+Assets/Prefabs/Tutorial/V8/FoldedLight.prefab: 2 two-sided gates
+Assets/Prefabs/Tutorial/V9/03_FoldedBridge.prefab: 2 two-sided gates
+Assets/Scenes/CoastalTemple.unity: 2 two-sided gates; pairs valid=True
+Assets/Scenes/MechanismPlayground.unity: 2 two-sided gates; pairs valid=True

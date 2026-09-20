@@ -1,6 +1,6 @@
 # V6 · 模型拼装尖岬
 
-场景：`Assets/CoastalTemple/Scenes/CoastalTemple.unity`。本机试玩：`Builds/CoastalHeadland-Windows/CoastalTemple.exe`；可分享试玩压缩包：`Builds/CoastalHeadland-Windows.zip`。
+场景：`Assets/Scenes/CoastalTemple.unity`。本机试玩：`Builds/CoastalHeadland-Windows/CoastalTemple.exe`；可分享试玩压缩包：`Builds/CoastalHeadland-Windows.zip`。
 
 ## 地形与路线
 

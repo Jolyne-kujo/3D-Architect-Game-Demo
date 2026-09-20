@@ -1,0 +1,1 @@
+PASS actual scaled showroom stair prefab: exited=True, up clip=True, down clip=True, mantle=False, end=(-24.00, -2.66, 10.52)

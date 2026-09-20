@@ -1,0 +1,8 @@
+{
+  "path": "Builds\\CoastalRoutes-Windows.zip",
+  "zipMB": 61.3,
+  "entries": 216,
+  "crcValid": true,
+  "sha256": "3f25138d7dcab8acd979ed8b037cfee7984455eabc3b791b152911b5a4e2cd60",
+  "validationScope": "Package contents and ZIP integrity only; no Windows play validation."
+}

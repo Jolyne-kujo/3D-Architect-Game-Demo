@@ -1,0 +1,11 @@
+PASS Submerged foot support stands, restores stepOffset, jumps and stays airborne
+PASS No false ground from sidewalls or trigger volumes; open-water ascent remains bounded
+PASS Walk and jump up submerged half-metre stairs to dry land
+PASS Swimming approach automatically mantles a below-shoulder ledge
+PASS A low pool lip is climbable when floating above the previous stair
+PASS Over-shoulder walls, no intent and blocked landing do not mantle
+PASS Moving rotated scaled platform retains the landing point in its local space
+PASS Disappearing support and respawn cancel climbing without disabling controller
+PASS New ceiling during mantle cancels safely and restores collision with the ledge
+PASS Actual buoyant prefab can be boarded from surface by forward plus Space
+PASS Laser prefab starts yellow and both readout meshes match the whole color cycle

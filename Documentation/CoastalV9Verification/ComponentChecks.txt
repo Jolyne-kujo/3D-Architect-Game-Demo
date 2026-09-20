@@ -1,0 +1,95 @@
+PASS requesting light before pickup stays dark
+PASS nearby console ignores its own physical collider and player body
+PASS console changes actual emitter aim before any curtain or reward exists
+PASS nearest registry interaction uses the same reachable console
+PASS player and aim console operate without any tutorial or HUD component
+PASS disabling the tutorial never disables player interaction
+PASS legacy facade delegates to the independent interaction module
+PASS explicit player action permission is enforced
+PASS environmental collider blocks E through a nearby wall
+PASS non-solid observation trigger does not block interaction
+PASS dense geometry fixture saturates the normal 64-hit interaction buffer
+PASS saturated interaction buffer still finds the environmental blocker
+PASS dense allowed geometry remains usable without an environmental wall
+PASS out-of-range console cannot be operated
+PASS overview walker has neither an interaction nor a prompt candidate
+PASS camera overview also forbids console interaction
+PASS disabled console cannot interact through a retained reference
+PASS pickup requires a real lantern capability and is not consumed on failure
+PASS reachable lantern pickup grants and lights the reusable lantern
+PASS lantern pickup event is emitted once independently of rewards
+PASS collected pickup has no lingering collider or repeat interaction
+PASS collected lantern can be switched off
+PASS collected lantern can be switched on again
+PASS rail selection starts travel without teleporting the portal
+PASS portal rail advances through actual intermediate geometry
+PASS portal rail stops at the authored dock
+PASS portal rail can be reversed with no progression condition
+PASS authored station radius selects the current lesson
+PASS authored first hint is displayed
+PASS authored progressive hint is displayed
+PASS arrival and reading hints never fabricate a completion reward
+PASS leaving all lesson radii does not invent a nearby station
+PASS explicit actual-world reward event reaches observers
+PASS arrival condition cannot complete without actual player and destination references
+PASS arrival reward includes the exact authored local boundary
+PASS being outside an authored arrival box cannot complete it
+PASS arrival condition respects actual destination rotation and scale
+PASS observed physical arrival emits the authored lesson reward
+PASS rotated narrow side of arrival box remains outside
+PASS leaving and returning to the real destination does not repeat a completion reward
+40/40 interaction checks passed; failures=0
+PASS platform has a kinematic Rigidbody for rider contact
+PASS local endpoints resolve through the authored lift root
+PASS real vector motion advances 0.75m in half a second
+PASS both receivers request an immediate stop
+PASS real vector motion stops exactly at upper landing
+PASS lower-height beam reaches the platform receiver at bottom
+PASS an illuminated real receiver requests physical platform movement
+PASS disabled receiver cannot leave lift moving with stale active state
+PASS light loss stops the lift request immediately with zero grace
+PASS same beam cannot hit the receiver after it reaches upper height
+PASS normalized height reaches one at the upper landing
+11 lift component checks passed; runtime rider travel still requires play-mode verification.
+PASS Edit-mode fixture explicitly initializes the real buoyant-body Rigidbody reference
+PASS experiment fixture has no tutorial or player component
+PASS StartDrain powers the existing refraction beam
+PASS real water solver drains after the gate opens
+PASS repeated StartDrain does not refill water or reset the latched gate
+PASS visible gate follows the real water gate at 35 degrees per second
+PASS reset disables the refraction light source
+PASS reset refills the real water volume and closes its gate
+PASS reset restores the authored Rigidbody position and rotation
+PASS reset clears floating-body linear and angular momentum
+PASS reset closes the visible gate immediately without waiting for Update
+PASS repeated reset is safe with a null floater entry
+PASS Toggle starts the standalone experiment
+PASS Toggle resets the powered experiment
+PASS explicit migration copies existing experiment references without rebuilding objects
+PASS migration wires the existing console and preserves component identities
+PASS repeated migration reuses its experiment component
+PASS legacy ResetWater delegates to the independent experiment
+PASS migrated console operates without a TutorialJourney dependency
+PASS unassigned experiment references are safe to call repeatedly
+20 drain component and migration checks passed; no keyboard or full-scene route was exercised.
+PASS crossing large triangle loses only the box interior
+PASS untouched submesh preserves its original surface area and material slot
+PASS source mesh is unchanged
+PASS intersections preserve primary UV and a four-dimensional secondary UV channel
+PASS normals tangent handedness and vertex colors are preserved
+PASS repeating a mesh cut is stable within float storage tolerance
+PASS yaw-frame cutting preserves the intended local area
+PASS a box touching one vertex does not alter the mesh
+PASS real MeshCollider has no hidden support inside the cut
+PASS real MeshCollider preserves support outside the cut
+PASS terrain cells crossing the cut are found even when the box misses cell corners
+PASS copied terrain holes leave the shared original and distant terrain intact
+PASS repeating a terrain cut changes no additional cells
+PASS a cutter above the terrain surface does not delete cells below it
+PASS rectangular terrain patches use height then width rather than the affected Unity GetHoles allocation order
+PASS rectangular cuts preserve an existing hole outside the cutter in the padded patch
+PASS a rectangular patch changes its intended cells without transposing the cut
+PASS repeating a rectangular terrain cut preserves cumulative holes
+PASS rectangular edge patches stay within the last valid holes cell
+PASS edge cuts remove the last cell only on the copied terrain
+20 gap geometry checks passed; scene asset restoration still requires authoring verification.

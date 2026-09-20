@@ -3,6 +3,7 @@ import asyncio
 import json
 import sys
 import logging
+import os
 from pathlib import Path
 from fastmcp import Client
 
@@ -14,6 +15,8 @@ def compact(value):
     return value
 
 async def main():
+    # Keep the loopback editor connection out of Windows/system HTTP proxies.
+    os.environ["NO_PROXY"] = ",".join(filter(None, [os.environ.get("NO_PROXY", ""), "127.0.0.1", "localhost"]))
     async with Client("http://127.0.0.1:8765/mcp", timeout=180) as client:
         for group in ("probuilder", "scripting_ext"):
             await client.call_tool("manage_tools", {"action": "activate", "group": group})

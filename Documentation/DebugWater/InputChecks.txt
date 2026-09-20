@@ -1,0 +1,4 @@
+PASS F6 keyboard event enables debug mode without firing
+PASS F7 plus right mouse selects and emits yellow; actual=Yellow firing=True
+PASS mouse release stops emission
+PASS second F6 disables debug mode

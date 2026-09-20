@@ -1,0 +1,97 @@
+{
+    "mode": "Prefab assets only",
+    "passed": 17,
+    "failed": 0,
+    "assetsChecked": 16,
+    "serializedReferences": 7482,
+    "missingReferences": 0,
+    "externalObjectReferences": 0,
+    "originalScenesPreserved": true,
+    "results": [
+        {
+            "name": "LaserDevice asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedStoneCurtain asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "RedLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "YellowLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "BlueLightReceiver asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightBridge asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "LightDrivenLift asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "VerticalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "HorizontalBuoyantPlatform asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal1 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "Portal2 asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PortalPair asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "DrainGate asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "PoolsideDrainConsole asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "WaterMirage asset, drag-out, and duplicate references",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "original scenes remain loaded with original active/dirty state",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

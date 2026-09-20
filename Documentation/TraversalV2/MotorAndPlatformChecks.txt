@@ -1,0 +1,46 @@
+PASS 30 Hz ground acceleration is gradual
+PASS 30 Hz no-input jump retains travel: 1.5638 m in 0.3 s
+PASS 30 Hz air release is not ground braking
+PASS 30 Hz releasing mouse/input does not erase air momentum
+PASS 30 Hz touchdown brakes to a complete stop
+PASS 30 Hz diagonal input cannot exceed configured run speed
+PASS 60 Hz ground acceleration is gradual
+PASS 60 Hz no-input jump retains travel: 1.5651 m in 0.3 s
+PASS 60 Hz air release is not ground braking
+PASS 60 Hz releasing mouse/input does not erase air momentum
+PASS 60 Hz touchdown brakes to a complete stop
+PASS 60 Hz diagonal input cannot exceed configured run speed
+PASS 144 Hz ground acceleration is gradual
+PASS 144 Hz no-input jump retains travel: 1.5658 m in 0.3 s
+PASS 144 Hz air release is not ground braking
+PASS 144 Hz releasing mouse/input does not erase air momentum
+PASS 144 Hz touchdown brakes to a complete stop
+PASS 144 Hz diagonal input cannot exceed configured run speed
+PASS 30/60/144 Hz airborne distance agrees within 3.5 cm; spread=0.00201416
+PASS a reusable guided buoyancy component exists
+PASS Vertical initializes its own child body
+PASS Archimedes equilibrium matches 350 kg/m3 density and 0.6 m thickness
+PASS buoyancy moves only the deck, never its rail frame
+PASS vertical guides reject lateral motion
+PASS raising real water raises the floating deck
+PASS lowering real water lowers the floating deck
+PASS submerged platform stops at the upper rail limit
+PASS drained water lets gravity return the deck to the lower rail limit
+PASS TiltedScaled initializes its own child body
+PASS rotated and nonuniformly scaled guide keeps the deck on its authored local rail
+PASS unassigned water is discovered automatically after rotation and scaling
+PASS displaced volume includes positive nonuniform root scale
+PASS Horizontal initializes its own child body
+PASS horizontal shared control cycles to direction 1
+PASS horizontal shared control cycles to direction 0
+PASS horizontal shared control cycles to direction -1
+PASS horizontal shared control cycles to direction 0
+PASS horizontal guide moves in its rotated path direction
+PASS horizontal stop preserves path progress while buoyancy follows the new water level
+PASS horizontal drive stops exactly at the far endpoint
+PASS E after the far endpoint starts the return trip
+PASS duplicating the frame remaps the platform to its own child body
+PASS operating a duplicate cannot change the original platform
+PASS existing walker can stand on the floating deck collider
+PASS existing walker rides horizontal deck movement without a player script change
+26 guided platform checks passed.

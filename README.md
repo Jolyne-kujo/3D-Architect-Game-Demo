@@ -5,16 +5,22 @@ Unity 6 团队开发项目。源码和资源保存在私有 GitHub 仓库，供�
 - 仓库：<https://github.com/Jolyne-kujo/3D-Architect-Game-Demo>
 - Unity 编辑器：**6000.5.9f1**，以 `ProjectSettings/ProjectVersion.txt` 为准。
 - 渲染管线：URP；依赖版本由 `Packages/manifest.json` 和 `Packages/packages-lock.json` 共同记录。
-- 默认关卡：`Assets/CoastalTemple/Scenes/CoastalTemple.unity`。
-- 独立水系统实验：`Assets/WaterCourtyard/Scenes/WaterCourtyard.unity`（原 SampleScene 保留）。
+- 默认关卡：`Assets/Scenes/CoastalTemple.unity`。
+- 独立水系统实验：`Assets/Scenes/WaterCourtyard.unity`（原 SampleScene 保留）。
 
 ## 海岸神庙白模
 
-打开 `CoastalTemple` 场景并 Play；最新本机试玩包位于 `Builds/CoastalCompact-Windows/CoastalTemple.exe`。
+打开 `Assets/Scenes/CoastalTemple.unity` 并 Play。当前角色为红色 X Bot，使用新待机、慢跑、快跑、跳跃动画，并叠加右手举灯姿态。默认第三人称跟随视角，鼠标环绕观察，角色朝移动方向转身；包含游泳、激光石幕、光桥及空间连接教学。`Builds` 中的历史试玩包不代表当前场景版本。
 当前采用暖白色岩壁与建筑、淡土黄色地表和沙滩，已去除山体彩色贴图。[当前地形与截图](Documentation/CoastalV7Verification/README.md)。
-从沙滩岸边进入露天遗迹，经半山观海平台到达大型神庙。**WASD** 行走/游泳，**Shift** 快走，**空格** 跳跃/上浮，**Ctrl** 下潜，**Tab** 在行走和观察间切换，**F1/F2/F3** 查看全景、半山海面和神庙，**Home** 回到起点。水池按 **1** 排水、**R** 重新蓄水。触碰黄色浮标所在的近远海交界线会回到出生点。
+从沙滩岸边进入露天遗迹，经半山观海平台到达大型神庙。**WASD** 慢跑/游泳，**Shift** 快跑，**空格** 跳跃/上浮，**Ctrl** 下潜，**E** 交互，**H** 查看线索，**L** 切换已获得的提灯，**Esc** 释放鼠标，**Home** 回到起点。普通玩法关闭了全景切换快捷键。触碰黄色浮标所在的近远海交界线会回到出生点。
 
-V7 将半山搬到山顶旁，填起原来的中间海湾，缩短南侧山脚，形成紧凑的连续岩体。北岸出发沿凿入山体的道路上到约 41 米半山，再从侧面折返到约 64 米的神庙台基，三角尖岬最高约 75 米。半山另一条支路经过观海转弯，下降到被岩体遮住的新沙滩；目前为海边关卡预留区。11 个模型模块分别可选，Terrain 辅助承托路面和沙滩，运行时不生成环境。56 段往返行走、26 项几何检查以及海水／水池回归结果见 [V7 验证](Documentation/CoastalV7Verification/README.md)。海浪采用 GPU 四组叠加波，近岸另有低频流体模拟，远海使用轻量平面，调节方法见 [海面说明](Documentation/CoastalV3Verification/README.md)，场景编辑见 [海岸关卡说明](Documentation/CoastalTemple.md)。
+## 资源与代码位置
+
+`Assets` 按用途分为 `Animations`、`Materials`、`Objects`、`Prefabs`、`Scenes`、`Scripts`、`Settings`、`Shaders`、`Textures`。所有代码统一在 `Assets/Scripts`；人物相关代码在 `Gameplay/Player`，移动与游泳控制在 `WaterDemo/Runtime/CourtyardWalker.cs`。
+
+完整目录表和常用文件入口见 [Assets 导航](Assets/README.md)。慢跑、快跑文件在 `Assets/Animations/Player/Locomotion`，原始 DAE 在 `SourceAssets/Characters/Mixamo`。资源迁移记录与验证见 [本次整理说明](Documentation/AssetOrganization/README.md)。
+
+地形模块、Terrain 与建筑的编辑方法见 [海岸关卡说明](Documentation/CoastalTemple.md)。海面采用 GPU 叠加波，近岸另有流体模拟，参数见 [海面说明](Documentation/CoastalV3Verification/README.md)。各历史版本的验证报告保留在 Documentation 下。
 
 ## 水系统白模实验
 

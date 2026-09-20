@@ -1,0 +1,1383 @@
+{
+    "startedUtc": "2026-09-18T18:23:00.2292649Z",
+    "endedUtc": "2026-09-18T18:27:19.4294512Z",
+    "scene": "Assets/Scenes/CoastalTemple.unity",
+    "progress": "Actual overview mode retains built-in rider physics",
+    "outcome": "PASS",
+    "diagnostic": "",
+    "running": false,
+    "routePassed": true,
+    "extraChecksPassed": true,
+    "recoveryChecksPassed": true,
+    "routeTeleports": 0,
+    "postRouteTeleports": 5,
+    "elapsedSeconds": 259.1991271972656,
+    "currentPosition": {
+        "x": -20.6163272857666,
+        "y": 42.52499771118164,
+        "z": 116.59534454345703
+    },
+    "checks": [
+        {
+            "name": "Start at authored spawn",
+            "detail": "Input disabled only for deterministic motor intent; no route teleport. timeScale=1",
+            "passed": true,
+            "position": {
+                "x": -65.0,
+                "y": 0.1460759937763214,
+                "z": 204.0
+            },
+            "target": {
+                "x": -65.0,
+                "y": 0.1460759937763214,
+                "z": 204.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "01 approach first light",
+            "detail": "Reached through CharacterController movement; vertical error=-0.055m.",
+            "passed": true,
+            "position": {
+                "x": -66.58252716064453,
+                "y": 0.024999886751174928,
+                "z": 193.3079071044922
+            },
+            "target": {
+                "x": -66.65084075927735,
+                "y": -0.030000008642673494,
+                "z": 192.84634399414063
+            },
+            "horizontalDistance": 0.46659108996391299,
+            "elapsedSeconds": 3.3662524223327638
+        },
+        {
+            "name": "01 reach sun-lens console",
+            "detail": "Reached through CharacterController movement; vertical error=-0.018m.",
+            "passed": true,
+            "position": {
+                "x": -66.36544036865235,
+                "y": 0.09262046217918396,
+                "z": 189.9230499267578
+            },
+            "target": {
+                "x": -66.35102844238281,
+                "y": 0.07499999552965164,
+                "z": 189.6983184814453
+            },
+            "horizontalDistance": 0.2251930832862854,
+            "elapsedSeconds": 1.114821434020996
+        },
+        {
+            "name": "01 E rotates first sun lens",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.119m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -66.36544036865235,
+                "y": 0.09262046217918396,
+                "z": 189.9230499267578
+            },
+            "target": {
+                "x": -65.66895294189453,
+                "y": 0.9250000715255737,
+                "z": 189.54090881347657
+            },
+            "horizontalDistance": 0.7944347262382507,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "01 permanent curtain opens",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -66.36544036865235,
+                "y": 0.09262040257453919,
+                "z": 189.9230499267578
+            },
+            "target": {
+                "x": -66.36544036865235,
+                "y": 0.09262040257453919,
+                "z": 189.9230499267578
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.4969816207885742
+        },
+        {
+            "name": "01 curtain is physically passable",
+            "detail": "IsOpen=true; physical collider disabled=true.",
+            "passed": true,
+            "position": {
+                "x": -66.36544036865235,
+                "y": 0.09262040257453919,
+                "z": 189.9230499267578
+            },
+            "target": {
+                "x": -66.36544036865235,
+                "y": 0.09262040257453919,
+                "z": 189.9230499267578
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "01 cross opened curtain",
+            "detail": "Reached through CharacterController movement; vertical error=-0.119m.",
+            "passed": true,
+            "position": {
+                "x": -68.31256866455078,
+                "y": 0.3694617450237274,
+                "z": 185.37181091308595
+            },
+            "target": {
+                "x": -68.44972229003906,
+                "y": 0.25,
+                "z": 185.0512237548828
+            },
+            "horizontalDistance": 0.3486936092376709,
+            "elapsedSeconds": 1.502579689025879
+        },
+        {
+            "name": "01 E collects reusable lantern within reach",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=2.226m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -68.31256866455078,
+                "y": 0.3694617450237274,
+                "z": 185.37181091308595
+            },
+            "target": {
+                "x": -67.01811218261719,
+                "y": 1.3049999475479127,
+                "z": 183.69456481933595
+            },
+            "horizontalDistance": 2.1186721324920656,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "01 lantern acquired",
+            "detail": "HasLantern=true; LanternOn=true; pickup used through normal E policy.",
+            "passed": true,
+            "position": {
+                "x": -68.31256866455078,
+                "y": 0.3694617450237274,
+                "z": 185.37181091308595
+            },
+            "target": {
+                "x": -68.31256866455078,
+                "y": 0.3694617450237274,
+                "z": 185.37181091308595
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "shore route waypoint 1",
+            "detail": "Reached through CharacterController movement; vertical error=0.150m.",
+            "passed": true,
+            "position": {
+                "x": -70.85076141357422,
+                "y": 2.849928379058838,
+                "z": 174.6315155029297
+            },
+            "target": {
+                "x": -71.0,
+                "y": 3.0,
+                "z": 174.0
+            },
+            "horizontalDistance": 0.648909866809845,
+            "elapsedSeconds": 3.245295524597168
+        },
+        {
+            "name": "mountain route waypoint 2",
+            "detail": "Reached through CharacterController movement; vertical error=0.252m.",
+            "passed": true,
+            "position": {
+                "x": -68.10467529296875,
+                "y": 9.748194694519043,
+                "z": 158.6106719970703
+            },
+            "target": {
+                "x": -68.0,
+                "y": 10.0,
+                "z": 158.0
+            },
+            "horizontalDistance": 0.6195782423019409,
+            "elapsedSeconds": 4.785503387451172
+        },
+        {
+            "name": "mountain route waypoint 3",
+            "detail": "Reached through CharacterController movement; vertical error=0.287m.",
+            "passed": true,
+            "position": {
+                "x": -58.3375129699707,
+                "y": 18.713245391845704,
+                "z": 143.52142333984376
+            },
+            "target": {
+                "x": -58.0,
+                "y": 19.0,
+                "z": 143.0
+            },
+            "horizontalDistance": 0.6211258172988892,
+            "elapsedSeconds": 5.294834136962891
+        },
+        {
+            "name": "02 approach borrowed-light passage",
+            "detail": "Reached through CharacterController movement; vertical error=0.100m.",
+            "passed": true,
+            "position": {
+                "x": -52.283172607421878,
+                "y": 26.400190353393556,
+                "z": 131.57589721679688
+            },
+            "target": {
+                "x": -52.080318450927737,
+                "y": 26.5,
+                "z": 131.1756591796875
+            },
+            "horizontalDistance": 0.4487095773220062,
+            "elapsedSeconds": 3.9609127044677736
+        },
+        {
+            "name": "02 temporary entrance is lit and open",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -52.283172607421878,
+                "y": 26.400190353393556,
+                "z": 131.57589721679688
+            },
+            "target": {
+                "x": -52.283172607421878,
+                "y": 26.400190353393556,
+                "z": 131.57589721679688
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.000091552734375
+        },
+        {
+            "name": "02 enter and reach redistribution console",
+            "detail": "Reached through CharacterController movement; vertical error=0.042m.",
+            "passed": true,
+            "position": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "target": {
+                "x": -46.85405731201172,
+                "y": 28.53999900817871,
+                "z": 128.06338500976563
+            },
+            "horizontalDistance": 0.2467641681432724,
+            "elapsedSeconds": 1.9295978546142579
+        },
+        {
+            "name": "02 E redirects the single beam",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.132m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "target": {
+                "x": -46.337303161621097,
+                "y": 29.389999389648439,
+                "z": 128.67410278320313
+            },
+            "horizontalDistance": 0.8667723536491394,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "02 enduring exit opens and temporary entrance returns",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "target": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.5128631591796875
+        },
+        {
+            "name": "02 physical curtain rules differ after redirect",
+            "detail": "Permanent exit open/collider off; temporary entrance closed/collider on.",
+            "passed": true,
+            "position": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "target": {
+                "x": -47.06123733520508,
+                "y": 28.497529983520509,
+                "z": 128.1974334716797
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "02 cross enduring exit",
+            "detail": "Reached through CharacterController movement; vertical error=0.106m.",
+            "passed": true,
+            "position": {
+                "x": -43.583778381347659,
+                "y": 30.304035186767579,
+                "z": 124.0815658569336
+            },
+            "target": {
+                "x": -43.30137634277344,
+                "y": 30.40999984741211,
+                "z": 123.74732208251953
+            },
+            "horizontalDistance": 0.4375726282596588,
+            "elapsedSeconds": 1.6130027770996094
+        },
+        {
+            "name": "route toward folded light",
+            "detail": "Reached through CharacterController movement; vertical error=0.200m.",
+            "passed": true,
+            "position": {
+                "x": -35.45221710205078,
+                "y": 33.800018310546878,
+                "z": 117.37307739257813
+            },
+            "target": {
+                "x": -35.0,
+                "y": 34.0,
+                "z": 117.0
+            },
+            "horizontalDistance": 0.5862482786178589,
+            "elapsedSeconds": 3.1125946044921877
+        },
+        {
+            "name": "03 reach lift approach ramp",
+            "detail": "Reached through CharacterController movement; vertical error=0.056m.",
+            "passed": true,
+            "position": {
+                "x": -32.346195220947269,
+                "y": 34.84413146972656,
+                "z": 116.26622009277344
+            },
+            "target": {
+                "x": -31.992809295654298,
+                "y": 34.89999771118164,
+                "z": 116.14028930664063
+            },
+            "horizontalDistance": 0.3751535415649414,
+            "elapsedSeconds": 1.0103874206542969
+        },
+        {
+            "name": "03 ascend authored ramp",
+            "detail": "Reached through CharacterController movement; vertical error=0.156m.",
+            "passed": true,
+            "position": {
+                "x": -23.283353805541993,
+                "y": 39.24386978149414,
+                "z": 116.49291229248047
+            },
+            "target": {
+                "x": -23.0,
+                "y": 39.39999771118164,
+                "z": 116.5
+            },
+            "horizontalDistance": 0.2834424376487732,
+            "elapsedSeconds": 2.7479629516601564
+        },
+        {
+            "name": "03 board real lift platform",
+            "detail": "Reached through CharacterController movement; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 39.42499923706055,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -20.90167808532715,
+                "y": 39.39999771118164,
+                "z": 116.58393096923828
+            },
+            "horizontalDistance": 0.2457694262266159,
+            "elapsedSeconds": 0.7315902709960938
+        },
+        {
+            "name": "03 settle on platform",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 39.42499923706055,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -21.147268295288087,
+                "y": 39.42499923706055,
+                "z": 116.57454681396485
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.12825393676757813
+        },
+        {
+            "name": "03 E changes rail from stop to raise",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.135m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 39.42499923706055,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -20.965627670288087,
+                "y": 40.369998931884769,
+                "z": 115.68065643310547
+            },
+            "horizontalDistance": 0.9121586084365845,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "03 neutral-input physical lift ride",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 42.41511154174805,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -21.147268295288087,
+                "y": 42.41511154174805,
+                "z": 116.57454681396485
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 3.11407470703125
+        },
+        {
+            "name": "03 settle at upper landing",
+            "detail": "Simulated motor intent across 10 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 42.52499771118164,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -21.147268295288087,
+                "y": 42.52499771118164,
+                "z": 116.57454681396485
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.18070220947265626
+        },
+        {
+            "name": "03 rider carried by actual Rigidbody platform",
+            "detail": "Neutral input throughout ride; no jumps/teleports. Rider rise=3.100m; platform rise=3.100m; normalized height=1.000",
+            "passed": true,
+            "position": {
+                "x": -21.147268295288087,
+                "y": 42.52499771118164,
+                "z": 116.57454681396485
+            },
+            "target": {
+                "x": -21.147268295288087,
+                "y": 42.52499771118164,
+                "z": 116.57454681396485
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "03 cross upper landing",
+            "detail": "Reached through CharacterController movement; vertical error=-0.010m.",
+            "passed": true,
+            "position": {
+                "x": -17.291879653930665,
+                "y": 42.46999740600586,
+                "z": 116.72835540771485
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.28731289505958559,
+            "elapsedSeconds": 1.2144088745117188
+        },
+        {
+            "name": "03 follow descent deck",
+            "detail": "Reached through CharacterController movement; vertical error=-0.122m.",
+            "passed": true,
+            "position": {
+                "x": -7.389963626861572,
+                "y": 40.67188262939453,
+                "z": 117.12440490722656
+            },
+            "target": {
+                "x": -7.012784004211426,
+                "y": 40.54999923706055,
+                "z": 117.13948822021485
+            },
+            "horizontalDistance": 0.3774811029434204,
+            "elapsedSeconds": 2.9596405029296877
+        },
+        {
+            "name": "exit folded-light structure",
+            "detail": "Reached through CharacterController movement; vertical error=-0.122m.",
+            "passed": true,
+            "position": {
+                "x": -7.389963626861572,
+                "y": 40.67188262939453,
+                "z": 117.12440490722656
+            },
+            "target": {
+                "x": -7.0,
+                "y": 40.54999923706055,
+                "z": 117.0
+            },
+            "horizontalDistance": 0.4093265235424042,
+            "elapsedSeconds": 0.0000457763671875
+        },
+        {
+            "name": "04 reach halfway sea reveal",
+            "detail": "Reached through CharacterController movement; vertical error=0.062m.",
+            "passed": true,
+            "position": {
+                "x": -3.39237117767334,
+                "y": 40.93772506713867,
+                "z": 120.65360260009766
+            },
+            "target": {
+                "x": -3.0,
+                "y": 41.0,
+                "z": 121.0
+            },
+            "horizontalDistance": 0.5233988165855408,
+            "elapsedSeconds": 1.5684738159179688
+        },
+        {
+            "name": "Full spawn-to-halfway route passed",
+            "detail": "Actual controller movement, four E interactions across three stages, two curtain rules and a physical lift ride; route teleports=0.",
+            "passed": true,
+            "position": {
+                "x": -3.39237117767334,
+                "y": 40.93772506713867,
+                "z": 120.65360260009766
+            },
+            "target": {
+                "x": -3.39237117767334,
+                "y": 40.93772506713867,
+                "z": 120.65360260009766
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Supplementary pool reposition",
+            "detail": "Pool check reposition occurs after accepted route; route teleport count remains zero.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.0,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Pool initial 30 floating frames",
+            "detail": "Simulated motor intent across 30 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.293635129928589,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.293635129928589,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.498504638671875
+        },
+        {
+            "name": "Pool continued 120 floating frames",
+            "detail": "Simulated motor intent across 120 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0162110328674318,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.0162110328674318,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 1.9964675903320313
+        },
+        {
+            "name": "Pool stable physical surface draft",
+            "detail": "After 150 real frames, draft=1.416m; Swimming=true.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0162110328674318,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.0162110328674318,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Pool Ctrl-style deliberate dive",
+            "detail": "Simulated motor intent across 90 real frames; swim input=-1.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -4.403781890869141,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -4.403781890869141,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 1.4971580505371094
+        },
+        {
+            "name": "Pool dive changes physical depth",
+            "detail": "Feet descended 2.388m.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -4.403781890869141,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -4.403781890869141,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Pool Space-style ascent with repeated presses",
+            "detail": "Simulated motor intent across 240 real frames; swim input=1.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 3.9961814880371095
+        },
+        {
+            "name": "Pool surface ascent remains bounded",
+            "detail": "120 additional held-ascent frames, repeated jump intents; largest float-target overshoot=0.000m.",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "target": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage solid step 1 physically raycastable",
+            "detail": "Hit actual authored collider at (-90.30, 3.05, 197.08).",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "target": {
+                "x": -90.30000305175781,
+                "y": 2.940000057220459,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 43.02726745605469,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage solid step 2 physically raycastable",
+            "detail": "Hit actual authored collider at (-89.15, 3.35, 197.08).",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 3.240000009536743,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 41.95209503173828,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage solid step 3 physically raycastable",
+            "detail": "Hit actual authored collider at (-88.00, 3.65, 197.08).",
+            "passed": true,
+            "position": {
+                "x": -50.0,
+                "y": -2.0054197311401369,
+                "z": 182.0
+            },
+            "target": {
+                "x": -88.0,
+                "y": 3.5399999618530275,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 40.8809928894043,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage place character above middle solid step",
+            "detail": "Explicit supplementary reposition after the completed route; subsequent interactions and crossing use normal policies/physics.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 3.9499998092651369,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 3.9499998092651369,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage neutral physical landing on raised step",
+            "detail": "Simulated motor intent across 45 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 3.374999523162842,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 3.374999523162842,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.7414932250976563
+        },
+        {
+            "name": "Mirage solid step physically supports the actual player",
+            "detail": "45 neutral real frames after landing; grounded=true, Swimming=false, feet=3.375m, step top=3.350m; supporting collider=40_Tutorial/05_Optional_WaterMirage/ProjectedSolidStep_2",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 3.374999523162842,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 3.374999523162842,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage misalignment removes physical step colliders",
+            "detail": "65 degrees: IsSolid=false; all three colliders disabled and absent from downward rays. Status=投影点超出单层水体光路",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 3.374999523162842,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -88.0,
+                "y": 3.0,
+                "z": 194.0
+            },
+            "horizontalDistance": 3.283003091812134,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage unsupported player falls for 45 real frames",
+            "detail": "Simulated motor intent across 45 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.2678110599517823,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 1.2678110599517823,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.7411537170410156
+        },
+        {
+            "name": "Mirage removed support transitions to actual swimming",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.2678110599517823,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 1.2678110599517823,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.00009918212890625
+        },
+        {
+            "name": "Mirage swimmer recovers surface buoyancy",
+            "detail": "Simulated motor intent across 90 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 1.5032157897949219
+        },
+        {
+            "name": "Mirage support loss causes falling and swimming recovery",
+            "detail": "No movement input or rescue teleport after support removal; grounded=false, Swimming=true, recovered draft=1.419m in the authored optional basin.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Mirage correct aim restores solid steps after the fall",
+            "detail": "50-degree aim restored IsSolid=true after the physical support-loss/swim cycle.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -88.0,
+                "y": 3.0,
+                "z": 194.0
+            },
+            "horizontalDistance": 3.283003091812134,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Supplementary checks passed",
+            "detail": "Original-pool float/dive/ascent and optional mirage collision states passed within the declared scope.",
+            "passed": true,
+            "position": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "target": {
+                "x": -89.1500015258789,
+                "y": 1.5814099311828614,
+                "z": 197.0749969482422
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery settle after actual Home reset",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -65.0,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "target": {
+                "x": -65.0,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.1384124755859375
+        },
+        {
+            "name": "Home/respawn preserves acquired and enduring state",
+            "detail": "Called the real walker.ResetPosition used by Home; counted separately as a post-route reposition. Lantern and permanent openings remain.",
+            "passed": true,
+            "position": {
+                "x": -65.0,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "target": {
+                "x": -65.0,
+                "y": 0.024999886751174928,
+                "z": 204.0
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery position outside closed temporary entrance",
+            "detail": "Explicit supplementary reposition after the completed route; subsequent interactions and crossing use normal policies/physics.",
+            "passed": true,
+            "position": {
+                "x": -51.43437576293945,
+                "y": 26.549999237060548,
+                "z": 131.9390411376953
+            },
+            "target": {
+                "x": -51.43437576293945,
+                "y": 26.549999237060548,
+                "z": 131.9390411376953
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery settle at exterior entrance handle",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -51.43437576293945,
+                "y": 26.540742874145509,
+                "z": 131.9390411376953
+            },
+            "target": {
+                "x": -51.43437576293945,
+                "y": 26.540742874145509,
+                "z": 131.9390411376953
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.1268157958984375
+        },
+        {
+            "name": "Recovery E restores entrance illumination from outside",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.139m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -51.43437576293945,
+                "y": 26.540742874145509,
+                "z": 131.9390411376953
+            },
+            "target": {
+                "x": -50.91762161254883,
+                "y": 27.350000381469728,
+                "z": 132.5497589111328
+            },
+            "horizontalDistance": 0.8000069260597229,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery temporary entrance reopens",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -51.43437576293945,
+                "y": 26.540742874145509,
+                "z": 131.9390411376953
+            },
+            "target": {
+                "x": -51.43437576293945,
+                "y": 26.540742874145509,
+                "z": 131.9390411376953
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0123748779296875
+        },
+        {
+            "name": "Recovery physically reenter restored entrance",
+            "detail": "Reached through CharacterController movement; vertical error=0.074m.",
+            "passed": true,
+            "position": {
+                "x": -49.229984283447269,
+                "y": 27.785951614379884,
+                "z": 128.87440490722657
+            },
+            "target": {
+                "x": -49.026771545410159,
+                "y": 27.85999870300293,
+                "z": 128.59188842773438
+            },
+            "horizontalDistance": 0.34801003336906435,
+            "elapsedSeconds": 1.1658477783203126
+        },
+        {
+            "name": "Previously solved passage remains recoverable after respawn",
+            "detail": "Normal exterior E interaction reopened the temporary barrier, and the real controller crossed it after Home. No collision or interaction bypass.",
+            "passed": true,
+            "position": {
+                "x": -49.229984283447269,
+                "y": 27.785951614379884,
+                "z": 128.87440490722657
+            },
+            "target": {
+                "x": -49.229984283447269,
+                "y": 27.785951614379884,
+                "z": 128.87440490722657
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery reach interior console again",
+            "detail": "Reached through CharacterController movement; vertical error=0.033m.",
+            "passed": true,
+            "position": {
+                "x": -47.07384490966797,
+                "y": 28.507221221923829,
+                "z": 128.13841247558595
+            },
+            "target": {
+                "x": -46.85405731201172,
+                "y": 28.53999900817871,
+                "z": 128.06338500976563
+            },
+            "horizontalDistance": 0.23224063217639924,
+            "elapsedSeconds": 0.7841339111328125
+        },
+        {
+            "name": "Recovery restore original interior beam allocation",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.172m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -47.07384490966797,
+                "y": 28.507221221923829,
+                "z": 128.13841247558595
+            },
+            "target": {
+                "x": -46.337303161621097,
+                "y": 29.389999389648439,
+                "z": 128.67410278320313
+            },
+            "horizontalDistance": 0.9107457399368286,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery temporary entrance closes while enduring exit stays open",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -47.07384490966797,
+                "y": 28.507219314575197,
+                "z": 128.13841247558595
+            },
+            "target": {
+                "x": -47.07384490966797,
+                "y": 28.507219314575197,
+                "z": 128.13841247558595
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.140106201171875
+        },
+        {
+            "name": "Recovery position at upper landing recall handle",
+            "detail": "Explicit supplementary reposition after the completed route; subsequent interactions and crossing use normal policies/physics.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery settle on fixed upper landing",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.125030517578125
+        },
+        {
+            "name": "Recovery E lowers lift from upper landing",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.268m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -16.964826583862306,
+                "y": 43.29999923706055,
+                "z": 115.74060821533203
+            },
+            "horizontalDistance": 0.9999979734420776,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery platform leaves upper landing and reaches bottom",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 3.1497039794921877
+        },
+        {
+            "name": "Upper landing handle remains reachable with lift absent",
+            "detail": "Player stayed on static landing; platform reached bottom through the normal light-driven motor.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery E selects stop from upper landing",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.268m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -16.964826583862306,
+                "y": 43.29999923706055,
+                "z": 115.74060821533203
+            },
+            "horizontalDistance": 0.9999979734420776,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery moving portal reaches stop dock",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 1.94464111328125
+        },
+        {
+            "name": "Recovery E recalls lift upward from upper landing",
+            "detail": "TutorialJourney.Interact accepted; eye-to-control distance=1.268m, allowed radius=2.800m.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -16.964826583862306,
+                "y": 43.29999923706055,
+                "z": 115.74060821533203
+            },
+            "horizontalDistance": 0.9999979734420776,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Recovery absent platform returns to upper landing",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "target": {
+                "x": -17.00479507446289,
+                "y": 42.459999084472659,
+                "z": 116.73980712890625
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 2.76275634765625
+        },
+        {
+            "name": "Recovery physically reboard recalled lift",
+            "detail": "Reached through CharacterController movement; vertical error=-0.025m.",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.90167808532715,
+                "y": 42.5,
+                "z": 116.58393096923828
+            },
+            "horizontalDistance": 0.28557896614074709,
+            "elapsedSeconds": 1.14874267578125
+        },
+        {
+            "name": "Recovery settle on recalled platform",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.129180908203125
+        },
+        {
+            "name": "Upper lift recall prevents a stranded return route",
+            "detail": "Upper E handle lowered an occupied-world platform, selected stop, recalled it upward, and the real controller reboarded its physical collider. Main route remained teleport-free; supplemental repositions=5",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.0
+        },
+        {
+            "name": "Overview regression returns occupied platform to bottom",
+            "detail": "Satisfied during real rendered/physics frames with neutral controller input.",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 39.50888442993164,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.6163272857666,
+                "y": 39.50888442993164,
+                "z": 116.59534454345703
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 3.179962158203125
+        },
+        {
+            "name": "Overview regression settles rider at bottom",
+            "detail": "Simulated motor intent across 8 real frames; swim input=0.",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 39.42499923706055,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.6163272857666,
+                "y": 39.42499923706055,
+                "z": 116.59534454345703
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 0.129791259765625
+        },
+        {
+            "name": "Actual overview mode carries player on the moving lift",
+            "detail": "Called CoastalWalkthrough.SetOverview(true), with input inactive. Observed 252 real frames for 4.252s without any harness motor call or synthetic keystroke; built-in Update carried rider 3.100m while Rigidbody rose 3.100m.",
+            "passed": true,
+            "position": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "target": {
+                "x": -20.6163272857666,
+                "y": 42.52499771118164,
+                "z": 116.59534454345703
+            },
+            "horizontalDistance": 0.0,
+            "elapsedSeconds": 4.251800537109375
+        }
+    ],
+    "scope": "Route uses real CharacterController movement and normal-frame physics, with no teleport or synthetic jump. E is exercised through TutorialJourney.Interact, including its reach/occlusion/player-active policy; physical keyboard events are not injected. Supplementary pool/recovery/mirage repositioning is permitted only after the route passes and is counted separately. Mirage assertions cover real physics raycasts, actual CharacterController standing on an above-water step, and support removal followed by swimming recovery; each is claimed only by its passing result record. Optional respawn/reentry and upper-lift recall regressions require a separate BeginRecoveryChecks call after route acceptance. Exit Play to restore the authored scene."
+}

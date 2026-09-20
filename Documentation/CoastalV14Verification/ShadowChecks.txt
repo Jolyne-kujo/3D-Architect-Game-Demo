@@ -1,0 +1,27 @@
+PASS idle feet centered within capsule; horizontal offset=0.0718592
+PASS actual skinned sole to floor distance=0.02899292
+PASS animation root motion disabled; controller owns translation
+PASS all camera-space geometry including lantern casts no world shadow
+PASS baseline contains both lit floor and rendered shadow
+PASS pitch -75 changes no world body vertices; max meters=0
+PASS pitch -75 rotates camera in place
+PASS pitch -75 keeps actual fixed-view shadow unchanged; mean RGB delta=0
+PASS pitch 75 changes no world body vertices; max meters=0
+PASS pitch 75 rotates camera in place
+PASS pitch 75 keeps actual fixed-view shadow unchanged; mean RGB delta=0
+PASS pitch 0 changes no world body vertices; max meters=0
+PASS pitch 0 rotates camera in place
+PASS pitch 0 keeps actual fixed-view shadow unchanged; mean RGB delta=0
+PASS camera-only yaw cannot move world shadow
+PASS yaw 90 all skinned vertices rotate about controller pivot; error=3.496228E-05
+PASS yaw 90 world body pivot and camera do not translate
+PASS yaw 180 all skinned vertices rotate about controller pivot; error=2.157919E-05
+PASS yaw 180 world body pivot and camera do not translate
+PASS yaw 270 all skinned vertices rotate about controller pivot; error=3.496228E-05
+PASS yaw 270 world body pivot and camera do not translate
+PASS yaw 360 all skinned vertices rotate about controller pivot; error=2.157919E-05
+PASS yaw 360 world body pivot and camera do not translate
+PASS actual world shadow responds to changed light direction
+PASS actual controller strafe moves player
+PASS animated body follows controller translation without trailing offset
+PASS strafing animation cannot turn body toward velocity

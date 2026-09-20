@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-09-19T03:01:02.4203147Z",
+  "output_path": "Builds/CoastalRoutes-Windows/CoastalTemple.exe",
+  "platform": "StandaloneWindows64",
+  "job_id": "build-88e56aa3cd",
+  "total_size_mb": 166.09,
+  "warnings": 486,
+  "result": "succeeded",
+  "errors": 0,
+  "completed_at": "2026-09-19T03:01:24.8202404Z",
+  "duration_seconds": 22.3999257
+}

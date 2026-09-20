@@ -1,0 +1,10 @@
+{
+  "durationSeconds": 95.14,
+  "renderDeviceInitialized": true,
+  "processId": 50288,
+  "passed": true,
+  "log": "Logs/CoastalV8PlayerFinal.log",
+  "driverDiagnostic": "D3D12 info queue interface unavailable; graphics device subsequently initialized",
+  "scope": "Standalone Windows player launched in hidden batch mode, graphics device initialized, process remained alive; startup smoke check, not manual gameplay",
+  "applicationExceptions": 0
+}

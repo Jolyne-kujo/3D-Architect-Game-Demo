@@ -1,0 +1,15 @@
+PASS walking changes actual arm bones, not just whole-model sway; degrees=29.40245
+PASS walking hand animation is not frozen at playback speed zero
+PASS hand animation cannot move the eye camera
+PASS test performs a real grounded jump
+PASS releasing input in air preserves most launch speed; before=5.300106, after=5.186343
+PASS released jump continues travelling forward
+PASS turning camera in air does not rotate momentum
+PASS airborne hands use an active movement pose
+PASS landing applies ground braking and comes to rest
+PASS touchdown plays the imported landing animation
+PASS opposite air input steers gradually instead of reversing instantly
+PASS respawn clears previous momentum
+PASS inertial controller still stops before wall
+PASS blocked character reports zero actual speed for animation
+PASS removing wall does not release stored blocked velocity

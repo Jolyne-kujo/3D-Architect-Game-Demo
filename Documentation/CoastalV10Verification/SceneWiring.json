@@ -1,0 +1,7 @@
+{
+  "handLight": true,
+  "carriedLantern": true,
+  "cameraAttached": true,
+  "avatarPath": "Assets/Prefabs/Player/QuaterniusMannequin.prefab",
+  "sceneSaved": true
+}

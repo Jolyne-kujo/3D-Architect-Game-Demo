@@ -1,0 +1,14 @@
+FAIL Assets/Character/X Bot@Slow Run.fbx has valid Humanoid avatar
+FAIL Slow Run is a looping retargetable humanoid clip
+FAIL Slow Run cannot apply imported translation/rotation to controller
+FAIL Assets/Character/X Bot@Fast Run.fbx has valid Humanoid avatar
+FAIL Fast Run is a looping retargetable humanoid clip
+FAIL Fast Run cannot apply imported translation/rotation to controller
+FAIL MannequinLocomotion uses user Slow Run at normal movement speed
+FAIL MannequinLocomotion uses user Fast Run at sprint speed
+PASS MannequinLocomotion retains idle
+PASS MannequinLocomotion retains swimming and jumping
+FAIL FirstPersonHands uses user Slow Run at normal movement speed
+FAIL FirstPersonHands uses user Fast Run at sprint speed
+PASS FirstPersonHands retains idle
+PASS FirstPersonHands retains swimming and jumping

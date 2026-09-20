@@ -1,0 +1,61 @@
+using System;
+using System.Reflection;
+using CoastalTemple.Mechanisms;
+using UnityEngine;
+int passed = 0, failed = 0;
+void Check(bool good, string name) { Console.WriteLine((good ? "PASS " : "FAIL ") + name); if (good) passed++; else failed++; }
+var motor = new LinearPlatformMotor();
+var entrance = new MotorLever { motor = motor };
+var landing = new MotorLever { motor = motor };
+Check(entrance.Direction == 0 && landing.Direction == 0, "both handles initially observe stopped motor");
+entrance.Use(null);
+Check(motor.Direction == 1 && landing.Direction == 1 && landing.DisplayPrompt.Contains(landing.forwardLabel), "another handle immediately reports the running motor");
+landing.Use(null);
+Check(motor.Direction == 0 && entrance.Direction == 0, "a different handle stops existing forward motion instead of restarting it");
+entrance.Use(null);
+Check(motor.Direction == -1 && landing.Direction == -1, "switching handles after forward stop reverses the same motor");
+landing.Use(null);
+Check(motor.Direction == 0 && entrance.Direction == 0, "another handle stops reverse motion");
+landing.Use(null);
+Check(motor.Direction == 1 && entrance.Direction == 1, "full shared cycle returns to forward");
+motor.SetDirection(-1);
+Check(entrance.Direction == -1 && landing.DisplayPrompt.Contains(landing.backwardLabel), "direct motor commands are reflected without touching either handle");
+entrance.Use(null);
+Check(motor.Direction == 0, "first use after an external reverse command stops it");
+landing.Use(null);
+Check(motor.Direction == 1, "another handle resumes forward after the shared reverse stop");
+motor.SetDirection(0); // End-stop or another controller stops actual movement.
+landing.Use(null);
+Check(motor.Direction == -1, "an external stop after forward motion advances to reverse");
+var otherMotor = new LinearPlatformMotor();
+var independent = new MotorLever { motor = otherMotor };
+independent.Use(null);
+Check(otherMotor.Direction == 1 && motor.Direction == -1, "another motor owns a separate cycle");
+motor.isActiveAndEnabled = false;
+Check(!entrance.Available && entrance.Direction == 0, "disabled motor is shown stopped and cannot be operated");
+entrance.Use(null);
+Check(motor.ManualDirection == -1, "disabled handle use does not change the motor command");
+var conditionType = Assembly.GetExecutingAssembly().GetType("CoastalTemple.Tutorial.PlayerReachedCondition");
+Check(conditionType != null, "arrival reward has an independent spatial condition");
+if (conditionType != null)
+{
+    object condition = Activator.CreateInstance(conditionType);
+    bool Complete() => (bool)conditionType.GetProperty("IsComplete").GetValue(condition);
+    void Field(string name, object value) => conditionType.GetField(name).SetValue(condition, value);
+    Check(!Complete(), "missing arrival references cannot issue a reward");
+    var player = new Transform(); var destination = new Transform { position = new Vector3(10, 20, 30) };
+    Field("player", player); Field("destination", destination); Field("halfExtents", new Vector3(3, 2, 1));
+    player.position = new Vector3(13, 22, 31);
+    Check(Complete(), "local box boundary is included");
+    player.position = new Vector3(13.01f, 22, 31);
+    Check(!Complete(), "outside position cannot complete arrival");
+    destination.localRotation = Quaternion.AngleAxis(90, new Vector3(0, 1, 0));
+    player.position = new Vector3(10, 20, 27.5f);
+    Check(Complete(), "rotated destination uses local axes rather than world bounds");
+    player.position = new Vector3(12, 20, 30);
+    Check(!Complete(), "rotated narrow axis remains outside");
+    Field("halfExtents", new Vector3(-3, 2, 1));
+    Check(!Complete(), "negative configured half extents do not award arrival");
+}
+Console.WriteLine($"Lever and arrival checks: {passed} passed, {failed} failed.");
+Environment.ExitCode = failed == 0 ? 0 : 1;

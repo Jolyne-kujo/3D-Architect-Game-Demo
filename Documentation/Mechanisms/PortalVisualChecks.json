@@ -1,0 +1,26 @@
+{
+    "passed": 4,
+    "failed": 0,
+    "results": [
+        {
+            "name": "mesh crossing creates only clipped renderer geometry",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "leaving portal restores exact original material and property block",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "crossing swaps body and ghost sides without extra controllers",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "actual RedBot skinned pose is baked and restored",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

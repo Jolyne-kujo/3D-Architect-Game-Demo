@@ -1,0 +1,44 @@
+PASS generic motor uses the authored kinematic collision root
+PASS generic motor resolves a horizontal path through its parent
+PASS one motor step physically advances the authored platform exactly one metre
+PASS moving platform retains rendering and collision while counterweight follows inversely
+PASS removing a generic drive holds an actual intermediate platform position
+PASS reverse motion reaches the authored endpoint without overshoot
+PASS disabled motor cannot advance its physical platform
+PASS unpowered authored path has neither visible geometry nor collision
+PASS partial receiver activation cannot expose path collision early
+PASS completed receiver activation enables both authored rendering and collision
+PASS compatible light adapter samples power through the single motor update
+PASS opposed manual and light commands stop instead of advancing twice
+PASS light loss removes path rendering and collision even when receiver retains grace or latch
+PASS the light-driven motor stops when the beam moves away despite receiver latch
+PASS disabling a still-active receiver cannot leave a platform moving or a path solid
+PASS disabling the path driver removes only its assigned geometry and collision
+PASS disabling a path independently clears its visible and physical state
+PASS repeated path switching does not create geometry or material instances
+PASS path switching does not modify an unrelated platform
+PASS real lever selects drive 1 without simulating the motor
+PASS real lever selects drive 0 without simulating the motor
+PASS real lever selects drive -1 without simulating the motor
+PASS real lever selects drive 0 without simulating the motor
+PASS a second landing handle reads actual motion and prompt from the shared motor
+PASS untouched handle visual follows the other landing's forward command
+PASS using another landing handle stops existing motion and restores its authored pose
+PASS switching back to the first handle reverses after the shared forward stop
+PASS either landing can stop the same reverse command
+PASS external reverse commands join the shared stop then forward cycle
+PASS external forward stop advances the shared cycle to reverse instead of restarting forward
+PASS all legacy serialized lift fields remain on the original component identity
+31 mechanism component checks passed in an isolated physics scene.
+PASS platform has a kinematic Rigidbody for rider contact
+PASS local endpoints resolve through the authored lift root
+PASS real vector motion advances 0.75m in half a second
+PASS both receivers request an immediate stop
+PASS real vector motion stops exactly at upper landing
+PASS lower-height beam reaches the platform receiver at bottom
+PASS an illuminated real receiver requests physical platform movement
+PASS disabled receiver cannot leave lift moving with stale active state
+PASS light loss stops the lift request immediately with zero grace
+PASS same beam cannot hit the receiver after it reaches upper height
+PASS normalized height reaches one at the upper landing
+11 lift component checks passed; runtime rider travel still requires play-mode verification.

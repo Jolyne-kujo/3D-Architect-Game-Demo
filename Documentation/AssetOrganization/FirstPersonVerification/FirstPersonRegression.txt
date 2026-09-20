@@ -1,0 +1,35 @@
+PASS look pitch keeps the collision capsule upright
+PASS look pitch keeps the collision capsule upright
+PASS look pitch keeps the collision capsule upright
+PASS look pitch keeps the collision capsule upright
+PASS 360-degree yaw and extreme pitch do not orbit camera; drift=0
+PASS turning does not translate the character; drift=0
+PASS camera remains exactly at the eye pivot
+PASS full head, torso and legs only cast world shadows
+PASS viewmodel contains only downloaded arm and hand skin weights
+PASS visual hands cannot collide with or move their player
+PASS viewmodel animation cannot translate player or camera
+PASS resting hands keep an active looping idle animation
+PASS relaxed idle hands stay low instead of blocking the centre of the viewport
+PASS camera-space hand geometry is kept close to capsule center
+PASS real CharacterController stops at wall
+PASS world camera near plane stays on player side of wall
+PASS eye remains outside solid geometry
+PASS looking down does not push the eye through the wall
+PASS old perspective API cannot re-enable third person
+PASS author overview hides local first-person hands
+PASS return from author inspection restores eye and hands
+PASS normal gameplay has no overview keyboard shortcuts
+PASS actual courtyard water still enters swimming
+PASS floating eye stays just above water, not several metres behind player; clearance=0.2031822
+PASS downloaded swimming animations drive first-person arms
+PASS floating animation keeps cut shoulders outside viewport
+PASS shoulder cuts stay outside viewport through swimming stroke
+PASS deliberate dive carries eye below water
+PASS diving never detaches camera or disables arms
+PASS carried lantern belongs to first-person rig
+PASS pickup keeps held lantern and illumination working
+PASS downloaded left-arm torch-holding layer follows pickup
+PASS lantern uses imported animation's left holding hand
+PASS carrying animation keeps cut shoulders outside viewport
+PASS held lantern appears within first-person viewport

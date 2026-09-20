@@ -1,0 +1,909 @@
+PASS Removed Assets/Character/Fast Run.zip
+PASS Removed Assets/Character/Slow Run.zip
+PASS Exists Assets/Animations/Player/Locomotion/FastRun.fbx
+PASS Preserved GUID Assets/Animations/Player/Locomotion/FastRun.fbx
+PASS Preserved content Assets/Animations/Player/Locomotion/FastRun.fbx
+PASS Exists Assets/Animations/Player/Locomotion/SlowRun.fbx
+PASS Preserved GUID Assets/Animations/Player/Locomotion/SlowRun.fbx
+PASS Preserved content Assets/Animations/Player/Locomotion/SlowRun.fbx
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V10_BeforeFirstPerson.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V10_BeforeFirstPerson.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V10_BeforeFirstPerson.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V11_BeforeMotionFix.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V11_BeforeMotionFix.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V11_BeforeMotionFix.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V13_BeforeShadowFix.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V13_BeforeShadowFix.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V13_BeforeShadowFix.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V14_BeforeAssetOrganization.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V14_BeforeAssetOrganization.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V14_BeforeAssetOrganization.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V7.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V7.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V7.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V8.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V8.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V8.unity
+PASS Exists Assets/Scenes/Archive/CoastalTemple_V9.unity
+PASS Preserved GUID Assets/Scenes/Archive/CoastalTemple_V9.unity
+PASS Preserved content Assets/Scenes/Archive/CoastalTemple_V9.unity
+PASS Exists Assets/Scripts/Editor/Gameplay/CourtyardDrainExperimentChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/CourtyardDrainExperimentChecks.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/CourtyardDrainMigration.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/CourtyardDrainMigration.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/FirstPersonAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/FirstPersonAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/FirstPersonChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/FirstPersonChecks.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/LightRuleTests.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/LightRuleTests.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/LocomotionAssetChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/LocomotionAssetChecks.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/MeshAssetWriter.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/MeshAssetWriter.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/MirageSandboxAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/MirageSandboxAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/PlayerAvatarAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/PlayerAvatarAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/RelaxedHandsAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/RelaxedHandsAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/ReusableAssetChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/ReusableAssetChecks.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/ReusableGameplayAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/ReusableGameplayAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/Routes/RouteAuthoringKit.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/Routes/RouteAuthoringKit.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/Routes/RouteLayouts.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/Routes/RouteLayouts.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/Routes/TutorialV9Authoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/Routes/TutorialV9Authoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/SceneObjectGuideEditor.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/SceneObjectGuideEditor.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/TutorialGapExcavator.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/TutorialGapExcavator.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/TutorialInteractionChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/TutorialInteractionChecks.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/TutorialModuleMigration.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/TutorialModuleMigration.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/TutorialSceneAuthoring.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/TutorialSceneAuthoring.cs
+PASS Exists Assets/Scripts/Editor/Gameplay/WalkerMomentumChecks.cs
+PASS Preserved GUID Assets/Scripts/Editor/Gameplay/WalkerMomentumChecks.cs
+PASS Exists Assets/Textures/Environment/AlgorithmicRippleNormal.asset
+PASS Preserved GUID Assets/Textures/Environment/AlgorithmicRippleNormal.asset
+PASS Preserved content Assets/Textures/Environment/AlgorithmicRippleNormal.asset
+PASS Exists Assets/Materials/Environment/BoundaryBuoy.mat
+PASS Preserved GUID Assets/Materials/Environment/BoundaryBuoy.mat
+PASS Preserved content Assets/Materials/Environment/BoundaryBuoy.mat
+PASS Exists Assets/Materials/Environment/Chalk.mat
+PASS Preserved GUID Assets/Materials/Environment/Chalk.mat
+PASS Preserved content Assets/Materials/Environment/Chalk.mat
+PASS Exists Assets/Materials/Environment/CliffCap.mat
+PASS Preserved GUID Assets/Materials/Environment/CliffCap.mat
+PASS Preserved content Assets/Materials/Environment/CliffCap.mat
+PASS Exists Assets/Materials/Environment/CliffFace.mat
+PASS Preserved GUID Assets/Materials/Environment/CliffFace.mat
+PASS Preserved content Assets/Materials/Environment/CliffFace.mat
+PASS Exists Assets/Materials/Environment/CliffUndercut.mat
+PASS Preserved GUID Assets/Materials/Environment/CliffUndercut.mat
+PASS Preserved content Assets/Materials/Environment/CliffUndercut.mat
+PASS Exists Assets/Materials/Environment/CoastalOcean.mat
+PASS Preserved GUID Assets/Materials/Environment/CoastalOcean.mat
+PASS Preserved content Assets/Materials/Environment/CoastalOcean.mat
+PASS Exists Assets/Settings/Lighting/CoastalTone.asset
+PASS Preserved GUID Assets/Settings/Lighting/CoastalTone.asset
+PASS Preserved content Assets/Settings/Lighting/CoastalTone.asset
+PASS Exists Assets/Materials/Environment/CutStone.mat
+PASS Preserved GUID Assets/Materials/Environment/CutStone.mat
+PASS Preserved content Assets/Materials/Environment/CutStone.mat
+PASS Exists Assets/Materials/Environment/Headland_BareRock.mat
+PASS Preserved GUID Assets/Materials/Environment/Headland_BareRock.mat
+PASS Preserved content Assets/Materials/Environment/Headland_BareRock.mat
+PASS Exists Assets/Materials/Environment/Headland_Grass.mat
+PASS Preserved GUID Assets/Materials/Environment/Headland_Grass.mat
+PASS Preserved content Assets/Materials/Environment/Headland_Grass.mat
+PASS Exists Assets/Materials/Environment/Headland_Layered02.mat
+PASS Preserved GUID Assets/Materials/Environment/Headland_Layered02.mat
+PASS Preserved content Assets/Materials/Environment/Headland_Layered02.mat
+PASS Exists Assets/Materials/Environment/Headland_Layered03.mat
+PASS Preserved GUID Assets/Materials/Environment/Headland_Layered03.mat
+PASS Preserved content Assets/Materials/Environment/Headland_Layered03.mat
+PASS Exists Assets/Materials/Environment/Headland_Layered04.mat
+PASS Preserved GUID Assets/Materials/Environment/Headland_Layered04.mat
+PASS Preserved content Assets/Materials/Environment/Headland_Layered04.mat
+PASS Exists Assets/Materials/Environment/Sea.mat
+PASS Preserved GUID Assets/Materials/Environment/Sea.mat
+PASS Preserved content Assets/Materials/Environment/Sea.mat
+PASS Exists Assets/Materials/Environment/Sky.mat
+PASS Preserved GUID Assets/Materials/Environment/Sky.mat
+PASS Preserved content Assets/Materials/Environment/Sky.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Chalk.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Chalk.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Chalk.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Instrument_teal.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Instrument_teal.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Instrument_teal.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Limestone.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Limestone.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Limestone.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Mechanism.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Mechanism.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Mechanism.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Pool_tile.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Pool_tile.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Pool_tile.mat
+PASS Exists Assets/Materials/Environment/Whitebox_Recess.mat
+PASS Preserved GUID Assets/Materials/Environment/Whitebox_Recess.mat
+PASS Preserved content Assets/Materials/Environment/Whitebox_Recess.mat
+PASS Exists Assets/Prefabs/Architecture/SummitTemple.prefab
+PASS Preserved GUID Assets/Prefabs/Architecture/SummitTemple.prefab
+PASS Preserved content Assets/Prefabs/Architecture/SummitTemple.prefab
+PASS Exists Assets/Prefabs/Architecture/TempleColumn.prefab
+PASS Preserved GUID Assets/Prefabs/Architecture/TempleColumn.prefab
+PASS Preserved content Assets/Prefabs/Architecture/TempleColumn.prefab
+PASS Exists Assets/Animations/Player/FirstPersonHands.controller
+PASS Preserved GUID Assets/Animations/Player/FirstPersonHands.controller
+PASS Exists Assets/Prefabs/Player/FirstPersonHands.prefab
+PASS Preserved GUID Assets/Prefabs/Player/FirstPersonHands.prefab
+PASS Preserved content Assets/Prefabs/Player/FirstPersonHands.prefab
+PASS Exists Assets/Materials/Player/HeldLantern.mat
+PASS Preserved GUID Assets/Materials/Player/HeldLantern.mat
+PASS Preserved content Assets/Materials/Player/HeldLantern.mat
+PASS Exists Assets/Objects/Characters/Quaternius/Quaternius_ArmsOnly.asset
+PASS Preserved GUID Assets/Objects/Characters/Quaternius/Quaternius_ArmsOnly.asset
+PASS Preserved content Assets/Objects/Characters/Quaternius/Quaternius_ArmsOnly.asset
+PASS Exists Assets/Animations/Player/RelaxedHands.anim
+PASS Preserved GUID Assets/Animations/Player/RelaxedHands.anim
+PASS Preserved content Assets/Animations/Player/RelaxedHands.anim
+PASS Exists Assets/Prefabs/Light/RedStone_Permanent.prefab
+PASS Preserved GUID Assets/Prefabs/Light/RedStone_Permanent.prefab
+PASS Preserved content Assets/Prefabs/Light/RedStone_Permanent.prefab
+PASS Exists Assets/Prefabs/Light/RedStone_WhileLit.prefab
+PASS Preserved GUID Assets/Prefabs/Light/RedStone_WhileLit.prefab
+PASS Preserved content Assets/Prefabs/Light/RedStone_WhileLit.prefab
+PASS Exists Assets/Materials/Light/StoneRuleMark.mat
+PASS Preserved GUID Assets/Materials/Light/StoneRuleMark.mat
+PASS Preserved content Assets/Materials/Light/StoneRuleMark.mat
+PASS Exists Assets/Materials/Player/Mannequin_Ivory.mat
+PASS Preserved GUID Assets/Materials/Player/Mannequin_Ivory.mat
+PASS Preserved content Assets/Materials/Player/Mannequin_Ivory.mat
+PASS Exists Assets/Animations/Player/MannequinLocomotion.controller
+PASS Preserved GUID Assets/Animations/Player/MannequinLocomotion.controller
+PASS Exists Assets/Prefabs/Player/QuaterniusMannequin.prefab
+PASS Preserved GUID Assets/Prefabs/Player/QuaterniusMannequin.prefab
+PASS Preserved content Assets/Prefabs/Player/QuaterniusMannequin.prefab
+PASS Exists Assets/Scripts/Gameplay/CoastalSwell.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/CoastalSwell.cs
+PASS Exists Assets/Scripts/Gameplay/CoastalWalkthrough.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/CoastalWalkthrough.cs
+PASS Exists Assets/Scripts/Gameplay/Core/SeaBounds.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Core/SeaBounds.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/FirstPersonMotionChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/FirstPersonMotionChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/FirstPersonPlayChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/FirstPersonPlayChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/PlayerShadowChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/PlayerShadowChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/V10PlayerChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/V10PlayerChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/V8PlayChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/V8PlayChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Diagnostics/V9PlayChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Diagnostics/V9PlayChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Interaction/LanternState.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Interaction/LanternState.cs
+PASS Exists Assets/Scripts/Gameplay/Interaction/PlayerInteractor.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Interaction/PlayerInteractor.cs
+PASS Exists Assets/Scripts/Gameplay/Interaction/PlayerLantern.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Interaction/PlayerLantern.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LaserEmitter.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LaserEmitter.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightActivationState.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightActivationState.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightPortal.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightPortal.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightPuzzleWorld.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightPuzzleWorld.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightReceiver.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightReceiver.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightTarget.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightTarget.cs
+PASS Exists Assets/Scripts/Gameplay/Light/LightTargetFeedback.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/LightTargetFeedback.cs
+PASS Exists Assets/Scripts/Gameplay/Light/RedStoneCurtain.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Light/RedStoneCurtain.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/CourtyardDrainExperiment.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/CourtyardDrainExperiment.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LightDrivenLift.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LightDrivenLift.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftMath.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftMath.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LightPathDriver.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LightPathDriver.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotor.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotor.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotorMath.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotorMath.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MechanismComponentChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MechanismComponentChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MechanismDriveRules.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MechanismDriveRules.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MirageAimConsole.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MirageAimConsole.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MirageBeamView.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MirageBeamView.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MotorLever.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MotorLever.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/MotorLeverState.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/MotorLeverState.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/SolidPath.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/SolidPath.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/WaterMirage.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/WaterMirage.cs
+PASS Exists Assets/Scripts/Gameplay/Mechanisms/WaterMirageMath.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Mechanisms/WaterMirageMath.cs
+PASS Exists Assets/Scripts/Gameplay/OceanWaves.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/OceanWaves.cs
+PASS Exists Assets/Scripts/Gameplay/Player/CoastalPlayerAvatar.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/CoastalPlayerAvatar.cs
+PASS Exists Assets/Scripts/Gameplay/Player/CoastalPlayerCamera.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/CoastalPlayerCamera.cs
+PASS Exists Assets/Scripts/Gameplay/Player/FallRecoveryChecks.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/FallRecoveryChecks.cs
+PASS Exists Assets/Scripts/Gameplay/Player/FallRecoveryRegion.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/FallRecoveryRegion.cs
+PASS Exists Assets/Scripts/Gameplay/Player/FirstPersonHands.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/FirstPersonHands.cs
+PASS Exists Assets/Scripts/Gameplay/Player/PlayerBodyAnchor.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/PlayerBodyAnchor.cs
+PASS Exists Assets/Scripts/Gameplay/Player/PlayerCameraMath.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/PlayerCameraMath.cs
+PASS Exists Assets/Scripts/Gameplay/Player/RiggedPlayerAnimation.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Player/RiggedPlayerAnimation.cs
+PASS Exists Assets/Scripts/Gameplay/SceneObjectGuide.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/SceneObjectGuide.cs
+PASS Exists Assets/Scripts/Gameplay/SeaBoundary.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/SeaBoundary.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/AimConsole.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/AimConsole.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/AimConsoleRelay.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/AimConsoleRelay.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/CONTROLS.md
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/CONTROLS.md
+PASS Exists Assets/Scripts/Gameplay/Tutorial/CourtyardDrainConsole.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/CourtyardDrainConsole.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/LanternPickup.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/LanternPickup.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/LessonCompletionCondition.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/LessonCompletionCondition.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/LessonProgress.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/LessonProgress.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/LessonStation.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/LessonStation.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/PlayerReachedCondition.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/PlayerReachedCondition.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/PortalConsoleRelay.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/PortalConsoleRelay.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/PortalRailConsole.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/PortalRailConsole.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/TutorialHud.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/TutorialHud.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/TutorialInput.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/TutorialInput.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/TutorialInteractable.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/TutorialInteractable.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/TutorialInteractionPolicy.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/TutorialInteractionPolicy.cs
+PASS Exists Assets/Scripts/Gameplay/Tutorial/TutorialJourney.cs
+PASS Preserved GUID Assets/Scripts/Gameplay/Tutorial/TutorialJourney.cs
+PASS Exists Assets/Scenes/CoastalTemple.unity
+PASS Preserved GUID Assets/Scenes/CoastalTemple.unity
+PASS Preserved scene content apart from ProBuilder save revision counters Assets/Scenes/CoastalTemple.unity
+PASS Exists Assets/Shaders/Ocean.shader
+PASS Preserved GUID Assets/Shaders/Ocean.shader
+PASS Preserved content Assets/Shaders/Ocean.shader
+PASS Exists Assets/Textures/Terrain/ChalkGray.asset
+PASS Preserved GUID Assets/Textures/Terrain/ChalkGray.asset
+PASS Preserved content Assets/Textures/Terrain/ChalkGray.asset
+PASS Exists Assets/Objects/Environment/Terrain/Layers/ChalkGray.terrainlayer
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Layers/ChalkGray.terrainlayer
+PASS Preserved content Assets/Objects/Environment/Terrain/Layers/ChalkGray.terrainlayer
+PASS Exists Assets/Objects/Environment/Terrain/CoastalMountain.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CoastalMountain.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CoastalMountain.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Beach_BroadRockSlope.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Beach_BroadRockSlope.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Beach_BroadRockSlope.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Beach_OccludingButtress.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Beach_OccludingButtress.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Beach_OccludingButtress.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/East_SummitSupport.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/East_SummitSupport.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/East_SummitSupport.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Halfway_JoinedFront.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Halfway_JoinedFront.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Halfway_JoinedFront.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Halfway_WestShoulder.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Halfway_WestShoulder.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Halfway_WestShoulder.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Main_SouthBody.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Main_SouthBody.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Main_SouthBody.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/North_AscentBody.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/North_AscentBody.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/North_AscentBody.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Rear_FoldedRidge.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Rear_FoldedRidge.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Rear_FoldedRidge.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Summit_CompactPoint.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Summit_CompactPoint.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Summit_CompactPoint.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/Tip_LowerButtress.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/Tip_LowerButtress.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/Tip_LowerButtress.asset
+PASS Exists Assets/Objects/Environment/Terrain/CompactMountain/West_RockFlank.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/CompactMountain/West_RockFlank.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/CompactMountain/West_RockFlank.asset
+PASS Exists Assets/Objects/Environment/Terrain/FarSeaRing.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/FarSeaRing.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/FarSeaRing.asset
+PASS Exists Assets/Objects/Environment/Terrain/Halfway_CliffBlock.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Halfway_CliffBlock.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Halfway_CliffBlock.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Coastal_LowCrag_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Coastal_LowCrag_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Coastal_LowCrag_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/East_Toe_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/East_Toe_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/East_Toe_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Layers/Grass.terrainlayer
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Layers/Grass.terrainlayer
+PASS Preserved content Assets/Objects/Environment/Terrain/Layers/Grass.terrainlayer
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Midland_Center_Cliff02.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Midland_Center_Cliff02.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Midland_Center_Cliff02.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Midland_East_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Midland_East_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Midland_East_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Midland_South_Cliff02.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Midland_South_Cliff02.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Midland_South_Cliff02.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Midland_West_Cliff02.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Midland_West_Cliff02.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Midland_West_Cliff02.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/North_Shoulders_Cliff02.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/North_Shoulders_Cliff02.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/North_Shoulders_Cliff02.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/South_Toe_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/South_Toe_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/South_Toe_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Summit_Root_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Summit_Root_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Summit_Root_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/Summit_TriangularCliff04.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/Summit_TriangularCliff04.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/Summit_TriangularCliff04.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/West_GradedFlank_Cliff02.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/West_GradedFlank_Cliff02.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/West_GradedFlank_Cliff02.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/West_Shoulders_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/West_Shoulders_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/West_Shoulders_Cliff03.asset
+PASS Exists Assets/Objects/Environment/Terrain/Headland/West_Toe_Cliff03.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Headland/West_Toe_Cliff03.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Headland/West_Toe_Cliff03.asset
+PASS Exists Assets/Textures/Terrain/Headland/WhiteboxBeach.asset
+PASS Preserved GUID Assets/Textures/Terrain/Headland/WhiteboxBeach.asset
+PASS Preserved content Assets/Textures/Terrain/Headland/WhiteboxBeach.asset
+PASS Exists Assets/Textures/Terrain/Headland/WhiteboxRock.asset
+PASS Preserved GUID Assets/Textures/Terrain/Headland/WhiteboxRock.asset
+PASS Preserved content Assets/Textures/Terrain/Headland/WhiteboxRock.asset
+PASS Exists Assets/Textures/Terrain/Headland/WhiteboxSoil.asset
+PASS Preserved GUID Assets/Textures/Terrain/Headland/WhiteboxSoil.asset
+PASS Preserved content Assets/Textures/Terrain/Headland/WhiteboxSoil.asset
+PASS Exists Assets/Textures/Terrain/Headland/WhiteboxTrail.asset
+PASS Preserved GUID Assets/Textures/Terrain/Headland/WhiteboxTrail.asset
+PASS Preserved content Assets/Textures/Terrain/Headland/WhiteboxTrail.asset
+PASS Exists Assets/Textures/Terrain/MutedSage.asset
+PASS Preserved GUID Assets/Textures/Terrain/MutedSage.asset
+PASS Preserved content Assets/Textures/Terrain/MutedSage.asset
+PASS Exists Assets/Objects/Environment/Terrain/Layers/MutedSage.terrainlayer
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Layers/MutedSage.terrainlayer
+PASS Preserved content Assets/Objects/Environment/Terrain/Layers/MutedSage.terrainlayer
+PASS Exists Assets/Objects/Environment/Terrain/NearshorePreview.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/NearshorePreview.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/NearshorePreview.asset
+PASS Exists Assets/Objects/Environment/Terrain/Summit_OverhangingCliff.asset
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Summit_OverhangingCliff.asset
+PASS Preserved content Assets/Objects/Environment/Terrain/Summit_OverhangingCliff.asset
+PASS Exists Assets/Materials/Environment/Terrain.mat
+PASS Preserved GUID Assets/Materials/Environment/Terrain.mat
+PASS Preserved content Assets/Materials/Environment/Terrain.mat
+PASS Exists Assets/Textures/Terrain/WhiteboxPath.asset
+PASS Preserved GUID Assets/Textures/Terrain/WhiteboxPath.asset
+PASS Preserved content Assets/Textures/Terrain/WhiteboxPath.asset
+PASS Exists Assets/Objects/Environment/Terrain/Layers/WhiteboxPath.terrainlayer
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Layers/WhiteboxPath.terrainlayer
+PASS Preserved content Assets/Objects/Environment/Terrain/Layers/WhiteboxPath.terrainlayer
+PASS Exists Assets/Textures/Terrain/WhiteboxSand.asset
+PASS Preserved GUID Assets/Textures/Terrain/WhiteboxSand.asset
+PASS Preserved content Assets/Textures/Terrain/WhiteboxSand.asset
+PASS Exists Assets/Objects/Environment/Terrain/Layers/WhiteboxSand.terrainlayer
+PASS Preserved GUID Assets/Objects/Environment/Terrain/Layers/WhiteboxSand.terrainlayer
+PASS Preserved content Assets/Objects/Environment/Terrain/Layers/WhiteboxSand.terrainlayer
+PASS Exists Assets/Materials/Tutorial/V8/Chalk.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/Chalk.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/Chalk.mat
+PASS Exists Assets/Materials/Tutorial/V8/Portal_Turquoise.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/Portal_Turquoise.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/Portal_Turquoise.mat
+PASS Exists Assets/Materials/Tutorial/V8/Recess.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/Recess.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/Recess.mat
+PASS Exists Assets/Materials/Tutorial/V8/Sandstone.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/Sandstone.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/Sandstone.mat
+PASS Exists Assets/Materials/Tutorial/V8/StoneCurtain_Red.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/StoneCurtain_Red.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/StoneCurtain_Red.mat
+PASS Exists Assets/Materials/Tutorial/V8/Sunlight_Gold.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V8/Sunlight_Gold.mat
+PASS Preserved content Assets/Materials/Tutorial/V8/Sunlight_Gold.mat
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/01_FirstLight_CarvedFloor.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/01_FirstLight_CarvedFloor.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/01_FirstLight_CarvedFloor.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/02_BorrowedLight_CarvedFloor.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/02_BorrowedLight_CarvedFloor.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/02_BorrowedLight_CarvedFloor.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/03_FoldedLight_CarvedFloor.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/03_FoldedLight_CarvedFloor.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/03_FoldedLight_CarvedFloor.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/BorrowedLight_Approach.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/BorrowedLight_Approach.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/BorrowedLight_Approach.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/Descent_To_Halfway.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/Descent_To_Halfway.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/Descent_To_Halfway.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V8/Lift_Approach.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V8/Lift_Approach.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V8/Lift_Approach.asset
+PASS Exists Assets/Prefabs/Tutorial/V8/BorrowedLight.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V8/BorrowedLight.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V8/BorrowedLight.prefab
+PASS Exists Assets/Prefabs/Tutorial/V8/ExplorerVisual.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V8/ExplorerVisual.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V8/ExplorerVisual.prefab
+PASS Exists Assets/Prefabs/Tutorial/V8/FirstLight.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V8/FirstLight.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V8/FirstLight.prefab
+PASS Exists Assets/Prefabs/Tutorial/V8/FoldedLight.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V8/FoldedLight.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V8/FoldedLight.prefab
+PASS Exists Assets/Prefabs/Tutorial/V8/WaterMirageSandbox.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V8/WaterMirageSandbox.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V8/WaterMirageSandbox.prefab
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGapRestore.json
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGapRestore.json
+PASS Exists Assets/Materials/Tutorial/V9/Chalk.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/Chalk.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/Chalk.mat
+PASS Exists Assets/Materials/Tutorial/V9/LightPath.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/LightPath.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/LightPath.mat
+PASS Exists Assets/Materials/Tutorial/V9/Recess.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/Recess.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/Recess.mat
+PASS Exists Assets/Materials/Tutorial/V9/ReturningStone.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/ReturningStone.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/ReturningStone.mat
+PASS Exists Assets/Materials/Tutorial/V9/Sandstone.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/Sandstone.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/Sandstone.mat
+PASS Exists Assets/Materials/Tutorial/V9/SpaceWindow.mat
+PASS Preserved GUID Assets/Materials/Tutorial/V9/SpaceWindow.mat
+PASS Preserved content Assets/Materials/Tutorial/V9/SpaceWindow.mat
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Exit_Join.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Exit_Join.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Exit_Join.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Shore_Approach.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Shore_Approach.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Shore_Approach.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Approach.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Approach.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Approach.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Exit_Join.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Exit_Join.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Exit_Join.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Approach.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Approach.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Approach.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_B_Rising_LightBridge.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_B_Rising_LightBridge.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_B_Rising_LightBridge.asset
+PASS Exists Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Exit_Join.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Exit_Join.asset
+PASS Preserved content Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Exit_Join.asset
+PASS Exists Assets/Prefabs/Tutorial/V9/01_BorrowedBridge.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V9/01_BorrowedBridge.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V9/01_BorrowedBridge.prefab
+PASS Exists Assets/Prefabs/Tutorial/V9/02_StoneWorkshop.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V9/02_StoneWorkshop.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V9/02_StoneWorkshop.prefab
+PASS Exists Assets/Prefabs/Tutorial/V9/03_FoldedBridge.prefab
+PASS Preserved GUID Assets/Prefabs/Tutorial/V9/03_FoldedBridge.prefab
+PASS Preserved content Assets/Prefabs/Tutorial/V9/03_FoldedBridge.prefab
+PASS Exists Assets/Scripts/Editor/Tools/LocalMcpConnection.cs
+PASS Preserved GUID Assets/Scripts/Editor/Tools/LocalMcpConnection.cs
+PASS Exists Assets/Settings/Input/InputSystem_Actions.inputactions
+PASS Preserved GUID Assets/Settings/Input/InputSystem_Actions.inputactions
+PASS Preserved content Assets/Settings/Input/InputSystem_Actions.inputactions
+PASS Exists Assets/Materials/Floor01.mat
+PASS Preserved GUID Assets/Materials/Floor01.mat
+PASS Preserved content Assets/Materials/Floor01.mat
+PASS Exists Assets/Materials/Floor1.mat
+PASS Preserved GUID Assets/Materials/Floor1.mat
+PASS Preserved content Assets/Materials/Floor1.mat
+PASS Exists Assets/Materials/FloorNormal.mat
+PASS Preserved GUID Assets/Materials/FloorNormal.mat
+PASS Preserved content Assets/Materials/FloorNormal.mat
+PASS Exists Assets/Materials/testMaterial.mat
+PASS Preserved GUID Assets/Materials/testMaterial.mat
+PASS Preserved content Assets/Materials/testMaterial.mat
+PASS Removed Assets/Readme.asset
+PASS Removed Assets/Resources/.gitkeep
+PASS Exists Assets/Scenes/SampleScene.unity
+PASS Preserved GUID Assets/Scenes/SampleScene.unity
+PASS Preserved content Assets/Scenes/SampleScene.unity
+PASS Exists Assets/Settings/Lighting/DefaultVolumeProfile.asset
+PASS Preserved GUID Assets/Settings/Lighting/DefaultVolumeProfile.asset
+PASS Preserved content Assets/Settings/Lighting/DefaultVolumeProfile.asset
+PASS Exists Assets/Settings/Rendering/Mobile_Renderer.asset
+PASS Preserved GUID Assets/Settings/Rendering/Mobile_Renderer.asset
+PASS Preserved content Assets/Settings/Rendering/Mobile_Renderer.asset
+PASS Exists Assets/Settings/Rendering/Mobile_RPAsset.asset
+PASS Preserved GUID Assets/Settings/Rendering/Mobile_RPAsset.asset
+PASS Preserved content Assets/Settings/Rendering/Mobile_RPAsset.asset
+PASS Exists Assets/Settings/Rendering/PC_Renderer.asset
+PASS Preserved GUID Assets/Settings/Rendering/PC_Renderer.asset
+PASS Preserved content Assets/Settings/Rendering/PC_Renderer.asset
+PASS Exists Assets/Settings/Rendering/PC_RPAsset.asset
+PASS Preserved GUID Assets/Settings/Rendering/PC_RPAsset.asset
+PASS Preserved content Assets/Settings/Rendering/PC_RPAsset.asset
+PASS Exists Assets/Settings/Lighting/SampleSceneProfile.asset
+PASS Preserved GUID Assets/Settings/Lighting/SampleSceneProfile.asset
+PASS Preserved content Assets/Settings/Lighting/SampleSceneProfile.asset
+PASS Exists Assets/Settings/Rendering/UniversalRenderPipelineGlobalSettings.asset
+PASS Preserved GUID Assets/Settings/Rendering/UniversalRenderPipelineGlobalSettings.asset
+PASS Preserved content Assets/Settings/Rendering/UniversalRenderPipelineGlobalSettings.asset
+PASS Exists Assets/Textures/Floor01.PNG
+PASS Preserved GUID Assets/Textures/Floor01.PNG
+PASS Preserved content Assets/Textures/Floor01.PNG
+PASS Exists Assets/Textures/Floor02.PNG
+PASS Preserved GUID Assets/Textures/Floor02.PNG
+PASS Preserved content Assets/Textures/Floor02.PNG
+PASS Exists Assets/Textures/Floor03.PNG
+PASS Preserved GUID Assets/Textures/Floor03.PNG
+PASS Preserved content Assets/Textures/Floor03.PNG
+PASS Exists Assets/Textures/Floor04.png
+PASS Preserved GUID Assets/Textures/Floor04.png
+PASS Preserved content Assets/Textures/Floor04.png
+PASS Exists Assets/Textures/Floor05.png
+PASS Preserved GUID Assets/Textures/Floor05.png
+PASS Preserved content Assets/Textures/Floor05.png
+PASS Exists Assets/Textures/Floor06.png
+PASS Preserved GUID Assets/Textures/Floor06.png
+PASS Preserved content Assets/Textures/Floor06.png
+PASS Exists Assets/Textures/Floor07.png
+PASS Preserved GUID Assets/Textures/Floor07.png
+PASS Preserved content Assets/Textures/Floor07.png
+PASS Exists Assets/Textures/FloorNormal.PNG
+PASS Preserved GUID Assets/Textures/FloorNormal.PNG
+PASS Preserved content Assets/Textures/FloorNormal.PNG
+PASS Exists Assets/Objects/Environment/PureNature/Boulders/Boulder01.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Boulders/Boulder01.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Boulders/Boulder01.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Boulders/Boulder02.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Boulders/Boulder02.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Boulders/Boulder02.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Boulders/Boulder03.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Boulders/Boulder03.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Boulders/Boulder03.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Boulders/Boulder04.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Boulders/Boulder04.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Boulders/Boulder04.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Boulders/Boulder05.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Boulders/Boulder05.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Boulders/Boulder05.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff01.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff01.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff01.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02b.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02b.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02b.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02c.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02c.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02c.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02d.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02d.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02d.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02e.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02e.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02e.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02f.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02f.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02f.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff02g.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff02g.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff02g.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03b.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03b.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03b.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03c.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03c.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03c.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03d.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03d.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03d.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03e.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03e.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03e.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03f.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03f.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03f.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff03g.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff03g.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff03g.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff04.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff04.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff04.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Cliffs/Cliff05.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Cliffs/Cliff05.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Cliffs/Cliff05.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Paveway01.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Paveway01.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Paveway01.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock01.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock01.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock01.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock02.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock02.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock02.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock03.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock03.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock03.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock04.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock04.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock04.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock05.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock05.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock05.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock06.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock06.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock06.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock07.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock07.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock07.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock08.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock08.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock08.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock09.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock09.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock09.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock10.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock10.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock10.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock11.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock11.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock11.fbx
+PASS Exists Assets/Objects/Environment/PureNature/Rocks/Rock12.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/Rocks/Rock12.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/Rocks/Rock12.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular01.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular01.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular01.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular02.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular02.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular02.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular03.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular03.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular03.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular04.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular04.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular04.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular05.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular05.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular05.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular06.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular06.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular06.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular07.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular07.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular07.fbx
+PASS Exists Assets/Objects/Environment/PureNature/RocksModular/RockModular08.fbx
+PASS Preserved GUID Assets/Objects/Environment/PureNature/RocksModular/RockModular08.fbx
+PASS Preserved content Assets/Objects/Environment/PureNature/RocksModular/RockModular08.fbx
+PASS Exists Assets/Objects/Environment/PureNature/SourceInfo/README.md
+PASS Preserved GUID Assets/Objects/Environment/PureNature/SourceInfo/README.md
+PASS Exists Assets/Objects/Environment/PureNature/SourceInfo/Readme.pdf
+PASS Preserved GUID Assets/Objects/Environment/PureNature/SourceInfo/Readme.pdf
+PASS Preserved content Assets/Objects/Environment/PureNature/SourceInfo/Readme.pdf
+PASS Exists Assets/Textures/Environment/PureNature/Cliff02_a.png
+PASS Preserved GUID Assets/Textures/Environment/PureNature/Cliff02_a.png
+PASS Preserved content Assets/Textures/Environment/PureNature/Cliff02_a.png
+PASS Exists Assets/Textures/Environment/PureNature/Cliff03_a.png
+PASS Preserved GUID Assets/Textures/Environment/PureNature/Cliff03_a.png
+PASS Preserved content Assets/Textures/Environment/PureNature/Cliff03_a.png
+PASS Exists Assets/Textures/Environment/PureNature/Cliff04_a.png
+PASS Preserved GUID Assets/Textures/Environment/PureNature/Cliff04_a.png
+PASS Preserved content Assets/Textures/Environment/PureNature/Cliff04_a.png
+PASS Exists Assets/Textures/Environment/PureNature/Grass01_a.png
+PASS Preserved GUID Assets/Textures/Environment/PureNature/Grass01_a.png
+PASS Preserved content Assets/Textures/Environment/PureNature/Grass01_a.png
+PASS Exists Assets/Objects/Characters/Quaternius/AnimationLibrary_Unity_Standard.fbx
+PASS Preserved GUID Assets/Objects/Characters/Quaternius/AnimationLibrary_Unity_Standard.fbx
+PASS Preserved content Assets/Objects/Characters/Quaternius/AnimationLibrary_Unity_Standard.fbx
+PASS Exists Assets/Objects/Characters/Quaternius/License.txt
+PASS Preserved GUID Assets/Objects/Characters/Quaternius/License.txt
+PASS Preserved content Assets/Objects/Characters/Quaternius/License.txt
+PASS Exists Assets/Textures/Reference/Quaternius/Preview.png
+PASS Preserved GUID Assets/Textures/Reference/Quaternius/Preview.png
+PASS Preserved content Assets/Textures/Reference/Quaternius/Preview.png
+PASS Exists Assets/Objects/Characters/Quaternius/SOURCE.md
+PASS Preserved GUID Assets/Objects/Characters/Quaternius/SOURCE.md
+PASS Exists Assets/Textures/Reference/Quaternius/Unity_Setup.png
+PASS Preserved GUID Assets/Textures/Reference/Quaternius/Unity_Setup.png
+PASS Preserved content Assets/Textures/Reference/Quaternius/Unity_Setup.png
+PASS Removed Assets/TutorialInfo/Icons/URP.png
+PASS Removed Assets/TutorialInfo/Layout.wlt
+PASS Removed Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs
+PASS Removed Assets/TutorialInfo/Scripts/Readme.cs
+PASS Exists Assets/Scripts/Editor/WaterDemo/CourtyardBuilder.cs
+PASS Preserved GUID Assets/Scripts/Editor/WaterDemo/CourtyardBuilder.cs
+PASS Exists Assets/Scripts/Editor/WaterDemo/WaterCourtyard.Editor.asmdef
+PASS Preserved GUID Assets/Scripts/Editor/WaterDemo/WaterCourtyard.Editor.asmdef
+PASS Preserved content Assets/Scripts/Editor/WaterDemo/WaterCourtyard.Editor.asmdef
+PASS Exists Assets/Settings/Lighting/CourtVolume.asset
+PASS Preserved GUID Assets/Settings/Lighting/CourtVolume.asset
+PASS Preserved content Assets/Settings/Lighting/CourtVolume.asset
+PASS Exists Assets/Objects/LevelGeometry/WaterDemo/DrainRing.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/WaterDemo/DrainRing.asset
+PASS Preserved content Assets/Objects/LevelGeometry/WaterDemo/DrainRing.asset
+PASS Exists Assets/Objects/LevelGeometry/WaterDemo/GradedFloor.asset
+PASS Preserved GUID Assets/Objects/LevelGeometry/WaterDemo/GradedFloor.asset
+PASS Preserved content Assets/Objects/LevelGeometry/WaterDemo/GradedFloor.asset
+PASS Exists Assets/Materials/WaterDemo/Chalk.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Chalk.mat
+PASS Preserved content Assets/Materials/WaterDemo/Chalk.mat
+PASS Exists Assets/Materials/WaterDemo/Flow marks.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Flow marks.mat
+PASS Preserved content Assets/Materials/WaterDemo/Flow marks.mat
+PASS Exists Assets/Materials/WaterDemo/Instrument teal.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Instrument teal.mat
+PASS Preserved content Assets/Materials/WaterDemo/Instrument teal.mat
+PASS Exists Assets/Materials/WaterDemo/Light ray.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Light ray.mat
+PASS Preserved content Assets/Materials/WaterDemo/Light ray.mat
+PASS Exists Assets/Materials/WaterDemo/Limestone.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Limestone.mat
+PASS Preserved content Assets/Materials/WaterDemo/Limestone.mat
+PASS Exists Assets/Materials/WaterDemo/Mechanism.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Mechanism.mat
+PASS Preserved content Assets/Materials/WaterDemo/Mechanism.mat
+PASS Exists Assets/Materials/WaterDemo/Pool tile.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Pool tile.mat
+PASS Preserved content Assets/Materials/WaterDemo/Pool tile.mat
+PASS Exists Assets/Materials/WaterDemo/Receiver.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Receiver.mat
+PASS Preserved content Assets/Materials/WaterDemo/Receiver.mat
+PASS Exists Assets/Materials/WaterDemo/Recess.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Recess.mat
+PASS Preserved content Assets/Materials/WaterDemo/Recess.mat
+PASS Exists Assets/Materials/WaterDemo/Sky.mat
+PASS Preserved GUID Assets/Materials/WaterDemo/Sky.mat
+PASS Preserved content Assets/Materials/WaterDemo/Sky.mat
+PASS Exists Assets/Prefabs/Water/CourtyardWater.prefab
+PASS Preserved GUID Assets/Prefabs/Water/CourtyardWater.prefab
+PASS Preserved content Assets/Prefabs/Water/CourtyardWater.prefab
+PASS Exists Assets/Textures/WaterDemo/TileGrid.asset
+PASS Preserved GUID Assets/Textures/WaterDemo/TileGrid.asset
+PASS Preserved content Assets/Textures/WaterDemo/TileGrid.asset
+PASS Exists Assets/Scripts/WaterDemo/Runtime/CourtyardLab.cs
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/CourtyardLab.cs
+PASS Exists Assets/Scripts/WaterDemo/Runtime/CourtyardWalker.cs
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/CourtyardWalker.cs
+PASS Exists Assets/Scripts/WaterDemo/Runtime/FlowTracers.cs
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/FlowTracers.cs
+PASS Exists Assets/Scripts/WaterDemo/Runtime/RefractedDrainBeam.cs
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/RefractedDrainBeam.cs
+PASS Exists Assets/Scripts/WaterDemo/Runtime/WaterAcceptance.cs
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/WaterAcceptance.cs
+PASS Exists Assets/Scripts/WaterDemo/Runtime/WaterCourtyard.Demo.asmdef
+PASS Preserved GUID Assets/Scripts/WaterDemo/Runtime/WaterCourtyard.Demo.asmdef
+PASS Preserved content Assets/Scripts/WaterDemo/Runtime/WaterCourtyard.Demo.asmdef
+PASS Exists Assets/Scenes/WaterCourtyard.unity
+PASS Preserved GUID Assets/Scenes/WaterCourtyard.unity
+PASS Preserved content Assets/Scenes/WaterCourtyard.unity
+PASS Exists Assets/Materials/Water/Water.mat
+PASS Preserved GUID Assets/Materials/Water/Water.mat
+PASS Preserved content Assets/Materials/Water/Water.mat
+PASS Exists Assets/Prefabs/Water/WaterVolume.prefab
+PASS Preserved GUID Assets/Prefabs/Water/WaterVolume.prefab
+PASS Preserved content Assets/Prefabs/Water/WaterVolume.prefab
+PASS Exists Assets/Scripts/WaterSystem/BuoyantBody.cs
+PASS Preserved GUID Assets/Scripts/WaterSystem/BuoyantBody.cs
+PASS Exists Assets/Scripts/WaterSystem/Core/OceanWaveMath.cs
+PASS Preserved GUID Assets/Scripts/WaterSystem/Core/OceanWaveMath.cs
+PASS Exists Assets/Scripts/WaterSystem/Core/WaterGrid.cs
+PASS Preserved GUID Assets/Scripts/WaterSystem/Core/WaterGrid.cs
+PASS Exists Assets/Scripts/WaterSystem/Courtyard.Water.asmdef
+PASS Preserved GUID Assets/Scripts/WaterSystem/Courtyard.Water.asmdef
+PASS Preserved content Assets/Scripts/WaterSystem/Courtyard.Water.asmdef
+PASS Exists Assets/Scripts/WaterSystem/WaterSurfaceMotion.cs
+PASS Preserved GUID Assets/Scripts/WaterSystem/WaterSurfaceMotion.cs
+PASS Exists Assets/Scripts/WaterSystem/WaterVolume.cs
+PASS Preserved GUID Assets/Scripts/WaterSystem/WaterVolume.cs
+PASS Exists Assets/Shaders/HeightfieldWater.shader
+PASS Preserved GUID Assets/Shaders/HeightfieldWater.shader
+PASS Preserved content Assets/Shaders/HeightfieldWater.shader
+PASS Only the nine documented top-level categories
+PASS All .cs files are in Scripts: []
+PASS All .prefab files are in Prefabs: []
+PASS All .unity files are in Scenes: []
+PASS All .mat files are in Materials: []
+PASS All .controller files are in Animations: []
+PASS All .anim files are in Animations: []
+PASS All .shader files are in Shaders: []
+PASS No ZIP archives imported into Unity
+PASS Unused Resources removed
+PASS Extracted source intact SourceAssets/Characters/Mixamo/Fast Run.dae
+PASS Extracted source intact SourceAssets/Characters/Mixamo/Slow Run.dae
+PASS No duplicate asset GUIDs: {}
+PASS Migration introduces no unresolved asset GUIDs: []
+INFO Existing package references in byte-identical rendering settings: [{'asset': 'Assets/Settings/Lighting/DefaultVolumeProfile.asset', 'guid': '5a00a63fdd6bd2a45ab1f2d869305ffd'}, {'asset': 'Assets/Settings/Lighting/DefaultVolumeProfile.asset', 'guid': '74955a4b0b4243bc87231e8b59ed9140'}, {'asset': 'Assets/Settings/Lighting/DefaultVolumeProfile.asset', 'guid': '60f3b30c03e6ba64d9a27dc9dba8f28d'}, {'asset': 'Assets/Settings/Lighting/DefaultVolumeProfile.asset', 'guid': '0fd9ee276a1023e439cf7a9c393195fa'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': '53a11f4ebaebf4049b3638ef78dc9664'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': '8f96cd657dc40064aa21efcc7e50a2e7'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': 'b9a23f869c4fd45f19c5ada54dd82176'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': 'e5c6678ed2aaa91408dd3df699057aae'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': '57d7c4c16e2765b47a4d2069b311bffe'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': '24ec0e140fb444a44ab96ee80844e18e'}, {'asset': 'Assets/Settings/Rendering/PC_Renderer.asset', 'guid': '03cfc4915c15d504a9ed85ecc404e607'}]

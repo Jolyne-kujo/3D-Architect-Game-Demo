@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs"/>
+    <Compile Include="../../../Assets/Scripts/WaterDemo/Runtime/CourtyardWalker.cs"/>
+    <Compile Include="../../../Assets/Scripts/Gameplay/Player/*.cs"/>
+    <Compile Include="../../../Assets/Scripts/Gameplay/Mechanisms/LightDrivenLift*.cs"/>
+    <Compile Include="../../../Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotor*.cs"/>
+    <Compile Include="../../../Assets/Scripts/Gameplay/Mechanisms/MechanismDriveRules.cs"/>
+    <Compile Include="../../../Assets/Scripts/Gameplay/Light/*.cs"/>
+    <Compile Include="../../../Assets/Scripts/Editor/Gameplay/PlayerAvatarAuthoring.cs" Condition="Exists('../../../Assets/Scripts/Editor/Gameplay/PlayerAvatarAuthoring.cs')"/>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>E:/Unity/6000.5.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>E:/Unity/6000.5.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>E:/Unity/6000.5.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath></Reference>
+    <Reference Include="Unity.InputSystem"><HintPath>../../../Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath></Reference>
+    <Reference Include="Courtyard.Water"><HintPath>../../../Library/ScriptAssemblies/Courtyard.Water.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

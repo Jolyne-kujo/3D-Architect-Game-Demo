@@ -1,0 +1,4 @@
+step=0.016 grounded=True jumpSpeed=4.44304
+step=1E-05 grounded=False jumpSpeed=-2
+step=1E-06 grounded=False jumpSpeed=-2
+step=1E-07 grounded=False jumpSpeed=-2

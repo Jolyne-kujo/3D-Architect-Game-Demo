@@ -1,0 +1,61 @@
+[{
+    "id": "borrowed-a",
+    "terrains": 1,
+    "holeCells": 336,
+    "meshes": 0,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 0.0,
+    "milliseconds": 25.363
+},{
+    "id": "borrowed-b",
+    "terrains": 1,
+    "holeCells": 336,
+    "meshes": 1,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 213.84092835049774,
+    "milliseconds": 103.4381
+},{
+    "id": "workshop-approach",
+    "terrains": 1,
+    "holeCells": 104,
+    "meshes": 3,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 228.2597925268414,
+    "milliseconds": 145.56050000000003
+},{
+    "id": "workshop",
+    "terrains": 1,
+    "holeCells": 633,
+    "meshes": 4,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 1597.749702763363,
+    "milliseconds": 234.4899
+},{
+    "id": "folded-a",
+    "terrains": 1,
+    "holeCells": 442,
+    "meshes": 4,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 778.5272800755515,
+    "milliseconds": 189.919
+},{
+    "id": "folded-b",
+    "terrains": 1,
+    "holeCells": 521,
+    "meshes": 3,
+    "colliderOnlyMeshes": 0,
+    "unsupportedColliders": 0,
+    "unchangedRepeat": false,
+    "removedSurfaceArea": 808.5324390403555,
+    "milliseconds": 112.07610000000001
+}]

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "Actual player settled into swimming",
+      "ok": true,
+      "detail": "(-50.00, -2.02, 182.00)"
+    },
+    {
+      "name": "Swim camera stays above surface",
+      "ok": true,
+      "detail": 1.88462579
+    },
+    {
+      "name": "Camera clears nearby floating cube",
+      "ok": true,
+      "detail": 4.216266
+    },
+    {
+      "name": "Swimming camera still avoids real walls",
+      "ok": true,
+      "detail": 1.53000069
+    },
+    {
+      "name": "Camera restores full distance after obstruction removed",
+      "ok": true,
+      "detail": 4.21626663
+    }
+  ],
+  "scope": "Real Unity Play swimming frames and camera geometry; temporary wall; no physical keyboard input"
+}

@@ -1,0 +1,15 @@
+PASS grounded idle uses downloaded locomotion state
+PASS animation never moves the physical player root
+PASS real walking moves the character
+PASS actual velocity drives walking blend
+PASS downloaded animation moves skeletal leg bones
+PASS model faces movement rather than walking backwards
+PASS running selects faster imported animation blend
+PASS real jump selects imported airborne animation
+PASS third person camera stays attached during movement
+PASS first person hides the local avatar
+PASS third person restores skinned avatar
+PASS overview exit restores player binding
+PASS actual water selects imported swim-idle animation
+PASS swimming follow camera stays above water
+PASS swimming forward uses downloaded stroke animation

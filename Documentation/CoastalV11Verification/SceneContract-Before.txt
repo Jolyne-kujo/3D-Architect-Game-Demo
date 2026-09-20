@@ -1,0 +1,5 @@
+FAIL gameplay starts in first person
+FAIL camera is a direct child of stable eye pivot
+FAIL camera has no orbit or shoulder offset
+FAIL separate first person hands camera exists
+FAIL legacy third person requests cannot enable orbit gameplay

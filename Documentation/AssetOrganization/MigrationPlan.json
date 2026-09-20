@@ -1,0 +1,2262 @@
+{
+  "assets": [
+    {
+      "source": "Assets/Character/Fast Run.zip",
+      "target": null,
+      "guid": "d8186c13e05e0d64e9d9f143416702d9",
+      "sha256": "24a1125eca9b30354a8a51d2938c2ffb6d45b6b5909da44a6da1632c7159618a"
+    },
+    {
+      "source": "Assets/Character/Slow Run.zip",
+      "target": null,
+      "guid": "894983243d0b96640838841f94743cdc",
+      "sha256": "e439af14e9786efe143d1def8c6b68ea4f11b57400e99ab77b75233c9e687177"
+    },
+    {
+      "source": "Assets/Character/X Bot@Fast Run.fbx",
+      "target": "Assets/Animations/Player/Locomotion/FastRun.fbx",
+      "guid": "30653e724fe41ba4fba96997785689f9",
+      "sha256": "990cdea0130485f814b6b748b285e1ce4b92f2e63df72abc288249ac4b6ab9a7"
+    },
+    {
+      "source": "Assets/Character/X Bot@Slow Run.fbx",
+      "target": "Assets/Animations/Player/Locomotion/SlowRun.fbx",
+      "guid": "69ad0ce074ca89b49bfa418b53bb956d",
+      "sha256": "92fb7b3e774911fd65bba66f54dfc0d49e233abbb324f2d551e6efee674e7c23"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V10_BeforeFirstPerson.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V10_BeforeFirstPerson.unity",
+      "guid": "d089b31951a3acd4ba17af98049dfe5e",
+      "sha256": "4d6d127ac589c33c03041c603c80ba270c92375007b2871900339fc1fd36d902"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V11_BeforeMotionFix.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V11_BeforeMotionFix.unity",
+      "guid": "824619e120387dc4e91ae302b952f55c",
+      "sha256": "6094bb759bad52e16ac2d4dc88e4c636075e1f4edd0470388172f1d771c989c1"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V12_BeforeRelaxedArms.unity",
+      "guid": "fb615b6d1080d694099d4348564af9d4",
+      "sha256": "5b7a7c7df07d1c2e40b731d037ad69169e78f738ca13658342ea8b05848ddcd0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V13_BeforeShadowFix.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V13_BeforeShadowFix.unity",
+      "guid": "0eaa4a820edfefc4db109d1cc0e92b86",
+      "sha256": "6fc4e0ec4254b42dfea2830d747502f93a01d577650bd2fb0ef5552fa46bcaf6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V14_BeforeAssetOrganization.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V14_BeforeAssetOrganization.unity",
+      "guid": "495f33981ca6ddf4fafab1952fe69cf9",
+      "sha256": "5b85da6fb27feae9a8268ac88775eef415d5a18b4c73d36beecc715da7abec5a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V7.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V7.unity",
+      "guid": "ceee9e5804271ea47993fcc6b291a4bb",
+      "sha256": "e24d6bbf0a289fe104bf9603dbdd4f70b13beb2d93d4da8ad0a143086e54c2a9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V8.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V8.unity",
+      "guid": "e767f660f3f91a945b078a0421da34ee",
+      "sha256": "15fc216352c6cfee1e7c89ff30aaf2a11e42a027deeeb42196daac662241de24"
+    },
+    {
+      "source": "Assets/CoastalTemple/Archive/CoastalTemple_V9.unity",
+      "target": "Assets/Scenes/Archive/CoastalTemple_V9.unity",
+      "guid": "91a7954decc031344bc4224f9aec13ed",
+      "sha256": "cbf654f860232299543788bfb31d5c6a430b8da2c2775b5aa4d7f91131fa859f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/CourtyardDrainExperimentChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/CourtyardDrainExperimentChecks.cs",
+      "guid": "4b8639e5f93a4075b31a6575167d44f8",
+      "sha256": "2329cdaf4b505fad5010b97eaee73b6d354cf43d9ed97f49dfdd337d15f3eab5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/CourtyardDrainMigration.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/CourtyardDrainMigration.cs",
+      "guid": "8bac35587a364462b3c8fb3f3a81b95a",
+      "sha256": "b79f4b91806040c01f5582a26fc534fd750748309ee6600c3fc0f606f0db327b"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/FirstPersonAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/FirstPersonAuthoring.cs",
+      "guid": "3f8e938621635694484606f90bc97741",
+      "sha256": "50bfb41a5921c84e245936b46a1df008096d8c8fd82262f76fbfe3fda908cc01"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/FirstPersonChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/FirstPersonChecks.cs",
+      "guid": "7d6e052e1ebe2b545b7617c4016dcbea",
+      "sha256": "9c2c00f63d57469a334aa62637b70fbbc1d1bcb682c04dc07f6407ad632d4f55"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/LightRuleTests.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/LightRuleTests.cs",
+      "guid": "1d6ed56bc2fd1094d99170f7b1e55374",
+      "sha256": "894bc33ac7caf17cdcc47843314c7c2019b796e946fbefc356063a90d5375ea7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/LocomotionAssetChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/LocomotionAssetChecks.cs",
+      "guid": "ff6b4fecebe3daf44bb7183c2b73057f",
+      "sha256": "0e03524b230bbc06d63e0ddd5750221b5b26305fc5325a2fc77a056fa5851aa5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/MeshAssetWriter.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/MeshAssetWriter.cs",
+      "guid": "4cd6986fe6ce4b62972828ca1e8b5ff1",
+      "sha256": "910b391b3471bd0b9f284684fc774266d6f6057a9992e1ab074e0bc6df8ebf28"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/MirageSandboxAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/MirageSandboxAuthoring.cs",
+      "guid": "a1996477ec2c0a349a7e13ff65150579",
+      "sha256": "d2aba54e5bb7f2a3d611d61e3c9c3ed58771cc962f3c5bb39f9f13c65a0a8b50"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/PlayerAvatarAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/PlayerAvatarAuthoring.cs",
+      "guid": "1daf50586ef4063409e962ddb383ec5c",
+      "sha256": "e111aa477fb8b447a5735f1b5c2fd12e03cfac00dd343838a6a066b193470e1f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/RelaxedHandsAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/RelaxedHandsAuthoring.cs",
+      "guid": "e3be7fbcdf161c14b946753568610693",
+      "sha256": "1bdb3bf868580d25bf51ab413c42210ccfa330fbbc7a240fb26ae64100dcb184"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/ReusableAssetChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/ReusableAssetChecks.cs",
+      "guid": "2c144101848032145aa37dab50c4d9ae",
+      "sha256": "ab991c154ba55163681bcd91feda5717c7c786e30f586aa6dbb19ddbbed268fd"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/ReusableGameplayAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/ReusableGameplayAuthoring.cs",
+      "guid": "b3cc656c96c131045b9e392e033f4823",
+      "sha256": "9a8b522cd737027831444cc2cf09271910e45d34342efc0a4b4eedfcd2f3b05a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/Routes/RouteAuthoringKit.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/Routes/RouteAuthoringKit.cs",
+      "guid": "feefd5b145d21a64aa69837b59508049",
+      "sha256": "5d8ce940948b69dfd1d3f631fd0d5021066d3a2998538e92af7a8da3ee82c7c6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/Routes/RouteLayouts.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/Routes/RouteLayouts.cs",
+      "guid": "cd2bcc6f9ec09fe4eaba16e39cbd866f",
+      "sha256": "9a01a06f561af7bc31bf08fe33259e906ad6760fd76457c3fa59e4b220336ff9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/Routes/TutorialV9Authoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/Routes/TutorialV9Authoring.cs",
+      "guid": "354055a41980ce146896b330b73747bb",
+      "sha256": "b65ec774a9301f6535338e7972efe7708ba3aed0c0fcef0baf9bbb4a08e246e5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/SceneObjectGuideEditor.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/SceneObjectGuideEditor.cs",
+      "guid": "6f2494765a1c1ad4094f6a1f879e78fd",
+      "sha256": "18759169e9f1a92d78ba63e80d69efdf03c1f690cddd5d5984a1574d0f5c2a1b"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/TutorialGapExcavator.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/TutorialGapExcavator.cs",
+      "guid": "a6585997bd9342948aba121b08023085",
+      "sha256": "41a349cb08c444dd037c9435af016de8c0da2df43aca59c5be75352a9a438309"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/TutorialInteractionChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/TutorialInteractionChecks.cs",
+      "guid": "683390cc70f041f68b3a4957e79ceb17",
+      "sha256": "8236c823cac7275c94ed00f4cbe61ce2bfedc931a33d7b9dbe159b47839ce1db"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/TutorialModuleMigration.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/TutorialModuleMigration.cs",
+      "guid": "32c78c3c409049f69e47999561e10c37",
+      "sha256": "003336f513308b685e668ef3c3d2620ca14f3bcb585ca32e558ccb92645c71eb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/TutorialSceneAuthoring.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/TutorialSceneAuthoring.cs",
+      "guid": "1c93b594ee7441b4d909ff88c7043686",
+      "sha256": "ca9914410501f73a58df7930d82c95bc5001d1fb5ef9c10b6b9245e98582ebef"
+    },
+    {
+      "source": "Assets/CoastalTemple/Editor/WalkerMomentumChecks.cs",
+      "target": "Assets/Scripts/Editor/Gameplay/WalkerMomentumChecks.cs",
+      "guid": "291afa5ad54624d449d33bb18d858f83",
+      "sha256": "0173ad817045e319abfc2d23099e233172fae7b272c0583fb9324fd0a712829e"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/AlgorithmicRippleNormal.asset",
+      "target": "Assets/Textures/Environment/AlgorithmicRippleNormal.asset",
+      "guid": "ed52661a5567dc342a430fb2f3ddb6f8",
+      "sha256": "83a8c56a3f4f32ee7a613a5bed1486ea7b36244579390d551776287de000cd8c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/BoundaryBuoy.mat",
+      "target": "Assets/Materials/Environment/BoundaryBuoy.mat",
+      "guid": "d72dbdaeeddec274f9572cef72c15b62",
+      "sha256": "1fc67f17e294adef363b5c8e06f597c09dd1f109575f947303176532ee0a5be2"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Chalk.mat",
+      "target": "Assets/Materials/Environment/Chalk.mat",
+      "guid": "cba7e0be2c12ac14394b159b72f24279",
+      "sha256": "1429421b706a6402fca546ad3b7cd6dd3ba4f7af63a5a265b96b52402e31544c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CliffCap.mat",
+      "target": "Assets/Materials/Environment/CliffCap.mat",
+      "guid": "e4a288091170f31479ca8ffa957c3be5",
+      "sha256": "ab9b30e2953b544773d093ecd0ccb05a16443ae0ab1d86950eee55ff9af58a1e"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CliffFace.mat",
+      "target": "Assets/Materials/Environment/CliffFace.mat",
+      "guid": "52dc7e13beb746b4abefaea32e18b127",
+      "sha256": "929fefe0b43c1bf972662e622d3c0301ea46e876585d45278c7db98d7ba55fa6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CliffUndercut.mat",
+      "target": "Assets/Materials/Environment/CliffUndercut.mat",
+      "guid": "63078125a0ec13c468ff5a41710cd99a",
+      "sha256": "5d81c710da4f8503651e99890d3dbdc4f6d89ab9af99275a458ba6fcb317e9ab"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CoastalOcean.mat",
+      "target": "Assets/Materials/Environment/CoastalOcean.mat",
+      "guid": "43e04f2c99690c64f86f04c1baa332ff",
+      "sha256": "415d648507bb9060a926dcf2df2521f3bf2cafdf2089cc83101a2e02447bb625"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CoastalTone.asset",
+      "target": "Assets/Settings/Lighting/CoastalTone.asset",
+      "guid": "4dc2c66b4ec7fb34bb712aecabb644d4",
+      "sha256": "863e4ac8adc062ca86febedf21adaa976066a9972dfe6293742f8597d85bec81"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/CutStone.mat",
+      "target": "Assets/Materials/Environment/CutStone.mat",
+      "guid": "668dbfe337a3c22449e6930081b6fb39",
+      "sha256": "b0702840be93a87b0aa12ce1e1bf5f3dba29282b69e868d96069c739f8597bb4"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Headland_BareRock.mat",
+      "target": "Assets/Materials/Environment/Headland_BareRock.mat",
+      "guid": "8484a1433e5d532409a1fdde7f8420d4",
+      "sha256": "8f775d34ce8641286649a5332153592aa97cac08fdb4a9274ee9e2772cf26fb9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Headland_Grass.mat",
+      "target": "Assets/Materials/Environment/Headland_Grass.mat",
+      "guid": "0d51f2b72f93330479b7dc8b1dd20f48",
+      "sha256": "7fa9ed3ab156891001f33800cc1e758f6dcc0409944179e2eb19b7a53ecc2653"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Headland_Layered02.mat",
+      "target": "Assets/Materials/Environment/Headland_Layered02.mat",
+      "guid": "71bd536bf4355224ba22d563529e1b1d",
+      "sha256": "3a1a704f7f76b997efd64ac26e2ed851ccc8b2b5b66dd3a889271322ef277672"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Headland_Layered03.mat",
+      "target": "Assets/Materials/Environment/Headland_Layered03.mat",
+      "guid": "6ffb37d7ecc08ee4d995b48945155ede",
+      "sha256": "f58347fdbc5499a5d0224ca4d80ef67bfd6dbad7c4d77b34f560fe3b331cd0b8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Headland_Layered04.mat",
+      "target": "Assets/Materials/Environment/Headland_Layered04.mat",
+      "guid": "e44ae2397cb828f4cb32745d09805729",
+      "sha256": "1475c5bc640c5f74688d0a1da24f4a204af764644eb6706ec93573943b25520a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Sea.mat",
+      "target": "Assets/Materials/Environment/Sea.mat",
+      "guid": "421b84ea06a882d4c874978561d57b90",
+      "sha256": "7d7d3d11ac3888a0cf2014b5e8c03038a37772ad666bad6f97d3d2420f6699a7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Sky.mat",
+      "target": "Assets/Materials/Environment/Sky.mat",
+      "guid": "2ce534db73d014a4da99cd0b3069fcc4",
+      "sha256": "4c2964920c0db1072da694e5b4d81eb69bd91b21896f63260a1e2d9b5ed0568f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Chalk.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Chalk.mat",
+      "guid": "a66326d1155e1a943b6849042fabe2b5",
+      "sha256": "743a5842d5e87e7035afe20a6e74943765045f20deae704719916fe32a791919"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Instrument_teal.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Instrument_teal.mat",
+      "guid": "135f82bf7ce607544a55649bbdf69ce5",
+      "sha256": "2c7647450d3506f2c21ba1daccd2d10315e416696a5a1053a57c6b38d0441ee7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Limestone.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Limestone.mat",
+      "guid": "e92406506c5c3d046bf5238dc6bcd4e4",
+      "sha256": "b1304822b7abdc4910c175b28657743bba935cd6ce1671d0d599df0ab212a1cc"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Mechanism.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Mechanism.mat",
+      "guid": "6b6f0462bedadfc489afbd8c49c477a8",
+      "sha256": "73579e0ef49fdb822f73c3010874f1bf6c5951f5b805c9bd8db267978bf9009b"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Pool_tile.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Pool_tile.mat",
+      "guid": "10e7b54b4eaefff4399b7c80a9a54c21",
+      "sha256": "079a61c5ab07cffd56c6a0a1c4793cb4f788d91731e59b77504a1197d1336b3f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Materials/Whitebox_Recess.mat",
+      "target": "Assets/Materials/Environment/Whitebox_Recess.mat",
+      "guid": "abe2ba2c37ad8d445aea27003c055b6b",
+      "sha256": "09dd4800f5143931b4052d1a4241b9c1204ceb1219dc8fbb43fd78d2ffc9cf96"
+    },
+    {
+      "source": "Assets/CoastalTemple/Prefabs/SummitTemple.prefab",
+      "target": "Assets/Prefabs/Architecture/SummitTemple.prefab",
+      "guid": "b196bcbc74c3bea4687fa103da14836a",
+      "sha256": "2b9acd327e292d6bfbbb3e2e9be6993073173fa98f6fc97a771f7c9efc7e56c5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Prefabs/TempleColumn.prefab",
+      "target": "Assets/Prefabs/Architecture/TempleColumn.prefab",
+      "guid": "b8a9947ef4236484e80b3a40f70a707b",
+      "sha256": "2d4a6cd8f88c28a3933ab237c57918486550c6cb183be58b2591713e3eadf67b"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/FirstPerson/FirstPersonHands.controller",
+      "target": "Assets/Animations/Player/FirstPersonHands.controller",
+      "guid": "4bd7c89f7ce89bb4b9409be4a6ceb444",
+      "sha256": "f2b31620e1f17dd0a7b80707caec9b553b9c40d2607887a612dfecf8ea7d31bf"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/FirstPerson/FirstPersonHands.prefab",
+      "target": "Assets/Prefabs/Player/FirstPersonHands.prefab",
+      "guid": "5388951c9a24e3443b6df8a266ff7f5d",
+      "sha256": "89a19f4747f2389a6a7762d266501953a6da0a4cd11e19c03ee45682f9ef2dad"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/FirstPerson/HeldLantern.mat",
+      "target": "Assets/Materials/Player/HeldLantern.mat",
+      "guid": "949d4abea7efd1847a4b317995452e41",
+      "sha256": "ebc68e446b44feb77a7d2ed6c57d69fafe7afbd1582eeecf89704756c222ba03"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/FirstPerson/Quaternius_ArmsOnly.asset",
+      "target": "Assets/Objects/Characters/Quaternius/Quaternius_ArmsOnly.asset",
+      "guid": "4d9720332e96d01448ac28133e3f5277",
+      "sha256": "267627fa10d267d31f5331e291b7d770ed1d7fea7db0d4ce067d6934cc8b0a8c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/FirstPerson/RelaxedHands.anim",
+      "target": "Assets/Animations/Player/RelaxedHands.anim",
+      "guid": "5b90707539e5f404b85e87aa765208d8",
+      "sha256": "6deeee358fb3999d429e1cb3ac7bd0f57e5eb67b666a521087c5adc7bdb07b21"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Light/RedStone_Permanent.prefab",
+      "target": "Assets/Prefabs/Light/RedStone_Permanent.prefab",
+      "guid": "5664a7cbff0b19545af41438e07f1a29",
+      "sha256": "b96ad26f6dde4d301db87df814b079438e199521b165117ec0ae041a680765ee"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Light/RedStone_WhileLit.prefab",
+      "target": "Assets/Prefabs/Light/RedStone_WhileLit.prefab",
+      "guid": "5909d01b245ec8a4381a015b893c701a",
+      "sha256": "5a71299781195ef5180fc3a09595a452f8abff821437940f5be6122ca72d57be"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Light/StoneRuleMark.mat",
+      "target": "Assets/Materials/Light/StoneRuleMark.mat",
+      "guid": "b2d97c44568428849b3f4703481184bc",
+      "sha256": "21b719b54b2496124a3aaed27fcecaa2f5c74ea87c644052fe1c93c029458b03"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Player/Mannequin_Ivory.mat",
+      "target": "Assets/Materials/Player/Mannequin_Ivory.mat",
+      "guid": "6e8f0e4d7cf8b884ea500a8d3edf6d95",
+      "sha256": "1e3de345e5b89c267d28e0da986a8433663c743808cae0731e5e597392cad402"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Player/MannequinLocomotion.controller",
+      "target": "Assets/Animations/Player/MannequinLocomotion.controller",
+      "guid": "1a3a88ce336c17642930e94694af5e85",
+      "sha256": "fdf6018bc91d0b09ac05a172e0686d31c496a576cfb0179a9a7982610fa59b16"
+    },
+    {
+      "source": "Assets/CoastalTemple/Reusable/Player/QuaterniusMannequin.prefab",
+      "target": "Assets/Prefabs/Player/QuaterniusMannequin.prefab",
+      "guid": "5123b3411bbb3c1419232f51d4d8ab4d",
+      "sha256": "8b9b0d9fbaf0b20a550bbe440669149322eec567bc57f2276ed0202289d4574d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/CoastalSwell.cs",
+      "target": "Assets/Scripts/Gameplay/CoastalSwell.cs",
+      "guid": "1ab87ba18babbe24283029ae7d6e483a",
+      "sha256": "8b393c2209079f194b15d899de4f49dea550dcd7ae7c1ad3985a8eb1dee53e80"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/CoastalWalkthrough.cs",
+      "target": "Assets/Scripts/Gameplay/CoastalWalkthrough.cs",
+      "guid": "3568c7b0dc760494b9458e5f8ec5cf1e",
+      "sha256": "4c7f6fdc00b707de6c96bc5a263e63182dff421ed56183a7a3241aad957da0a9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Core/SeaBounds.cs",
+      "target": "Assets/Scripts/Gameplay/Core/SeaBounds.cs",
+      "guid": "67c22793cd5077149828602dcea61576",
+      "sha256": "3571a5618e58cce52553630380d75bea1d37114cd649628316214584203c5117"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/FirstPersonMotionChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/FirstPersonMotionChecks.cs",
+      "guid": "56e6f506f47d4ef4e85e6cff8a5699a6",
+      "sha256": "74ed76e24a05348366930d3b4496dd7caea142ae185cbf859d649bd84f7c6390"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/FirstPersonPlayChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/FirstPersonPlayChecks.cs",
+      "guid": "ea0972c0a85cb7a4a8d3154e88dbc8af",
+      "sha256": "130e1aea7df86fa32dfa3bad1b240a096567b1d9885760ac7949745caafcb9f5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/PlayerShadowChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/PlayerShadowChecks.cs",
+      "guid": "91d7d279e3c839b4789a468dee8c97a6",
+      "sha256": "72cbb042df0cacecb7ba08d92f8473f9f6d559e665221b1665f1fbf8abf073c8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/V10PlayerChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/V10PlayerChecks.cs",
+      "guid": "4dbd3c380c33e0a408ce24db46a51ce8",
+      "sha256": "96ee0db0eab0d9d0649c3e1c325231c9e39081efe85e2a186db35cad8c762485"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/V8PlayChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/V8PlayChecks.cs",
+      "guid": "6e20f90ad992ba849a469bb2eefb88eb",
+      "sha256": "2f82c6f7f9e9f913a9ffef77306e28c9836433cdb1552aa02daf17a49eb4a2cb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Diagnostics/V9PlayChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Diagnostics/V9PlayChecks.cs",
+      "guid": "b52e31d40ac74138880bf0cff19a10a0",
+      "sha256": "32c8dfba75613852a91200791aaf33a4e1713a1547bd5001590239af55eae3f9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Interaction/LanternState.cs",
+      "target": "Assets/Scripts/Gameplay/Interaction/LanternState.cs",
+      "guid": "923502b40d4f4df093d81735736d0e0a",
+      "sha256": "cfa0ea775736d45af3c57eee9fa5b71db539401bb1f2e515dc4bfa83db50a377"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Interaction/PlayerInteractor.cs",
+      "target": "Assets/Scripts/Gameplay/Interaction/PlayerInteractor.cs",
+      "guid": "a559c9198b54479d895bb8c5bb4aabae",
+      "sha256": "a678c99a5b9ab571ee076c7b13d2b4aa5612a24cbd37b0ed09193dd174d50542"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Interaction/PlayerLantern.cs",
+      "target": "Assets/Scripts/Gameplay/Interaction/PlayerLantern.cs",
+      "guid": "48de5e72450c4099ab030433f990c43c",
+      "sha256": "e9df240700d8ff4052f87768c0439dde789a653b16be20bbc0eabd50cdfad159"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LaserEmitter.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LaserEmitter.cs",
+      "guid": "20496dc39bb6bcd48a75cb5e1d28efe2",
+      "sha256": "f16a0f9fc45db694bf32f658ee24c6e4146d2e2546de38f4477b6d19fe9bbb13"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightActivationState.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightActivationState.cs",
+      "guid": "24588e545e77ca14b8f82dce06a4d4c3",
+      "sha256": "ace46ba66c0e5f3169b6824556f39b9ee375d01ada47af5d5194286de4aa5232"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightPortal.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightPortal.cs",
+      "guid": "e03ee148ab1032b41873171d8a962aee",
+      "sha256": "de0d33045b3d07acd374a6fb3a1eca29924334b98388e14eb0bc7a5dcd79e671"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightPuzzleWorld.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightPuzzleWorld.cs",
+      "guid": "7d1e379a12987014490515d8d893c476",
+      "sha256": "f2930597ad958ea76e1ff284a66a19755e8cded0dba7424ffa2577f32626291a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightReceiver.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightReceiver.cs",
+      "guid": "81fbc6a135917464c845ca4ea5b17d74",
+      "sha256": "e4cf099e7afb025378b1dd7c529a5082f41b46de4f80be1c4f59553aa1ec1ff8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightTarget.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightTarget.cs",
+      "guid": "073a4d42f57487d44be9c3ccd8b6e688",
+      "sha256": "d7753d94c8539b53bb4dba12d9876960fe1789ca5a1faaa38fed7853325d1326"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/LightTargetFeedback.cs",
+      "target": "Assets/Scripts/Gameplay/Light/LightTargetFeedback.cs",
+      "guid": "356d8a22c4e7841478608cc0209daada",
+      "sha256": "6327eb6a7e081634ce4abc5a53ff8d33184581c86a068c3f3de23e70d6a8d59d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Light/RedStoneCurtain.cs",
+      "target": "Assets/Scripts/Gameplay/Light/RedStoneCurtain.cs",
+      "guid": "93ebfdcd206bce0488527cb9c822e12a",
+      "sha256": "040a31dab86fff70f0d85f4b08673db05b2f6b219db30559e4bb91f6d5674e11"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/CourtyardDrainExperiment.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/CourtyardDrainExperiment.cs",
+      "guid": "183f6d84334c4a9cb4a408fb2a976c71",
+      "sha256": "3a919ea4c5ca55978fe1303a4793fdff564e87a90a99c78b151ca3e1924a59aa"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLift.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LightDrivenLift.cs",
+      "guid": "1b190cf757bf69142abce5a92b961346",
+      "sha256": "b88c80f5f761da4170f75a2d2dd3133c03b7021e7c8fbcc1d7ac641c2b1d1b12"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLiftChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftChecks.cs",
+      "guid": "f8c78c7c78d015442982d4fd2b7756e2",
+      "sha256": "7694212d7f8f614ad09049aa23e755e6fbbc3afe8c1b51274548e42f310f3653"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LightDrivenLiftMath.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LightDrivenLiftMath.cs",
+      "guid": "e738dfdd24a20804a85f9f1ea56f9b6b",
+      "sha256": "7d03da0867fc90f18bf50cddf8f1d525b17c703107e75ae4ef46fe25717cf969"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LightPathDriver.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LightPathDriver.cs",
+      "guid": "8af2c8979d2893f4799f73ece56edc83",
+      "sha256": "92c3d831e8ef9cdf007833ffc963d1fd87f443c0d85d90c03a9f2cedc9fca75a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LinearPlatformMotor.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotor.cs",
+      "guid": "4dfaa365149ee704b9a972209d991cf3",
+      "sha256": "b72b5dd6c4ee86af7ed9df3929b478769bb1ce47fb9f32da3b485566104423c7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/LinearPlatformMotorMath.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/LinearPlatformMotorMath.cs",
+      "guid": "4d337e0cab4900548a37f469dd7b6453",
+      "sha256": "9d7f92a98223f9f19feb8711a3f3df101e6aa9f651c8849e6acfdf3949ace3b6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MechanismComponentChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MechanismComponentChecks.cs",
+      "guid": "1c7a024cacdef504c886e021370e3a62",
+      "sha256": "2b1e6195ae0f4ae59b7aaaeae403d0c7853d267a127d86570cc2425e4c1f6311"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MechanismDriveRules.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MechanismDriveRules.cs",
+      "guid": "0e22db7ac1e3d4b409d19195546fdf97",
+      "sha256": "43caf5408a423d82b5aef12ec4f2e260366580aab02cf982e58858aee13e0690"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MirageAimConsole.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MirageAimConsole.cs",
+      "guid": "c22f4037b54892242b2463c2f5c541e3",
+      "sha256": "54ca81550e22e88f0f16c1b00aaef6cd46d03cbcb6866a8e7d2c5cfaadc04747"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MirageBeamView.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MirageBeamView.cs",
+      "guid": "6e5fada55bf267d47b9b06342034a40a",
+      "sha256": "353decc8cfa9d47209a63e8e46609b16151b5fe76c07108914699365e103f1e5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MotorLever.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MotorLever.cs",
+      "guid": "de14c725112d9fa42952c0e92db73e13",
+      "sha256": "f94df93117055e6f1db758389ef0a42857e0a9d557fe926619b324f7b0f6c2e4"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/MotorLeverState.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/MotorLeverState.cs",
+      "guid": "b2b53b41eea6af440b8c397927785fb5",
+      "sha256": "311f9ca0b55da1ec99c8d2b077e0ce77087c803cc8c4ab2c889bf28b448f48c0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/SolidPath.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/SolidPath.cs",
+      "guid": "d7f550095660ec8429f2cc1e5e95e155",
+      "sha256": "a2b61b96fb3995e2d7d1512110a0d2ac91a4e4247eaae94255b6134d71088b26"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/WaterMirage.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/WaterMirage.cs",
+      "guid": "076b4936a36323c459bf1bdc33c827cc",
+      "sha256": "4504639e585e086c0b5750aff3137ebb8b082db90448df67611c3a3867087310"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Mechanisms/WaterMirageMath.cs",
+      "target": "Assets/Scripts/Gameplay/Mechanisms/WaterMirageMath.cs",
+      "guid": "412405e8b208d7b408a13335aaba7e0c",
+      "sha256": "cee9d582c1764cd522dcce5f5441beb83682afd9f7bac6e1d0ce4eae7978c14d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/OceanWaves.cs",
+      "target": "Assets/Scripts/Gameplay/OceanWaves.cs",
+      "guid": "b6907aa28677cc44eb210c314afe9d87",
+      "sha256": "540b6525ebf8f8eb777644f326ccb1d62a7857663dbe30e14e679cf7bcc80cc9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/CoastalPlayerAvatar.cs",
+      "target": "Assets/Scripts/Gameplay/Player/CoastalPlayerAvatar.cs",
+      "guid": "57002125e98a84d4aad4c2316858309a",
+      "sha256": "fb89b8a5eacd4d834382460086419bb303bb9672f0075e589441f60f2644f0d8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/CoastalPlayerCamera.cs",
+      "target": "Assets/Scripts/Gameplay/Player/CoastalPlayerCamera.cs",
+      "guid": "9c3dfb53d07203c4ea5fb3637e5e3938",
+      "sha256": "e60aef49d6877660da2a8bd43f69257e77106a9ea4f5b2ca26e329aebccf29d0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/FallRecoveryChecks.cs",
+      "target": "Assets/Scripts/Gameplay/Player/FallRecoveryChecks.cs",
+      "guid": "1ae916e41d86be64eb45078a7428dc4b",
+      "sha256": "5320d802aded6f555366b387b15221d51c127123e1a24f7ea89fc4009f76eaae"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/FallRecoveryRegion.cs",
+      "target": "Assets/Scripts/Gameplay/Player/FallRecoveryRegion.cs",
+      "guid": "345bf29d164a0764ba55f9413a8a4fae",
+      "sha256": "ef3e05a446874772d607f9cf2a4cc5cc314176fe63276dbef0078b1e447f2bb0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/FirstPersonHands.cs",
+      "target": "Assets/Scripts/Gameplay/Player/FirstPersonHands.cs",
+      "guid": "8aa221eb504600a4486b89f9594164bc",
+      "sha256": "0bd5d26d5368a86b9960e55a416d9da709926268efe0bc5ebf8740035468efdd"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/PlayerBodyAnchor.cs",
+      "target": "Assets/Scripts/Gameplay/Player/PlayerBodyAnchor.cs",
+      "guid": "900ef621bd47a1d47a5dbb4dccc42a19",
+      "sha256": "3bdd26d32b62e1e8885eb954b063950177604f56f56d937a6263271ced7ae395"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/PlayerCameraMath.cs",
+      "target": "Assets/Scripts/Gameplay/Player/PlayerCameraMath.cs",
+      "guid": "991a97662b0f71d4180afc7a8428e946",
+      "sha256": "80e18c7652b38f0a9b6906154c0a403bd5a15988b2d22dfee8c05e9ad334bf27"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Player/RiggedPlayerAnimation.cs",
+      "target": "Assets/Scripts/Gameplay/Player/RiggedPlayerAnimation.cs",
+      "guid": "4b03b0b6460352c41bd12da760881e7b",
+      "sha256": "8ff8441b458f8589ec975459e800759134c7ac6f4865a5e3caffca166de0946f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/SceneObjectGuide.cs",
+      "target": "Assets/Scripts/Gameplay/SceneObjectGuide.cs",
+      "guid": "26978249b6acfa84aa35908d258b5b5e",
+      "sha256": "9697f22bf384f4909e9e6321ed8614f05a39feac378cb01054eb886343b28f6f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/SeaBoundary.cs",
+      "target": "Assets/Scripts/Gameplay/SeaBoundary.cs",
+      "guid": "d28a7ed4ac9f59349931a3d5db9df8b6",
+      "sha256": "5461f8db935a6d5edc07fc5ebb1eaa11362579074c365ff4054cf2932dab8b87"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/AimConsole.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/AimConsole.cs",
+      "guid": "69d5b2d0669e42ac876d27060189afee",
+      "sha256": "0ab615e559bdf696e9c2615c26bebcdeec8ca86ea9a95718e15adb646a86b042"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/AimConsoleRelay.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/AimConsoleRelay.cs",
+      "guid": "110345aead80cdf45bd3d810a8aec8b8",
+      "sha256": "28bd7e7ab795e7a6b347a8480e254528a0122810c2d572229233b4e29ee76ec3"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/CONTROLS.md",
+      "target": "Assets/Scripts/Gameplay/Tutorial/CONTROLS.md",
+      "guid": "2876d99826b840349c836d93a82adad5",
+      "sha256": "6b771f7029d71dfc54c280399ba1f55b224d4e901c054d58ab9ffa41c07773f5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/CourtyardDrainConsole.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/CourtyardDrainConsole.cs",
+      "guid": "8797e3f395044fb4298f08c070099607",
+      "sha256": "a52a1511f9c8bdb71b87ab67b5ac87d19b9c09b8c4f786715c40e9765619041d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/LanternPickup.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/LanternPickup.cs",
+      "guid": "e2fb096968634748bab2527f85d78335",
+      "sha256": "b7ed040ed01a5f9ad3fa2f17c0791539e598336ebbf6886e5278afac5c07d459"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/LessonCompletionCondition.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/LessonCompletionCondition.cs",
+      "guid": "e0053771d9774a66bc8190f4b5b0a518",
+      "sha256": "d99ec6aae2ba860c21b0e925b033dfd392d2c0f15c8be36b403887e1f1ff8ee7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/LessonProgress.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/LessonProgress.cs",
+      "guid": "fdedd8ef4a2e4477b6af6e8f03cf68cb",
+      "sha256": "cdbce737d23b6ffb1c6491b511879ae1b849a7ee2fcfc5eb0fb9e5ea23ead032"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/LessonStation.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/LessonStation.cs",
+      "guid": "903d2c2c18dc47818cb6bb191c8383eb",
+      "sha256": "db48837c53b331091b7f6ab3dbc80c1ec51bb04bb57f76ac4c47fe7a594d2bae"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/PlayerReachedCondition.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/PlayerReachedCondition.cs",
+      "guid": "f609588a8216462fa5172b5ffa79db57",
+      "sha256": "f4932644dac790aa06cbcb0fa02922a93a609e1f3c7a3dbb24b564fbc643ac37"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/PortalConsoleRelay.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/PortalConsoleRelay.cs",
+      "guid": "b5bbd7c3dd5cd914fa9eaaf61bb39467",
+      "sha256": "87262fffc7d5b54c1a0054d9ace1c9f0e8a29fdaa8ed494b6181cec49157b304"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/PortalRailConsole.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/PortalRailConsole.cs",
+      "guid": "87c69f24a28b4cfab057676a437e27a8",
+      "sha256": "56ec734d86d63d997ea1ace20888be37d6c5ca68d792088b9525b2612d7577e3"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/TutorialHud.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/TutorialHud.cs",
+      "guid": "5b501567c1594163ab614b0ed0ab4d8a",
+      "sha256": "d41bfe1054f1475e1165512cc4b20d1afa140a34098f7908f1a9b09a0885260e"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInput.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/TutorialInput.cs",
+      "guid": "fc2396ab9de445e882994f779029ceb0",
+      "sha256": "8b0ea52c5fd7bf9e0aa2ec97a5306fd62a2a0a5940dee2567a837c790189ebeb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInteractable.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/TutorialInteractable.cs",
+      "guid": "36580022de5b4a73a7509178372798d8",
+      "sha256": "998cec5deae22810c3dc759850ae13f215ea740e172e7375a984261b8fe9f7ef"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/TutorialInteractionPolicy.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/TutorialInteractionPolicy.cs",
+      "guid": "454bdec6d71747469231e64c04a5a17d",
+      "sha256": "87678b097167958ca3bdfe1255edb4f94522a8b8f6a240e32c76f1f84d36ea43"
+    },
+    {
+      "source": "Assets/CoastalTemple/Runtime/Tutorial/TutorialJourney.cs",
+      "target": "Assets/Scripts/Gameplay/Tutorial/TutorialJourney.cs",
+      "guid": "fc0861c6100e4ff58f93cff2c67f8f9b",
+      "sha256": "479bf116eb6dc3896c3e854214356ad092938c23f5bab400e52e88a9431df6ce"
+    },
+    {
+      "source": "Assets/CoastalTemple/Scenes/CoastalTemple.unity",
+      "target": "Assets/Scenes/CoastalTemple.unity",
+      "guid": "6284b13d103146a4c91e8447a974e0e1",
+      "sha256": "5b85da6fb27feae9a8268ac88775eef415d5a18b4c73d36beecc715da7abec5a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Shaders/Ocean.shader",
+      "target": "Assets/Shaders/Ocean.shader",
+      "guid": "ca626fac53c386c46b2525de7b275548",
+      "sha256": "86533aa1b0d3e4fed8a2687329d233783b7edf88a7879e35ef05e507bda615d3"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/ChalkGray.asset",
+      "target": "Assets/Textures/Terrain/ChalkGray.asset",
+      "guid": "922e1985319ae0a44af261b1f7eebf08",
+      "sha256": "8424e18fb00ae574a02414ea6d1ee2f0e214a3177a550c8dac2013db8496a3a5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/ChalkGray.terrainlayer",
+      "target": "Assets/Objects/Environment/Terrain/Layers/ChalkGray.terrainlayer",
+      "guid": "467681a79db80974aa863e719b46d608",
+      "sha256": "3bac2fe4f4b8800e12c7af0acb3388d8bc0a658f826abfdb575c4678ec79eee1"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CoastalMountain.asset",
+      "target": "Assets/Objects/Environment/Terrain/CoastalMountain.asset",
+      "guid": "643123f5fa715de40b58bbf1aa8d777e",
+      "sha256": "a730d33a1bc5b57ccf6bd11aa8b1d2d198845f79e9e802cdc87543bf163d0ed8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Beach_BroadRockSlope.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Beach_BroadRockSlope.asset",
+      "guid": "c265a993fe7d2554198a67d74068d3e2",
+      "sha256": "c70d72dacb872c9de9dd1666ac4a5d3610b3e9014eeb888c8db4e7b6245da13f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Beach_OccludingButtress.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Beach_OccludingButtress.asset",
+      "guid": "cccf280f273898a4aa1b150bb3a951e6",
+      "sha256": "4a564849007cf4b6860a8941a2c3e533065bcf67648ce7f0caebb03b49586b07"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/East_SummitSupport.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/East_SummitSupport.asset",
+      "guid": "b6cfd930385602d4da32e02895fc1778",
+      "sha256": "eb912e9aa282667c2ff5b85ad29640a44049e413602b6857bcb8a7a17e233f37"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Halfway_JoinedFront.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Halfway_JoinedFront.asset",
+      "guid": "a52547506c3867b41a59ea200922f132",
+      "sha256": "f62d9fc878c5b14242a1fdda968be38d138cd6be49e86ef41796ede0880a59e2"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Halfway_WestShoulder.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Halfway_WestShoulder.asset",
+      "guid": "b01334f5077fc9a438a612889e866cc8",
+      "sha256": "2d1ca07fe83b1959709233affce4d57b37b673e5fc9520a8b26b085ebdfe157c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Main_SouthBody.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Main_SouthBody.asset",
+      "guid": "9e992c5ccc3800440ab9602d784a9d2b",
+      "sha256": "f6d7401d5fc4e5f396dfe1269d335db487d829ee6496e043b302acc38c3aea6f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/North_AscentBody.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/North_AscentBody.asset",
+      "guid": "f6497619361550740a477d63f2a8c4dd",
+      "sha256": "b1294be3b6c25e65e179ff7ac4ce5fe2f2a8e99ed71d82feda8e978ea485e9af"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Rear_FoldedRidge.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Rear_FoldedRidge.asset",
+      "guid": "1f486ae883ffe674ab0e2f771d06c41a",
+      "sha256": "d10fb8161a50276a2a8b4999e298284fd4492124a6d607c4afb7426f3a4711eb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Summit_CompactPoint.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Summit_CompactPoint.asset",
+      "guid": "16686f3fd3bc18648ae23bf34c80a86f",
+      "sha256": "5a70f27b0f04cbab1524f517359b3c1c663aa4be0a77b113b401abcd687881b8"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/Tip_LowerButtress.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/Tip_LowerButtress.asset",
+      "guid": "cc8b54e615520854793258fe882eeede",
+      "sha256": "0cc0eda87eef278ed150552f3e6c2d53c7700fac4437656332cea090cd2edbd6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/CompactMountain/West_RockFlank.asset",
+      "target": "Assets/Objects/Environment/Terrain/CompactMountain/West_RockFlank.asset",
+      "guid": "d45fa1f738203f94ba1674657f8b61ca",
+      "sha256": "f2bdefeded1dfa4a8410626dbdb6316b1c44b775b17cad6bc780b00686ed72c0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/FarSeaRing.asset",
+      "target": "Assets/Objects/Environment/Terrain/FarSeaRing.asset",
+      "guid": "acd627edbe0e80d45ab66356c30abe32",
+      "sha256": "ba81e7ca78f5e2dfdb83d2e467e5b25183b7a3bc85831c25c65dd0569e8f2503"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Halfway_CliffBlock.asset",
+      "target": "Assets/Objects/Environment/Terrain/Halfway_CliffBlock.asset",
+      "guid": "1f81c807895afae4ea1b634e1cf3e007",
+      "sha256": "cbb98d760328edb3757b8b19c7fb65e8397d68775fcb3929984ef4ef58fc0a62"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Coastal_LowCrag_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Coastal_LowCrag_Cliff03.asset",
+      "guid": "59d37dee550bd854db8d41fd0101e90c",
+      "sha256": "20375bb469e4b23d05821bcae7c1463ec18e9538b3dc1630c784f61a702b65c0"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/East_Toe_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/East_Toe_Cliff03.asset",
+      "guid": "706ee3b04f6cd784b9c0678b96b4221f",
+      "sha256": "53b19f2c3f6f5f023d6a0ce7e2ac81d498813b9fe837323f3f20b7cf78b80357"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Grass.terrainlayer",
+      "target": "Assets/Objects/Environment/Terrain/Layers/Grass.terrainlayer",
+      "guid": "d8032f8e9b58cb84f89f529d9b934f88",
+      "sha256": "43214b3a68bcbcc24af76f639643201dbd6a2e360c6004be10a8a365d08592ab"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Midland_Center_Cliff02.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Midland_Center_Cliff02.asset",
+      "guid": "d397d6647f766ed4e8b0ee291945f8ec",
+      "sha256": "e4051ca4d440416ea4292189d647c288399efede430860a743544f801d4ac753"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Midland_East_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Midland_East_Cliff03.asset",
+      "guid": "b0e237a0cd5d9ad41b56d099aadb0983",
+      "sha256": "57543f35516f960d9fc86dc98f0c9b17d84f04c0403fa6d0d820115051f279bc"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Midland_South_Cliff02.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Midland_South_Cliff02.asset",
+      "guid": "fc3e20fc03437314f8f2ad11218d5f9c",
+      "sha256": "17e777407b88fc23e0b1a9d016f8a8c8b150a35a541c5aae0a2821655a25469c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Midland_West_Cliff02.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Midland_West_Cliff02.asset",
+      "guid": "63d6b3407c99dbd44b73cfea413e60ed",
+      "sha256": "98d92bc031028d216fa6956f6d82224484c65fdc1ece17087a7f9483c05da8e7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/North_Shoulders_Cliff02.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/North_Shoulders_Cliff02.asset",
+      "guid": "2b9f17b6c9c9d494fabe1a0db7219e03",
+      "sha256": "e8bfb883ebe8805f71d2f5735af244a4edf859b332af57f130a75e9ce572e9db"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/South_Toe_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/South_Toe_Cliff03.asset",
+      "guid": "f8e4893350752d940880856e79bd17b1",
+      "sha256": "5e563930cb956cc37c6ea2408371e9a1b492af0dd85c1d61a70dc43c2aef1175"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Summit_Root_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Summit_Root_Cliff03.asset",
+      "guid": "a9107e5729f5a1d40b4d396b215853df",
+      "sha256": "be092b68e54b8da56e4e45eeb75bcddb7091dce98fe4f3c5475640050f3634b2"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/Summit_TriangularCliff04.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/Summit_TriangularCliff04.asset",
+      "guid": "27fc684fbad46164da91ffbbe53cf9da",
+      "sha256": "75488bd59f836c92dd987d2e3633fbb10f4fe2583590436caed25ce1fec4effb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/West_GradedFlank_Cliff02.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/West_GradedFlank_Cliff02.asset",
+      "guid": "efc0e4b5abc2a4346bfc5fb299c21f64",
+      "sha256": "1ff3e2fa6fe28ffcb0feb2857ec26483f15e4e1cf3f8595a99a562023f59fc0d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/West_Shoulders_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/West_Shoulders_Cliff03.asset",
+      "guid": "5acc9a7f317af4e43aa7928f9c4be5c6",
+      "sha256": "e3a95f7e148b74cec65e648e1b3ca60eee056fe2ef6f9489a914ef7e53bbf290"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/West_Toe_Cliff03.asset",
+      "target": "Assets/Objects/Environment/Terrain/Headland/West_Toe_Cliff03.asset",
+      "guid": "a11109da46641b7428f0fd6e237183e8",
+      "sha256": "34c772717a384c7cfdf0a0c0200e76a9a32d522bb9cb568a1798239e5e771a2c"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/WhiteboxBeach.asset",
+      "target": "Assets/Textures/Terrain/Headland/WhiteboxBeach.asset",
+      "guid": "52485e0da2f3d7d4ca94d132cbfdd5cf",
+      "sha256": "16deb942b5a980ff93612145f18866b534c00003f91ea93869293502191024d5"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/WhiteboxRock.asset",
+      "target": "Assets/Textures/Terrain/Headland/WhiteboxRock.asset",
+      "guid": "4ed1c48df48e021428772511dd8bb725",
+      "sha256": "b3a548d8b7e27ece6083c8c3cfe20da8172a48419873cbb0ecacf00679ebeb29"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/WhiteboxSoil.asset",
+      "target": "Assets/Textures/Terrain/Headland/WhiteboxSoil.asset",
+      "guid": "f65defd116631214f806a5f45c9a03a1",
+      "sha256": "c055de2cfae71b675ba5e99b763e51033a128d7ef261052b0d4e3e3907c82ac1"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Headland/WhiteboxTrail.asset",
+      "target": "Assets/Textures/Terrain/Headland/WhiteboxTrail.asset",
+      "guid": "487dc1547de59c548903f39a069a1cde",
+      "sha256": "ab0e9963fe192c059afa05dd41e3040205f4c12c0a4c128b0181af959f293ceb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/MutedSage.asset",
+      "target": "Assets/Textures/Terrain/MutedSage.asset",
+      "guid": "d1703858850740747b54a6b4a209b95e",
+      "sha256": "585fad0aa11f958cd3cae21654db922db3171988e8d44b4e14d824afab02b5cb"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/MutedSage.terrainlayer",
+      "target": "Assets/Objects/Environment/Terrain/Layers/MutedSage.terrainlayer",
+      "guid": "5d4d8c2f249a6d840b7f26ed048f7c5a",
+      "sha256": "a884f5d305e7330a281bd5f002256b1ef6e2cb23775832700983bd342139004f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/NearshorePreview.asset",
+      "target": "Assets/Objects/Environment/Terrain/NearshorePreview.asset",
+      "guid": "2a10bf4f7235f50418ecd2d361d6dd00",
+      "sha256": "8a3b3ecbe5dcf328c5d9df25788aec6c947cd22760c743862eed155ad369aafc"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Summit_OverhangingCliff.asset",
+      "target": "Assets/Objects/Environment/Terrain/Summit_OverhangingCliff.asset",
+      "guid": "aa007b94b2859294c907be76b67ccb5c",
+      "sha256": "bc256c2ec8a96b4ef8db3ac3048ba87ed13fabd265cd20ecf26d1715fd09fd31"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/Terrain.mat",
+      "target": "Assets/Materials/Environment/Terrain.mat",
+      "guid": "f01f4428a700f1842ba5ce9eb0b25329",
+      "sha256": "fb9fb720087a852eefe0dbc0994e8530f2043908f46c9d90efbc91e5e6ce35e6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/WhiteboxPath.asset",
+      "target": "Assets/Textures/Terrain/WhiteboxPath.asset",
+      "guid": "411367d04605f974097caab8c2c50286",
+      "sha256": "1e553c55a69cc855fa792eed3992e18754a6342b80a0bf25d260ae500fdca7c9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/WhiteboxPath.terrainlayer",
+      "target": "Assets/Objects/Environment/Terrain/Layers/WhiteboxPath.terrainlayer",
+      "guid": "bd29633b72a306e4ca51df63d7953989",
+      "sha256": "99af2ca247a2c72e273f194cb6bd12240860f71bae835665055c93dfb0585875"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/WhiteboxSand.asset",
+      "target": "Assets/Textures/Terrain/WhiteboxSand.asset",
+      "guid": "8c3da41a7eec47d4f831d6d469faeea8",
+      "sha256": "c63621f9fdf91d8fd659522cdc8219a3bc4409ddc8b52acfc343d0ac52674799"
+    },
+    {
+      "source": "Assets/CoastalTemple/Terrain/WhiteboxSand.terrainlayer",
+      "target": "Assets/Objects/Environment/Terrain/Layers/WhiteboxSand.terrainlayer",
+      "guid": "e8e1e0511717df04b831b22e307c9546",
+      "sha256": "22c45e26f38ea9877eb3e924de9fae0adb70bd4105fc8f1bfebf337277371578"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/Chalk.mat",
+      "target": "Assets/Materials/Tutorial/V8/Chalk.mat",
+      "guid": "f76743cc70e590645bdc04aaca7e071c",
+      "sha256": "54f5ce8905521965249eeb473f887085f4eccad95c8e5e189e923fc2301a310e"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/Portal_Turquoise.mat",
+      "target": "Assets/Materials/Tutorial/V8/Portal_Turquoise.mat",
+      "guid": "2eb876e3a0a632f42b7fac78e8924148",
+      "sha256": "e5d09ff8f21c6cd2c168708a7087e581970d5616d21dd6e643e1820033a4a2bf"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/Recess.mat",
+      "target": "Assets/Materials/Tutorial/V8/Recess.mat",
+      "guid": "8d4484f061b7a264b8d1e55328fda0f6",
+      "sha256": "18959ef82e7aa9d13a55004566198bad5bb437b2a56196ad01311691ebd2a4d7"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/Sandstone.mat",
+      "target": "Assets/Materials/Tutorial/V8/Sandstone.mat",
+      "guid": "576416d7f2c8e024ca81a4ad1cf12404",
+      "sha256": "ba4551274617c8d31512805cb8b2458cdd7ca01c58919e01c4337d8cfbc8db36"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/StoneCurtain_Red.mat",
+      "target": "Assets/Materials/Tutorial/V8/StoneCurtain_Red.mat",
+      "guid": "215ed1efedf030e4595422a7d1c5bcb6",
+      "sha256": "fe65a205bfc63516fd8b2bcf3bedd4b7c6ffda03a45559af58788ad9f4f90077"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Materials/Sunlight_Gold.mat",
+      "target": "Assets/Materials/Tutorial/V8/Sunlight_Gold.mat",
+      "guid": "8178c05dfa91cc3408ab7d7b5998ba23",
+      "sha256": "1229bfc89455c11e6557728f8a4d0f171c81e59756f81ea30683368fbf8c632a"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/01_FirstLight_CarvedFloor.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/01_FirstLight_CarvedFloor.asset",
+      "guid": "f7c8819f38618eb43ae5aaaad9df4d41",
+      "sha256": "99137b3a939fc1f12fce3d75c57b5611e932b18dd8c3bfffe4dc9bf87bf08053"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/02_BorrowedLight_CarvedFloor.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/02_BorrowedLight_CarvedFloor.asset",
+      "guid": "d8e8b90da41782d4ab1a356fb7167bb0",
+      "sha256": "2b265e5652e19558dfc44a5b77113128b72e021efa90d6101bc938130c8a8907"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/03_FoldedLight_CarvedFloor.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/03_FoldedLight_CarvedFloor.asset",
+      "guid": "6bd6dfc1e88195f42b5675c0b7dd1ca0",
+      "sha256": "2202e04bd70fb28b56e0e990d537dbacedc00d0bccb38f565e8a8133e792c05f"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/BorrowedLight_Approach.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/BorrowedLight_Approach.asset",
+      "guid": "3ddac987e50666b4baa4a26c6916b0d8",
+      "sha256": "fd3d9508fcf50e11be8541b5ce5692ed6c56748560949c7e7f289528471f840d"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/Descent_To_Halfway.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/Descent_To_Halfway.asset",
+      "guid": "33aee327aff2aab42b3ba8ebed68627f",
+      "sha256": "ede0b81325bb60fde2e4edd279644912971162e71441e0c1af05d02fbd9678ff"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Meshes/Lift_Approach.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V8/Lift_Approach.asset",
+      "guid": "74f1c0494ea8c05428ef38b0eb585122",
+      "sha256": "8edc68c2b5a9389fac9d5857bb29c0b4691b22e888b349f0be08c19ee92b19c3"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Prefabs/BorrowedLight.prefab",
+      "target": "Assets/Prefabs/Tutorial/V8/BorrowedLight.prefab",
+      "guid": "62072487eb8a6b74eaa6de93b30feefb",
+      "sha256": "f5003cf18f9ee88956229f95c8df9d4afadd057a22e777b01d0858c87d3d6995"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Prefabs/ExplorerVisual.prefab",
+      "target": "Assets/Prefabs/Tutorial/V8/ExplorerVisual.prefab",
+      "guid": "c14ede7166dea704d89305a0f1cdcf52",
+      "sha256": "4ed0e4836b6eedb3324c1ff4deeb6e39dd0757d0b73f5af818635e77dca5322e"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Prefabs/FirstLight.prefab",
+      "target": "Assets/Prefabs/Tutorial/V8/FirstLight.prefab",
+      "guid": "f1074a6052fa4b84895728813e86cee0",
+      "sha256": "d3d4fe44f867fcb39bfe86215c08b276fe94e57d02862e469aa5ac0d85010ba9"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Prefabs/FoldedLight.prefab",
+      "target": "Assets/Prefabs/Tutorial/V8/FoldedLight.prefab",
+      "guid": "8b0c076b8ff0a794bbe03b2bbcf4abe9",
+      "sha256": "f89305595e11b05a8ff12c7cc060ec050a6f8baeb35e26de2a9c0601528c93a6"
+    },
+    {
+      "source": "Assets/CoastalTemple/Tutorial/Prefabs/WaterMirageSandbox.prefab",
+      "target": "Assets/Prefabs/Tutorial/V8/WaterMirageSandbox.prefab",
+      "guid": "fff34dfa5fc723f47b7af0d8d22b99f5",
+      "sha256": "718da41da6fbc4a42c81ed4384cc2b1ec8c1753b38098281459fc4a6fd28cecd"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+      "guid": "4e4048c0a822c2646a7595ea0dca9e76",
+      "sha256": "f5e3dcf94f280212f990556a64715de7c3b2d08f92bf3ff7c980e5211214732f"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_49D2A703313BD550.asset",
+      "guid": "3a78d3157c471b742b92ef8736cfe71d",
+      "sha256": "6bb0ea8e87a038a101be2ec49e644902cecd71eeb9302620f2daeb9a78a9590c"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_B524065BF59B7C90.asset",
+      "guid": "04d18854b87087c4c8fe6687464432de",
+      "sha256": "ea8ddd0a5c7a39dfad2bd0f9e48a3ee261bc712624212ab8ac687c41c36c6d16"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+      "guid": "97bc8e64ee44e0a478bf0e7541a63503",
+      "sha256": "97c5fce66dd093d8cdabe7848f5aeb6ad3c66efd835a0d49a323c80164336534"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Mesh_E228601A2E53986E.asset",
+      "guid": "3327b811d0a7be344aa3469c09d8e9cf",
+      "sha256": "a7732f79992f7f929411ea7ebe6d6c005ea2797aa6811bbf52cb9f65e6437dad"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset",
+      "guid": "8cc5e407931961940a05a733a3fe4537",
+      "sha256": "e271349a2ece4d7afaea23ea8a3b48807c30b68d6b70dd5ad5ed288dae4fc383"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_1B2B6529D6572BCC.asset",
+      "guid": "182725207b5b41643a26b7023ad6b005",
+      "sha256": "d692fbbcdd09e40415a6c520a1632045885c7213b7844aa89454501b1b328a5b"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_49D2A703313BD550.asset",
+      "guid": "1c23878cea9af8f4e9ad6bf772f4d8cd",
+      "sha256": "03b25eb6764123113f5bd7329ffb91480e075e63c0b3e78229287309b13cca1c"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_B524065BF59B7C90.asset",
+      "guid": "5c2d6b9d2a91f6442bae6018bfbffcf5",
+      "sha256": "3cae9f88affedbfff665573330a555b93cd18dd30a9daa948294573ac18f33ff"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_BBB8F19EC5A497C2.asset",
+      "guid": "174c7f1e60431f4459d0f1c391ff21ca",
+      "sha256": "77b2f05a63733d552ad1662433a622ebd94ad373903b6d4d2c2b534634a8297a"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Mesh_E228601A2E53986E.asset",
+      "guid": "9d1e3b038212d6d43809a42488ecab0e",
+      "sha256": "08168b701a953fda3504ac367e95fee47f3ffd91ebf7d5d59a611fb5d25882e1"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset",
+      "guid": "47375710433a0a94ab422f95824845e7",
+      "sha256": "cf7aefb1723a5f96b42fa0bfdb6394632a7a76b0af36575fa48d4f04c62bf681"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGapRestore.json",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGapRestore.json",
+      "guid": "340d6e08e58e03741836dddc151c7d5b",
+      "sha256": "096ab299e1f3f0e23342635e78252fb62fccd2febd9d17eb523f8635548c6345"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/Chalk.mat",
+      "target": "Assets/Materials/Tutorial/V9/Chalk.mat",
+      "guid": "fb23ba0768c74ca47919091560cd0c34",
+      "sha256": "ad92c90958d06cc1ce6f5b95ce21558098170506001cb37764031310ba693e06"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/LightPath.mat",
+      "target": "Assets/Materials/Tutorial/V9/LightPath.mat",
+      "guid": "02ca4646ca34d0f4d8c7eed5bcd40f65",
+      "sha256": "79ff034277ec627023ac71b3ed8f30f21ba068826ee75e2eaac38b9bb2bc8d75"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/Recess.mat",
+      "target": "Assets/Materials/Tutorial/V9/Recess.mat",
+      "guid": "c44c6c36cf2e76b47ba5485e1669a911",
+      "sha256": "684ca4dad8b2a69dc4361b3a6cd01590750109cae763a04106af60d3edf77b4a"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/ReturningStone.mat",
+      "target": "Assets/Materials/Tutorial/V9/ReturningStone.mat",
+      "guid": "a8522f25415b1764a93257eb9a2c35e8",
+      "sha256": "217c1b38dc2b52f4ddead09257c4cee3c622c62f4324a4cbf0d95600183b87b1"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/Sandstone.mat",
+      "target": "Assets/Materials/Tutorial/V9/Sandstone.mat",
+      "guid": "c842283e35a34cb4192b0a65805587ba",
+      "sha256": "9298d4ed1811cfb353b4f0a7f037ef99886e781bdf2415378c98dcf8ea68b3d9"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Materials/SpaceWindow.mat",
+      "target": "Assets/Materials/Tutorial/V9/SpaceWindow.mat",
+      "guid": "efdd9583275ae6841b04e1531a1d1473",
+      "sha256": "82fd6dd3ae0b7b38ca337669799a2a930e1a5328ecaba5e40dfa063da582c326"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/01_BorrowedBridge_Exit_Join.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Exit_Join.asset",
+      "guid": "ca999c843cf3d9349993aa278091cae0",
+      "sha256": "a8aed8c6c821bea678d8785aa7f60f8edd06b96d90f3ec01ea12649f1a386e9e"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/01_BorrowedBridge_Shore_Approach.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/01_BorrowedBridge_Shore_Approach.asset",
+      "guid": "d8ad0a04c8821ea4bb34b5138b7dad29",
+      "sha256": "7eff923d12e28eb6b6b9fddbdd511739b8ba236bfb186865d27e6b5eff5c65d0"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/02_StoneWorkshop_Approach.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Approach.asset",
+      "guid": "8675e2ee435f2da46a8c8296ba336c36",
+      "sha256": "df6b8e0eb46429023285f0d9aa37dec1c21cc132ce3c0c433b54c5b31016f11b"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/02_StoneWorkshop_Exit_Join.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/02_StoneWorkshop_Exit_Join.asset",
+      "guid": "62f81085b2fab9d47ac9471a61b10a2c",
+      "sha256": "9dc603808cf5ddb85c604e6180d1c5311fb5302b7637d1bedf1de4b41f24716f"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_Approach.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Approach.asset",
+      "guid": "b40cc7eb11556494f8af6e9c9f396a04",
+      "sha256": "10bf8a4cad2f4d27e72e7a44e87fe399514e5facfdf4ad4b1867e5eeaab8fee2"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_B_Rising_LightBridge.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_B_Rising_LightBridge.asset",
+      "guid": "89104bf4ef54e034a88bdd8c031d0660",
+      "sha256": "79e9a55c6c43ab3e72668eb6ef32c1ea909dafe0f670dc78189b2643b69a96ef"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Meshes/03_FoldedBridge_Exit_Join.asset",
+      "target": "Assets/Objects/LevelGeometry/Tutorial/V9/03_FoldedBridge_Exit_Join.asset",
+      "guid": "5ef6cdb961a3e33409ffa78deb7b69db",
+      "sha256": "cbc4967b2402da416c5bffbed36c5ed6bd5133981115180b6ff5a862fc5fb464"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Prefabs/01_BorrowedBridge.prefab",
+      "target": "Assets/Prefabs/Tutorial/V9/01_BorrowedBridge.prefab",
+      "guid": "cbb836c12dc8fdc4494f1e2766c5cc99",
+      "sha256": "538194f05434caebc8d6e4f62e01faca533b55782a4d593bd0f410ba6f7fc800"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Prefabs/02_StoneWorkshop.prefab",
+      "target": "Assets/Prefabs/Tutorial/V9/02_StoneWorkshop.prefab",
+      "guid": "e9d69700c3d847946bebbf60637fb137",
+      "sha256": "ead6a7e9fe5077f5a1ec84c58a309d25d8b9b7a72d13f394c8fe7629bdd9e8ce"
+    },
+    {
+      "source": "Assets/CoastalTemple/TutorialV9/Prefabs/03_FoldedBridge.prefab",
+      "target": "Assets/Prefabs/Tutorial/V9/03_FoldedBridge.prefab",
+      "guid": "e02f45ca75cfc6a4a9179cb978a3740c",
+      "sha256": "7a82d0798ccb27debf6adf105f4f793d58df891937375c0da78bb17040aa6ec8"
+    },
+    {
+      "source": "Assets/Editor/LocalMcpConnection.cs",
+      "target": "Assets/Scripts/Editor/Tools/LocalMcpConnection.cs",
+      "guid": "6f7214293deb0c844838d77e54ea943a",
+      "sha256": "e3a8bee63b5a69bbcf12fee48024240e45dd30b40e0c1286f9628656a9b6bebe"
+    },
+    {
+      "source": "Assets/InputSystem_Actions.inputactions",
+      "target": "Assets/Settings/Input/InputSystem_Actions.inputactions",
+      "guid": "052faaac586de48259a63d0c4782560b",
+      "sha256": "1c6cbb519d65ecfe19a29231735b7f54741a20ac1a8ad4f46a18e1bfb28a3c39"
+    },
+    {
+      "source": "Assets/Materials/Floor01.mat",
+      "target": "Assets/Materials/Floor01.mat",
+      "guid": "7faa1bd8ab6cc904a90d7c4d307e112d",
+      "sha256": "82b51ff91d587a5581891db7e10f460ccd2ebe964dc418c6154d18132fccae25"
+    },
+    {
+      "source": "Assets/Materials/Floor1.mat",
+      "target": "Assets/Materials/Floor1.mat",
+      "guid": "57892f3648730b34ca54f74734f3e34b",
+      "sha256": "c70eb087948d29580e4b389d55663612e417e90565ff913ccecbaf4ec666e359"
+    },
+    {
+      "source": "Assets/Materials/FloorNormal.mat",
+      "target": "Assets/Materials/FloorNormal.mat",
+      "guid": "78334c856c0bfdd40a3b77947fef18de",
+      "sha256": "ad04a28165d97f2804b19b29c2f926d2e7bc975a12866c5b41562794484ccccf"
+    },
+    {
+      "source": "Assets/Materials/testMaterial.mat",
+      "target": "Assets/Materials/testMaterial.mat",
+      "guid": "428923c45434f2344a7101a374cd8511",
+      "sha256": "342a4c11bb9b2ad94b7498734e5e061fc7669ed7b1ca5ce1cc8b938aad26d557"
+    },
+    {
+      "source": "Assets/Readme.asset",
+      "target": null,
+      "guid": "8105016687592461f977c054a80ce2f2",
+      "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107"
+    },
+    {
+      "source": "Assets/Resources/.gitkeep",
+      "target": null,
+      "guid": "",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "source": "Assets/Scenes/SampleScene.unity",
+      "target": "Assets/Scenes/SampleScene.unity",
+      "guid": "99c9720ab356a0642a771bea13969a05",
+      "sha256": "023937abf8ab56d7a05a20e98b9580edf55c47b284a6a3e47539d2a07e6b2f7a"
+    },
+    {
+      "source": "Assets/Settings/DefaultVolumeProfile.asset",
+      "target": "Assets/Settings/Lighting/DefaultVolumeProfile.asset",
+      "guid": "ab09877e2e707104187f6f83e2f62510",
+      "sha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115"
+    },
+    {
+      "source": "Assets/Settings/Mobile_Renderer.asset",
+      "target": "Assets/Settings/Rendering/Mobile_Renderer.asset",
+      "guid": "65bc7dbf4170f435aa868c779acfb082",
+      "sha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
+    },
+    {
+      "source": "Assets/Settings/Mobile_RPAsset.asset",
+      "target": "Assets/Settings/Rendering/Mobile_RPAsset.asset",
+      "guid": "5e6cbd92db86f4b18aec3ed561671858",
+      "sha256": "ba642b95fe751d42a081a346b4dee94ced67b3e7c8ed8c4f2929f6eb51d55b18"
+    },
+    {
+      "source": "Assets/Settings/PC_Renderer.asset",
+      "target": "Assets/Settings/Rendering/PC_Renderer.asset",
+      "guid": "f288ae1f4751b564a96ac7587541f7a2",
+      "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
+    },
+    {
+      "source": "Assets/Settings/PC_RPAsset.asset",
+      "target": "Assets/Settings/Rendering/PC_RPAsset.asset",
+      "guid": "4b83569d67af61e458304325a23e5dfd",
+      "sha256": "7b3794060807bb7989938dae6b6b1102800334925a1436f8427fed7043adbc6f"
+    },
+    {
+      "source": "Assets/Settings/SampleSceneProfile.asset",
+      "target": "Assets/Settings/Lighting/SampleSceneProfile.asset",
+      "guid": "10fc4df2da32a41aaa32d77bc913491c",
+      "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
+    },
+    {
+      "source": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "target": "Assets/Settings/Rendering/UniversalRenderPipelineGlobalSettings.asset",
+      "guid": "18dc0cd2c080841dea60987a38ce93fa",
+      "sha256": "36bdc67dd6205614cd8c1d7d4c726878deb95b205763c22e3245cb1da09ee242"
+    },
+    {
+      "source": "Assets/Textures/Floor01.PNG",
+      "target": "Assets/Textures/Floor01.PNG",
+      "guid": "7d8b981857ee93744b54b5f3bb26a3d9",
+      "sha256": "8e37540e643ddec6c3c4094ac32c91c77dd3383b568e9caf712ca3797517ab4f"
+    },
+    {
+      "source": "Assets/Textures/Floor02.PNG",
+      "target": "Assets/Textures/Floor02.PNG",
+      "guid": "bb25af4ac3ec3c842b2b1ad2a889ae59",
+      "sha256": "a7a5058ae1672163960b4d1d98f2b07ab98fcbfdfad6c17d9b9cd04b48a62c3f"
+    },
+    {
+      "source": "Assets/Textures/Floor03.PNG",
+      "target": "Assets/Textures/Floor03.PNG",
+      "guid": "ba749a31aecb5084e9b22ed362f674e0",
+      "sha256": "9581c9da4af3623c0f8c03c65e83e2e8913ad4fd8dac19c0780a2769e4cba4a2"
+    },
+    {
+      "source": "Assets/Textures/Floor04.png",
+      "target": "Assets/Textures/Floor04.png",
+      "guid": "f39368acefce75b4a810139cebee3706",
+      "sha256": "509686090d30a93f1684f4b896c8181be002a6805585d6c8307b8d68deb3dd35"
+    },
+    {
+      "source": "Assets/Textures/Floor05.png",
+      "target": "Assets/Textures/Floor05.png",
+      "guid": "9988538e390ef78449cfd079d4ae2ee0",
+      "sha256": "5f7cfd6a3816835725ec5d0a699c4468642de47e5a28e8eda14117a5025fea6f"
+    },
+    {
+      "source": "Assets/Textures/Floor06.png",
+      "target": "Assets/Textures/Floor06.png",
+      "guid": "5c184747416c7b44b8c236f7e9d9843d",
+      "sha256": "66bb8e4607145b80f121ea2ac382d25c750d6b8d9ce19e5fc510ffd00b1f00f5"
+    },
+    {
+      "source": "Assets/Textures/Floor07.png",
+      "target": "Assets/Textures/Floor07.png",
+      "guid": "b3c0bbe0037d2cd40b4668f08aaecbe7",
+      "sha256": "03f21d7f45eb8792da5958871fd66e3d55339bb124015fe707f3e5afa61b63b6"
+    },
+    {
+      "source": "Assets/Textures/FloorNormal.PNG",
+      "target": "Assets/Textures/FloorNormal.PNG",
+      "guid": "98a96af1d6c7b714cb5b060ed99e000d",
+      "sha256": "8e37540e643ddec6c3c4094ac32c91c77dd3383b568e9caf712ca3797517ab4f"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder01.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Boulders/Boulder01.fbx",
+      "guid": "3eaad35c83134024d8521b64b109f088",
+      "sha256": "3aca221d6a1b94a399afacf4e984d2ce3f5688dd862df2d75a6180d389b8566e"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder02.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Boulders/Boulder02.fbx",
+      "guid": "e333e25ba88ccf540840f967badadab5",
+      "sha256": "828eabe5cbc8ccb0d4d109665d589635b5b5fd5a69ff46cbc84111b31819501f"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder03.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Boulders/Boulder03.fbx",
+      "guid": "70d24e7129e37fb4db3deed89f0f8617",
+      "sha256": "b2787b1feb3c7d098ff1d1f24b4e318b5a223fe5e18d396254213b1bd3ce38c5"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder04.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Boulders/Boulder04.fbx",
+      "guid": "8043dbd290315f04e8512189765cde6a",
+      "sha256": "1e9f94c4fe36b103296685d6cd03f30fec5c6827495921e2e3c97d1bea9187e7"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Boulders/Boulder05.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Boulders/Boulder05.fbx",
+      "guid": "1a5f601bd6fe533459bc47057447aacc",
+      "sha256": "b343c974c18f116d754d28c0e3f9fd25a0205de6d7a53a164a27f3badb4a51d6"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff01.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff01.fbx",
+      "guid": "337e7ea00c398a240bf3322b03834cd6",
+      "sha256": "1c0af7ef2a53afeaa765eab5b232a5127017d19b8609b94ddedd9408655f4bcc"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02.fbx",
+      "guid": "00194efaa8dc40c4ab4553308e71360f",
+      "sha256": "5a99208ccfbbbc935f575caa317527e4b3f43c3bb19e54e0df5c72aaa4e1d993"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02b.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02b.fbx",
+      "guid": "63abda316caf8cf409157abde949cd8c",
+      "sha256": "f3255f395ac2e043501f4e01aff0a747d0b359c841ffeb6c7bb6b108eddddc6b"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02c.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02c.fbx",
+      "guid": "bd03343968dfaa74485728360dbe713f",
+      "sha256": "53d449508d281c10dbb56880bbb57e4fb56d2f373920c6ddb0034691520ca3b5"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02d.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02d.fbx",
+      "guid": "f7da1263f14e6b74f9b1ae0e9c841865",
+      "sha256": "8d3dfe65d20110cfb087ef5f91505fbeda403a910f0d446b253841f0252f3311"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02e.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02e.fbx",
+      "guid": "320d86c7ea6ccb14daae84af72936ca5",
+      "sha256": "fa9a0a1847644e8833f1bb97978685e4023fc8f94ade89f9eef2aa19ade59687"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02f.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02f.fbx",
+      "guid": "9f172cb24875542409a8063c7148bcc7",
+      "sha256": "70e98633bed797e5d250beb02290cced2db3955b56084974a725ef17df5aa9d2"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff02g.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff02g.fbx",
+      "guid": "5e56d0e225c14f74b9c019e24a26c711",
+      "sha256": "8604d2148aeac6d1b09d0b823c99fff3883627af7fe198cec0ccdd229db01d58"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03.fbx",
+      "guid": "2a567b513bee363499460d4193668e32",
+      "sha256": "ccaacee8f5a88143eb6fdcde36623a766a784713b231b22b4c61c377e8e1d352"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03b.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03b.fbx",
+      "guid": "0420d907b105cbb4cbc64fa529a24872",
+      "sha256": "cb96aa2396cc8fbec1e69f33bbafbb12e3932f37dee099a2cf9cf583351b621e"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03c.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03c.fbx",
+      "guid": "02f94cebd4cfcfd429bcdb1324a91db3",
+      "sha256": "de452f4f5cde9d60f7458f8113ecace57d507783b36de8ad8ff2196fdde0a9c3"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03d.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03d.fbx",
+      "guid": "f4ecaa0bea8ccdf4db56be72704b51c8",
+      "sha256": "91e5987d67f5707c2915a9ae202bccfdf302a4c540485c2a7a9c2e82a439fb53"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03e.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03e.fbx",
+      "guid": "2c36ac845a5d8a644ae6f6c29a5f2ce6",
+      "sha256": "9c3c93c736090fb07f863389f22139018439832e9dca7fb193747e880c2aac49"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03f.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03f.fbx",
+      "guid": "9c5fa9580ac3a6a468f9d4793a783bcb",
+      "sha256": "39a16788fcfbf909cd62ddc3ffd3c21e939c92835c883a9dffac4ce5c41c7686"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff03g.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff03g.fbx",
+      "guid": "1de2bff64e54872448f9fb5ca0b56cb9",
+      "sha256": "9caab8e5cbec66cf19aba7ce6d67ade24f903345a97c7f975e0a5ae055cff39a"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff04.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff04.fbx",
+      "guid": "20e6961ebaae33d4cafeb3c5c2433376",
+      "sha256": "e60be85f12d0781ffef73eef39a830dba04918b8f623c58616b102b1a9733166"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Cliffs/Cliff05.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Cliffs/Cliff05.fbx",
+      "guid": "244dfa26ae9bedf408af5120099208e5",
+      "sha256": "bc3a2e03c1c98d26ca04bf96aea478ccc846cdb199852ea96f98b4ba73ca645c"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Paveway01.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Paveway01.fbx",
+      "guid": "fab0907c9e920194987bdb26b641e554",
+      "sha256": "0fb0a327f97f75120dab30f9c4bb8c3af6e4eb7911086631987d7cc739e6678c"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock01.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock01.fbx",
+      "guid": "e66fee410cb35f84787af5440dfdc2cc",
+      "sha256": "afcd891a91f278097fbfa61111e538aab7e7ea9f197626c8a89d17954723e32f"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock02.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock02.fbx",
+      "guid": "1a555dcad38ea93448b4430b156937de",
+      "sha256": "40d67a9c6c8193627dc2cf652c017c58b2f3fd3ea3cf6c6612aaf652e4162dcf"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock03.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock03.fbx",
+      "guid": "6cef85b27eef70643bebe7ec4229f25d",
+      "sha256": "306d21ff18069b3d5e3f0718360cd9a432c499f2ae132ec7a0ada78e1a7a5111"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock04.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock04.fbx",
+      "guid": "d55515213986c4e43bda03ab4c2982d5",
+      "sha256": "b02cfca20c94e2d0d47ed16c76b1bddd64f8a63004e634a85bc8a675b737049e"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock05.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock05.fbx",
+      "guid": "f0c1fafaa13191646a776ce4bdb69c3c",
+      "sha256": "987cf5bd29415a3b4175b88fbd4e1eca5333fda0de6302e2fc7f97430b9c83c1"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock06.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock06.fbx",
+      "guid": "3ef54dab4b56d6a41814fbf07e63eb80",
+      "sha256": "60c9b47271321d0be93f15ecdb984cba110bede62fa0f2c0ae0f71ec595194b5"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock07.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock07.fbx",
+      "guid": "6d09b84846cf7be46988d1c9b32d938a",
+      "sha256": "0ae6c34b9549927e475a59180a6a97f2125e3287d1d1214eee478f7ecdb86ab1"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock08.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock08.fbx",
+      "guid": "8932f97f36d732a49900e3655b08ab81",
+      "sha256": "071716ec340c7c351bc7e18309770eceb5e62447ad2b6d177d59615150a64724"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock09.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock09.fbx",
+      "guid": "eaf697666981fc64eb2f1faf8e492aa3",
+      "sha256": "7b04754b633764c6e051bfb7af146ea1b882d0ac6c1434b75a857ef07024af6d"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock10.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock10.fbx",
+      "guid": "95e57251882ae8d4dbc491ce0cf2158b",
+      "sha256": "58f2563db268c54d84045e8fe726e5b34110f8147012286130b92ee248921e3d"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock11.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock11.fbx",
+      "guid": "5d6d56b7558a27e459c68661410b80e9",
+      "sha256": "d9f99517583838b472735e06037fee57a36728f32f44220ad178ca5416fcc60a"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/Rocks/Rock12.fbx",
+      "target": "Assets/Objects/Environment/PureNature/Rocks/Rock12.fbx",
+      "guid": "45772c977fe1b8b42b0d9699a0af0939",
+      "sha256": "6f61a51c85403ddac105fd5d3417e7ab8b75c2a25897316a81a0163ef262d8c9"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular01.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular01.fbx",
+      "guid": "29c3ac4f93371c548b5ba586d2da5826",
+      "sha256": "6674afa1bae6026a9f19ba6e0b7f8496320b1558b9d05b97270099ed5f190f9b"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular02.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular02.fbx",
+      "guid": "7e82e1cb82054c446a4319a6fc6e49c9",
+      "sha256": "ea9ebbe4c1dca08c21e5998440ca9372e24da6bb87dacbfcabc348a60cff9402"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular03.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular03.fbx",
+      "guid": "14376cb89053d864fb3b32c23dc16838",
+      "sha256": "7b4d66c5d0ed2402ef7302a26cd30d0626ae0c9598460ae9b9cf323370e28453"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular04.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular04.fbx",
+      "guid": "8906689737b74ef43b87272b6d8ac350",
+      "sha256": "139029c7b57f531e8b501bef8bcbd47d4d06f037b68cf8f33a4293f744e2d15c"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular05.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular05.fbx",
+      "guid": "845ebc3c8702c2d4084b46ff6db6bd68",
+      "sha256": "0da4792515784b9729dddfaa7748457e22acec219e322f26fc6d55459087f718"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular06.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular06.fbx",
+      "guid": "6664bd6f8b9837e4693d85525a04663f",
+      "sha256": "ff206e12e2b5a190dba6e3a78af3b883e8bc8c8e87c487724410b433389cd384"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular07.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular07.fbx",
+      "guid": "69fd531ba82a76b46abe0dcf4fa6a2cb",
+      "sha256": "995ec7dadf210bf9ab50cb12b00c5f8b78f1712e9ceaa549435d78750cfee284"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Models/RocksModular/RockModular08.fbx",
+      "target": "Assets/Objects/Environment/PureNature/RocksModular/RockModular08.fbx",
+      "guid": "a1a67b3aca5184644a91afcf6d640009",
+      "sha256": "9d0da214a501dd7caedfbc4e6dd699c2535a2c75dfea0f868b7ebf3a744b5d6f"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/README.md",
+      "target": "Assets/Objects/Environment/PureNature/SourceInfo/README.md",
+      "guid": "bb1ef50967d5c324da8a72beb801cc9b",
+      "sha256": "7c784d1d4ff18a5749834094233fc25f494bd0e12ce470538f88f6dd8bcc3e5e"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Readme.pdf",
+      "target": "Assets/Objects/Environment/PureNature/SourceInfo/Readme.pdf",
+      "guid": "1bd53099eea226f4f9ca0ec37f39084c",
+      "sha256": "ac71fa3de7ad194a898fda57275cac5e15415b35a366ebced00c96bab3807599"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff02_a.png",
+      "target": "Assets/Textures/Environment/PureNature/Cliff02_a.png",
+      "guid": "c62db5b329a61e04b94a78a0fbae0576",
+      "sha256": "4bfdea0e0398c3564fd97c8a6baf3badfb6942cba79f19019877b3797b971a62"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff03_a.png",
+      "target": "Assets/Textures/Environment/PureNature/Cliff03_a.png",
+      "guid": "94448abe9f8cb6847a146b9d37f0c9f2",
+      "sha256": "579f847cab4e09fcdd6fe402b5a61d6e5cb639b3e2d5d543033287eff65d9d5c"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Textures/Cliff04_a.png",
+      "target": "Assets/Textures/Environment/PureNature/Cliff04_a.png",
+      "guid": "50aae0c98587db146a01b1e3c6d06694",
+      "sha256": "8a8d7219f8998b69a59332e6e0e16f94a1347c07354872a57596dabeab7b724c"
+    },
+    {
+      "source": "Assets/ThirdParty/PureNatureSubset/Textures/Grass01_a.png",
+      "target": "Assets/Textures/Environment/PureNature/Grass01_a.png",
+      "guid": "1bbb6f363f884124aaa1cad8329f78cf",
+      "sha256": "5a4e5ca405382fa1d3f8a858ea33a8ec416dd9f1fd01680a6f74901b800efe0d"
+    },
+    {
+      "source": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/AnimationLibrary_Unity_Standard.fbx",
+      "target": "Assets/Objects/Characters/Quaternius/AnimationLibrary_Unity_Standard.fbx",
+      "guid": "4607ea505c5f35b45920ad4992910eaa",
+      "sha256": "42f16a4ed61d1e9f5fc7c2526894c5487148ac6ba82b64281ceb7943570f3c37"
+    },
+    {
+      "source": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/License.txt",
+      "target": "Assets/Objects/Characters/Quaternius/License.txt",
+      "guid": "56ff6bc4b94136d409acf828590d0d07",
+      "sha256": "11eac7504a28077e9d8dbac8ddfca2566510efba7eef46e11f21cdd2bc96d4d5"
+    },
+    {
+      "source": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/Preview.png",
+      "target": "Assets/Textures/Reference/Quaternius/Preview.png",
+      "guid": "d25bbca04e7f82443b2fdc7fd283476a",
+      "sha256": "4491742a3ffe68c571a04fdf8fdf9bf761a3cba690b60d96e87c858df92159ab"
+    },
+    {
+      "source": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/SOURCE.md",
+      "target": "Assets/Objects/Characters/Quaternius/SOURCE.md",
+      "guid": "513f310fe06a31241add93ca620bb8d6",
+      "sha256": "fd88d4b40631b07d127f3dbd8307319485869f4eeae314818fb4f1e1764fef2c"
+    },
+    {
+      "source": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/Unity_Setup.png",
+      "target": "Assets/Textures/Reference/Quaternius/Unity_Setup.png",
+      "guid": "37e007732a4ded94bb3943f4f8d1c72f",
+      "sha256": "1f9ac00f442c4342fae060150a2cfb5a825f7e3b6e8ffd8ce01044e4fe31f7c9"
+    },
+    {
+      "source": "Assets/TutorialInfo/Icons/URP.png",
+      "target": null,
+      "guid": "727a75301c3d24613a3ebcec4a24c2c8",
+      "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9"
+    },
+    {
+      "source": "Assets/TutorialInfo/Layout.wlt",
+      "target": null,
+      "guid": "eabc9546105bf4accac1fd62a63e88e6",
+      "sha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b"
+    },
+    {
+      "source": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+      "target": null,
+      "guid": "476cc7d7cd9874016adc216baab94a0a",
+      "sha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5"
+    },
+    {
+      "source": "Assets/TutorialInfo/Scripts/Readme.cs",
+      "target": null,
+      "guid": "fcf7219bab7fe46a1ad266029b2fee19",
+      "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Editor/CourtyardBuilder.cs",
+      "target": "Assets/Scripts/Editor/WaterDemo/CourtyardBuilder.cs",
+      "guid": "0bc7af10b2f553f4ca82f3a4092b008d",
+      "sha256": "8634490e79e1c6a70ad848bceb941bb501b92d5e7c6b13735a1c54961f9bc5e5"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Editor/WaterCourtyard.Editor.asmdef",
+      "target": "Assets/Scripts/Editor/WaterDemo/WaterCourtyard.Editor.asmdef",
+      "guid": "d49165c2480f2e447ad34167d1bb535b",
+      "sha256": "a6abc243e5e858f77d8c2a572cd54eb20040020f5cca32e9b3a7543340fba137"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/CourtVolume.asset",
+      "target": "Assets/Settings/Lighting/CourtVolume.asset",
+      "guid": "5e213539032f93e4a98cac68a1584b41",
+      "sha256": "f289305ef7fb7f06aa33207f45954a7bd25d63ccfe7689c6de6859e4e3de9822"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/DrainRing.asset",
+      "target": "Assets/Objects/LevelGeometry/WaterDemo/DrainRing.asset",
+      "guid": "e32ae3aa86141244aa1cb0e11a49d786",
+      "sha256": "1b1fea7b00826974f3183abd2ae81d11dd33eb026c3bdac47f1ef33b47cde6d5"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/GradedFloor.asset",
+      "target": "Assets/Objects/LevelGeometry/WaterDemo/GradedFloor.asset",
+      "guid": "bdadb48d6b22a0f4e84b5acc74a49baa",
+      "sha256": "0217fb917aeb2741e659ff06d8ffc19c1e382c367880c4bf80a5a3d26e54865e"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Chalk.mat",
+      "target": "Assets/Materials/WaterDemo/Chalk.mat",
+      "guid": "f40fb9df0284aa24c8bffa5d0d25b85d",
+      "sha256": "4e379274dbdc9fcc6f4ce907be9f3f9c4d4afb2bf63a12182cec4da3f651ec41"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Flow marks.mat",
+      "target": "Assets/Materials/WaterDemo/Flow marks.mat",
+      "guid": "26e81f8a3b7b1ee4f858f57e28c3f62f",
+      "sha256": "5897cef759b40705e7b008095c8c708d175a597d77579f766dfe60ef58be54e7"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Instrument teal.mat",
+      "target": "Assets/Materials/WaterDemo/Instrument teal.mat",
+      "guid": "755ff1e712021c64aa9626e6b05a9533",
+      "sha256": "fad440e5501d26ced2ca11a4aaeeab34c6f8f0237aae3cb5f7fe587ff165f411"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Light ray.mat",
+      "target": "Assets/Materials/WaterDemo/Light ray.mat",
+      "guid": "61eaff5b7873486428409cf49abf6a3f",
+      "sha256": "1aae9b164b9b6e75a29aa0699bfe3bba2a6b7c7cc46ed6f4641b3f5dcd7d5be6"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Limestone.mat",
+      "target": "Assets/Materials/WaterDemo/Limestone.mat",
+      "guid": "4c2a3899dc6b1ff4c9b50bcd3468beba",
+      "sha256": "ab1040781db1c813e6c64511f24b7663564aae1fcb325c022d62a18e838d15dc"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Mechanism.mat",
+      "target": "Assets/Materials/WaterDemo/Mechanism.mat",
+      "guid": "7fb98ef83bab2d74b84926ec4aacc312",
+      "sha256": "d5bdc29282a136e67aeab5f7991485fdf93169b2e42b89f3cdb47ebdfcf2c547"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Pool tile.mat",
+      "target": "Assets/Materials/WaterDemo/Pool tile.mat",
+      "guid": "1d79fc55fa1c5224cbf2b7f004497dcf",
+      "sha256": "8bc8d749e400bdc551b4365010c4c9b5f8efb3702eff780fa342a1bd6151bd7c"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Receiver.mat",
+      "target": "Assets/Materials/WaterDemo/Receiver.mat",
+      "guid": "09df77c776648064ba7e7dd3c500b101",
+      "sha256": "e092bb3082608237f46bb38c3fe5e12c711ae724a02e2b690dabb8393e8d454c"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Recess.mat",
+      "target": "Assets/Materials/WaterDemo/Recess.mat",
+      "guid": "ac0898cfc344c6e4ca3e9b60d6fbe8fa",
+      "sha256": "1a62bedce6a29d445f6ddb22c15ef68f2180a9f61b0ff3163a817819e1c4e7bb"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Materials/Sky.mat",
+      "target": "Assets/Materials/WaterDemo/Sky.mat",
+      "guid": "67008340a00e0454ab5e4ff0bea537aa",
+      "sha256": "de08b73a859ffb439719eb46939db443d5097e348a5fbc1c88708189c6fdc2b2"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/Prefabs/CourtyardWater.prefab",
+      "target": "Assets/Prefabs/Water/CourtyardWater.prefab",
+      "guid": "9b73b31e66115eb4998bb1fca674c3b3",
+      "sha256": "b81a14856c85c95cc7652851771be701634d7d827c12d38492693e08708a29fe"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Generated/TileGrid.asset",
+      "target": "Assets/Textures/WaterDemo/TileGrid.asset",
+      "guid": "e376d543120c8e8469dc46f928f04005",
+      "sha256": "f2fccb57f8845eb9d563861d3cb004135667388d26946857f719fdc367198cd9"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/CourtyardLab.cs",
+      "target": "Assets/Scripts/WaterDemo/Runtime/CourtyardLab.cs",
+      "guid": "dbc72d2c327720b4ebfc1aa9553780b8",
+      "sha256": "6dc46ffcd3cd272f49b5ad6928b6a7d7a99c98f3df2152400ba27af5ba1798b0"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/CourtyardWalker.cs",
+      "target": "Assets/Scripts/WaterDemo/Runtime/CourtyardWalker.cs",
+      "guid": "c7162cba94fad8e44a1c129671d06f83",
+      "sha256": "798c8bdf4ab58f62e73f042f6ad5fd0d1c9ae3d86b6a73874d5aeb7e4bfa997c"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/FlowTracers.cs",
+      "target": "Assets/Scripts/WaterDemo/Runtime/FlowTracers.cs",
+      "guid": "39f29fc817ac6f8498df2e83ae1c6039",
+      "sha256": "d071da15ed56d230821ceb489d15211ae9be03209111b487c18e3b4f8ae714d3"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/RefractedDrainBeam.cs",
+      "target": "Assets/Scripts/WaterDemo/Runtime/RefractedDrainBeam.cs",
+      "guid": "b916cba29dfdd0b46b07505f9cff5043",
+      "sha256": "3e177c6554d334c41e21c360206595a2f1b9b907190b7dfc5707967f41604059"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/WaterAcceptance.cs",
+      "target": "Assets/Scripts/WaterDemo/Runtime/WaterAcceptance.cs",
+      "guid": "8dfd5e0bab24d5f4faceec2b48290ea5",
+      "sha256": "3847740710f03602a4e2f754d5e45fa97f656b20b9aebb5813be566c6531f5e7"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Runtime/WaterCourtyard.Demo.asmdef",
+      "target": "Assets/Scripts/WaterDemo/Runtime/WaterCourtyard.Demo.asmdef",
+      "guid": "325cc3185ee1ab04f8da974a8e73ee57",
+      "sha256": "65a6b6392c9d743305301ac54180a7b4958ee9f59af7994ef2c5170cbae5ad11"
+    },
+    {
+      "source": "Assets/WaterCourtyard/Scenes/WaterCourtyard.unity",
+      "target": "Assets/Scenes/WaterCourtyard.unity",
+      "guid": "8545752159d10224788a59b9c8dceab8",
+      "sha256": "02e6dc1ef996209fc288344d570136adbac2872f68b8f3cb8f6b1a9dbe6c739d"
+    },
+    {
+      "source": "Assets/WaterSystem/Materials/Water.mat",
+      "target": "Assets/Materials/Water/Water.mat",
+      "guid": "d5ea1856b079d254c85a797475f17129",
+      "sha256": "ec8111385ff7ee877fc01844243b4b4d0bbfde5a83e900fa59e156e39e99f44e"
+    },
+    {
+      "source": "Assets/WaterSystem/Prefabs/WaterVolume.prefab",
+      "target": "Assets/Prefabs/Water/WaterVolume.prefab",
+      "guid": "01f38413dd1d5a44ba0392cab2549dbd",
+      "sha256": "4ca90ec4f3c59561a437345b41a0aad015f4ff41a9f3052a3e6ec83a0d3caf38"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/BuoyantBody.cs",
+      "target": "Assets/Scripts/WaterSystem/BuoyantBody.cs",
+      "guid": "f3eecda10e488944fbee314f298648a5",
+      "sha256": "892f2b0632c8dffcd4edfba70a614cc759f3330771d571c8591c1b7ea702be84"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/Core/OceanWaveMath.cs",
+      "target": "Assets/Scripts/WaterSystem/Core/OceanWaveMath.cs",
+      "guid": "260b1c252cf1af149904fd9218699d47",
+      "sha256": "a373535d7624502710cd19481abf7034349098120f6230d008156de90bb117d3"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/Core/WaterGrid.cs",
+      "target": "Assets/Scripts/WaterSystem/Core/WaterGrid.cs",
+      "guid": "da81fa596701bda48a8f3cc9f0f78e9d",
+      "sha256": "e52bb75c19025c870fca4342e5e515a548ef828f9eacb772a5e2c1ba21074bd6"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/Courtyard.Water.asmdef",
+      "target": "Assets/Scripts/WaterSystem/Courtyard.Water.asmdef",
+      "guid": "a85ae6b9a42b29c40b4001502bec23b4",
+      "sha256": "7edd9262efaa47362b5bd083ee304de4c17d7ca5c86fb93096e0c31227286bcd"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/WaterSurfaceMotion.cs",
+      "target": "Assets/Scripts/WaterSystem/WaterSurfaceMotion.cs",
+      "guid": "a0cc4f8c6c44b3646a9929d2167d8de5",
+      "sha256": "7ca88ae07540bc304073f4e467cb658716dd2a46c80152e5239bad9f95e1fb84"
+    },
+    {
+      "source": "Assets/WaterSystem/Runtime/WaterVolume.cs",
+      "target": "Assets/Scripts/WaterSystem/WaterVolume.cs",
+      "guid": "2d0629efd8669c247a595dd70c905353",
+      "sha256": "31184568a617680aac6c8d16a8a71efc9f5c1dcc6f3a1ddf49b4070dd396604a"
+    },
+    {
+      "source": "Assets/WaterSystem/Shaders/HeightfieldWater.shader",
+      "target": "Assets/Shaders/HeightfieldWater.shader",
+      "guid": "0e7d71e9c9ed8e649b23f2afc8374fba",
+      "sha256": "3441f2f32ee5df77551f6da29847fdc07384d3e4dc6a5e26b97f2fb6382ef69b"
+    }
+  ],
+  "prefixes": {
+    "Assets/CoastalTemple/Runtime": "Assets/Scripts/Gameplay",
+    "Assets/CoastalTemple/Editor": "Assets/Scripts/Editor/Gameplay",
+    "Assets/WaterSystem/Runtime": "Assets/Scripts/WaterSystem",
+    "Assets/WaterCourtyard/Runtime": "Assets/Scripts/WaterDemo/Runtime",
+    "Assets/WaterCourtyard/Editor": "Assets/Scripts/Editor/WaterDemo",
+    "Assets/Editor": "Assets/Scripts/Editor/Tools",
+    "Assets/CoastalTemple/Archive": "Assets/Scenes/Archive",
+    "Assets/CoastalTemple/Scenes": "Assets/Scenes",
+    "Assets/WaterCourtyard/Scenes": "Assets/Scenes",
+    "Assets/CoastalTemple/Prefabs": "Assets/Prefabs/Architecture",
+    "Assets/CoastalTemple/Reusable/Player": "Assets/Prefabs/Player",
+    "Assets/CoastalTemple/Reusable/FirstPerson": "Assets/Prefabs/Player",
+    "Assets/CoastalTemple/Reusable/Light": "Assets/Prefabs/Light",
+    "Assets/CoastalTemple/TutorialV9/Prefabs": "Assets/Prefabs/Tutorial/V9",
+    "Assets/CoastalTemple/Tutorial/Prefabs": "Assets/Prefabs/Tutorial/V8",
+    "Assets/WaterCourtyard/Generated/Prefabs": "Assets/Prefabs/Water",
+    "Assets/WaterSystem/Prefabs": "Assets/Prefabs/Water",
+    "Assets/CoastalTemple/TutorialV9/Materials": "Assets/Materials/Tutorial/V9",
+    "Assets/CoastalTemple/Tutorial/Materials": "Assets/Materials/Tutorial/V8",
+    "Assets/CoastalTemple/Materials": "Assets/Materials/Environment",
+    "Assets/WaterCourtyard/Generated/Materials": "Assets/Materials/WaterDemo",
+    "Assets/WaterSystem/Materials": "Assets/Materials/Water",
+    "Assets/CoastalTemple/TutorialV9/Meshes": "Assets/Objects/LevelGeometry/Tutorial/V9",
+    "Assets/CoastalTemple/Tutorial/Meshes": "Assets/Objects/LevelGeometry/Tutorial/V8",
+    "Assets/CoastalTemple/TutorialV9/Excavation": "Assets/Objects/LevelGeometry/Tutorial/V9/Excavation",
+    "Assets/CoastalTemple/Terrain": "Assets/Objects/Environment/Terrain",
+    "Assets/WaterCourtyard/Generated": "Assets/Objects/LevelGeometry/WaterDemo",
+    "Assets/CoastalTemple/Shaders": "Assets/Shaders",
+    "Assets/WaterSystem/Shaders": "Assets/Shaders",
+    "Assets/ThirdParty/PureNatureSubset/Models": "Assets/Objects/Environment/PureNature",
+    "Assets/ThirdParty/PureNatureSubset/Textures": "Assets/Textures/Environment/PureNature",
+    "Assets/ThirdParty/PureNatureSubset": "Assets/Objects/Environment/PureNature/SourceInfo",
+    "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary": "Assets/Objects/Characters/Quaternius",
+    "Assets/Character": "Assets/Animations/Player/Locomotion"
+  },
+  "extracted": [
+    {
+      "archive": "Assets/Character/Fast Run.zip",
+      "extracted": "SourceAssets/Characters/Mixamo/Fast Run.dae",
+      "sha256": "54e227300a505801dd7f0e9acc2ec8dfa00961af42b2bc3ee2fb7d6ab582d68a",
+      "bytes": 7212283
+    },
+    {
+      "archive": "Assets/Character/Slow Run.zip",
+      "extracted": "SourceAssets/Characters/Mixamo/Slow Run.dae",
+      "sha256": "145801db34f32e4b58a6bb431eecce049dfccd4a14ff7f8b4a21bebe2e4c78e3",
+      "bytes": 7263703
+    }
+  ],
+  "textUpdates": [
+    {
+      "path": "Assets/CoastalTemple/Editor/FirstPersonAuthoring.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/FirstPersonAuthoring.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/RelaxedHandsAuthoring.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/RelaxedHandsAuthoring.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/ReusableAssetChecks.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/ReusableAssetChecks.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/ReusableGameplayAuthoring.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/ReusableGameplayAuthoring.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/TutorialSceneAuthoring.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/TutorialSceneAuthoring.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/Routes/RouteAuthoringKit.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/Routes/RouteAuthoringKit.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/Editor/Routes/TutorialV9Authoring.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/Editor/Routes/TutorialV9Authoring.cs"
+    },
+    {
+      "path": "Assets/CoastalTemple/TutorialV9/Excavation/TutorialGapRestore.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/CoastalTemple/TutorialV9/Excavation/TutorialGapRestore.json"
+    },
+    {
+      "path": "Assets/ThirdParty/PureNatureSubset/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/ThirdParty/PureNatureSubset/README.md"
+    },
+    {
+      "path": "Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/SOURCE.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/ThirdParty/Quaternius/UniversalAnimationLibrary/SOURCE.md"
+    },
+    {
+      "path": "Assets/WaterCourtyard/Editor/CourtyardBuilder.cs",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Assets/WaterCourtyard/Editor/CourtyardBuilder.cs"
+    },
+    {
+      "path": "Tools/Gameplay/InteractionChecks/InteractionChecks.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/InteractionChecks/InteractionChecks.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/InteractionCompile/InteractionCompile.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/InteractionCompile/InteractionCompile.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/LeverChecks/LeverChecks.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/LeverChecks/LeverChecks.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/LightCompile/LightCompile.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/LightCompile/LightCompile.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/LightMirageTests/Run.ps1",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/LightMirageTests/Run.ps1"
+    },
+    {
+      "path": "Tools/Gameplay/LightStateTests/LightStateTests.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/LightStateTests/LightStateTests.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/LightStateTests/Run.ps1",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/LightStateTests/Run.ps1"
+    },
+    {
+      "path": "Tools/Gameplay/MechanismChecks/MechanismChecks.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/MechanismChecks/MechanismChecks.csproj"
+    },
+    {
+      "path": "Tools/Gameplay/PlayerMotionChecks/PlayerMotionChecks.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tools/Gameplay/PlayerMotionChecks/PlayerMotionChecks.csproj"
+    },
+    {
+      "path": "Tests/Water/WaterChecks.csproj",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Tests/Water/WaterChecks.csproj"
+    },
+    {
+      "path": "Documentation/CoastalTemple.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalTemple.md"
+    },
+    {
+      "path": "Documentation/CoastalV10PlayerAndReusableAssets.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV10PlayerAndReusableAssets.md"
+    },
+    {
+      "path": "Documentation/CoastalV11FirstPerson.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV11FirstPerson.md"
+    },
+    {
+      "path": "Documentation/CoastalV12Motion.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV12Motion.md"
+    },
+    {
+      "path": "Documentation/CoastalV13RelaxedWalk.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV13RelaxedWalk.md"
+    },
+    {
+      "path": "Documentation/CoastalV14CameraShadow.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV14CameraShadow.md"
+    },
+    {
+      "path": "Documentation/CoastalV8Tutorial.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV8Tutorial.md"
+    },
+    {
+      "path": "Documentation/CoastalV9Routes.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV9Routes.md"
+    },
+    {
+      "path": "Documentation/WaterSystem.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/WaterSystem.md"
+    },
+    {
+      "path": "Documentation/CoastalV10Verification/SceneWiring.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV10Verification/SceneWiring.json"
+    },
+    {
+      "path": "Documentation/CoastalV4Verification/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV4Verification/README.md"
+    },
+    {
+      "path": "Documentation/CoastalV4Verification/SceneValidation.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV4Verification/SceneValidation.json"
+    },
+    {
+      "path": "Documentation/CoastalV5Verification/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV5Verification/README.md"
+    },
+    {
+      "path": "Documentation/CoastalV5Verification/SceneValidation.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV5Verification/SceneValidation.json"
+    },
+    {
+      "path": "Documentation/CoastalV6Verification/Assembly.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV6Verification/Assembly.json"
+    },
+    {
+      "path": "Documentation/CoastalV6Verification/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV6Verification/README.md"
+    },
+    {
+      "path": "Documentation/CoastalV6Verification/SceneChecks.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV6Verification/SceneChecks.json"
+    },
+    {
+      "path": "Documentation/CoastalV7Verification/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV7Verification/README.md"
+    },
+    {
+      "path": "Documentation/CoastalV8Verification/BuildChecks.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV8Verification/BuildChecks.json"
+    },
+    {
+      "path": "Documentation/CoastalV8Verification/PlayChecks.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV8Verification/PlayChecks.json"
+    },
+    {
+      "path": "Documentation/CoastalV9Verification/PlayChecks.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV9Verification/PlayChecks.json"
+    },
+    {
+      "path": "Documentation/CoastalV9Verification/README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV9Verification/README.md"
+    },
+    {
+      "path": "Documentation/CoastalV12Verification/Route/PlayChecks.json",
+      "staged": "Logs/AssetOrganization/UpdatedSources/Documentation/CoastalV12Verification/Route/PlayChecks.json"
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "staged": "Logs/AssetOrganization/UpdatedSources/ProjectSettings/EditorBuildSettings.asset"
+    },
+    {
+      "path": "README.md",
+      "staged": "Logs/AssetOrganization/UpdatedSources/README.md"
+    }
+  ]
+}

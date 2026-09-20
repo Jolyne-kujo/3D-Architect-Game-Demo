@@ -1,0 +1,14 @@
+PASS Assets/Animations/Player/Locomotion/SlowRun.fbx has valid Humanoid avatar
+PASS Slow Run is a looping retargetable humanoid clip
+PASS Slow Run contains retargeted leg muscle animation
+PASS Assets/Animations/Player/Locomotion/FastRun.fbx has valid Humanoid avatar
+PASS Fast Run is a looping retargetable humanoid clip
+PASS Fast Run contains retargeted leg muscle animation
+PASS MannequinLocomotion uses user Slow Run at normal movement speed
+PASS MannequinLocomotion uses user Fast Run at sprint speed
+PASS MannequinLocomotion retains idle
+PASS MannequinLocomotion retains swimming and jumping
+PASS FirstPersonHands uses user Slow Run at normal movement speed
+PASS FirstPersonHands uses user Fast Run at sprint speed
+PASS FirstPersonHands retains idle
+PASS FirstPersonHands retains swimming and jumping

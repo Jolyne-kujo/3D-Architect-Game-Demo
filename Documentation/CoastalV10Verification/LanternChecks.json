@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Lantern prop attached to downloaded right hand",
+    "ok": true
+  },
+  {
+    "name": "Lantern starts hidden",
+    "ok": true
+  },
+  {
+    "name": "Acquisition shows carried prop and light",
+    "ok": true
+  },
+  {
+    "name": "Switching light off keeps inventory and held model",
+    "ok": true
+  },
+  {
+    "name": "Switching light on restores illumination",
+    "ok": true
+  }
+]

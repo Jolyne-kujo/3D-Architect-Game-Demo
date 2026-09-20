@@ -1,0 +1,3 @@
+FAIL water projection beams are blue; actual=RGBA(1.000, 0.800, 0.251, 1.000)
+FAIL accessible drain console on dry front shore
+FAIL player has switchable debug laser

@@ -1,0 +1,178 @@
+{
+  "created_at": "2026-09-19T22:22:54+08:00",
+  "source_directory": "Assets/Animations/Character",
+  "fbx_files": [
+    {
+      "path": "Assets/Animations/Character/X Bot@Fast Run.fbx",
+      "bytes": 305616,
+      "sha256": "d04ff367c70a8f3820e96f6b3128ef3667f6dd39d53303e981fe2a8f41a73266",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "with_skin": false
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Idle.fbx",
+      "bytes": 1643568,
+      "sha256": "6e4ec0c6eb7dda178d86124dd3434decc8f93b61f24a7f36e252b2db51c0b022",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "with_skin": false
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Jump.fbx",
+      "bytes": 508112,
+      "sha256": "e65427ad9a13f013a17047776fe7b0844f25b9bc3e6d840b016b296f69d6a275",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "with_skin": false
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Lifting.fbx",
+      "bytes": 679568,
+      "sha256": "e7ad2eb4e0550029cc35ee7cb7215364c7b07af22539e0ec1cb4617d18d4e9bd",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "with_skin": false
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Slow Run.fbx",
+      "bytes": 1818944,
+      "sha256": "7ddc3688f2462016830d0c31f02a752044e206209ea6d3a9078d0ba5e50db28f",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "with_skin": true
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Swimming.fbx",
+      "bytes": 663808,
+      "sha256": "0e30a85f6a5c6da6670d2c294416910f8e21c2417238b9adf5b315c4e3813ffa",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "same_bone_parent_hierarchy": true,
+      "with_skin": false,
+      "fbx_version": 7700,
+      "object_counts": {
+        "Geometry": 0,
+        "Material": 0,
+        "Deformer": 0,
+        "Texture": 0,
+        "Video": 0,
+        "AnimationStack": 1,
+        "AnimationLayer": 1,
+        "AnimationCurve": 315
+      },
+      "missing_bones": [],
+      "extra_bones": [],
+      "external_textures_required": false,
+      "audit_note": "Without-skin animation with the same 65-joint skeleton and parent hierarchy as Slow Run; no mesh, material, Texture or Video objects. Native Unity import/animation binding is validated separately."
+    },
+    {
+      "path": "Assets/Animations/Character/X Bot@Treading Water.fbx",
+      "bytes": 560496,
+      "sha256": "84abe1cec13722c9cf068e7348cc2993ddc42b2808449cd66ccc45a43f79a78e",
+      "bone_count": 65,
+      "same_bone_names": true,
+      "same_bone_parent_hierarchy": true,
+      "with_skin": false,
+      "fbx_version": 7700,
+      "object_counts": {
+        "Geometry": 0,
+        "Material": 0,
+        "Deformer": 0,
+        "Texture": 0,
+        "Video": 0,
+        "AnimationStack": 1,
+        "AnimationLayer": 1,
+        "AnimationCurve": 315
+      },
+      "missing_bones": [],
+      "extra_bones": [],
+      "external_textures_required": false,
+      "audit_note": "Without-skin animation with the same 65-joint skeleton and parent hierarchy as Slow Run; no mesh, material, Texture or Video objects. Native Unity import/animation binding is validated separately."
+    }
+  ],
+  "archive": {
+    "path": "Assets/Animations/Character/Slow Run.zip",
+    "sha256": "c141a6d0f37b7148fd2d32a4f3190dc739b5d7cf0080526c567e4f4dab7a47f0",
+    "crc_check_passed": true,
+    "members": [
+      {
+        "name": "Slow Run.dae",
+        "size": 7263703,
+        "crc32": "400169ba"
+      }
+    ],
+    "has_texture_files": false
+  },
+  "extracted_source": {
+    "path": "SourceAssets/Characters/RedBot/Slow Run.dae",
+    "bytes": 7263703,
+    "sha256": "2ca71134eee6ac9a69cfc6067faf16868e30df87371c7306698ae750c68d32cb",
+    "verified_identical_to_archive_member": true
+  },
+  "findings": {
+    "fbx_version": 7700,
+    "shared_skeleton": "65 identically named mixamorig joints across all seven FBX files; the newly added swimming and treading-water files also match Slow Run bone-parent hierarchy.",
+    "slow_run_skin": {
+      "meshes": [
+        "Beta_Surface",
+        "Beta_Joints"
+      ],
+      "geometry_count": 2,
+      "material_count": 2,
+      "deformer_count": 131
+    },
+    "other_clips": "Animation and skeleton only; no mesh or material, matching the requested without-skin exports.",
+    "textures": "No Texture or Video objects in any FBX; no external image references in FBX or DAE. The archive contains only Slow Run.dae.",
+    "dae": {
+      "geometry_count": 2,
+      "controller_count": 2,
+      "image_count": 0
+    },
+    "materials": [
+      {
+        "mesh": "Beta_Surface",
+        "material": "Beta_HighLimbsGeoSG3",
+        "diffuse_color": [
+          0.8370000124,
+          0.302308023,
+          0.2636550069
+        ],
+        "diffuse_factor": 0.8,
+        "diffuse_after_factor": [
+          0.6696000199,
+          0.241846422,
+          0.2109240087
+        ],
+        "opacity": 1
+      },
+      {
+        "mesh": "Beta_Joints",
+        "material": "Beta_Joints_MAT1",
+        "diffuse_color": [
+          0.3333333433,
+          0.1245288774,
+          0.1010147333
+        ],
+        "diffuse_factor": 0.8,
+        "diffuse_after_factor": [
+          0.2666666786,
+          0.0996231034,
+          0.0808117879
+        ],
+        "opacity": 1
+      }
+    ],
+    "conclusion": "No missing texture download is indicated. Reproduce the supplied red X Bot using opaque red and dark-red materials. Unity import and animation usability are validated separately.",
+    "additional_swimming_assets": {
+      "files": [
+        "Assets/Animations/Character/X Bot@Swimming.fbx",
+        "Assets/Animations/Character/X Bot@Treading Water.fbx"
+      ],
+      "compatible_with_slow_run_skeleton": true,
+      "no_external_texture_dependency": true,
+      "download_problem_detected": false
+    }
+  },
+  "updated_at": "2026-09-19T22:47:28+08:00"
+}

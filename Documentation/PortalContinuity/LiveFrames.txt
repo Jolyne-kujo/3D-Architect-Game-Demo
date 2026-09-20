@@ -1,0 +1,1 @@
+PASS live RedBot through actual showroom portal: frames=11348, renders=11348, changed red-body pixels=814, hand movement=0.4989392

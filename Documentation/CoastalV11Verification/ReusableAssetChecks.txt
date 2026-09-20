@@ -1,0 +1,14 @@
+PASS downloaded mannequin prefab exists
+PASS valid Humanoid skeleton and Animator
+PASS authored animation controller attached
+PASS real skinned mesh and imported bones
+PASS visual model does not obstruct player or camera
+PASS RedStone_Permanent reusable prefab exists
+PASS RedStone_Permanent owns visuals and optical/physical shape
+PASS RedStone_Permanent has no external visual references
+PASS RedStone_WhileLit reusable prefab exists
+PASS RedStone_WhileLit owns visuals and optical/physical shape
+PASS RedStone_WhileLit has no external visual references
+PASS main camera remains parented to character
+PASS moving character immediately moves attached camera
+PASS returning from overview rebinds camera

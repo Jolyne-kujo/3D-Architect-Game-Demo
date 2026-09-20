@@ -1,0 +1,6 @@
+FAIL Slow Run valid humanoid avatar
+FAIL Fast Run valid humanoid avatar
+FAIL Idle valid humanoid avatar
+FAIL Jump valid humanoid avatar
+FAIL Lifting valid humanoid avatar
+FAIL active body uses new RedBot controller

@@ -1,0 +1,21 @@
+{
+  "scene": "Assets/Scenes/CoastalTemple.unity",
+  "components": 2745,
+  "prefabs": 16,
+  "missingScripts": 0,
+  "missingReferences": [],
+  "bodyPosition": "(0.00, 0.00, 0.00)",
+  "bodyRotation": "(0.00, 0.00, 0.00)",
+  "cameraAtEye": true,
+  "temporaryObjects": 0,
+  "buildScenes": [
+    {
+      "path": "Assets/Scenes/CoastalTemple.unity",
+      "exists": true
+    },
+    {
+      "path": "Assets/Scenes/WaterCourtyard.unity",
+      "exists": true
+    }
+  ]
+}

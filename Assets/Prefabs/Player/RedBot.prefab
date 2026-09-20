@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5239151928766879878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3071440740177255874}
+  - component: {fileID: 1954258879436136469}
+  - component: {fileID: 1595378366745567399}
+  - component: {fileID: 7792408871369950732}
+  - component: {fileID: 3157037630698316410}
+  m_Layer: 0
+  m_Name: RedBot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3071440740177255874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239151928766879878}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8601534064044973051}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954258879436136469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239151928766879878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57002125e98a84d4aad4c2316858309a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.CoastalPlayerAvatar
+  walker: {fileID: 0}
+  poseRoot: {fileID: 0}
+  leftShoulder: {fileID: 0}
+  rightShoulder: {fileID: 0}
+  leftElbow: {fileID: 0}
+  rightElbow: {fileID: 0}
+  leftHip: {fileID: 0}
+  rightHip: {fileID: 0}
+  leftKnee: {fileID: 0}
+  rightKnee: {fileID: 0}
+  bodyRenderers:
+  - {fileID: 5020950016443362252}
+  - {fileID: 2702376204584045035}
+  keepShadowsWhenHidden: 1
+--- !u!114 &1595378366745567399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239151928766879878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b03b0b6460352c41bd12da760881e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.RiggedPlayerAnimation
+  walker: {fileID: 0}
+  animator: {fileID: 2431633169828495745}
+  facingRoot: {fileID: 8601534064044973051}
+  modelYawOffset: 0
+  turnSpeed: 540
+--- !u!114 &7792408871369950732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239151928766879878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900ef621bd47a1d47a5dbb4dccc42a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.PlayerBodyAnchor
+  walker: {fileID: 0}
+  animationDriver: {fileID: 1595378366745567399}
+--- !u!114 &3157037630698316410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239151928766879878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af45913f0fee28b45bfbeef0a04b8c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.PlayerCarryAnimation
+  animator: {fileID: 2431633169828495745}
+  walker: {fileID: 0}
+  lantern: {fileID: 0}
+  handBone: 18
+  layerName: Carried Lantern
+  blendSpeed: 6
+--- !u!1001 &8130247291541912592
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3071440740177255874}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99489594
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99489594
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99489594
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00034939806
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.044217024
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0018831342
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_Name
+      value: RedBot_ModelAndSkeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853268898807207900, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853268898807207900, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 438ed025e07b9394ea228b6e10f40152, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6d7f5da80465b834cb6b994790fc6c1a, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148737315974723067, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148737315974723067, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: addf3ea3a4076e54790e6182a4a09a94, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6015949517403827838}
+  m_SourcePrefab: {fileID: 100100000, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+--- !u!95 &2431633169828495745 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+  m_PrefabInstance: {fileID: 8130247291541912592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &2702376204584045035 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6148737315974723067, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+  m_PrefabInstance: {fileID: 8130247291541912592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5020950016443362252 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3853268898807207900, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+  m_PrefabInstance: {fileID: 8130247291541912592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8601534064044973051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+  m_PrefabInstance: {fileID: 8130247291541912592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8941080140459458881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 19615be78f94ba742af3994c1acbbd5d, type: 3}
+  m_PrefabInstance: {fileID: 8130247291541912592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6015949517403827838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8941080140459458881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af75097ceb39594f93013183d114ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.Player.LedgeClimbHandIK

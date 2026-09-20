@@ -1,0 +1,5 @@
+PASS saved prefab assets: checks=17 missing=0 external=0
+PASS CoastalTemple reload: two-sided paired scene instances, count=2
+PASS CoastalTemple clean saved scene, missing scripts=0
+PASS MechanismPlayground reload: two-sided paired scene instances, count=2
+PASS MechanismPlayground clean saved scene, missing scripts=0

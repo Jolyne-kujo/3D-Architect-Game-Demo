@@ -1,0 +1,61 @@
+{
+    "passed": 11,
+    "failed": 0,
+    "results": [
+        {
+            "name": "laser direction follows nonuniform spatial mapping",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "runtime view and traveller components exist",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "translated rotated unequal portals round trip points and velocities",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "explicit one-sided gate catches fast travellers and rejects back side",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "smaller destination aperture rejects mismatched crossing",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "negative and degenerate scale safely disable crossing",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "walker portal warp preserves full mapped momentum",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "rigidbody warp preserves mapped linear and angular velocity",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "third person camera stays continuous while actor crosses first",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "registered traveller crossing keeps overshoot and does not bounce",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "reversing during third person bridge keeps original camera space",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

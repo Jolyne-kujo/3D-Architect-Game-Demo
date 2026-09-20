@@ -1,5 +1,5 @@
 {
-  "scene": "Assets/CoastalTemple/Scenes/CoastalTemple.unity",
+  "scene": "Assets/Scenes/CoastalTemple.unity",
   "playing": false,
   "missingScripts": 0,
   "brokenPrefabs": 0,
@@ -18,7 +18,7 @@
       "name": "Halfway_CliffBlock",
       "active": true,
       "triangles": 44,
-      "meshAsset": "Assets/CoastalTemple/Terrain/Halfway_CliffBlock.asset",
+      "meshAsset": "Assets/Objects/Environment/Terrain/Halfway_CliffBlock.asset",
       "colliderMatches": true,
       "preserveMeshAssetOnDestroy": true
     },
@@ -26,7 +26,7 @@
       "name": "Summit_OverhangingCliff",
       "active": true,
       "triangles": 50,
-      "meshAsset": "Assets/CoastalTemple/Terrain/Summit_OverhangingCliff.asset",
+      "meshAsset": "Assets/Objects/Environment/Terrain/Summit_OverhangingCliff.asset",
       "colliderMatches": true,
       "preserveMeshAssetOnDestroy": true
     }

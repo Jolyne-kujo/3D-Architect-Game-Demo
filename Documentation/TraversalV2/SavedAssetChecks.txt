@@ -1,0 +1,10 @@
+PASS saved main map active
+PASS geography transforms unchanged after reload
+PASS no missing scripts in main map
+PASS scene player surface swimmer persisted
+PASS scene land mantle threshold persisted
+PASS complete player prefab surface swimmer persisted
+PASS stair prefab marker and collision asset saved
+PASS upstairs and downstairs clip motions bound
+PASS main map is first enabled build scene
+Roots: 10_Geography_EDIT_TERRAIN_HERE, 20_Architecture, 30_Water, 50_Player_And_Cameras, 60_Lighting, 40_Tutorial

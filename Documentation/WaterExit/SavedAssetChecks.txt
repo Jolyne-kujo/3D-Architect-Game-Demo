@@ -1,0 +1,9 @@
+PASS saved CoastalTemple player has climbing motor and hand IK
+PASS saved complete player prefab has climbing motor and hand IK
+PASS Ascending Stairs imported Humanoid 1.37 s
+PASS Descending Stairs imported Humanoid 0.93 s
+PASS Braced Hang To Crouch imported Humanoid 1.13 s
+PASS saved showroom emitter (-9.00, 0.00, -7.00) starts yellow and has both lamps
+PASS saved showroom emitter (-2.70, 0.00, -4.00) starts yellow and has both lamps
+PASS saved showroom emitter (7.00, 0.00, -3.00) starts yellow and has both lamps
+PASS saved showroom emitter (-17.00, 0.00, -7.00) starts yellow and has both lamps

@@ -1,0 +1,2 @@
+Assets/Scenes/CoastalTemple.unity
+Geography transforms unchanged=True

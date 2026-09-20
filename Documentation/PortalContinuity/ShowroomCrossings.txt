@@ -1,0 +1,4 @@
+PASS Portal1 side=1 crossed=1 steps=25 camera discontinuity=1.192093E-06 position=(22.04, 0.02, 17.00)
+PASS Portal1 side=-1 crossed=1 steps=25 camera discontinuity=9.536743E-07 position=(21.96, 0.02, 17.00)
+PASS Portal2 side=1 crossed=1 steps=25 camera discontinuity=0 position=(7.00, 0.05, -7.96)
+PASS Portal2 side=-1 crossed=1 steps=25 camera discontinuity=0 position=(7.00, 0.05, -8.04)

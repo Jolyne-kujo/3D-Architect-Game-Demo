@@ -1,0 +1,7 @@
+PASS 0.6m obstacle never mantles and remains jumpable 
+PASS 1.3m land ledge still climbs above jump height 
+PASS Rotated scaled stair prefab walks up and down with the two supplied clips, never mantles 
+PASS Submerged stairs remain standing and use stair locomotion all the way out 
+PASS Idle and moving swim keep the animated head above water without mode flicker idle head clearance=0.242, moving minimum=0.229, transition minimum=0.036
+PASS Real floating prefab auto-grabs from moving swim without pressing Space 
+PASS Surface-exit rule rejects diving, high freeboard and blocked headroom 

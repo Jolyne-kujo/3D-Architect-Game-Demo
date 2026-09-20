@@ -1,0 +1,27 @@
+PASS a reusable guided buoyancy component exists
+PASS Vertical initializes its own child body
+PASS Archimedes equilibrium matches 350 kg/m3 density and 0.6 m thickness
+PASS buoyancy moves only the deck, never its rail frame
+PASS vertical guides reject lateral motion
+PASS raising real water raises the floating deck
+PASS lowering real water lowers the floating deck
+PASS submerged platform stops at the upper rail limit
+PASS drained water lets gravity return the deck to the lower rail limit
+PASS TiltedScaled initializes its own child body
+PASS rotated and nonuniformly scaled guide keeps the deck on its authored local rail
+PASS unassigned water is discovered automatically after rotation and scaling
+PASS displaced volume includes positive nonuniform root scale
+PASS Horizontal initializes its own child body
+PASS horizontal shared control cycles to direction 1
+PASS horizontal shared control cycles to direction 0
+PASS horizontal shared control cycles to direction -1
+PASS horizontal shared control cycles to direction 0
+PASS horizontal guide moves in its rotated path direction
+PASS horizontal stop preserves path progress while buoyancy follows the new water level
+PASS horizontal drive stops exactly at the far endpoint
+PASS E after the far endpoint starts the return trip
+PASS duplicating the frame remaps the platform to its own child body
+PASS operating a duplicate cannot change the original platform
+PASS existing walker can stand on the floating deck collider
+PASS existing walker rides horizontal deck movement without a player script change
+26 guided platform checks passed.

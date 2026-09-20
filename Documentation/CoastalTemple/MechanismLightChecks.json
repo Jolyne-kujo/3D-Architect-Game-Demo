@@ -1,0 +1,66 @@
+{
+    "passed": 12,
+    "failed": 0,
+    "results": [
+        {
+            "name": "yellow never latches even after prolonged exposure",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "red requires uninterrupted exposure and then remains gone",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "yellow does not count toward red exposure",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "all source colors aggregate independently of creation order",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "blue cannot open the red wall or hold a yellow opening",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "yellow wall preserves optical detection and passes light onward",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "rotated scaled wall waits for an occupant before restoring",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "legacy modes retain their color independent behavior",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "E interaction cycles red yellow blue off and respects reach",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "E interaction cannot operate a console through an opaque wall",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "origin follows a moved rotated nonuniformly scaled emitter",
+            "passed": true,
+            "detail": "passed"
+        },
+        {
+            "name": "blue beam replaces red material tint without mutating the asset",
+            "passed": true,
+            "detail": "passed"
+        }
+    ]
+}

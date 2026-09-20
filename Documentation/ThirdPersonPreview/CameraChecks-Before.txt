@@ -1,0 +1,12 @@
+FAIL third-person mode can be selected
+FAIL camera follows behind the actor instead of remaining in the head
+FAIL complete body is rendered with a real world shadow
+FAIL first-person arms and overlay are hidden
+PASS orbit never translates the character
+FAIL stationary camera orbit does not rotate the body or shadow
+PASS camera yaw follows mouse look independently of actor heading
+FAIL solid wall retracts the camera before clipping
+FAIL trigger volumes and actor colliders do not obstruct camera
+FAIL return from overview preserves third-person mode
+PASS explicit first-person fallback restores eye and hands
+PASS first-person fallback still casts the complete body shadow

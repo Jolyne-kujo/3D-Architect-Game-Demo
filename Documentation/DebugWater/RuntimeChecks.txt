@@ -1,0 +1,21 @@
+PASS debug laser starts disabled, with no unintended red light
+PASS both incoming and refracted projection beams are blue and visible
+PASS shore console is the nearest reachable E interaction on dry ground
+PASS ordinary player E interaction opens the correct pool drain
+PASS 22s drain: water level -0.30 -> -3.22, volume 1476.3 -> 313.1
+PASS physical guided float follows draining water: deck Y -0.20 -> -3.30
+PASS draining below the submerged sample removes the refraction and solid mirage steps
+PASS second E interaction refills the same pool and closes its drain
+PASS buoyancy recovers after refill: deck Y -0.20
+PASS enabling debug mode alone does not emit
+PASS color cycle is red -> yellow -> blue -> red
+PASS yellow on red receiver cannot raise the lift
+PASS player red laser physically raises lift: 2.38 -> 3.37
+PASS debug beam begins at camera center and uses ordinary optical tracing
+PASS releasing fire immediately removes lift drive, even during receiver grace
+PASS blue on yellow receiver cannot lower the lift
+PASS player yellow laser physically lowers lift: 3.37 -> 2.38
+PASS ordinary wall blocks the debug laser and stops the lift
+PASS player blue laser activates the actual blue bridge and its receiver
+PASS releasing player control also suppresses debug emission
+PASS F6 debug-disable path always turns the source off

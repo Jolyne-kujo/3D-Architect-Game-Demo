@@ -1,0 +1,3 @@
+PASS actual showroom: first E yellow does not open bridge
+PASS actual showroom: second E blue creates solid bridge
+PASS actual showroom: next E red removes bridge

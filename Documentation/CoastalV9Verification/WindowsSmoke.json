@@ -1,0 +1,14 @@
+{
+  "responding": true,
+  "passed": true,
+  "processAlive": true,
+  "observedSeconds": 30.1,
+  "log": "Logs/CoastalV9Player.log",
+  "graphicsDeviceInitialized": true,
+  "gameplayErrors": [],
+  "executable": "F:\\Unity Project\\3D Architect\\Builds\\CoastalRoutes-Windows\\CoastalTemple.exe",
+  "notes": [
+    "D3D12 debug info queue interface unavailable (0x80004002); device and player still initialized"
+  ],
+  "scope": "Windows startup smoke only; no full manual Windows playthrough"
+}

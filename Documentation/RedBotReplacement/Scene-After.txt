@@ -1,0 +1,9 @@
+Scene: Assets/Scenes/CoastalTemple.unity
+RedBot instances: 1
+Missing scripts: 0
+Missing serialized references: 0
+First person hands removed: True
+Third person enabled: True
+Light attached to carried lantern: True
+Temporary test objects: 0
+Prefab connected: True

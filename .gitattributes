@@ -191,3 +191,6 @@ Assets/CoastalTemple/Terrain/NearshorePreview.asset lfs
 Assets/CoastalTemple/Materials/AlgorithmicRippleNormal.asset lfs
 Assets/CoastalTemple/Terrain/Headland/*.asset lfs
 Assets/CoastalTemple/Terrain/CompactMountain/*.asset lfs
+"Assets/Objects/Environment/Terrain/CoastalMountain.asset" lfs
+"Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/TutorialGap_Terrain_106AE45125BD135C.asset" lfs
+"Assets/Objects/LevelGeometry/Tutorial/V9/Excavation/Originals/TutorialGap_Terrain_106AE45125BD135C.asset" lfs

@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3799898037577134354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8422123217210319567}
+  m_Layer: 0
+  m_Name: PortalPair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8422123217210319567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3799898037577134354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6043408314070254300}
+  - {fileID: 7445022278540706900}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4934465130393663769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8422123217210319567}
+    m_Modifications:
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900458678522786824, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: Paired
+      value: 
+      objectReference: {fileID: 8597099688655666320}
+    - target: {fileID: 7978384940340078922, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+      propertyPath: m_Name
+      value: Portal2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+--- !u!114 &3017038651590364433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7900458678522786824, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+  m_PrefabInstance: {fileID: 4934465130393663769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03ee148ab1032b41873171d8a962aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.LightPuzzles.LightPortal
+--- !u!4 &7445022278540706900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2533474580545387853, guid: fd89c90d999203241b96846f5fedacfd, type: 3}
+  m_PrefabInstance: {fileID: 4934465130393663769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7698008827478626365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8422123217210319567}
+    m_Modifications:
+    - target: {fileID: 788695183779457652, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_Name
+      value: Portal1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133539230148619437, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: Paired
+      value: 
+      objectReference: {fileID: 3017038651590364433}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+--- !u!4 &6043408314070254300 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4110288828439433953, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+  m_PrefabInstance: {fileID: 7698008827478626365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8597099688655666320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2133539230148619437, guid: 4cf65f9db67a7954d99ed544b00bdb51, type: 3}
+  m_PrefabInstance: {fileID: 7698008827478626365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03ee148ab1032b41873171d8a962aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoastalTemple.LightPuzzles.LightPortal

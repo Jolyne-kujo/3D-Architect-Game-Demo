@@ -1,0 +1,20 @@
+PASS Initial write retains the existing asset GUID, local id and renderer reference
+PASS Initial write preserves all static vertex attributes, eight UV channels and every submesh
+PASS Initial write native GPU vertex/index buffers match the current CPU mesh
+PASS first cut removes real surface triangles
+PASS First cut overwrites the already-uploaded asset retains the existing asset GUID, local id and renderer reference
+PASS First cut overwrites the already-uploaded asset preserves all static vertex attributes, eight UV channels and every submesh
+PASS First cut overwrites the already-uploaded asset native GPU vertex/index buffers match the current CPU mesh
+PASS second distinct cut removes additional triangles
+PASS Second cut overwrites the same asset again retains the existing asset GUID, local id and renderer reference
+PASS Second cut overwrites the same asset again preserves all static vertex attributes, eight UV channels and every submesh
+PASS Second cut overwrites the same asset again native GPU vertex/index buffers match the current CPU mesh
+PASS Restoring the original topology retains the existing asset GUID, local id and renderer reference
+PASS Restoring the original topology preserves all static vertex attributes, eight UV channels and every submesh
+PASS Restoring the original topology native GPU vertex/index buffers match the current CPU mesh
+PASS source/destination alias is rejected without clearing CPU or GPU data
+PASS Sparse replacement changes index format and removes old channels/submeshes retains the existing asset GUID, local id and renderer reference
+PASS Sparse replacement changes index format and removes old channels/submeshes preserves all static vertex attributes, eight UV channels and every submesh
+PASS Sparse replacement changes index format and removes old channels/submeshes native GPU vertex/index buffers match the current CPU mesh
+PASS source geometry and attributes remain unchanged throughout repeated writes
+19 mesh asset checks passed, including native GPU buffer readback after consecutive persistent-asset updates.
