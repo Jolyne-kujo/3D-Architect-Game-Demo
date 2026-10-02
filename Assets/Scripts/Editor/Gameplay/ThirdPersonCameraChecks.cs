@@ -53,7 +53,7 @@ namespace CoastalTemple.Editor
                 rig.SetOverview(true); rig.SetOverview(false);
                 Check(rig.thirdPerson && !hands.overlayCamera.enabled && Vector3.Distance(view.transform.position, eye.position) > 3, "return from overview preserves third-person mode");
                 rig.SetThirdPerson(false);
-                Check(view.transform.parent == eye && view.transform.localPosition == Vector3.zero && hands.overlayCamera.enabled, "explicit first-person fallback restores eye and hands");
+                Check(view.transform.parent == eye && view.transform.localPosition == Vector3.zero && !hands.overlayCamera.enabled, "explicit first-person fallback restores eye without hands");
                 Check(avatar.bodyRenderers[0].shadowCastingMode == ShadowCastingMode.ShadowsOnly, "first-person fallback still casts the complete body shadow");
             }
             finally { Object.DestroyImmediate(root); }

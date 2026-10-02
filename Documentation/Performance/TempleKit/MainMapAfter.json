@@ -1,0 +1,106 @@
+{
+    "scene": "Assets/Scenes/CoastalTemple.unity",
+    "cpu": "AMD Ryzen 9 7940HX with Radeon Graphics ",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "unityVersion": "6000.5.9f1",
+    "cameraStart": "(-66.44, 2.36, 207.77) / (10.00, 160.00, 0.00)",
+    "cameraEnd": "(-66.44, 2.24, 207.77) / (10.00, 160.00, 0.00)",
+    "quality": "PC",
+    "width": 1465,
+    "height": 1246,
+    "frames": 594,
+    "targetFrameRate": 60,
+    "lodBias": 2.0,
+    "metrics": [
+        {
+            "name": "Observed frame interval",
+            "unit": "ms",
+            "available": true,
+            "mean": 16.840381646585287,
+            "median": 16.68490655720234,
+            "p95": 21.65999822318554,
+            "maximum": 124.3584007024765
+        },
+        {
+            "name": "GPU frame time",
+            "unit": "ms",
+            "available": true,
+            "mean": 4.699301494949499,
+            "median": 5.281792,
+            "p95": 7.411712,
+            "maximum": 8.48896
+        },
+        {
+            "name": "CPU Main Thread Frame Time",
+            "unit": "ms",
+            "available": true,
+            "mean": 7.443548297979792,
+            "median": 6.2337,
+            "p95": 12.3335,
+            "maximum": 19.856
+        },
+        {
+            "name": "CPU Render Thread Frame Time",
+            "unit": "ms",
+            "available": true,
+            "mean": 2.4496755791245765,
+            "median": 1.5237,
+            "p95": 6.506,
+            "maximum": 8.6605
+        },
+        {
+            "name": "SRP Batcher Draw Calls Count",
+            "unit": "count",
+            "available": true,
+            "mean": 4.505050505050505,
+            "median": 6.0,
+            "p95": 12.0,
+            "maximum": 12.0
+        },
+        {
+            "name": "Standard Draw Calls Count",
+            "unit": "count",
+            "available": true,
+            "mean": 37.58080808080808,
+            "median": 50.0,
+            "p95": 100.0,
+            "maximum": 101.0
+        },
+        {
+            "name": "BRG Draw Calls Count",
+            "unit": "count",
+            "available": true,
+            "mean": 290.57575757575759,
+            "median": 387.0,
+            "p95": 774.0,
+            "maximum": 774.0
+        },
+        {
+            "name": "BRG Indirect Draw Calls Count",
+            "unit": "count",
+            "available": true,
+            "mean": 0.0,
+            "median": 0.0,
+            "p95": 0.0,
+            "maximum": 0.0
+        },
+        {
+            "name": "SetPass Calls Count",
+            "unit": "count",
+            "available": true,
+            "mean": 62.35858585858586,
+            "median": 83.0,
+            "p95": 166.0,
+            "maximum": 167.0
+        },
+        {
+            "name": "Triangles Count",
+            "unit": "count",
+            "available": true,
+            "mean": 888602.5185185185,
+            "median": 1183475.0,
+            "p95": 2366950.0,
+            "maximum": 2366952.0
+        }
+    ]
+}

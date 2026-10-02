@@ -1,0 +1,3 @@
+PASS yellow cannot activate red receivers
+PASS both red receivers activate including four reflections
+PASS receiver opens original stone curtain

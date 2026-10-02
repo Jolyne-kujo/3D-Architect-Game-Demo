@@ -26,7 +26,8 @@ namespace CoastalTemple
             GUI.Box(new Rect(20,20,540,166),GUIContent.none);
             GUI.Label(new Rect(34,28,514,152),"机关预制体试验场\n黄 → 蓝 → 红 → 关闭；上大灯当前 / 下小灯下次\n蓝光开桥；红受光器升台，黄受光器降台\n池前岸边 DRAIN / REFILL：E 排水，再按 E 补水\n踩到水下楼梯即可站立并沿楼梯走出\n上浮板：在水面贴近边缘向前，自动抓边上岸",style);
             GUI.Box(new Rect(20,Screen.height-70,Screen.width-40,48),GUIContent.none);
-            GUI.Label(new Rect(32,Screen.height-61,Screen.width-64,40),"WASD 移动 · Shift 快跑 · 空格 跳跃 / 上浮 · Ctrl 下潜 · E 操作 · Home 回起点 · Esc 鼠标",style);
+            bool operating=cameraRig&&cameraRig.IsMechanismView;
+            GUI.Label(new Rect(32,Screen.height-61,Screen.width-64,40),operating?"E 继续操作当前机关 · WASD / 空格 / Esc 返回第一人称":"WASD 移动 · Shift 快跑 · 空格 跳跃 / 上浮 · Ctrl 下潜 · E 操作 · Home 回起点 · Esc 鼠标",style);
             if(interactor && interactor.Nearby)
                 GUI.Label(new Rect(Screen.width*.5f-230,Screen.height-122,460,40),"E  "+interactor.Nearby.DisplayPrompt,style);
         }

@@ -1,0 +1,4 @@
+PASS run from existing test court across the connected walkway: (42.78, 0.02, 0.00)
+PASS walk through the courtyard gate onto imported floor: (52.62, 0.23, 8.06)
+PASS courtyard retains real static mesh collisions: 505
+PASS existing experimental pool still simulates water

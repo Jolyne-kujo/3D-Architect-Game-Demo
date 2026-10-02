@@ -1,0 +1,12 @@
+PASS third-person mode can be selected
+PASS camera follows behind the actor instead of remaining in the head
+PASS complete body is rendered with a real world shadow
+PASS first-person arms and overlay are hidden
+PASS orbit never translates the character
+PASS stationary camera orbit does not rotate the body or shadow
+PASS camera yaw follows mouse look independently of actor heading
+PASS solid wall retracts the camera before clipping
+PASS trigger volumes and actor colliders do not obstruct camera
+PASS return from overview preserves third-person mode
+PASS explicit first-person fallback restores eye without hands
+PASS first-person fallback still casts the complete body shadow

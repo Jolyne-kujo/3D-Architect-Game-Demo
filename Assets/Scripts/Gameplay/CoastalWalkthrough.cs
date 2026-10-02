@@ -56,6 +56,7 @@ namespace CoastalTemple
             }
             if(kb.escapeKey.wasPressedThisFrame&&!overview)
             {
+                if(playerCamera&&playerCamera.IsMechanismView){playerCamera.EndMechanismView();return;}
                 bool released=walker.active;walker.SetActive(!released);walker.simulateWhileInactive=released;
             }
             if(!overview&&!walker.active&&Mouse.current!=null&&Mouse.current.leftButton.wasPressedThisFrame)
@@ -83,10 +84,11 @@ namespace CoastalTemple
             GUI.Label(new Rect(41,34,340,34),"潮岸遗迹 · 朝圣之路",title);
             GUI.Label(new Rect(42,73,340,24),"沙滩遗迹 → 半山海湾 → 山顶神庙",label);
             GUI.color=new Color(.025f,.06f,.065f,.83f);GUI.DrawTexture(new Rect(24,h-79,w-48,55),Texture2D.whiteTexture);GUI.color=Color.white;
-            GUI.Label(new Rect(41,h-68,w-75,24),"WASD 行走 / 游泳 · 鼠标转头 · 空格上浮 · Ctrl 下潜 · Esc 释放鼠标 · Home 回起点",label);
+            bool operating=playerCamera&&playerCamera.IsMechanismView;
+            GUI.Label(new Rect(41,h-68,w-75,24),operating?"E 继续操作当前机关 · WASD / 空格 / Esc 返回第一人称":"WASD 行走 / 游泳 · 鼠标转头 · E 操纵机关 · 空格上浮 · Ctrl 下潜 · Esc 释放鼠标 · Home 回起点",label);
             if(experiment&&experiment.water)
                 GUI.Label(new Rect(41,h-46,w-75,22),$"1 开启水池排水 · R 重新蓄水 · V 水流视图    |    余水 {experiment.water.Remaining*100:0.0}% · 排水倍率 ×{experiment.water.drainSpeedMultiplier:0.0}",label);
-            if(!overview)GUI.Label(new Rect(w*.5f-4,h*.5f-12,18,24),"·",label);
+            if(!overview&&!operating)GUI.Label(new Rect(w*.5f-4,h*.5f-12,18,24),"·",label);
             if(seaBoundary&&Time.time-seaBoundary.LastDeathTime<3)
             {
                 GUI.color=new Color(.08f,.12f,.15f,.9f);GUI.DrawTexture(new Rect(w*.5f-215,h*.42f,430,60),Texture2D.whiteTexture);GUI.color=Color.white;

@@ -13,6 +13,9 @@ namespace CoastalTemple.Tutorial
         static readonly List<TutorialInteractable> registry = new List<TutorialInteractable>(16);
         public static IReadOnlyList<TutorialInteractable> Registry => registry;
         public virtual bool Available => isActiveAndEnabled;
+        [Tooltip("Use a raised observation view while operating this control. Disable for pickups or simple interactions.")]
+        public bool observeWhileOperating = true;
+        public virtual bool UsesObservationView => observeWhileOperating;
         public virtual string DisplayPrompt => prompt;
         public Vector3 InteractionPosition => interactionPoint ? interactionPoint.position : transform.position;
 

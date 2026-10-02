@@ -1,0 +1,18 @@
+{
+    "axes": [
+        0,
+        2,
+        1
+    ],
+    "signs": [
+        -1.0,
+        1.0,
+        -1.0
+    ],
+    "measured_probe_center": {
+        "x": -0.9999974370002747,
+        "y": 3.0,
+        "z": -1.9999927282333375
+    },
+    "evidence": "Unity renderer.bounds.center of Rhino source probe centered at (1,2,3) meters; native FBX MapZtoFbxY=true, useFileScale=true, globalScale=1."
+}

@@ -1,0 +1,25 @@
+{
+  "source": "F:\\Unity Project\\RuinTempleKit_V5_FacetedFractures\\Unity",
+  "file_count": 995,
+  "mappings": {
+    "Models": "Assets/Objects/Environment/RuinTempleKit/Models",
+    "LODModels": "Assets/Objects/Environment/RuinTempleKit/LODModels",
+    "Data": "Assets/Objects/Environment/RuinTempleKit/Data",
+    "Prefabs": "Assets/Prefabs/Environment/RuinTempleKit/Modules",
+    "Examples": "Assets/Prefabs/Environment/RuinTempleKit/Assemblies",
+    "Materials": "Assets/Materials/Environment/RuinTempleKit",
+    "Textures": "Assets/Textures/Environment/RuinTempleKit"
+  },
+  "omitted": [
+    "Editor scripts",
+    "FallbackOBJ duplicates",
+    "source example scenes",
+    "Rhino files"
+  ],
+  "models": 360,
+  "module_prefabs": 120,
+  "assembly_prefabs": 3,
+  "binary_files_identical_to_source": 363,
+  "original_scene_blocks_unchanged": 165,
+  "existing_user_model_unchanged": true
+}

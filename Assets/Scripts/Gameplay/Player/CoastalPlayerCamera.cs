@@ -2,6 +2,8 @@ using UnityEngine;
 using WaterCourtyard;
 using CoastalTemple.LightPuzzles;
 using CoastalTemple.Portals;
+using CoastalTemple.Tutorial;
+using UnityEngine.InputSystem;
 
 namespace CoastalTemple.Player
 {
@@ -17,6 +19,18 @@ namespace CoastalTemple.Player
         public Transform overviewRoot;
         public FirstPersonHands hands;
         public PlayerLantern lantern;
+        [Header("First-person presentation")]
+        public bool showFirstPersonHands;
+        [Tooltip("Optional item-only overlay. It renders the lantern after pickup without a hand model.")]
+        public Camera heldItemCamera;
+        [Header("Mechanism observation")]
+        [Range(45,80)] public float mechanismPitch = 65;
+        [Range(60,95)] public float mechanismFieldOfView = 80;
+        [Min(4)] public float fallbackObservationRadius = 9;
+        public bool IsMechanismView { get; private set; }
+        public TutorialInteractable MechanismTarget { get; private set; }
+        MechanismObservationArea observationArea;
+        float gameplayFieldOfView, mechanismYaw;
         [Header("Third-person follow")]
         public bool thirdPerson;
         [Min(.5f)] public float distance = 4.2f;
@@ -42,6 +56,7 @@ namespace CoastalTemple.Player
         public void WarpThroughPortal(Matrix4x4 mapping, LightPortal entrance,float entrySide=1)
         {
             if (!view || IsOverview) return;
+            EndMechanismView();
             if (!thirdPerson) { SnapToTarget(); return; }
             if (portalBridge && portalBridge.CanTransfer)
             {
@@ -77,6 +92,7 @@ namespace CoastalTemple.Player
 
         public void SetOverview(bool value)
         {
+            EndMechanismView();
             IsOverview = value;
             if (value && view) view.transform.SetParent(overviewRoot, true);
             UpdateAvatarVisibility();
@@ -85,6 +101,7 @@ namespace CoastalTemple.Player
 
         public void SetThirdPerson(bool value)
         {
+            EndMechanismView();
             thirdPerson = value;
             if (walker)
             {
@@ -97,7 +114,7 @@ namespace CoastalTemple.Player
 
         public void SnapToTarget()
         {
-            if (!walker || !view || IsOverview) return;
+            if (!walker || !view || IsOverview || IsMechanismView) return;
             portalBridge = null;
             walker.rotateBodyWithLook = !thirdPerson;
             if (thirdPerson)
@@ -119,22 +136,79 @@ namespace CoastalTemple.Player
         {
             if (avatar) avatar.SetVisible(IsOverview || (thirdPerson && CurrentDistance > .55f));
             var heldItem = lantern ? lantern : hands ? hands.lantern : null;
-            if (heldItem) heldItem.SetPerspective(thirdPerson || IsOverview);
+            if (heldItem)
+            {
+                heldItem.SetPerspective(thirdPerson || IsOverview);
+                heldItem.SetPresentationVisible(!IsMechanismView);
+            }
+            if(heldItemCamera)heldItemCamera.enabled=!IsOverview&&!thirdPerson&&!IsMechanismView&&heldItem&&heldItem.HasLantern;
             if (hands)
             {
-                hands.SetVisible(!IsOverview && !thirdPerson);
+                hands.SetVisible(showFirstPersonHands&&!IsOverview&&!thirdPerson&&!IsMechanismView);
             }
         }
 
+        public void BeginMechanismView(TutorialInteractable target)
+        {
+            if(!walker||!view||IsOverview||!target||!target.UsesObservationView)return;
+            if(!IsMechanismView)gameplayFieldOfView=view.fieldOfView;
+            MechanismTarget=target;observationArea=target.GetComponentInParent<MechanismObservationArea>();
+            mechanismYaw=observationArea&&observationArea.fixedYaw?observationArea.yaw:walker.LookYaw;
+            IsMechanismView=true;walker.cameraInputSuspended=true;
+            view.transform.SetParent(overviewRoot,true);
+            UpdateMechanismView();UpdateAvatarVisibility();
+        }
+
+        public void EndMechanismView()
+        {
+            if(!IsMechanismView)return;
+            IsMechanismView=false;MechanismTarget=null;observationArea=null;
+            if(walker)walker.cameraInputSuspended=false;
+            if(view)view.fieldOfView=gameplayFieldOfView;
+            UpdateAvatarVisibility();SnapToTarget();
+        }
+
+        void UpdateMechanismView()
+        {
+            var bounds=observationArea?observationArea.WorldBounds:
+                new Bounds(MechanismTarget.InteractionPosition+Vector3.up,new Vector3(fallbackObservationRadius*2,4,fallbackObservationRadius*2));
+            var rotation=Quaternion.Euler(mechanismPitch,mechanismYaw,0);
+            var inverse=Quaternion.Inverse(rotation);
+            float vertical=Mathf.Tan(mechanismFieldOfView*.5f*Mathf.Deg2Rad);
+            float horizontal=vertical*Mathf.Max(.3f,view.aspect),distance=10;
+            for(int x=-1;x<=1;x+=2)for(int y=-1;y<=1;y+=2)for(int z=-1;z<=1;z+=2)
+            {
+                var corner=inverse*Vector3.Scale(bounds.extents,new Vector3(x,y,z));
+                distance=Mathf.Max(distance,Mathf.Max(Mathf.Abs(corner.x)/horizontal-corner.z,Mathf.Abs(corner.y)/vertical-corner.z));
+            }
+            view.fieldOfView=mechanismFieldOfView;
+            view.transform.SetPositionAndRotation(bounds.center-rotation*Vector3.forward*(distance+1.5f),rotation);
+        }
+
+        void Update()
+        {
+            if(!IsMechanismView)return;
+            var keys=Keyboard.current;
+            if(keys!=null&&(keys.wKey.isPressed||keys.aKey.isPressed||keys.sKey.isPressed||keys.dKey.isPressed
+                ||keys.spaceKey.wasPressedThisFrame||keys.escapeKey.wasPressedThisFrame))EndMechanismView();
+        }
+
+        void OnDisable()=>EndMechanismView();
+
         void LateUpdate()
         {
+            if(IsMechanismView)
+            {
+                if(!MechanismTarget||!MechanismTarget.Available)EndMechanismView();
+                else{UpdateMechanismView();UpdateAvatarVisibility();return;}
+            }
             if (IsOverview || !walker || !view) return;
             if (thirdPerson)
             {
                 UpdateFollowCamera(Time.deltaTime, false);
-                UpdateAvatarVisibility();
             }
             else if (view.transform.parent != walker.eye) SnapToTarget();
+            UpdateAvatarVisibility();
         }
 
         void UpdateFollowCamera(float seconds, bool snap)

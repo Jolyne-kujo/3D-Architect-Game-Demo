@@ -20,6 +20,7 @@ namespace CoastalTemple.Player
         public bool LanternOn => state.IsLit && handLight && handLight.enabled;
 
         readonly LanternState state = new LanternState();
+        bool presentationVisible = true;
 
         void Awake() => ApplyVisuals();
         void OnEnable() => ApplyVisuals();
@@ -45,6 +46,12 @@ namespace CoastalTemple.Player
         public void SetLantern(bool value) { state.SetLight(value); ApplyVisuals(); }
         public void Toggle() => SetLantern(!state.IsLit);
 
+        public void SetPresentationVisible(bool value)
+        {
+            if(presentationVisible==value)return;
+            presentationVisible=value;ApplyVisuals();
+        }
+
         public void SetPerspective(bool thirdPerson)
         {
             var hand = thirdPerson ? worldHand : firstPersonHand;
@@ -64,7 +71,7 @@ namespace CoastalTemple.Player
         void ApplyVisuals()
         {
             if (handLight) handLight.enabled = isActiveAndEnabled && state.IsLit;
-            if (carriedLantern) carriedLantern.SetActive(isActiveAndEnabled && state.Acquired);
+            if (carriedLantern) carriedLantern.SetActive(isActiveAndEnabled && state.Acquired && presentationVisible);
         }
     }
 }

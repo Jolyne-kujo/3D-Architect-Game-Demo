@@ -1,0 +1,6518 @@
+{
+  "coordinate_system": "Rhino Z-up meters",
+  "scenes": [
+    {
+      "name": "Temple_Courtyard",
+      "label": "48m TEMPLE COURTYARD",
+      "instances": [
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            -14.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            18.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            22.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            18.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -6.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            2.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            14.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -10.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -2.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            10.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            -18.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            18.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            -22.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -18.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -14.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -10.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -6.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            6.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            10.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            14.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            18.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            22.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -24.0,
+            -22.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -24.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -24.0,
+            -14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -24.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -24.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -24.0,
+            -2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -24.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -24.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -24.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -24.0,
+            14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -24.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -24.0,
+            22.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            -22.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            -18.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            -14.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -10.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -6.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            -2.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            2.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            6.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            10.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            14.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W03_Straight_4m_Full",
+          "position": [
+            18.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W04_Straight_4m_Light_Damage",
+          "position": [
+            22.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            24.0,
+            -22.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            24.0,
+            -14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            24.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            24.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            -2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            24.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            24.0,
+            14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            24.0,
+            22.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W16_Gate_4m_Clear_6m_Module",
+          "position": [
+            0.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            0.0,
+            3.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            0.0,
+            -3.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A05_Monumental_Doric_6m",
+          "position": [
+            -3.0,
+            0.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A06_Monumental_Broken",
+          "position": [
+            -3.0,
+            6.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A05_Monumental_Doric_6m",
+          "position": [
+            3.0,
+            0.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A06_Monumental_Broken",
+          "position": [
+            3.0,
+            6.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A31_Grand_Lintel_6m",
+          "position": [
+            0.0,
+            0.0,
+            6.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A28_Pediment_8m_Crown_Missing",
+          "position": [
+            0.0,
+            0.0,
+            8.07
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            0.0,
+            5.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A22_Colonnade_8m_Broken",
+          "position": [
+            -16.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_A21_Colonnade_8m_Complete",
+          "position": [
+            -16.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_A22_Colonnade_8m_Broken",
+          "position": [
+            -16.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_A22_Colonnade_8m_Broken",
+          "position": [
+            16.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_A21_Colonnade_8m_Complete",
+          "position": [
+            16.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_A22_Colonnade_8m_Broken",
+          "position": [
+            16.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_G28_Debris_4m_Massive_Fallen_Stone",
+          "position": [
+            -8.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.8812462838832262
+        },
+        {
+          "name": "V2_G32_Debris_4m_Sloped_Collapse",
+          "position": [
+            9.0,
+            -8.0,
+            0.2
+          ],
+          "rotation_z": -0.7362345006715172
+        },
+        {
+          "name": "V2_G26_Connector_8m_Collapsed_Wall_Band",
+          "position": [
+            -10.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.7340907616027552
+        },
+        {
+          "name": "V2_G32_Debris_4m_Sloped_Collapse",
+          "position": [
+            10.0,
+            14.0,
+            0.2
+          ],
+          "rotation_z": -0.995079813600003
+        },
+        {
+          "name": "V2_G25_Connector_4m_Fallen_Drum_Band",
+          "position": [
+            -20.0,
+            19.0,
+            0.2
+          ],
+          "rotation_z": 0.7113994184467802
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            19.0,
+            20.0,
+            0.2
+          ],
+          "rotation_z": 0.012531682282391765
+        },
+        {
+          "name": "V2_G19_Platform_4m_Recessed_Basin",
+          "position": [
+            -9.0,
+            -16.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G19_Platform_4m_Recessed_Basin",
+          "position": [
+            9.0,
+            -16.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        }
+      ],
+      "instance_count": 214,
+      "size_m": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "Processional_Avenue",
+      "label": "80m PROCESSIONAL AVENUE",
+      "instances": [
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -38.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -34.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            34.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -38.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -34.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            26.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            34.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -38.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -34.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            34.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            -38.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -34.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            34.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -38.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -34.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            34.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -38.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -34.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            34.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            38.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -34.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            -30.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -26.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            -24.0,
+            -6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -22.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            -18.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -14.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            -12.0,
+            -6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -10.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            -6.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -2.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            0.0,
+            -6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            2.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            6.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            10.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            12.0,
+            -6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            14.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            18.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            22.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            24.0,
+            -6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            26.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            30.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            34.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -38.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -34.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -30.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -26.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -22.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -18.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -14.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -10.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -6.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -2.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            2.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            6.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            10.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            14.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            18.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            22.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            26.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            30.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            34.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            38.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -34.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            -30.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -26.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            -24.0,
+            6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -22.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            -18.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -14.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            -12.0,
+            6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -10.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            -6.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            -2.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            0.0,
+            6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            2.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            6.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            10.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            12.0,
+            6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            14.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A03_Doric_High_Fracture",
+          "position": [
+            18.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            22.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A30_Entablature_4m_Fracture",
+          "position": [
+            24.0,
+            6.0,
+            4.199999999999999
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            26.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A02_Doric_Low_Fracture",
+          "position": [
+            30.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A01_Stout_Doric_4m",
+          "position": [
+            34.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -38.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -34.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -30.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -26.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -22.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -18.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -14.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -10.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            -6.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            -2.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            2.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            6.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            10.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            14.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            18.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W30_Stone_Railing_Breached",
+          "position": [
+            22.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            26.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            30.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            34.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W28_Parapet_4m_Broken",
+          "position": [
+            38.0,
+            12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W20_Tall_Roman_Arch_Gate",
+          "position": [
+            -38.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W20_Tall_Roman_Arch_Gate",
+          "position": [
+            38.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -28.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -28.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -20.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -20.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -12.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -12.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -4.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            -4.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            4.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            4.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            12.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            12.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            20.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            20.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            28.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G21_Connector_4m_Straight_Channel",
+          "position": [
+            28.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G23_Connector_4m_Intact_Bridge_Deck",
+          "position": [
+            -24.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G24_Connector_4m_Fractured_Bridge_Deck",
+          "position": [
+            -24.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G23_Connector_4m_Intact_Bridge_Deck",
+          "position": [
+            0.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G24_Connector_4m_Fractured_Bridge_Deck",
+          "position": [
+            0.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G23_Connector_4m_Intact_Bridge_Deck",
+          "position": [
+            24.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G24_Connector_4m_Fractured_Bridge_Deck",
+          "position": [
+            24.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A16_Tall_Masonry_Pedestal",
+          "position": [
+            -28.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A19_Ionic_Capital_Separate",
+          "position": [
+            -28.0,
+            0.0,
+            1.8800000000000001
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A16_Tall_Masonry_Pedestal",
+          "position": [
+            28.0,
+            0.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A19_Ionic_Capital_Separate",
+          "position": [
+            28.0,
+            0.0,
+            1.8800000000000001
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            -30.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.9452943858781524
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            -18.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 1.8883393697473065
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            6.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.3685643663574487
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            18.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 1.67816759573446
+        },
+        {
+          "name": "V2_G31_Debris_4m_Fluted_Column_Shards",
+          "position": [
+            30.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 1.6736069817067099
+        },
+        {
+          "name": "V2_G08_Floor_4m_Well_Aperture",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        }
+      ],
+      "instance_count": 240,
+      "size_m": [
+        80,
+        24
+      ]
+    },
+    {
+      "name": "Terraced_Sanctuary",
+      "label": "64m TERRACED SANCTUARY",
+      "instances": [
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -26.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -6.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -2.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            2.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            2.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            18.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            2.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            30.0,
+            -6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            -2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            2.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            14.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            6.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            22.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            10.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -14.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -2.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            14.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -30.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -26.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -22.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -18.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -10.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            -6.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -2.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            6.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G03_Floor_4m_Through_Fissure",
+          "position": [
+            14.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            26.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            18.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -30.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -26.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G06_Floor_4m_Diamond_Paving",
+          "position": [
+            -22.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -18.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -14.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            -10.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            -6.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G04_Floor_4m_Missing_Corner",
+          "position": [
+            -2.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            2.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            6.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            10.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            14.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            18.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            22.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            26.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G02_Floor_4m_Ashlar",
+          "position": [
+            30.0,
+            22.0,
+            0.0
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            -20.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            -20.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            -22.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A07_Square_Fluted_Pier",
+          "position": [
+            -18.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            -20.0,
+            -10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            -20.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            -20.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            -22.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A08_Square_Pier_Collapse",
+          "position": [
+            -18.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            -20.0,
+            10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            0.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            0.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            -2.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            2.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            0.0,
+            -10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            0.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            0.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A08_Square_Pier_Collapse",
+          "position": [
+            -2.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            2.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            0.0,
+            10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            20.0,
+            -12.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            20.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A07_Square_Fluted_Pier",
+          "position": [
+            18.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A10_Ionic_Broken_And_Capital",
+          "position": [
+            22.0,
+            -12.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            20.0,
+            -10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G16_Platform_8m_Three_Tier",
+          "position": [
+            20.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G09_Stairs_4m_Three_Risers",
+          "position": [
+            20.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A09_Ionic_Volute_Column",
+          "position": [
+            18.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_A07_Square_Fluted_Pier",
+          "position": [
+            22.0,
+            8.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G20_Platform_4m_Grooved_Altar",
+          "position": [
+            20.0,
+            10.0,
+            0.95
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W08_Straight_8m_Twin_Breaches",
+          "position": [
+            -28.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -28.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            -20.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -20.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            -12.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            -12.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            -4.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            4.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W18_Twin_Window_Wall",
+          "position": [
+            12.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            12.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            20.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            20.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W22_Monumental_Entry_Crown_Lost",
+          "position": [
+            28.0,
+            24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W06_Straight_4m_Heavy_Collapse",
+          "position": [
+            28.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -32.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            32.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            -14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            -14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -32.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            32.0,
+            -6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            -2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            -2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            2.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -32.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            32.0,
+            6.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            -32.0,
+            14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W05_Straight_4m_Breach",
+          "position": [
+            32.0,
+            14.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            -32.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W19_Triple_Arrow_Slits",
+          "position": [
+            32.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 1.5707963267948966
+        },
+        {
+          "name": "V2_W21_Twin_Arcade_6m",
+          "position": [
+            0.0,
+            -24.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_G28_Debris_4m_Massive_Fallen_Stone",
+          "position": [
+            -12.0,
+            -10.0,
+            0.2
+          ],
+          "rotation_z": 1.4297132506510963
+        },
+        {
+          "name": "V2_G29_Debris_4m_Long_Roof_Stone",
+          "position": [
+            12.0,
+            -8.0,
+            0.2
+          ],
+          "rotation_z": -1.434911084333243
+        },
+        {
+          "name": "V2_G27_Debris_4m_Dense_Gravel",
+          "position": [
+            -10.0,
+            8.0,
+            0.2
+          ],
+          "rotation_z": 0.990094847742558
+        },
+        {
+          "name": "V2_G32_Debris_4m_Sloped_Collapse",
+          "position": [
+            12.0,
+            10.0,
+            0.2
+          ],
+          "rotation_z": -1.0249024880384394
+        },
+        {
+          "name": "V2_G32_Debris_4m_Sloped_Collapse",
+          "position": [
+            -26.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 0.13661999077164744
+        },
+        {
+          "name": "V2_G30_Debris_4m_Shattered_Flagstones",
+          "position": [
+            27.0,
+            -18.0,
+            0.2
+          ],
+          "rotation_z": -0.13408094610368315
+        },
+        {
+          "name": "V2_G29_Debris_4m_Long_Roof_Stone",
+          "position": [
+            0.0,
+            20.0,
+            0.2
+          ],
+          "rotation_z": -0.1386985653013355
+        },
+        {
+          "name": "V2_W31_Recessed_Shrine_Niche",
+          "position": [
+            -10.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        },
+        {
+          "name": "V2_W31_Recessed_Shrine_Niche",
+          "position": [
+            10.0,
+            18.0,
+            0.2
+          ],
+          "rotation_z": 0.0
+        }
+      ],
+      "instance_count": 266,
+      "size_m": [
+        64,
+        48
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+INFO Ruin coast read-only audit; physics queries use the current physics snapshot. No SyncTransforms/refresh/save/play transition is performed.
+INFO Sampling checks geometry, not completed CharacterController traversal or a solved reflection puzzle.
+PASS SU_ShoreTutorial active count=1
+PASS Mountain_RuinCorridor active count=1
+PASS Mountain_Corridor_Paving active count=1
+PASS 12_ShoreTalus_EDIT_ROCKS active count=1
+PASS 10_CompactMountain active count=1
+PASS Shore child 01_BrokenPaving_EDIT_MODULES
+PASS Shore child 02_RuinedWalls_NOT_COLUMNS
+PASS Shore child 03_LightPuzzles
+PASS Shore child 04_SingleFallenColumns_Guidance
+PASS Shore child 05_CollapsedRooms_And_Debris
+PASS Active legacy stacked-column/fence objects=0
+PASS Single fallen guide modules=12 (expected 12)
+PASS Coincident guide-center stack pairs=0
+PASS Old 02_StoneWorkshop total=1 active=0
+PASS Old 03_FoldedBridge total=1 active=0
+PASS Shore optics emitters=2 mirrors=4 receivers=2 (expected 2/4/2)
+PASS Emitter_A_Direct origin=20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Emitter_A_Direct/Beam origin +Z range=110
+PASS Emitter_B_Reflection origin=20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Emitter_B_Reflection/Beam origin +Z range=110
+PASS 20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Receiver_A_Direct_Red/Receiver required=Red latching=True opticalCollider=True
+PASS 20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Receiver_B_Reflection_Red/Receiver required=Red latching=True opticalCollider=True
+INFO Receiver event Receiver_B_Reflection_Red -> StoneCurtain_SU.SetActive(False), enabled=True
+PASS Persistent receiver -> StoneCurtain_SU.SetActive(false) link preserved=True
+INFO Stone curtain world bounds=(2.645,3,0.71); check both ends against the expanded passage.
+PASS Mechanism material audit: prefab renderers compared=39 missing=0 differing=0 unlinked=0
+PASS Read-only beam preview leaves source/receiver state unchanged: Emitter_A_Direct
+INFO CURRENT ORIENTATION Emitter_A_Direct segments=1 reached=20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Receiver_A_Direct_Red/Receiver end=(-54.152,1.48,181.485)
+PASS Read-only beam preview leaves source/receiver state unchanged: Emitter_B_Reflection
+INFO CURRENT ORIENTATION Emitter_B_Reflection segments=5 reached=20_Architecture/SU_ShoreTutorial/03_LightPuzzles/Receiver_B_Reflection_Red/Receiver end=(-71.287,1.794,181.201)
+PASS Ground colliders=7; only Terrain and 10_CompactMountain are road support; roofs, ruins, players excluded.
+INFO Route step=0.45m lanes=0,+/-1m capsule radius=0.28 height=1.8 stepOffset=0.3 slopeLimit=50
+PASS ROUTE segment=0 lane=0 samples=10 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.388 maxAlongSlope=15.71 maxNormalSlope=15.71
+PASS ROUTE segment=0 lane=-1 samples=10 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.388 maxAlongSlope=15.71 maxNormalSlope=15.71
+PASS ROUTE segment=0 lane=1 samples=10 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.388 maxAlongSlope=15.71 maxNormalSlope=15.71
+PASS ROUTE segment=1 lane=0 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.577 maxAlongSlope=37.061 maxNormalSlope=37.062
+PASS ROUTE segment=1 lane=-1 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.577 maxAlongSlope=37.061 maxNormalSlope=37.062
+PASS ROUTE segment=1 lane=1 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.577 maxAlongSlope=37.061 maxNormalSlope=37.062
+PASS ROUTE segment=2 lane=0 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.577 maxAlongSlope=36.214 maxNormalSlope=36.208
+PASS ROUTE segment=2 lane=-1 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.575 maxAlongSlope=36.373 maxNormalSlope=36.373
+PASS ROUTE segment=2 lane=1 samples=33 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.575 maxAlongSlope=36.313 maxNormalSlope=36.373
+PASS ROUTE segment=3 lane=0 samples=36 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.442 maxAlongSlope=27.242 maxNormalSlope=27.242
+PASS ROUTE segment=3 lane=-1 samples=36 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.442 maxAlongSlope=27.242 maxNormalSlope=27.242
+PASS ROUTE segment=3 lane=1 samples=36 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.44 maxAlongSlope=27.242 maxNormalSlope=27.242
+PASS ROUTE segment=4 lane=0 samples=72 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.617 maxAlongSlope=34.443 maxNormalSlope=34.364
+PASS ROUTE segment=4 lane=-1 samples=72 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.618 maxAlongSlope=34.415 maxNormalSlope=34.524
+PASS ROUTE segment=4 lane=1 samples=72 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.619 maxAlongSlope=34.364 maxNormalSlope=34.364
+PASS ROUTE segment=5 lane=0 samples=45 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.177 maxAlongSlope=11.084 maxNormalSlope=11.354
+PASS ROUTE segment=5 lane=-1 samples=45 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.212 maxAlongSlope=13.081 maxNormalSlope=18.11
+PASS ROUTE segment=5 lane=1 samples=45 noGround=0 gradeErrors=0 steep=0 blocked=0 maxGradeError=0.179 maxAlongSlope=11.337 maxNormalSlope=11.354
+PASS Non-ground colliders intersecting walking body=0; body query starts above stepOffset, so low paving is not counted.
+PASS Scene dirty flag unchanged=True
+SUMMARY failures=0, warning lines=0. INFO preview results do not imply puzzle completion.

@@ -1,0 +1,11 @@
+PASS walk toward (-62.00, 0.00, 257.00) arrived=(-61.78, -1.27, 257.08) swimming=False grounded=True
+PASS walk toward (-68.00, 0.00, 253.00) arrived=(-67.80, -0.82, 253.13) swimming=False grounded=True
+PASS walk toward (-72.50, 0.00, 251.00) arrived=(-72.29, -0.07, 251.09) swimming=False grounded=True
+PASS walk toward (-72.80, 0.00, 248.50) arrived=(-72.78, -0.07, 248.69) swimming=False grounded=True
+PASS walk toward (-66.00, 0.00, 246.00) arrived=(-66.20, -0.07, 246.07) swimming=False grounded=True
+PASS walk toward (-62.00, 0.00, 244.00) arrived=(-62.18, -0.07, 244.09) swimming=False grounded=True
+PASS walk toward (-64.00, 0.00, 241.00) arrived=(-63.88, -0.07, 241.16) swimming=False grounded=True
+PASS walk toward (-65.60, 0.00, 239.80) arrived=(-65.43, -0.07, 239.93) swimming=False grounded=True
+PASS walk toward (-66.00, 0.00, 237.00) arrived=(-65.97, -0.07, 237.19) swimming=False grounded=True
+PASS walk toward (-66.00, 0.00, 234.00) arrived=(-66.00, -0.07, 234.25) swimming=False grounded=True
+PASS imported main temple stairs support running, reached (-65.00, 2.15, 194.11)

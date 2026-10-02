@@ -1,0 +1,115 @@
+{
+  "label": "baseline-courtyard",
+  "frames": 1954,
+  "screen": [
+    1465,
+    1246
+  ],
+  "camera": "(64.00, 2.00, -4.00)",
+  "rotation": "(358.26, 14.04, 0.00)",
+  "portals": 0,
+  "stats": {
+    "frameMs": {
+      "mean": 4.0941142800960888,
+      "median": 3.9120041765272617,
+      "p95": 5.5331988260149956,
+      "max": 27.55269967019558
+    },
+    "gpuMs": {
+      "mean": 1.2065093961105438,
+      "median": 1.229824,
+      "p95": 1.772544,
+      "max": 2.096128
+    },
+    "CPU Main Thread Frame Time": {
+      "mean": 2349996.794268168,
+      "median": 2163200.0,
+      "p95": 3503600.0,
+      "max": 26005200.0
+    },
+    "CPU Render Thread Frame Time": {
+      "mean": 1277928.7517911976,
+      "median": 1233400.0,
+      "p95": 1708900.0,
+      "max": 2535400.0
+    },
+    "CPU Total Frame Time": {
+      "mean": 4094229.0424769702,
+      "median": 3914000.0,
+      "p95": 5518500.0,
+      "max": 28022400.0
+    },
+    "SRP Batcher Draw Calls Count": {
+      "mean": 1869.0,
+      "median": 1869.0,
+      "p95": 1869.0,
+      "max": 1869.0
+    },
+    "Standard Draw Calls Count": {
+      "mean": 10.066530194472875,
+      "median": 10.0,
+      "p95": 11.0,
+      "max": 11.0
+    },
+    "SetPass Calls Count": {
+      "mean": 47.066530194472875,
+      "median": 47.0,
+      "p95": 48.0,
+      "max": 48.0
+    },
+    "Triangles Count": {
+      "mean": 936725.133060389,
+      "median": 936725.0,
+      "p95": 936727.0,
+      "max": 936727.0
+    },
+    "Vertices Count": {
+      "mean": 1217252.2661207779,
+      "median": 1217252.0,
+      "p95": 1217256.0,
+      "max": 1217256.0
+    },
+    "Main Thread": {
+      "mean": 4065984.5445240531,
+      "median": 3885700.0,
+      "p95": 5484700.0,
+      "max": 27991100.0
+    },
+    "PlayerLoop": {
+      "mean": 2350385.7215967248,
+      "median": 2163400.0,
+      "p95": 3503800.0,
+      "max": 26005300.0
+    },
+    "Gfx.WaitForPresentOnGfxThread": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "GC.Collect": {
+      "mean": 8579.3756397134075,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 13583800.0
+    },
+    "Physics.Simulate": {
+      "mean": 38589.866939611056,
+      "median": 0.0,
+      "p95": 213000.0,
+      "max": 308800.0
+    },
+    "BehaviourUpdate": {
+      "mean": 84956.038894575235,
+      "median": 80900.0,
+      "p95": 124400.0,
+      "max": 189900.0
+    },
+    "ScriptRunBehaviourLateUpdate": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    }
+  }
+}

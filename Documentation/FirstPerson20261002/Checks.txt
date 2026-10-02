@@ -1,0 +1,14 @@
+PASS first-person view sits at the stable eye
+PASS empty first-person view hides arms and their camera
+PASS body remains a world shadow without visible geometry
+PASS acquired lantern uses a separate eye-space anchor
+PASS acquiring the lantern never restores hands
+PASS looking around rotates in place and never orbits the actor
+PASS E operates the real mirror
+PASS mechanism operation raises the camera into a downward observation angle
+PASS mechanism framing never translates the actor
+PASS raised view still permits repeated operation of the same control
+PASS mechanism view provides a return to gameplay
+PASS leaving operation restores the eye binding
+PASS lantern pickup still grants the inventory
+PASS pickup does not trigger a mechanism observation shot

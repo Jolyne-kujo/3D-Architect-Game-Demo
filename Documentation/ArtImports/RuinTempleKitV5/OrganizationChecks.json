@@ -1,0 +1,15 @@
+{
+  "prefabs": 123,
+  "modules": 120,
+  "assemblies": 3,
+  "preservedGuids": 123,
+  "sceneLabels": 0,
+  "prefabLabels": 0,
+  "sceneModules": 840,
+  "brokenInstances": 0,
+  "missingMeshes": 0,
+  "missingMaterials": 0,
+  "colliders": 1961,
+  "lodPreserved": true,
+  "sceneDirty": false
+}

@@ -1,0 +1,9 @@
+PASS source geometry uniformly scaled 40; exactly eight mechanism markers removed
+PASS remaining 66 meshes and all source materials preserved
+PASS all retained source meshes have authored mesh colliders
+PASS old starting-island tutorial and archive removed from main scene
+PASS final saved emitters off
+PASS portable plaza prefab contains all eight existing devices
+PASS portable prefab has no external player or HUD references
+PASS pre-replacement scene backup exists
+PASS main scene saved and left in Edit mode

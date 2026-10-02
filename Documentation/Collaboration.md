@@ -1,13 +1,17 @@
 # 团队协作说明
 
-## 私有仓库与成员权限
+## 下载方式与成员权限
 
-本项目使用个人账号 `Jolyne-kujo` 下的私有仓库：
+本项目使用个人账号 `Jolyne-kujo` 下的仓库，目前按组员查看需求临时公开：
 <https://github.com/Jolyne-kujo/3D-Architect-Game-Demo>
 
-只有仓库所有者及获邀并接受邀请的协作者可以读取和推送代码。仅发送仓库链接不会赋予访问权。
+公开期间可直接下载 [完整工程 ZIP](https://github.com/Jolyne-kujo/3D-Architect-Game-Demo/releases/latest/download/3D-Architect-UnityProject.zip)，无需 GitHub 账号。解压后在 Unity Hub 中添加同时包含 `Assets`、`Packages`、`ProjectSettings` 的目录，使用 Unity `6000.5.9f1` 打开；不要把它当作 `.unitypackage` 导入空项目。
 
-管理员从 **Settings → Collaborators → Add people** 输入团队成员的 GitHub 用户名发出邀请。个人私有仓库的协作者拥有读写权限，管理员负责核对成员身份、邀请和移除。当前准备阶段不添加其他成员。不要共享账号或个人访问令牌。
+只有仓库所有者及获邀并接受邀请的协作者可以推送修改。公开下载不代表有提交权限。若仓库恢复私有，网页和下载附件也需要获邀账号访问。
+
+管理员从 **Settings → Collaborators → Add people** 输入团队成员的 GitHub 用户名发出邀请，管理员负责核对成员身份、邀请和移除。不要共享账号或个人访问令牌。Unity Cloud 成员邀请不会授予 GitHub 仓库权限。
+
+完整工程 ZIP 已包含真实模型和贴图，不依赖下载者运行 Git LFS。ZIP 不包含 `.git` 和版本历史：查看、试改可用 ZIP，持续提交请用 Git 克隆。通过 ZIP 交接美术改动时，请把改动资源和 `.meta` 一起交给负责人，不要覆盖其他人的整个工程。
 
 `main` + 功能分支 + Pull Request 是本项目的协作约定，不能把它当成已启用的服务器端强制分支保护。若后续需要组织 Team、细分角色或强制评审，可迁移至团队的 GitHub Organization，再按该账号套餐配置相应规则。
 

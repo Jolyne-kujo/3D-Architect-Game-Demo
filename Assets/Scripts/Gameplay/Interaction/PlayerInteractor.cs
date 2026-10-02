@@ -34,7 +34,12 @@ namespace CoastalTemple.Interaction
                 TryInteract();
         }
 
-        public void RefreshNearby() => Nearby = PlayerCanAct ? TutorialInteractable.FindNearest(this) : null;
+        public void RefreshNearby()
+        {
+            if(!PlayerCanAct){Nearby=null;return;}
+            var focused=cameraRig&&cameraRig.IsMechanismView?cameraRig.MechanismTarget:null;
+            Nearby=focused&&CanInteract(focused)?focused:TutorialInteractable.FindNearest(this);
+        }
 
         public bool CanInteract(TutorialInteractable target)
         {
@@ -65,12 +70,17 @@ namespace CoastalTemple.Interaction
             return shape.GetComponentInParent<TutorialInteractable>() != target;
         }
 
-        public bool TryInteract() => Interact(TutorialInteractable.FindNearest(this));
+        public bool TryInteract()
+        {
+            var target=cameraRig&&cameraRig.IsMechanismView?cameraRig.MechanismTarget:TutorialInteractable.FindNearest(this);
+            return Interact(target);
+        }
 
         public bool Interact(TutorialInteractable target)
         {
             if (!CanInteract(target)) return false;
             target.Use(this);
+            if(cameraRig&&target.UsesObservationView)cameraRig.BeginMechanismView(target);
             RefreshNearby();
             return true;
         }

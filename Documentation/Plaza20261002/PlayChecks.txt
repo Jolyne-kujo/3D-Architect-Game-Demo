@@ -1,0 +1,13 @@
+PASS spawn stands on imported dock above water: (-58.28, -1.27, 258.36)
+PASS camera remains first person
+PASS new spawn inside expanded sea boundary
+PASS both emitters start off
+PASS red receiver rejects Yellow
+PASS red receiver rejects Blue
+PASS direct red beam activates first receiver
+PASS mirror puzzle starts unsolved
+PASS one turn plus two turns completes four-mirror route and activates second receiver; segments=5
+PASS E reach and first yellow cycle operate with imported collision
+PASS operating emitter raises observation camera
+PASS second E controls same emitter from observation view
+PASS two mirrors are fixed and have no rotation control

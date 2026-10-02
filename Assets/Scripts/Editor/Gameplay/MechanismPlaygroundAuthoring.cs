@@ -18,7 +18,7 @@ namespace CoastalTemple.Editor
     public static class MechanismPlaygroundAuthoring
     {
         public const string ScenePath="Assets/Scenes/MechanismPlayground.unity";
-        const string PlayerPath="Assets/Prefabs/Player/ExplorerThirdPerson.prefab";
+        const string PlayerPath="Assets/Prefabs/Player/ExplorerFirstPerson.prefab";
         static Material ivory,gold,blue;
 
         [MenuItem("Coastal Temple/Mechanisms/Rebuild showroom (overwrites layout)")]
@@ -85,13 +85,14 @@ namespace CoastalTemple.Editor
             var hud=player.AddComponent<MechanismPlaygroundHud>();hud.walker=walker;hud.cameraRig=camera;hud.interactor=walker.GetComponent<PlayerInteractor>();
             DebugWaterAuthoring.ConfigureScene(scene,true);
             EditorSceneManager.SaveScene(scene,ScenePath);AssetDatabase.SaveAssets();
+            FirstPersonPresentationAuthoring.ConfigureScene();
             Selection.activeGameObject=pair;
         }
         static void ExportPlayer()
         {
             if(SceneManager.GetActiveScene().path!="Assets/Scenes/CoastalTemple.unity") EditorSceneManager.OpenScene("Assets/Scenes/CoastalTemple.unity");
             var walker=Object.FindFirstObjectByType<CourtyardWalker>();
-            var copy=Object.Instantiate(walker.transform.root.gameObject);copy.name="ExplorerThirdPerson";
+            var copy=Object.Instantiate(walker.transform.root.gameObject);copy.name="ExplorerFirstPerson";
             try
             {
                 foreach(var component in copy.GetComponentsInChildren<Component>(true))
@@ -103,7 +104,8 @@ namespace CoastalTemple.Editor
                 if(!w.GetComponent<CourtyardSurfaceSwimmer>())w.gameObject.AddComponent<CourtyardSurfaceSwimmer>();
                 w.transform.SetPositionAndRotation(Vector3.up*.05f,Quaternion.identity);
                 var lamp=w.GetComponent<PlayerLantern>();if(lamp)lamp.pickedUp=new UnityEvent();
-                var rig=w.GetComponent<CoastalPlayerCamera>();rig.overviewRoot=copy.transform;rig.thirdPerson=true;rig.SetThirdPerson(true);
+                var rig=w.GetComponent<CoastalPlayerCamera>();rig.overviewRoot=copy.transform;
+                FirstPersonPresentationAuthoring.ConfigurePlayer(w.gameObject);
                 PrefabUtility.SaveAsPrefabAsset(copy,PlayerPath);
             }
             finally{Object.DestroyImmediate(copy);}

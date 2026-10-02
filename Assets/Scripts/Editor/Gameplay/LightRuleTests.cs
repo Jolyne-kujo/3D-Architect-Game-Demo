@@ -119,7 +119,8 @@ namespace CoastalTemple.LightPuzzles.Editor
         static LaserEmitter Source(Vector3 position,Vector3 direction){var value=Object("Test laser",position);value.transform.rotation=Quaternion.LookRotation(direction);var source=value.AddComponent<LaserEmitter>();source.RenderBeam=false;Activate(source);return source;}
         static LightReceiver Receiver(Vector3 position){var value=Cube("Test receiver",position,Vector3.one);var target=value.AddComponent<LightReceiver>();target.OpticalCollider=value.GetComponent<BoxCollider>();target.RequiredHitSeconds=0;target.ReturnGraceSeconds=.15f;Activate(target);return target;}
         static RedStoneCurtain Curtain(Vector3 position,CurtainMode mode){var value=Cube("Test curtain",position,new Vector3(2,3,.4f));var target=value.AddComponent<RedStoneCurtain>();target.PhysicalCollider=value.GetComponent<BoxCollider>();target.Mode=mode;Activate(target);return target;}
-        static LightPortal Portal(Vector3 position,Vector3 forward){var value=Object("Test portal",position);value.transform.rotation=Quaternion.LookRotation(forward);var portal=value.AddComponent<LightPortal>();Activate(portal);return portal;}
+        // These aperture/hop fixtures intentionally model one-sided gates. Production gates default to two-sided.
+        static LightPortal Portal(Vector3 position,Vector3 forward){var value=Object("Test portal",position);value.transform.rotation=Quaternion.LookRotation(forward);var portal=value.AddComponent<LightPortal>();portal.TwoSided=false;Activate(portal);return portal;}
     }
 }
 #endif

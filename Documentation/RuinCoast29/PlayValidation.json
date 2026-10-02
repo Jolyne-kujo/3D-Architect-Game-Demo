@@ -1,0 +1,123 @@
+{
+  "movement": [
+    {
+      "direction": "uphill",
+      "node": 1,
+      "pass": true,
+      "distance": 0.275421143,
+      "seconds": 0.82,
+      "position": "(-65.00, 1.10, 174.28)",
+      "climbing": false
+    },
+    {
+      "direction": "uphill",
+      "node": 2,
+      "pass": true,
+      "distance": 0.283432,
+      "seconds": 2.63999987,
+      "position": "(-65.00, 8.08, 160.28)",
+      "climbing": false
+    },
+    {
+      "direction": "uphill",
+      "node": 3,
+      "pass": true,
+      "distance": 0.214746132,
+      "seconds": 2.72,
+      "position": "(-57.50, 15.19, 148.02)",
+      "climbing": false
+    },
+    {
+      "direction": "uphill",
+      "node": 4,
+      "pass": true,
+      "distance": 0.259533226,
+      "seconds": 2.96,
+      "position": "(-42.30, 21.10, 144.75)",
+      "climbing": false
+    },
+    {
+      "direction": "uphill",
+      "node": 5,
+      "pass": true,
+      "distance": 0.204338759,
+      "seconds": 6.04,
+      "position": "(-22.48, 37.89, 119.74)",
+      "climbing": false
+    },
+    {
+      "direction": "uphill",
+      "node": 6,
+      "pass": true,
+      "distance": 0.259895533,
+      "seconds": 3.67999983,
+      "position": "(-3.26, 40.84, 120.98)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 1,
+      "pass": true,
+      "distance": 0.271633148,
+      "seconds": 3.72,
+      "position": "(-22.08, 37.96, 119.60)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 2,
+      "pass": true,
+      "distance": 0.200806022,
+      "seconds": 6.06,
+      "position": "(-41.93, 21.20, 144.54)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 3,
+      "pass": true,
+      "distance": 0.218298852,
+      "seconds": 2.96,
+      "position": "(-57.18, 15.28, 147.80)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 4,
+      "pass": true,
+      "distance": 0.224198461,
+      "seconds": 2.72,
+      "position": "(-64.88, 8.20, 159.81)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 5,
+      "pass": true,
+      "distance": 0.242203608,
+      "seconds": 2.63999987,
+      "position": "(-65.00, 1.21, 173.76)",
+      "climbing": false
+    },
+    {
+      "direction": "downhill",
+      "node": 6,
+      "pass": true,
+      "distance": 0.214202881,
+      "seconds": 0.76,
+      "position": "(-65.00, 0.34, 177.79)",
+      "climbing": false
+    }
+  ],
+  "optical": [
+    {
+      "name": "Receiver_A_Direct_Red",
+      "active": true
+    },
+    {
+      "name": "Receiver_B_Reflection_Red",
+      "active": true
+    }
+  ],
+  "curtainActive": false
+}

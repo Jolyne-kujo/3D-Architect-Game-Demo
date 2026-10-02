@@ -8,6 +8,7 @@ namespace CoastalTemple.Tutorial
     {
         public Renderer[] visuals = System.Array.Empty<Renderer>();
         public bool Collected { get; private set; }
+        public override bool UsesObservationView => false;
         public override bool Available => base.Available && !Collected;
         public override bool CanUse(PlayerInteractor actor) => Available && actor && actor.lantern
             && actor.lantern.isActiveAndEnabled && !actor.lantern.HasLantern;

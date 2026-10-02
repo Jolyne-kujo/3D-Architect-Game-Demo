@@ -1,0 +1,16 @@
+PASS default scene is eye-bound first person
+PASS no hand geometry is active
+PASS full character is shadow-only
+PASS empty view has no held-item render pass
+PASS pickup enables only the lantern overlay
+PASS lantern is visible in the lower-right corner
+PASS yaw and pitch retain actor position and eye binding
+PASS reachable E control operates in the actual scene
+PASS operation enables a raised downward view and suspends movement input
+PASS another E cycles the same real emitter from the raised view
+PASS held lamp is hidden during the observation shot
+PASS authored puzzle bounds fit inside the observation frame
+PASS synthetic keyboard is enabled for the unfocused editor probe
+PASS real W input exits observation and restores first person
+PASS real Escape exits operation without pausing the player
+PASS author overview returns to first person

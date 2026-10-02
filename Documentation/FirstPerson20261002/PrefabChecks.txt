@@ -1,0 +1,6 @@
+PASS saved first-person defaults
+PASS saved eye binding
+PASS saved lantern overlay stack
+PASS saved lantern anchor
+PASS portable scene-water discovery
+PASS saved shadow-only body

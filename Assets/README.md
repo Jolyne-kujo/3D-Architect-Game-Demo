@@ -4,7 +4,9 @@
 
 切换场景：停止 Play 后，用 `Coastal Temple > Scenes > 主地图 CoastalTemple / 机关实验场 MechanismPlayground`，也可以直接双击 `Scenes` 中的对应文件。编辑后 Ctrl+S 保存。Scenes 菜单只打开现有场景，不重建地图。
 
-当前默认第三人称：鼠标环绕观察，WASD 按镜头方向移动并转身。镜头距离、肩偏移和高度在场景 `Player_ShoreStart` 的 `CoastalPlayerCamera` 上调整；当前距离 4.2 米。需要重新应用此配置时使用菜单 `Coastal Temple > Player > Use third-person preview`。
+当前默认第一人称：镜头绑定角色眼部，视野中隐藏身体和双手，仅拾取提灯后显示灯。可复用玩家在 `Prefabs/Player/ExplorerFirstPerson.prefab`。操作机关会切换到关卡俯视观察，继续按 E 操作同一机关，WASD / 空格 / Esc 返回第一人称。
+
+主地图起点的广场整套预制体在 `Prefabs/地形建筑/关卡片段/广场_新手关.prefab`；场景中展开 `20_Architecture > 01_广场新手关`，可分别修改原模型、机关以及出生点。原 FBX 在 `Objects/Environment/广场.fbx`。
 
 | 一级目录 | 放什么 |
 | --- | --- |

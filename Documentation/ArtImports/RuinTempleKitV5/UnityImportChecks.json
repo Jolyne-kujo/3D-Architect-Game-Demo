@@ -1,0 +1,13 @@
+{
+  "moduleAssets": 120,
+  "fbxFiles": 360,
+  "assemblyAssets": 3,
+  "placedModules": 840,
+  "meshRenderers": 5886,
+  "staticMeshColliders": 1961,
+  "missingMeshes": 0,
+  "missingMaterials": 0,
+  "missingScripts": 0,
+  "scene": "Assets/Scenes/MechanismPlayground.unity",
+  "sceneSaved": true
+}

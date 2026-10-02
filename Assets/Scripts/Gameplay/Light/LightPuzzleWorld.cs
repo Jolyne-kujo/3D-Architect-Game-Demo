@@ -11,6 +11,7 @@ namespace CoastalTemple.LightPuzzles
         static readonly List<LightTarget> resolvingTargets = new List<LightTarget>(32);
         static readonly List<LightTarget> resettingTargets = new List<LightTarget>(32);
         static readonly List<LightPortal> portals = new List<LightPortal>(16);
+        static readonly List<LightMirror> mirrors = new List<LightMirror>(16);
         static readonly LightTarget[] passedTargets = new LightTarget[LaserEmitter.MaximumSegments];
         static readonly RaycastHit[] hits = new RaycastHit[64];
         static readonly RaycastHit[] crowdedHits = new RaycastHit[256];
@@ -31,6 +32,8 @@ namespace CoastalTemple.LightPuzzles
         internal static void Unregister(LightTarget value) { targets.Remove(value); }
         internal static void Register(LightPortal value) { Add(portals, value); }
         internal static void Unregister(LightPortal value) { portals.Remove(value); }
+        internal static void Register(LightMirror value) { Add(mirrors, value); }
+        internal static void Unregister(LightMirror value) { mirrors.Remove(value); }
 
         internal static void Tick()
         {
@@ -73,6 +76,25 @@ namespace CoastalTemple.LightPuzzles
         {
             source.BeginTrace();
             if (!source.Powered || source.Channel == LightColorChannel.None || !source.isActiveAndEnabled) { source.DisplayTrace(); return; }
+            TracePath(source, targets, mirrors, portals, null, null);
+            source.DisplayTrace();
+        }
+
+        /// <summary>Geometry query only: never enables sources, charges targets or opens curtains.</summary>
+        public static void Preview(LaserEmitter source, List<BeamSegment> path,
+            IReadOnlyList<LightTarget> sceneTargets, IReadOnlyList<LightMirror> sceneMirrors,
+            IReadOnlyList<LightPortal> scenePortals, List<LightTarget> reached)
+        {
+            path.Clear(); reached?.Clear();
+            if (!source || !source.gameObject.activeInHierarchy) return;
+            TracePath(source, sceneTargets, sceneMirrors, scenePortals, path, reached);
+        }
+
+        static void TracePath(LaserEmitter source, IReadOnlyList<LightTarget> traceTargets,
+            IReadOnlyList<LightMirror> traceMirrors, IReadOnlyList<LightPortal> tracePortals,
+            List<BeamSegment> previewPath, List<LightTarget> reached)
+        {
+            bool preview = previewPath != null;
             var basis = source.Origin ? source.Origin : source.transform;
             Vector3 origin = basis.position;
             Vector3 direction = basis.forward.normalized;
@@ -84,9 +106,10 @@ namespace CoastalTemple.LightPuzzles
                 float nearest = PhysicalDistance(source, origin, direction, remaining);
                 LightTarget target = null;
                 LightPortal portal = null;
-                for (int i = 0; i < targets.Count; i++)
+                LightMirror mirror = null;
+                for (int i = 0; i < traceTargets.Count; i++)
                 {
-                    var candidate = targets[i];
+                    var candidate = traceTargets[i];
                     if (!candidate || !candidate.isActiveAndEnabled || !candidate.OpticallyPresent) continue;
                     bool passed = false;
                     for (int seen = 0; seen < passedCount; seen++) if (passedTargets[seen] == candidate) { passed = true; break; }
@@ -94,19 +117,36 @@ namespace CoastalTemple.LightPuzzles
                     if (candidate.Intersect(origin, direction, nearest, out float distance) && distance <= nearest)
                     { nearest = distance; target = candidate; }
                 }
-                for (int i = 0; i < portals.Count; i++)
+                for (int i = 0; i < tracePortals.Count; i++)
                 {
-                    var candidate = portals[i];
+                    var candidate = tracePortals[i];
                     if (!candidate || !candidate.isActiveAndEnabled) continue;
                     if (candidate.Intersect(origin, direction, nearest, out float distance) && distance < nearest)
                     { nearest = distance; portal = candidate; target = null; }
                 }
+                for (int i = 0; i < traceMirrors.Count; i++)
+                {
+                    var candidate = traceMirrors[i];
+                    if (!candidate || !candidate.isActiveAndEnabled) continue;
+                    if (candidate.Intersect(origin, direction, nearest, out float distance) && distance < nearest)
+                    { nearest = distance; mirror = candidate; portal = null; target = null; }
+                }
                 Vector3 end = origin + direction * nearest;
-                source.AddSegment(origin, end);
+                if (preview) previewPath.Add(new BeamSegment(origin, end));
+                else source.AddSegment(origin, end);
                 remaining -= nearest;
+                if (mirror)
+                {
+                    direction = mirror.Reflect(direction);
+                    origin = end + direction * .005f;
+                    remaining -= .005f;
+                    passedCount = 0;
+                    if (!preview && step == LaserEmitter.MaximumSegments - 1) source.TraceLimited = true;
+                    continue;
+                }
                 if (portal)
                 {
-                    if (hops >= Mathf.Clamp(source.MaxPortalHops, 0, 16)) { source.TraceLimited = true; break; }
+                    if (hops >= Mathf.Clamp(source.MaxPortalHops, 0, 16)) { if (!preview) source.TraceLimited = true; break; }
                     if (!portal.TryTransfer(end, direction, out origin, out direction)) break;
                     // Exit offset is part of the physical distance budget, while portal gap is not.
                     remaining -= portal.ExitOffset;
@@ -115,16 +155,16 @@ namespace CoastalTemple.LightPuzzles
                     continue;
                 }
                 if (!target) break;
-                target.Illuminate(source.Channel);
+                if (preview) reached?.Add(target);
+                else target.Illuminate(source.Channel);
                 if (!target.PassesBeam) break;
                 passedTargets[passedCount++] = target;
                 const float epsilon = .005f;
                 origin = end + direction * epsilon;
                 remaining -= epsilon;
-                if (step == LaserEmitter.MaximumSegments - 1) source.TraceLimited = true;
+                if (!preview && step == LaserEmitter.MaximumSegments - 1) source.TraceLimited = true;
             }
-            source.PortalHopCount = hops;
-            source.DisplayTrace();
+            if (!preview) source.PortalHopCount = hops;
         }
 
         static float PhysicalDistance(LaserEmitter source, Vector3 origin, Vector3 direction, float range)
@@ -149,6 +189,8 @@ namespace CoastalTemple.LightPuzzles
                 if (target && target.isActiveAndEnabled && target.OwnsCollider(collider) && target.Intersect(origin,direction,range,out _)) continue;
                 var portal = collider.GetComponent<LightPortal>();
                 if (portal && portal.isActiveAndEnabled && portal.Intersect(origin, direction, range, out _)) continue;
+                var mirror = collider.GetComponent<LightMirror>();
+                if (mirror && mirror.isActiveAndEnabled && mirror.OwnsCollider(collider) && mirror.Intersect(origin, direction, range, out _)) continue;
                 nearest = hit.distance;
             }
             return nearest;

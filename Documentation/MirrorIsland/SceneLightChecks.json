@@ -1,0 +1,13 @@
+{
+  "receivers": [
+    {
+      "name": "Receiver_A_Direct_Red",
+      "active": true
+    },
+    {
+      "name": "Receiver_B_Reflection_Red",
+      "active": true
+    }
+  ],
+  "reflectionSegments": 5
+}

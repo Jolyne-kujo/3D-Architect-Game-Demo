@@ -74,8 +74,9 @@ namespace CoastalTemple.Tutorial
                 if (!string.IsNullOrEmpty(lesson.safetyNote)) GUI.Label(new Rect(43, 108, 395, 29), lesson.safetyNote, smallStyle);
             }
             bool active = interactor.PlayerCanAct;
+            bool operating = interactor.cameraRig && interactor.cameraRig.IsMechanismView;
             Panel(new Rect(24, height - 72, width - 48, 48));
-            string controls = active ? "WASD 慢跑  ·  鼠标观察  ·  Shift 快跑  ·  空格 跳跃 / 上浮  ·  Ctrl 下潜  ·  H 观察线索  ·  Esc 释放鼠标" : "鼠标已释放  ·  点击画面或按 Esc 继续游戏";
+            string controls = operating ? "E 继续操作当前机关  ·  WASD / 空格 / Esc 返回第一人称" : active ? "WASD 慢跑  ·  鼠标观察  ·  Shift 快跑  ·  空格 跳跃 / 上浮  ·  Ctrl 下潜  ·  H 观察线索  ·  Esc 释放鼠标" : "鼠标已释放  ·  点击画面或按 Esc 继续游戏";
             GUI.Label(new Rect(41, height - 62, width - 83, 29), controls, smallStyle);
             if (active)
             {
@@ -88,7 +89,7 @@ namespace CoastalTemple.Tutorial
                     string prompt = nearby.DisplayPrompt ?? "操作";
                     GUI.Label(new Rect((width - promptWidth) * .5f + 16, height - 133, promptWidth - 32, 31), prompt.StartsWith("E") ? prompt : "E  " + prompt, promptStyle);
                 }
-                GUI.Label(new Rect(width * .5f - 5, height * .5f - 15, 16, 26), "·", promptStyle);
+                if(!operating)GUI.Label(new Rect(width * .5f - 5, height * .5f - 15, 16, 26), "·", promptStyle);
             }
             if (Time.unscaledTime < rewardUntil && !string.IsNullOrEmpty(rewardText))
             {

@@ -45,6 +45,7 @@ namespace WaterCourtyard
         public bool discoverSceneWater=true;
         public Transform eye;
         public bool active;
+        [System.NonSerialized] public bool cameraInputSuspended;
         [Tooltip("Overview can stop player input while retaining gravity and moving-platform contact.")]
         public bool simulateWhileInactive;
         [Tooltip("First-person yaw turns the body; third-person orbit leaves heading to movement.")]
@@ -154,6 +155,7 @@ namespace WaterCourtyard
         public void SetActive(bool value){active=value;Cursor.lockState=value?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!value;}
         void Update()
         {
+            if(cameraInputSuspended){SimulateMovement(Vector2.zero,false,false,0,Time.deltaTime);return;}
             if(!active){if(simulateWhileInactive)SimulateMovement(Vector2.zero,false,false,0,Time.deltaTime);return;}var kb=Keyboard.current;var mouse=Mouse.current;if(kb==null)return;
             if(mouse!=null)ApplyLook(mouse.delta.ReadValue()*.08f);
             Vector2 input=new Vector2((kb.dKey.isPressed?1:0)-(kb.aKey.isPressed?1:0),(kb.wKey.isPressed?1:0)-(kb.sKey.isPressed?1:0));input=Vector2.ClampMagnitude(input,1);

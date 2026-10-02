@@ -1,0 +1,139 @@
+{
+  "label": "after-overview",
+  "frames": 1948,
+  "screen": [
+    1465,
+    1246
+  ],
+  "camera": "(34.00, 20.00, -22.00)",
+  "rotation": "(13.39, 51.77, 0.00)",
+  "portals": 0,
+  "stats": {
+    "frameMs": {
+      "mean": 4.1056203820123063,
+      "median": 3.9417021907866,
+      "p95": 5.3265024907886982,
+      "max": 11.081802658736706
+    },
+    "gpuMs": {
+      "mean": 1.1900830225872687,
+      "median": 1.21344,
+      "p95": 1.62816,
+      "max": 2.399232
+    },
+    "CPU Main Thread Frame Time": {
+      "mean": 2620696.1950718686,
+      "median": 2440800.0,
+      "p95": 3729400.0,
+      "max": 9714500.0
+    },
+    "CPU Render Thread Frame Time": {
+      "mean": 1262985.4635523614,
+      "median": 1212900.0,
+      "p95": 1730000.0,
+      "max": 4258100.0
+    },
+    "CPU Total Frame Time": {
+      "mean": 4106294.2720739217,
+      "median": 3954700.0,
+      "p95": 5314500.0,
+      "max": 11423100.0
+    },
+    "SRP Batcher Draw Calls Count": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "Standard Draw Calls Count": {
+      "mean": 13.066735112936344,
+      "median": 13.0,
+      "p95": 14.0,
+      "max": 27.0
+    },
+    "SetPass Calls Count": {
+      "mean": 42.066735112936342,
+      "median": 42.0,
+      "p95": 43.0,
+      "max": 85.0
+    },
+    "Triangles Count": {
+      "mean": 707583.13347022585,
+      "median": 707583.0,
+      "p95": 707585.0,
+      "max": 1415168.0
+    },
+    "Vertices Count": {
+      "mean": 1211777.2669404517,
+      "median": 1211777.0,
+      "p95": 1211781.0,
+      "max": 2423558.0
+    },
+    "BRG Draw Calls Count": {
+      "mean": 439.0,
+      "median": 439.0,
+      "p95": 439.0,
+      "max": 878.0
+    },
+    "BRG Indirect Draw Calls Count": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "BRG Instances Count": {
+      "mean": 3745.0,
+      "median": 3745.0,
+      "p95": 3745.0,
+      "max": 7490.0
+    },
+    "BRG Indirect Instances Count": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "Main Thread": {
+      "mean": 4078794.4045174536,
+      "median": 3927200.0,
+      "p95": 5286200.0,
+      "max": 11389800.0
+    },
+    "PlayerLoop": {
+      "mean": 2620908.6242299792,
+      "median": 2441200.0,
+      "p95": 3730000.0,
+      "max": 9715000.0
+    },
+    "Gfx.WaitForPresentOnGfxThread": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "GC.Collect": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "Physics.Simulate": {
+      "mean": 37342.094455852159,
+      "median": 0.0,
+      "p95": 201800.0,
+      "max": 338300.0
+    },
+    "BehaviourUpdate": {
+      "mean": 70723.665297741274,
+      "median": 65700.0,
+      "p95": 106000.0,
+      "max": 185400.0
+    },
+    "ScriptRunBehaviourLateUpdate": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    }
+  }
+}

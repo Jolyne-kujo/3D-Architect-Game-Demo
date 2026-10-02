@@ -1,0 +1,2 @@
+PASS LightMirror_Rotatable reflection, interaction and geometry
+PASS LightMirror_Fixed reflection, interaction and geometry

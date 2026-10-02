@@ -1,0 +1,9 @@
+Removed old shore group: 01_广场新手关
+Replaced Mesh68 with rotatable mirror at (-74.60, 1.22, 228.43)
+Replaced Mesh62 with fixed mirror at (-81.00, 1.22, 228.43)
+Replaced Mesh67 with rotatable mirror at (-81.40, 1.22, 215.63)
+Replaced Mesh69 with fixed mirror at (-74.20, 1.22, 215.81)
+Near-sea boundary extended to z=272, far-sea ring matched; original 4 m simulation grid retained.
+Preserved 66 non-mechanism source meshes at uniform scale 40.
+2 emitters, 2 red receivers, 2 fixed mirrors, 2 rotatable mirrors. All emitters start off.
+Main-map placement: model origin (-40.60, -1.70, 267.68); spawn (-58.28, -1.22, 258.36)
